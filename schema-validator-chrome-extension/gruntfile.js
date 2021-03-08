@@ -4,9 +4,21 @@ module.exports = function (grunt) {
 			views: {
 				expand: true,
 				cwd: "src/",
-				src: ["views/**/*.{html,css,png}"],
+				src: ["views/**/*.html"],
 				dest: "dist/"
-			}
+			},
+			images: {
+				expand: true,
+				cwd: "src/",
+				src: ["images/**/*.{jpg,gif,png}"],
+				dest: "dist/"
+			},
+			css: {
+				expand: true,
+				cwd: "src/",
+				src: ["images/**/*.css"],
+				dest: "dist/"
+			},
 		}
 	});
 

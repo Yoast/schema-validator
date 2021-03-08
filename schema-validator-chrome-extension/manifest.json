@@ -6,7 +6,8 @@
     ],
     "browser_action": {
         "default_title": "Yoast Schema Validation",
-        "default_popup": "dist/views/plugin.html"
+        "default_popup": "dist/views/plugin.html",
+        "default_icon": "dist/images/grey.png"
     },
     "manifest_version": 2
 }
