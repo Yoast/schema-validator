@@ -6,6 +6,12 @@ module.exports = function (grunt) {
 				cwd: "src/",
 				src: ["views/**/*.{html,css,png}"],
 				dest: "dist/"
+			},
+			styles: {
+				expand: true,
+				cwd: "src/",
+				src: ["styles/**/*.{html,css,png}"],
+				dest: "dist/"
 			}
 		}
 	});
