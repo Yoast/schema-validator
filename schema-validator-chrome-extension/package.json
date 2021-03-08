@@ -1,0 +1,13 @@
+{
+  "name": "schema-validator-chrome-extension",
+  "version": "0.0.1",
+  "description": "A Chrome extension to validate schema output on wordpress pages",
+  "main": "dist/scripts/plugin.js",
+  "repository": "https://github.com/Yoast/schema-validator",
+  "author": "Yoast",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
+}

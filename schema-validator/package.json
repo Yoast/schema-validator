@@ -1,0 +1,10 @@
+{
+    "name": "schema-validator",
+    "version": "0.0.1",
+    "description": "A wrapper for schemarama",
+    "main": "dist/scripts/plugin.js",
+    "repository": "https://github.com/Yoast/schema-validator",
+    "author": "Yoast",
+    "license": "MIT",
+    "private": true
+}
