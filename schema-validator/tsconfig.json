@@ -13,7 +13,8 @@
         "declaration": true
     },
     "include": [
-        "src/scripts/**/*"
+        "src/scripts/**/*",
+        "schemarama-wrapper.ts"
     ],
     "exclude": [
         "node_modules"

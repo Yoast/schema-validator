@@ -1,5 +1,5 @@
 import { StructuredDataFailure, Validator as ShaclValidator } from "schemarama/shaclValidator";
-import { schema_shapes_ttf } from "./assets/datashapes.org.schemashapes.ttl";
+import { schema_shapes_ttf } from "./datashapes.org/schemashapes.ttl";
 
 export class SchemaValidator {
     
