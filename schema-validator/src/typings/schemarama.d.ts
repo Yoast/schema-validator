@@ -6,6 +6,10 @@ declare module "@schemarama/shaclValidator" {
       shape: string
     }
 
+    export type ShaclValidatorOptions = { 
+        baseUrl: string | undefined
+    };
+
     export class ShaclValidator {
         /**
          * @param {string} shaclSchema - shacl shapes in string format
@@ -24,6 +28,6 @@ declare module "@schemarama/shaclValidator" {
          * @param {{baseUrl: string|undefined}} options
          * @returns {Promise<{baseUrl: string, store: Store, failures: [StructuredDataFailure]}>}
          */
-        async validate(data: string | Store, options: { baseUrl: string | undefined; }={}): Promise<{ baseUrl: string; store: Store; failures: [StructuredDataFailure]; }>;
+        validate(data: string, options: ShaclValidatorOptions ): Promise<{ baseUrl: string; store: object; failures: [StructuredDataFailure]; }>;
     }
 }
