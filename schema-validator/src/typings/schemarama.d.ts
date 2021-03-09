@@ -1,4 +1,11 @@
 declare module "@schemarama/shaclValidator" {
+    export type StructuredDataFailure = {
+      property: string,
+      message: string,
+      severity: 'error'|'warning'|'info',
+      shape: string
+    }
+
     export class ShaclValidator {
         /**
          * @param {string} shaclSchema - shacl shapes in string format
