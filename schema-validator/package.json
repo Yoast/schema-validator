@@ -11,8 +11,9 @@
         "schemarama": "^0.0.4"
     },
     "devDependencies": {
-        "eslint": "^7.21.0",
         "@types/npm": "^2.0.31",
+        "eslint": "^7.21.0",
+        "eslint-config-yoast": "^5.0.17",
         "typescript": "^4.2.3"
     },
     "scripts": {
