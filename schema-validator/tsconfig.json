@@ -14,7 +14,6 @@
     },
     "include": [
         "src/scripts/**/*",
-        "schemarama-wrapper.ts"
     ],
     "exclude": [
         "node_modules"
