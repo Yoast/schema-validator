@@ -24,6 +24,7 @@ function gatherSchemaFromPage(): LinkedData {
  */
 function initialize() {
 	const graph = gatherSchemaFromPage();
+	console.log( graph );
 }
 
 initialize();

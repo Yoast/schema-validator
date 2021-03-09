@@ -12,7 +12,7 @@
         "declaration": true
     },
     "include": [
-        "src/scripts/**/*"
+        "src/scripts/*/*.ts"
     ],
     "exclude": [
         "node_modules"

@@ -1,5 +1,12 @@
+const pageWebpackConfig = require( "./config/webpack/page.webpack.config" );
+const pluginWebpackConfig = require( "./config/webpack/plugin.webpack.config" );
+
 module.exports = function( grunt ) {
 	grunt.initConfig( {
+		webpack: {
+			page: pageWebpackConfig,
+			plugin: pluginWebpackConfig,
+		},
 		copy: {
 			views: {
 				expand: true,
@@ -23,6 +30,7 @@ module.exports = function( grunt ) {
 	} );
 
 	grunt.loadNpmTasks( "grunt-contrib-copy" );
+	grunt.loadNpmTasks( "grunt-webpack" );
 
-	grunt.registerTask( "default", [ "copy" ] );
+	grunt.registerTask( "default", [ "copy", "webpack" ] );
 };
