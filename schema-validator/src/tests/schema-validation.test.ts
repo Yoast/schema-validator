@@ -1,3 +1,4 @@
+import { StructuredDataFailure } from "schemarama/shaclValidator";
 import { SchemaValidator } from "../scripts/schemarama-wrapper";
 
 /* eslint-disable max-len */
@@ -229,6 +230,6 @@ describe( "The SchemaValidator class", () => {
 		const validator = new SchemaValidator();
 		const result = await validator.validate( brokenYoastDotComSchema );
 
-		expect( result ).toEqual( [] );
+		expect( result ).toEqual( { severity: "error" } as StructuredDataFailure );
 	} );
 } );
