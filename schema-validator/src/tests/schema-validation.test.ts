@@ -130,8 +130,10 @@ const brokenYoastDotComSchema = `{
             "@type":"ImageObject",
             "@id":"https://yoast.com/#logo",
             "inLanguage":"en-US",
-            "url":"https://yoast.com/app/uploads/2020/09/Yoast_Icon_SocialMedia_500x500.png",
-            "width":500,
+            "url": { 
+                "broken_schema": true,
+            },
+            "width": 500,
             "height":500,
             "caption":"Yoast"
          },
@@ -226,7 +228,7 @@ describe( "The SchemaValidator class", () => {
 		expect( result ).toEqual( [] );
 	} );
 
-	it( "Validates broken schema against the default schema shapes and finds the error.", async () => {
+	it( "Validates broken schema against the default schema shapes and finds that an Image URL is an object instead of a string.", async () => {
 		const validator = new SchemaValidator();
 		const result = await validator.validate( brokenYoastDotComSchema );
 
