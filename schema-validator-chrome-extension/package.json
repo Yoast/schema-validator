@@ -28,7 +28,7 @@
     "schema-validator": "file:../schema-validator"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "grunt",
     "watch": "tsc --watch",
     "lint": "eslint 'src/**/*.ts'",
     "lint-fix": "eslint 'src/**/*.ts' --fix",

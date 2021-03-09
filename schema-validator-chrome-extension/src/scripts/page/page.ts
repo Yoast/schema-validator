@@ -19,12 +19,32 @@ function gatherSchemaFromPage(): LinkedData {
 	};
 }
 
+const mockResults: StructuredDataFailure[] = [
+	{
+		property: "author",
+		message: "A message",
+		severity: "warning",
+		shape: "",
+	},
+	{
+		property: "name",
+		message: "A second message",
+		severity: "warning",
+		shape: "",
+	},
+];
+
+function sendResults( failures: StructuredDataFailure[] ) {
+	chrome.runtime.sendMessage( { command: "setValidationResults", payload: failures } );
+}
+
 /**
  * Initializes the page-side of the browser extension.
  */
 function initialize() {
 	const graph = gatherSchemaFromPage();
 	console.log( graph );
+	sendResults( mockResults );
 }
 
 initialize();

@@ -9,6 +9,9 @@
         "default_popup": "./dist/views/plugin.html",
         "default_icon": "./dist/images/grey.png"
     },
+    "background": {
+        "scripts": [ "./dist/scripts/background/background.js" ]
+    },
     "content_scripts": [
         {
             "matches": [

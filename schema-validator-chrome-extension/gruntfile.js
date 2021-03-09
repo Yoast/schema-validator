@@ -1,11 +1,13 @@
 const pageWebpackConfig = require( "./config/webpack/page.webpack.config" );
 const pluginWebpackConfig = require( "./config/webpack/plugin.webpack.config" );
+const backgroundWebpackConfig = require( "./config/webpack/background.webpack.config" );
 
 module.exports = function( grunt ) {
 	grunt.initConfig( {
 		webpack: {
 			page: pageWebpackConfig,
 			plugin: pluginWebpackConfig,
+			background: backgroundWebpackConfig,
 		},
 		copy: {
 			views: {
