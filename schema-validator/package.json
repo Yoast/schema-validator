@@ -6,5 +6,11 @@
     "repository": "https://github.com/Yoast/schema-validator",
     "author": "Yoast",
     "license": "MIT",
-    "private": true
+    "private": true,
+    "dependencies": {
+        "schemarama": "^0.0.4"
+    },
+    "devDependencies": {
+        "typescript": "^4.2.3"
+    }
 }
