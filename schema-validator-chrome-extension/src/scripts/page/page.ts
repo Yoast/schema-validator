@@ -1,4 +1,5 @@
 import LinkedData from "./values/LinkedData";
+import { StructuredDataFailure } from "../common/values";
 
 /**
  * Gathers the Schema from the page and puts them together in a graph.
@@ -29,7 +30,7 @@ const mockResults: StructuredDataFailure[] = [
 	{
 		property: "name",
 		message: "A second message",
-		severity: "warning",
+		severity: "error",
 		shape: "",
 	},
 ];

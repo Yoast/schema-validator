@@ -1,5 +1,6 @@
 import MessageSender = chrome.runtime.MessageSender;
-import { Message, StructuredDataFailure, ValidationSummary } from "./values";
+import { Message, ValidationSummary } from "./values";
+import { StructuredDataFailure } from "../common/values";
 
 let validationResults: StructuredDataFailure[];
 

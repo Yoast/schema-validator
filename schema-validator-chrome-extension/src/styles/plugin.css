@@ -1,4 +1,34 @@
 
 body {
-	width: 10rem;
+	width: 20rem;
+	font-size: 1rem;
+}
+
+article.result {
+	border: 1px solid;
+	border-radius: 2px;
+	margin-top: 4px;
+	padding: 8px 16px;
+}
+
+article.result p {
+	margin: 0;
+}
+
+article.warning {
+	border-color: #b95200;
+	background-color: #ff9242;
+}
+
+article.warning p::before {
+	content: "\26A0"
+}
+
+article.error {
+	border-color: #b9000c;
+	background-color: #ff4262;
+}
+
+article.error p::before {
+	content: "\26D4"
 }
