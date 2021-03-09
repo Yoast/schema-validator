@@ -1,4 +1,8 @@
-export const schema_shapes_ttf = `# baseURI: http://datashapes.org/schema
+/* eslint-disable max-len */
+/**
+ * Automatically generated Schema shapes defined by datashapes.org.
+ */
+export const schemaShapesTTF = `# baseURI: http://datashapes.org/schema
 # imports: http://datashapes.org/dash
 
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -10,7 +14,7 @@ export const schema_shapes_ttf = `# baseURI: http://datashapes.org/schema
 
 <http://datashapes.org/schema>
   a owl:Ontology ;
-  rdfs:comment "<p>This is an RDF/SHACL version of schema.org, generated based on the official Turtle file http://schema.org/version/latest/all-layers.ttl. Alignments with common RDF practices have been made, e.g. using rdfs:Class instead of schema:Class.</p><p>Contact: <a href=\"mailto:holger@topquadrant.com\">Holger Knublauch</a></p>"^^rdf:HTML ;
+  rdfs:comment "<p>This is an RDF/SHACL version of schema.org, generated based on the official Turtle file http://schema.org/version/latest/all-layers.ttl. Alignments with common RDF practices have been made, e.g. using rdfs:Class instead of schema:Class.</p><p>Contact: <a href='mailto:holger@topquadrant.com'>Holger Knublauch</a></p>"^^rdf:HTML ;
   rdfs:label "Schema.org SHACL shapes" ;
   owl:imports <http://datashapes.org/dash> ;
   owl:versionInfo "2020-05-23T17:33:22.400+10:00"^^xsd:dateTime ;
@@ -20,8 +24,8 @@ export const schema_shapes_ttf = `# baseURI: http://datashapes.org/schema
   a sh:NodeShape ;
   schema:category "issue-2140" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """A 3D model represents some kind of 3D content, which may have <a class=\"localLink\" href=\"http://schema.org/encoding\">encoding</a>s in one or more <a class=\"localLink\" href=\"http://schema.org/MediaObject\">MediaObject</a>s. Many 3D formats are available (e.g. see <a href=\"https://en.wikipedia.org/wiki/Category:3D_graphics_file_formats\">Wikipedia</a>); specific encoding formats can be represented using the <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a> property applied to the relevant <a class=\"localLink\" href=\"http://schema.org/MediaObject\">MediaObject</a>. For the
-case of a single file published after Zip compression, the convention of appending '+zip' to the <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a> can be used. Geospatial, AR/VR, artistic/animation, gaming, engineering and scientific content can all be represented using <a class=\"localLink\" href=\"http://schema.org/3DModel\">3DModel</a>."""^^rdf:HTML ;
+  rdfs:comment """A 3D model represents some kind of 3D content, which may have <a class='localLink' href='http://schema.org/encoding'>encoding</a>s in one or more <a class='localLink' href='http://schema.org/MediaObject'>MediaObject</a>s. Many 3D formats are available (e.g. see <a href='https://en.wikipedia.org/wiki/Category:3D_graphics_file_formats'>Wikipedia</a>); specific encoding formats can be represented using the <a class='localLink' href='http://schema.org/encodingFormat'>encodingFormat</a> property applied to the relevant <a class='localLink' href='http://schema.org/MediaObject'>MediaObject</a>. For the
+case of a single file published after Zip compression, the convention of appending '+zip' to the <a class='localLink' href='http://schema.org/encodingFormat'>encodingFormat</a> can be used. Geospatial, AR/VR, artistic/animation, gaming, engineering and scientific content can all be represented using <a class='localLink' href='http://schema.org/3DModel'>3DModel</a>."""^^rdf:HTML ;
   rdfs:label "3DModel" ;
   rdfs:subClassOf schema:MediaObject ;
   sh:property <http://schema.org/3DModel-isResizable> ;
@@ -109,7 +113,7 @@ schema:AcceptAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/RejectAction\">RejectAction</a>: The antonym of AcceptAction.</li>
+<li><a class='localLink' href='http://schema.org/RejectAction'>RejectAction</a>: The antonym of AcceptAction.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Accept action" ;
@@ -121,7 +125,7 @@ schema:Accommodation
   rdfs:comment """An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a mandatory requirement.
 For more specific types of accommodations not defined in schema.org, one can use additionalType with external vocabularies.
 <br /><br />
-See also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
+See also the <a href='/docs/hotels.html'>dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
   rdfs:label "Accommodation" ;
   rdfs:subClassOf schema:Place ;
   sh:property schema:Accommodation-accommodationCategory ;
@@ -144,14 +148,14 @@ schema:Accommodation-accommodationCategory
   a sh:PropertyShape ;
   sh:path schema:accommodationCategory ;
   sh:datatype xsd:string ;
-  sh:description "Category of an <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>, following real estate conventions e.g. RESO (see <a href=\"https://ddwiki.reso.org/display/DDW17/PropertySubType+Field\">PropertySubType</a>, and <a href=\"https://ddwiki.reso.org/display/DDW17/PropertyType+Field\">PropertyType</a> fields  for suggested values)."^^rdf:HTML ;
+  sh:description "Category of an <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>, following real estate conventions e.g. RESO (see <a href='https://ddwiki.reso.org/display/DDW17/PropertySubType+Field'>PropertySubType</a>, and <a href='https://ddwiki.reso.org/display/DDW17/PropertyType+Field'>PropertyType</a> fields  for suggested values)."^^rdf:HTML ;
   sh:name "accommodationCategory" ;
 .
 schema:Accommodation-accommodationFloorPlan
   a sh:PropertyShape ;
   sh:path schema:accommodationFloorPlan ;
   sh:class schema:FloorPlan ;
-  sh:description "A floorplan of some <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>."^^rdf:HTML ;
+  sh:description "A floorplan of some <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>."^^rdf:HTML ;
   sh:name "accommodationFloorPlan" ;
 .
 schema:Accommodation-amenityFeature
@@ -165,8 +169,8 @@ schema:Accommodation-floorLevel
   a sh:PropertyShape ;
   sh:path schema:floorLevel ;
   sh:datatype xsd:string ;
-  sh:description """The floor level for an <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a> in a multi-storey building. Since counting
-  systems <a href=\"https://en.wikipedia.org/wiki/Storey#Consecutive_number_floor_designations\">vary internationally</a>, the local system should be used where possible."""^^rdf:HTML ;
+  sh:description """The floor level for an <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a> in a multi-storey building. Since counting
+  systems <a href='https://en.wikipedia.org/wiki/Storey#Consecutive_number_floor_designations'>vary internationally</a>, the local system should be used where possible."""^^rdf:HTML ;
   sh:name "floorLevel" ;
 .
 schema:Accommodation-floorSize
@@ -180,7 +184,7 @@ Typical unit code(s): MTK for square meter, FTK for square foot, or YDK for squa
 schema:Accommodation-leaseLength
   a sh:PropertyShape ;
   sh:path schema:leaseLength ;
-  sh:description "Length of the lease for some <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>, either particular to some <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a> or in some cases intrinsic to the property."^^rdf:HTML ;
+  sh:description "Length of the lease for some <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>, either particular to some <a class='localLink' href='http://schema.org/Offer'>Offer</a> or in some cases intrinsic to the property."^^rdf:HTML ;
   sh:name "leaseLength" ;
   sh:or (
       [
@@ -195,13 +199,13 @@ schema:Accommodation-numberOfBathroomsTotal
   a sh:PropertyShape ;
   sh:path schema:numberOfBathroomsTotal ;
   sh:datatype xsd:integer ;
-  sh:description "The total integer number of bathrooms in a some <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>, following real estate conventions as <a href=\"https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field\">documented in RESO</a>: \"The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.\". See also <a class=\"localLink\" href=\"http://schema.org/numberOfRooms\">numberOfRooms</a>."^^rdf:HTML ;
+  sh:description "The total integer number of bathrooms in a some <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>, following real estate conventions as <a href='https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field'>documented in RESO</a>: 'The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.'. See also <a class='localLink' href='http://schema.org/numberOfRooms'>numberOfRooms</a>."^^rdf:HTML ;
   sh:name "numberOfBathroomsTotal" ;
 .
 schema:Accommodation-numberOfBedrooms
   a sh:PropertyShape ;
   sh:path schema:numberOfBedrooms ;
-  sh:description "The total integer number of bedrooms in a some <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>, <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a> or <a class=\"localLink\" href=\"http://schema.org/FloorPlan\">FloorPlan</a>."^^rdf:HTML ;
+  sh:description "The total integer number of bedrooms in a some <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>, <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a> or <a class='localLink' href='http://schema.org/FloorPlan'>FloorPlan</a>."^^rdf:HTML ;
   sh:name "numberOfBedrooms" ;
   sh:or (
       [
@@ -216,14 +220,14 @@ schema:Accommodation-numberOfFullBathrooms
   a sh:PropertyShape ;
   sh:path schema:numberOfFullBathrooms ;
   sh:datatype xsd:float ;
-  sh:description "Number of full bathrooms - The total number of full and Â¾ bathrooms in an <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>. This corresponds to the <a href=\"https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field\">BathroomsFull field in RESO</a>."^^rdf:HTML ;
+  sh:description "Number of full bathrooms - The total number of full and Â¾ bathrooms in an <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>. This corresponds to the <a href='https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field'>BathroomsFull field in RESO</a>."^^rdf:HTML ;
   sh:name "numberOfFullBathrooms" ;
 .
 schema:Accommodation-numberOfPartialBathrooms
   a sh:PropertyShape ;
   sh:path schema:numberOfPartialBathrooms ;
   sh:datatype xsd:float ;
-  sh:description "Number of partial bathrooms - The total number of half and Â¼ bathrooms in an <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>. This corresponds to the <a href=\"https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field\">BathroomsPartial field in RESO</a>."^^rdf:HTML ;
+  sh:description "Number of partial bathrooms - The total number of half and Â¼ bathrooms in an <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>. This corresponds to the <a href='https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field'>BathroomsPartial field in RESO</a>."^^rdf:HTML ;
   sh:name "numberOfPartialBathrooms" ;
 .
 schema:Accommodation-numberOfRooms
@@ -265,7 +269,7 @@ schema:Accommodation-petsAllowed
 schema:Accommodation-tourBookingPage
   a sh:PropertyShape ;
   sh:path schema:tourBookingPage ;
-  sh:description "A page providing information on how to book a tour of some <a class=\"localLink\" href=\"http://schema.org/Place\">Place</a>, such as an <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a> or <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a> in a real estate setting, as well as other kinds of tours as appropriate."^^rdf:HTML ;
+  sh:description "A page providing information on how to book a tour of some <a class='localLink' href='http://schema.org/Place'>Place</a>, such as an <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a> or <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a> in a real estate setting, as well as other kinds of tours as appropriate."^^rdf:HTML ;
   sh:name "tourBookingPage" ;
   sh:nodeKind sh:IRI ;
 .
@@ -273,7 +277,7 @@ schema:Accommodation-yearBuilt
   a sh:PropertyShape ;
   sh:path schema:yearBuilt ;
   sh:datatype xsd:float ;
-  sh:description "The year an <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a> was constructed. This corresponds to the <a href=\"https://ddwiki.reso.org/display/DDW17/YearBuilt+Field\">YearBuilt field in RESO</a>."^^rdf:HTML ;
+  sh:description "The year an <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a> was constructed. This corresponds to the <a href='https://ddwiki.reso.org/display/DDW17/YearBuilt+Field'>YearBuilt field in RESO</a>."^^rdf:HTML ;
   sh:name "yearBuilt" ;
 .
 schema:AccountingService
@@ -281,7 +285,7 @@ schema:AccountingService
   a sh:NodeShape ;
   rdfs:comment """Accountancy business.<br/><br/>
 
-As a <a class=\"localLink\" href=\"http://schema.org/LocalBusiness\">LocalBusiness</a> it can be described as a <a class=\"localLink\" href=\"http://schema.org/provider\">provider</a> of one or more <a class=\"localLink\" href=\"http://schema.org/Service\">Service</a>(s)."""^^rdf:HTML ;
+As a <a class='localLink' href='http://schema.org/LocalBusiness'>LocalBusiness</a> it can be described as a <a class='localLink' href='http://schema.org/provider'>provider</a> of one or more <a class='localLink' href='http://schema.org/Service'>Service</a>(s)."""^^rdf:HTML ;
   rdfs:label "Accounting service" ;
   rdfs:subClassOf schema:FinancialService ;
 .
@@ -297,7 +301,7 @@ schema:Action
   a sh:NodeShape ;
   rdfs:comment """An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of the action may produce a result. Specific action sub-type documentation specifies the exact expectation of each argument/role.<br/><br/>
 
-See also <a href=\"http://blog.schema.org/2014/04/announcing-schemaorg-actions.html\">blog post</a> and <a href=\"http://schema.org/docs/actions.html\">Actions overview document</a>."""^^rdf:HTML ;
+See also <a href='http://blog.schema.org/2014/04/announcing-schemaorg-actions.html'>blog post</a> and <a href='http://schema.org/docs/actions.html'>Actions overview document</a>."""^^rdf:HTML ;
   rdfs:label "Action" ;
   rdfs:subClassOf schema:Thing ;
   sh:property schema:Action-actionStatus ;
@@ -508,7 +512,7 @@ schema:ActionAccessSpecification-eligibleRegion
   sh:path schema:eligibleRegion ;
   sh:description """The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.<br/><br/>
 
-See also <a class=\"localLink\" href=\"http://schema.org/ineligibleRegion\">ineligibleRegion</a>."""^^rdf:HTML ;
+See also <a class='localLink' href='http://schema.org/ineligibleRegion'>ineligibleRegion</a>."""^^rdf:HTML ;
   sh:name "eligibleRegion" ;
   sh:or (
       [
@@ -534,7 +538,7 @@ schema:ActionAccessSpecification-ineligibleRegion
   sh:path schema:ineligibleRegion ;
   sh:description """The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.<br/><br/>
 
-See also <a class=\"localLink\" href=\"http://schema.org/eligibleRegion\">eligibleRegion</a>."""^^rdf:HTML ;
+See also <a class='localLink' href='http://schema.org/eligibleRegion'>eligibleRegion</a>."""^^rdf:HTML ;
   sh:name "ineligibleRegion" ;
   sh:or (
       [
@@ -613,7 +617,7 @@ schema:AdvertiserContentArticle
   a sh:NodeShape ;
   schema:category "issue-1525" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "An <a class=\"localLink\" href=\"http://schema.org/Article\">Article</a> that an external entity has paid to place or to produce to its specifications. Includes <a href=\"https://en.wikipedia.org/wiki/Advertorial\">advertorials</a>, sponsored content, native advertising and other paid content."^^rdf:HTML ;
+  rdfs:comment "An <a class='localLink' href='http://schema.org/Article'>Article</a> that an external entity has paid to place or to produce to its specifications. Includes <a href='https://en.wikipedia.org/wiki/Advertorial'>advertorials</a>, sponsored content, native advertising and other paid content."^^rdf:HTML ;
   rdfs:label "Advertiser content article" ;
   rdfs:subClassOf schema:Article ;
 .
@@ -628,7 +632,7 @@ schema:AggregateOffer
   a sh:NodeShape ;
   rdfs:comment """When a single product is associated with multiple offers (for example, the same pair of shoes is offered by different merchants), then AggregateOffer can be used.<br/><br/>
 
-Note: AggregateOffers are normally expected to associate multiple offers that all share the same defined <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> value, or default to http://purl.org/goodrelations/v1#Sell if businessFunction is not explicitly defined."""^^rdf:HTML ;
+Note: AggregateOffers are normally expected to associate multiple offers that all share the same defined <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> value, or default to http://purl.org/goodrelations/v1#Sell if businessFunction is not explicitly defined."""^^rdf:HTML ;
   rdfs:label "Aggregate offer" ;
   rdfs:subClassOf schema:Offer ;
   sh:property schema:AggregateOffer-highPrice ;
@@ -690,7 +694,7 @@ schema:AggregateOffer-offerCount
 schema:AggregateOffer-offers
   a sh:PropertyShape ;
   sh:path schema:offers ;
-  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class=\"localLink\" href=\"http://schema.org/Demand\">Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
+  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class='localLink' href='http://schema.org/Demand'>Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
   sh:name "offers" ;
   sh:or (
       [
@@ -795,7 +799,7 @@ schema:AlignmentObject
   a sh:NodeShape ;
   rdfs:comment """An intangible item that describes an alignment between a learning resource and a node in an educational framework.<br/><br/>
 
-Should not be used where the nature of the alignment can be described using a simple property, for example to express that a resource <a class=\"localLink\" href=\"http://schema.org/teaches\">teaches</a> or <a class=\"localLink\" href=\"http://schema.org/assesses\">assesses</a> a competency."""^^rdf:HTML ;
+Should not be used where the nature of the alignment can be described using a simple property, for example to express that a resource <a class='localLink' href='http://schema.org/teaches'>teaches</a> or <a class='localLink' href='http://schema.org/assesses'>assesses</a> a competency."""^^rdf:HTML ;
   rdfs:label "Alignment object" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:AlignmentObject-alignmentType ;
@@ -869,7 +873,7 @@ schema:AnalysisNewsArticle
   a sh:NodeShape ;
   schema:category "issue-1525" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "An AnalysisNewsArticle is a <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a> that, while based on factual reporting, incorporates the expertise of the author/producer, offering interpretations and conclusions."^^rdf:HTML ;
+  rdfs:comment "An AnalysisNewsArticle is a <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a> that, while based on factual reporting, incorporates the expertise of the author/producer, offering interpretations and conclusions."^^rdf:HTML ;
   rdfs:label "Analysis news article" ;
   rdfs:subClassOf schema:NewsArticle ;
 .
@@ -1023,7 +1027,7 @@ schema:Answer
 schema:Apartment
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (Source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Apartment\">http://en.wikipedia.org/wiki/Apartment</a>)."^^rdf:HTML ;
+  rdfs:comment "An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (Source: Wikipedia, the free encyclopedia, see <a href='http://en.wikipedia.org/wiki/Apartment'>http://en.wikipedia.org/wiki/Apartment</a>)."^^rdf:HTML ;
   rdfs:label "Apartment" ;
   rdfs:subClassOf schema:Accommodation ;
   sh:property schema:Apartment-numberOfRooms ;
@@ -1068,20 +1072,20 @@ schema:ApartmentComplex-numberOfAccommodationUnits
   a sh:PropertyShape ;
   sh:path schema:numberOfAccommodationUnits ;
   sh:class schema:QuantitativeValue ;
-  sh:description "Indicates the total (available plus unavailable) number of accommodation units in an <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a>, or the number of accommodation units for a specific <a class=\"localLink\" href=\"http://schema.org/FloorPlan\">FloorPlan</a> (within its specific <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a>). See also <a class=\"localLink\" href=\"http://schema.org/numberOfAvailableAccommodationUnits\">numberOfAvailableAccommodationUnits</a>."^^rdf:HTML ;
+  sh:description "Indicates the total (available plus unavailable) number of accommodation units in an <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a>, or the number of accommodation units for a specific <a class='localLink' href='http://schema.org/FloorPlan'>FloorPlan</a> (within its specific <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a>). See also <a class='localLink' href='http://schema.org/numberOfAvailableAccommodationUnits'>numberOfAvailableAccommodationUnits</a>."^^rdf:HTML ;
   sh:name "numberOfAccommodationUnits" ;
 .
 schema:ApartmentComplex-numberOfAvailableAccommodationUnits
   a sh:PropertyShape ;
   sh:path schema:numberOfAvailableAccommodationUnits ;
   sh:class schema:QuantitativeValue ;
-  sh:description "Indicates the number of available accommodation units in an <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a>, or the number of accommodation units for a specific <a class=\"localLink\" href=\"http://schema.org/FloorPlan\">FloorPlan</a> (within its specific <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a>). See also <a class=\"localLink\" href=\"http://schema.org/numberOfAccommodationUnits\">numberOfAccommodationUnits</a>."^^rdf:HTML ;
+  sh:description "Indicates the number of available accommodation units in an <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a>, or the number of accommodation units for a specific <a class='localLink' href='http://schema.org/FloorPlan'>FloorPlan</a> (within its specific <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a>). See also <a class='localLink' href='http://schema.org/numberOfAccommodationUnits'>numberOfAccommodationUnits</a>."^^rdf:HTML ;
   sh:name "numberOfAvailableAccommodationUnits" ;
 .
 schema:ApartmentComplex-numberOfBedrooms
   a sh:PropertyShape ;
   sh:path schema:numberOfBedrooms ;
-  sh:description "The total integer number of bedrooms in a some <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>, <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a> or <a class=\"localLink\" href=\"http://schema.org/FloorPlan\">FloorPlan</a>."^^rdf:HTML ;
+  sh:description "The total integer number of bedrooms in a some <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>, <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a> or <a class='localLink' href='http://schema.org/FloorPlan'>FloorPlan</a>."^^rdf:HTML ;
   sh:name "numberOfBedrooms" ;
   sh:or (
       [
@@ -1109,7 +1113,7 @@ schema:ApartmentComplex-petsAllowed
 schema:ApartmentComplex-tourBookingPage
   a sh:PropertyShape ;
   sh:path schema:tourBookingPage ;
-  sh:description "A page providing information on how to book a tour of some <a class=\"localLink\" href=\"http://schema.org/Place\">Place</a>, such as an <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a> or <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a> in a real estate setting, as well as other kinds of tours as appropriate."^^rdf:HTML ;
+  sh:description "A page providing information on how to book a tour of some <a class='localLink' href='http://schema.org/Place'>Place</a>, such as an <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a> or <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a> in a real estate setting, as well as other kinds of tours as appropriate."^^rdf:HTML ;
   sh:name "tourBookingPage" ;
   sh:nodeKind sh:IRI ;
 .
@@ -1134,7 +1138,7 @@ schema:ApplyAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/RegisterAction\">RegisterAction</a>: Unlike RegisterAction, ApplyAction has no guarantees that the application will be accepted.</li>
+<li><a class='localLink' href='http://schema.org/RegisterAction'>RegisterAction</a>: Unlike RegisterAction, ApplyAction has no guarantees that the application will be accepted.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Apply action" ;
@@ -1170,7 +1174,7 @@ schema:ArchiveComponent-holdingArchive
   a sh:PropertyShape ;
   sh:path schema:holdingArchive ;
   sh:class schema:ArchiveOrganization ;
-  sh:description "<a class=\"localLink\" href=\"http://schema.org/ArchiveOrganization\">ArchiveOrganization</a> that holds, keeps or maintains the <a class=\"localLink\" href=\"http://schema.org/ArchiveComponent\">ArchiveComponent</a>."^^rdf:HTML ;
+  sh:description "<a class='localLink' href='http://schema.org/ArchiveOrganization'>ArchiveOrganization</a> that holds, keeps or maintains the <a class='localLink' href='http://schema.org/ArchiveComponent'>ArchiveComponent</a>."^^rdf:HTML ;
   sh:name "holdingArchive"@en ;
 .
 schema:ArchiveComponent-itemLocation
@@ -1204,7 +1208,7 @@ schema:ArchiveOrganization-archiveHeld
   a sh:PropertyShape ;
   sh:path schema:archiveHeld ;
   sh:class schema:ArchiveComponent ;
-  sh:description "Collection, <a href=\"https://en.wikipedia.org/wiki/Fonds\">fonds</a>, or item held, kept or maintained by an <a class=\"localLink\" href=\"http://schema.org/ArchiveOrganization\">ArchiveOrganization</a>."^^rdf:HTML ;
+  sh:description "Collection, <a href='https://en.wikipedia.org/wiki/Fonds'>fonds</a>, or item held, kept or maintained by an <a class='localLink' href='http://schema.org/ArchiveOrganization'>ArchiveOrganization</a>."^^rdf:HTML ;
   sh:name "archiveHeld"@en ;
 .
 schema:ArriveAction
@@ -1251,7 +1255,7 @@ schema:Article
   a sh:NodeShape ;
   rdfs:comment """An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all.<br/><br/>
 
-See also <a href=\"http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html\">blog post</a>."""^^rdf:HTML ;
+See also <a href='http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html'>blog post</a>."""^^rdf:HTML ;
   rdfs:label "Article" ;
   rdfs:subClassOf schema:CreativeWork ;
   sh:property schema:Article-articleBody ;
@@ -1280,7 +1284,7 @@ schema:Article-articleSection
 schema:Article-backstory
   a sh:PropertyShape ;
   sh:path schema:backstory ;
-  sh:description "For an <a class=\"localLink\" href=\"http://schema.org/Article\">Article</a>, typically a <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a>, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setting this could include information about reporting process, methods, interviews, data sources, etc."^^rdf:HTML ;
+  sh:description "For an <a class='localLink' href='http://schema.org/Article'>Article</a>, typically a <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a>, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setting this could include information about reporting process, methods, interviews, data sources, etc."^^rdf:HTML ;
   sh:name "backstory" ;
   sh:or (
       [
@@ -1294,7 +1298,7 @@ schema:Article-backstory
 schema:Article-pageEnd
   a sh:PropertyShape ;
   sh:path schema:pageEnd ;
-  sh:description "The page on which the work ends; for example \"138\" or \"xvi\"."^^rdf:HTML ;
+  sh:description "The page on which the work ends; for example '138' or 'xvi'."^^rdf:HTML ;
   sh:name "pageEnd" ;
   sh:or (
       [
@@ -1308,7 +1312,7 @@ schema:Article-pageEnd
 schema:Article-pageStart
   a sh:PropertyShape ;
   sh:path schema:pageStart ;
-  sh:description "The page on which the work starts; for example \"135\" or \"xiii\"."^^rdf:HTML ;
+  sh:description "The page on which the work starts; for example '135' or 'xiii'."^^rdf:HTML ;
   sh:name "pageStart" ;
   sh:or (
       [
@@ -1323,7 +1327,7 @@ schema:Article-pagination
   a sh:PropertyShape ;
   sh:path schema:pagination ;
   sh:datatype xsd:string ;
-  sh:description "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\"."^^rdf:HTML ;
+  sh:description "Any description of pages that is not separated into pageStart and pageEnd; for example, '1-6, 9, 55' or '10-12, 46-49'."^^rdf:HTML ;
   sh:name "pagination" ;
 .
 schema:Article-speakable
@@ -1335,12 +1339,12 @@ The <em>speakable</em> property can be repeated an arbitrary number of times, wi
 
 1.) <em>id-value</em> URL references - uses <em>id-value</em> of an element in the page being annotated. The simplest use of <em>speakable</em> has (potentially relative) URL values, referencing identified sections of the document concerned.<br/><br/>
 
-2.) CSS Selectors - addresses content in the annotated page, eg. via class attribute. Use the <a class=\"localLink\" href=\"http://schema.org/cssSelector\">cssSelector</a> property.<br/><br/>
+2.) CSS Selectors - addresses content in the annotated page, eg. via class attribute. Use the <a class='localLink' href='http://schema.org/cssSelector'>cssSelector</a> property.<br/><br/>
 
-3.)  XPaths - addresses content via XPaths (assuming an XML view of the content). Use the <a class=\"localLink\" href=\"http://schema.org/xpath\">xpath</a> property.<br/><br/>
+3.)  XPaths - addresses content via XPaths (assuming an XML view of the content). Use the <a class='localLink' href='http://schema.org/xpath'>xpath</a> property.<br/><br/>
 
 For more sophisticated markup of speakable sections beyond simple ID references, either CSS selectors or XPath expressions to pick out document section(s) as speakable. For this
-we define a supporting type, <a class=\"localLink\" href=\"http://schema.org/SpeakableSpecification\">SpeakableSpecification</a>  which is defined to be a possible value of the <em>speakable</em> property."""^^rdf:HTML ;
+we define a supporting type, <a class='localLink' href='http://schema.org/SpeakableSpecification'>SpeakableSpecification</a>  which is defined to be a possible value of the <em>speakable</em> property."""^^rdf:HTML ;
   sh:name "speakable" ;
   sh:or (
       [
@@ -1366,7 +1370,7 @@ schema:AskAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/ReplyAction\">ReplyAction</a>: Appears generally as a response to AskAction.</li>
+<li><a class='localLink' href='http://schema.org/ReplyAction'>ReplyAction</a>: Appears generally as a response to AskAction.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Ask action" ;
@@ -1385,7 +1389,7 @@ schema:AskPublicNewsArticle
   a sh:NodeShape ;
   schema:category "issue-1525" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a> expressing an open call by a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a> asking the public for input, insights, clarifications, anecdotes, documentation, etc., on an issue, for reporting purposes."^^rdf:HTML ;
+  rdfs:comment "A <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a> expressing an open call by a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a> asking the public for input, insights, clarifications, anecdotes, documentation, etc., on an issue, for reporting purposes."^^rdf:HTML ;
   rdfs:label "Ask public news article" ;
   rdfs:subClassOf schema:NewsArticle ;
 .
@@ -1416,7 +1420,7 @@ schema:Attorney
   a sh:NodeShape ;
   rdfs:comment """Professional service: Attorney. <br/><br/>
 
-This type is deprecated - <a class=\"localLink\" href=\"http://schema.org/LegalService\">LegalService</a> is more inclusive and less ambiguous."""^^rdf:HTML ;
+This type is deprecated - <a class='localLink' href='http://schema.org/LegalService'>LegalService</a> is more inclusive and less ambiguous."""^^rdf:HTML ;
   rdfs:label "Attorney" ;
   rdfs:subClassOf schema:LegalService ;
 .
@@ -1455,7 +1459,7 @@ schema:AudioObject
 schema:AudioObject-caption
   a sh:PropertyShape ;
   sh:path schema:caption ;
-  sh:description "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a>."^^rdf:HTML ;
+  sh:description "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the <a class='localLink' href='http://schema.org/encodingFormat'>encodingFormat</a>."^^rdf:HTML ;
   sh:name "caption" ;
   sh:or (
       [
@@ -1488,7 +1492,7 @@ schema:Audiobook-duration
   a sh:PropertyShape ;
   sh:path schema:duration ;
   sh:datatype xsd:duration ;
-  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>."^^rdf:HTML ;
+  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>."^^rdf:HTML ;
   sh:name "duration" ;
 .
 schema:Audiobook-readBy
@@ -1514,7 +1518,7 @@ schema:AuthoritativeLegalValue
   a schema:LegalValueLevel ;
   schema:category "issue-1156" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "Indicates that the publisher gives some special status to the publication of the document. (\"The Queens Printer\" version of a UK Act of Parliament, or the PDF version of a Directive published by the EU Office of Publications). Something \"Authoritative\" is considered to be also <a class=\"localLink\" href=\"http://schema.org/OfficialLegalValue\">OfficialLegalValue</a>\"." ;
+  rdfs:comment "Indicates that the publisher gives some special status to the publication of the document. ('The Queens Printer' version of a UK Act of Parliament, or the PDF version of a Directive published by the EU Office of Publications). Something 'Authoritative' is considered to be also <a class='localLink' href='http://schema.org/OfficialLegalValue'>OfficialLegalValue</a>'." ;
   rdfs:label "Authoritative legal value" ;
 .
 schema:AuthorizeAction
@@ -1613,7 +1617,7 @@ schema:BackgroundNewsArticle
   a sh:NodeShape ;
   schema:category "issue-1525" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a> providing historical context, definition and detail on a specific topic (aka \"explainer\" or \"backgrounder\"). For example, an in-depth article or frequently-asked-questions (<a href=\"https://en.wikipedia.org/wiki/FAQ\">FAQ</a>) document on topics such as Climate Change or the European Union. Other kinds of background material from a non-news setting are often described using <a class=\"localLink\" href=\"http://schema.org/Book\">Book</a> or <a class=\"localLink\" href=\"http://schema.org/Article\">Article</a>, in particular <a class=\"localLink\" href=\"http://schema.org/ScholarlyArticle\">ScholarlyArticle</a>. See also <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a> for related vocabulary from a learning/education perspective."^^rdf:HTML ;
+  rdfs:comment "A <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a> providing historical context, definition and detail on a specific topic (aka 'explainer' or 'backgrounder'). For example, an in-depth article or frequently-asked-questions (<a href='https://en.wikipedia.org/wiki/FAQ'>FAQ</a>) document on topics such as Climate Change or the European Union. Other kinds of background material from a non-news setting are often described using <a class='localLink' href='http://schema.org/Book'>Book</a> or <a class='localLink' href='http://schema.org/Article'>Article</a>, in particular <a class='localLink' href='http://schema.org/ScholarlyArticle'>ScholarlyArticle</a>. See also <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a> for related vocabulary from a learning/education perspective."^^rdf:HTML ;
   rdfs:label "Background news article" ;
   rdfs:subClassOf schema:NewsArticle ;
 .
@@ -1721,14 +1725,14 @@ schema:BedAndBreakfast
   a sh:NodeShape ;
   rdfs:comment """Bed and breakfast.
 <br /><br />
-See also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
+See also the <a href='/docs/hotels.html'>dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
   rdfs:label "Bed and breakfast" ;
   rdfs:subClassOf schema:LodgingBusiness ;
 .
 schema:BedDetails
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "An entity holding detailed information about the available bed types, e.g. the quantity of twin beds for a hotel room. For the single case of just one bed of a certain type, you can use bed directly with a text. See also <a class=\"localLink\" href=\"http://schema.org/BedType\">BedType</a> (under development)."^^rdf:HTML ;
+  rdfs:comment "An entity holding detailed information about the available bed types, e.g. the quantity of twin beds for a hotel room. For the single case of just one bed of a certain type, you can use bed directly with a text. See also <a class='localLink' href='http://schema.org/BedType'>BedType</a> (under development)."^^rdf:HTML ;
   rdfs:label "Bed details" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:BedDetails-numberOfBeds ;
@@ -1771,7 +1775,7 @@ schema:BefriendAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/FollowAction\">FollowAction</a>: Unlike FollowAction, BefriendAction implies that the connection is reciprocal.</li>
+<li><a class='localLink' href='http://schema.org/FollowAction'>FollowAction</a>: Unlike FollowAction, BefriendAction implies that the connection is reciprocal.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Befriend action" ;
@@ -1958,7 +1962,7 @@ schema:BorrowAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/LendAction\">LendAction</a>: Reciprocal of BorrowAction.</li>
+<li><a class='localLink' href='http://schema.org/LendAction'>LendAction</a>: Reciprocal of BorrowAction.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Borrow action" ;
@@ -2045,7 +2049,7 @@ schema:BreadcrumbList
   a sh:NodeShape ;
   rdfs:comment """A BreadcrumbList is an ItemList consisting of a chain of linked Web pages, typically described using at least their URL and their name, and typically ending with the current page.<br/><br/>
 
-The <a class=\"localLink\" href=\"http://schema.org/position\">position</a> property is used to reconstruct the order of the items in a BreadcrumbList The convention is that a breadcrumb list has an <a class=\"localLink\" href=\"http://schema.org/itemListOrder\">itemListOrder</a> of <a class=\"localLink\" href=\"http://schema.org/ItemListOrderAscending\">ItemListOrderAscending</a> (lower values listed first), and that the first items in this list correspond to the \"top\" or beginning of the breadcrumb trail, e.g. with a site or section homepage. The specific values of 'position' are not assigned meaning for a BreadcrumbList, but they should be integers, e.g. beginning with '1' for the first item in the list."""^^rdf:HTML ;
+The <a class='localLink' href='http://schema.org/position'>position</a> property is used to reconstruct the order of the items in a BreadcrumbList The convention is that a breadcrumb list has an <a class='localLink' href='http://schema.org/itemListOrder'>itemListOrder</a> of <a class='localLink' href='http://schema.org/ItemListOrderAscending'>ItemListOrderAscending</a> (lower values listed first), and that the first items in this list correspond to the 'top' or beginning of the breadcrumb trail, e.g. with a site or section homepage. The specific values of 'position' are not assigned meaning for a BreadcrumbList, but they should be integers, e.g. beginning with '1' for the first item in the list."""^^rdf:HTML ;
   rdfs:label "Breadcrumb list" ;
   rdfs:subClassOf schema:ItemList ;
 .
@@ -2086,7 +2090,7 @@ schema:BroadcastChannel-broadcastChannelId
 schema:BroadcastChannel-broadcastFrequency
   a sh:PropertyShape ;
   sh:path schema:broadcastFrequency ;
-  sh:description "The frequency used for over-the-air broadcasts. Numeric values or simple ranges e.g. 87-99. In addition a shortcut idiom is supported for frequences of AM and FM radio channels, e.g. \"87 FM\"."^^rdf:HTML ;
+  sh:description "The frequency used for over-the-air broadcasts. Numeric values or simple ranges e.g. 87-99. In addition a shortcut idiom is supported for frequences of AM and FM radio channels, e.g. '87 FM'."^^rdf:HTML ;
   sh:name "broadcastFrequency" ;
   sh:or (
       [
@@ -2160,7 +2164,7 @@ schema:BroadcastEvent-isLiveBroadcast
 schema:BroadcastEvent-subtitleLanguage
   a sh:PropertyShape ;
   sh:path schema:subtitleLanguage ;
-  sh:description "Languages in which subtitles/captions are available, in <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard format</a>."^^rdf:HTML ;
+  sh:description "Languages in which subtitles/captions are available, in <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard format</a>."^^rdf:HTML ;
   sh:name "subtitleLanguage" ;
   sh:or (
       [
@@ -2271,7 +2275,7 @@ schema:BroadcastService-broadcastDisplayName
 schema:BroadcastService-broadcastFrequency
   a sh:PropertyShape ;
   sh:path schema:broadcastFrequency ;
-  sh:description "The frequency used for over-the-air broadcasts. Numeric values or simple ranges e.g. 87-99. In addition a shortcut idiom is supported for frequences of AM and FM radio channels, e.g. \"87 FM\"."^^rdf:HTML ;
+  sh:description "The frequency used for over-the-air broadcasts. Numeric values or simple ranges e.g. 87-99. In addition a shortcut idiom is supported for frequences of AM and FM radio channels, e.g. '87 FM'."^^rdf:HTML ;
   sh:name "broadcastFrequency" ;
   sh:or (
       [
@@ -2286,7 +2290,7 @@ schema:BroadcastService-broadcastTimezone
   a sh:PropertyShape ;
   sh:path schema:broadcastTimezone ;
   sh:datatype xsd:string ;
-  sh:description "The timezone in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 format</a> for which the service bases its broadcasts"^^rdf:HTML ;
+  sh:description "The timezone in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 format</a> for which the service bases its broadcasts"^^rdf:HTML ;
   sh:name "broadcastTimezone" ;
 .
 schema:BroadcastService-broadcaster
@@ -2300,7 +2304,7 @@ schema:BroadcastService-callSign
   a sh:PropertyShape ;
   sh:path schema:callSign ;
   sh:datatype xsd:string ;
-  sh:description "A <a href=\"https://en.wikipedia.org/wiki/Call_sign\">callsign</a>, as used in broadcasting and radio communications to identify people, radio and TV stations, or vehicles."^^rdf:HTML ;
+  sh:description "A <a href='https://en.wikipedia.org/wiki/Call_sign'>callsign</a>, as used in broadcasting and radio communications to identify people, radio and TV stations, or vehicles."^^rdf:HTML ;
   sh:name "callSign" ;
 .
 schema:BroadcastService-hasBroadcastChannel
@@ -2313,7 +2317,7 @@ schema:BroadcastService-hasBroadcastChannel
 schema:BroadcastService-inLanguage
   a sh:PropertyShape ;
   sh:path schema:inLanguage ;
-  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>."^^rdf:HTML ;
+  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>. See also <a class='localLink' href='http://schema.org/availableLanguage'>availableLanguage</a>."^^rdf:HTML ;
   sh:name "inLanguage" ;
   sh:or (
       [
@@ -2380,9 +2384,9 @@ schema:BusOrCoach-roofLoad
 Typical unit code(s): KGM for kilogram, LBR for pound<br/><br/>
 
 <ul>
-<li>Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"http://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>
-<li>Note 2: You may also link to a <a class=\"localLink\" href=\"http://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a></li>
-<li>Note 3: Note that you can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>
+<li>Note 1: You can indicate additional information in the <a class='localLink' href='http://schema.org/name'>name</a> of the <a class='localLink' href='http://schema.org/QuantitativeValue'>QuantitativeValue</a> node.</li>
+<li>Note 2: You may also link to a <a class='localLink' href='http://schema.org/QualitativeValue'>QualitativeValue</a> node that provides additional information using <a class='localLink' href='http://schema.org/valueReference'>valueReference</a></li>
+<li>Note 3: Note that you can use <a class='localLink' href='http://schema.org/minValue'>minValue</a> and <a class='localLink' href='http://schema.org/maxValue'>maxValue</a> to indicate ranges.</li>
 </ul>
 """^^rdf:HTML ;
   sh:name "roofLoad" ;
@@ -2392,7 +2396,7 @@ schema:BusReservation
   a sh:NodeShape ;
   rdfs:comment """A reservation for bus travel. <br/><br/>
 
-Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a>."""^^rdf:HTML ;
+Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use <a class='localLink' href='http://schema.org/Offer'>Offer</a>."""^^rdf:HTML ;
   rdfs:label "Bus reservation" ;
   rdfs:subClassOf schema:Reservation ;
 .
@@ -2597,7 +2601,7 @@ schema:CDCPMDRecord
   schema:category "issue-2521" ;
   schema:isPartOf <http://pending.schema.org> ;
   rdfs:comment """A CDCPMDRecord is a data structure representing a record in a CDC tabular data format
-      used for hospital data reporting. See <a href=\"/docs/cdc-covid.html\">documentation</a> for details, and the linked CDC materials for authoritative
+      used for hospital data reporting. See <a href='/docs/cdc-covid.html'>documentation</a> for details, and the linked CDC materials for authoritative
       definitions used as the source here."""^^rdf:HTML ;
   rdfs:label "CDCPMDRecord" ;
   rdfs:subClassOf schema:StructuredValue ;
@@ -2637,14 +2641,14 @@ schema:CDCPMDRecord-cvdFacilityCounty
   a sh:PropertyShape ;
   sh:path schema:cvdFacilityCounty ;
   sh:datatype xsd:string ;
-  sh:description "Name of the County of the NHSN facility that this data record applies to. Use <a class=\"localLink\" href=\"http://schema.org/cvdFacilityId\">cvdFacilityId</a> to identify the facility. To provide other details, <a class=\"localLink\" href=\"http://schema.org/healthcareReportingData\">healthcareReportingData</a> can be used on a <a class=\"localLink\" href=\"http://schema.org/Hospital\">Hospital</a> entry."^^rdf:HTML ;
+  sh:description "Name of the County of the NHSN facility that this data record applies to. Use <a class='localLink' href='http://schema.org/cvdFacilityId'>cvdFacilityId</a> to identify the facility. To provide other details, <a class='localLink' href='http://schema.org/healthcareReportingData'>healthcareReportingData</a> can be used on a <a class='localLink' href='http://schema.org/Hospital'>Hospital</a> entry."^^rdf:HTML ;
   sh:name "cvdFacilityCounty" ;
 .
 schema:CDCPMDRecord-cvdFacilityId
   a sh:PropertyShape ;
   sh:path schema:cvdFacilityId ;
   sh:datatype xsd:string ;
-  sh:description "Identifier of the NHSN facility that this data record applies to. Use <a class=\"localLink\" href=\"http://schema.org/cvdFacilityCounty\">cvdFacilityCounty</a> to indicate the county. To provide other details, <a class=\"localLink\" href=\"http://schema.org/healthcareReportingData\">healthcareReportingData</a> can be used on a <a class=\"localLink\" href=\"http://schema.org/Hospital\">Hospital</a> entry."^^rdf:HTML ;
+  sh:description "Identifier of the NHSN facility that this data record applies to. Use <a class='localLink' href='http://schema.org/cvdFacilityCounty'>cvdFacilityCounty</a> to indicate the county. To provide other details, <a class='localLink' href='http://schema.org/healthcareReportingData'>healthcareReportingData</a> can be used on a <a class='localLink' href='http://schema.org/Hospital'>Hospital</a> entry."^^rdf:HTML ;
   sh:name "cvdFacilityId" ;
 .
 schema:CDCPMDRecord-cvdNumBeds
@@ -2780,11 +2784,11 @@ schema:CafeOrCoffeeShop
 schema:Campground
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment """A camping site, campsite, or <a class=\"localLink\" href=\"http://schema.org/Campground\">Campground</a> is a place used for overnight stay in the outdoors, typically containing individual <a class=\"localLink\" href=\"http://schema.org/CampingPitch\">CampingPitch</a> locations. <br/><br/>
+  rdfs:comment """A camping site, campsite, or <a class='localLink' href='http://schema.org/Campground'>Campground</a> is a place used for overnight stay in the outdoors, typically containing individual <a class='localLink' href='http://schema.org/CampingPitch'>CampingPitch</a> locations. <br/><br/>
 
-In British English a campsite is an area, usually divided into a number of pitches, where people can camp overnight using tents or camper vans or caravans; this British English use of the word is synonymous with the American English expression campground. In American English the term campsite generally means an area where an individual, family, group, or military unit can pitch a tent or park a camper; a campground may contain many campsites (Source: Wikipedia see <a href=\"https://en.wikipedia.org/wiki/Campsite\">https://en.wikipedia.org/wiki/Campsite</a>).<br/><br/>
+In British English a campsite is an area, usually divided into a number of pitches, where people can camp overnight using tents or camper vans or caravans; this British English use of the word is synonymous with the American English expression campground. In American English the term campsite generally means an area where an individual, family, group, or military unit can pitch a tent or park a camper; a campground may contain many campsites (Source: Wikipedia see <a href='https://en.wikipedia.org/wiki/Campsite'>https://en.wikipedia.org/wiki/Campsite</a>).<br/><br/>
 
-See also the dedicated <a href=\"/docs/hotels.html\">document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
+See also the dedicated <a href='/docs/hotels.html'>document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
   rdfs:label "Campground" ;
   rdfs:subClassOf schema:CivicStructure ;
   rdfs:subClassOf schema:LodgingBusiness ;
@@ -2792,12 +2796,12 @@ See also the dedicated <a href=\"/docs/hotels.html\">document on the use of sche
 schema:CampingPitch
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment """A <a class=\"localLink\" href=\"http://schema.org/CampingPitch\">CampingPitch</a> is an individual place for overnight stay in the outdoors, typically being part of a larger camping site, or <a class=\"localLink\" href=\"http://schema.org/Campground\">Campground</a>.<br/><br/>
+  rdfs:comment """A <a class='localLink' href='http://schema.org/CampingPitch'>CampingPitch</a> is an individual place for overnight stay in the outdoors, typically being part of a larger camping site, or <a class='localLink' href='http://schema.org/Campground'>Campground</a>.<br/><br/>
 
 In British English a campsite, or campground, is an area, usually divided into a number of pitches, where people can camp overnight using tents or camper vans or caravans; this British English use of the word is synonymous with the American English expression campground. In American English the term campsite generally means an area where an individual, family, group, or military unit can pitch a tent or park a camper; a campground may contain many campsites.
-(Source: Wikipedia see <a href=\"https://en.wikipedia.org/wiki/Campsite\">https://en.wikipedia.org/wiki/Campsite</a>).<br/><br/>
+(Source: Wikipedia see <a href='https://en.wikipedia.org/wiki/Campsite'>https://en.wikipedia.org/wiki/Campsite</a>).<br/><br/>
 
-See also the dedicated <a href=\"/docs/hotels.html\">document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
+See also the dedicated <a href='/docs/hotels.html'>document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
   rdfs:label "Camping pitch" ;
   rdfs:subClassOf schema:Accommodation ;
 .
@@ -2816,7 +2820,7 @@ schema:CancelAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/ConfirmAction\">ConfirmAction</a>: The antonym of CancelAction.</li>
+<li><a class='localLink' href='http://schema.org/ConfirmAction'>ConfirmAction</a>: The antonym of CancelAction.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Cancel action" ;
@@ -2847,9 +2851,9 @@ schema:Car-roofLoad
 Typical unit code(s): KGM for kilogram, LBR for pound<br/><br/>
 
 <ul>
-<li>Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"http://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>
-<li>Note 2: You may also link to a <a class=\"localLink\" href=\"http://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a></li>
-<li>Note 3: Note that you can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>
+<li>Note 1: You can indicate additional information in the <a class='localLink' href='http://schema.org/name'>name</a> of the <a class='localLink' href='http://schema.org/QuantitativeValue'>QuantitativeValue</a> node.</li>
+<li>Note 2: You may also link to a <a class='localLink' href='http://schema.org/QualitativeValue'>QualitativeValue</a> node that provides additional information using <a class='localLink' href='http://schema.org/valueReference'>valueReference</a></li>
+<li>Note 3: Note that you can use <a class='localLink' href='http://schema.org/minValue'>minValue</a> and <a class='localLink' href='http://schema.org/maxValue'>maxValue</a> to indicate ranges.</li>
 </ul>
 """^^rdf:HTML ;
   sh:name "roofLoad" ;
@@ -2913,7 +2917,7 @@ schema:CategoryCode-codeValue
 schema:CategoryCode-inCodeSet
   a sh:PropertyShape ;
   sh:path schema:inCodeSet ;
-  sh:description "A <a class=\"localLink\" href=\"http://schema.org/CategoryCodeSet\">CategoryCodeSet</a> that contains this category code."^^rdf:HTML ;
+  sh:description "A <a class='localLink' href='http://schema.org/CategoryCodeSet'>CategoryCodeSet</a> that contains this category code."^^rdf:HTML ;
   sh:name "inCodeSet" ;
   sh:or (
       [
@@ -2976,7 +2980,7 @@ schema:Chapter
 schema:Chapter-pageEnd
   a sh:PropertyShape ;
   sh:path schema:pageEnd ;
-  sh:description "The page on which the work ends; for example \"138\" or \"xvi\"."^^rdf:HTML ;
+  sh:description "The page on which the work ends; for example '138' or 'xvi'."^^rdf:HTML ;
   sh:name "pageEnd" ;
   sh:or (
       [
@@ -2990,7 +2994,7 @@ schema:Chapter-pageEnd
 schema:Chapter-pageStart
   a sh:PropertyShape ;
   sh:path schema:pageStart ;
-  sh:description "The page on which the work starts; for example \"135\" or \"xiii\"."^^rdf:HTML ;
+  sh:description "The page on which the work starts; for example '135' or 'xiii'."^^rdf:HTML ;
   sh:name "pageStart" ;
   sh:or (
       [
@@ -3005,7 +3009,7 @@ schema:Chapter-pagination
   a sh:PropertyShape ;
   sh:path schema:pagination ;
   sh:datatype xsd:string ;
-  sh:description "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\"."^^rdf:HTML ;
+  sh:description "Any description of pages that is not separated into pageStart and pageEnd; for example, '1-6, 9, 55' or '10-12, 46-49'."^^rdf:HTML ;
   sh:name "pagination" ;
 .
 schema:CharitableIncorporatedOrganization
@@ -3030,9 +3034,9 @@ schema:CheckInAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/CheckOutAction\">CheckOutAction</a>: The antonym of CheckInAction.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/ArriveAction\">ArriveAction</a>: Unlike ArriveAction, CheckInAction implies that the agent is informing/confirming the start of a previously reserved service.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/ConfirmAction\">ConfirmAction</a>: Unlike ConfirmAction, CheckInAction implies that the agent is informing/confirming the <em>start</em> of a previously reserved service rather than its validity/existence.</li>
+<li><a class='localLink' href='http://schema.org/CheckOutAction'>CheckOutAction</a>: The antonym of CheckInAction.</li>
+<li><a class='localLink' href='http://schema.org/ArriveAction'>ArriveAction</a>: Unlike ArriveAction, CheckInAction implies that the agent is informing/confirming the start of a previously reserved service.</li>
+<li><a class='localLink' href='http://schema.org/ConfirmAction'>ConfirmAction</a>: Unlike ConfirmAction, CheckInAction implies that the agent is informing/confirming the <em>start</em> of a previously reserved service rather than its validity/existence.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Check in action" ;
@@ -3046,9 +3050,9 @@ schema:CheckOutAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/CheckInAction\">CheckInAction</a>: The antonym of CheckOutAction.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/DepartAction\">DepartAction</a>: Unlike DepartAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/CancelAction\">CancelAction</a>: Unlike CancelAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.</li>
+<li><a class='localLink' href='http://schema.org/CheckInAction'>CheckInAction</a>: The antonym of CheckOutAction.</li>
+<li><a class='localLink' href='http://schema.org/DepartAction'>DepartAction</a>: Unlike DepartAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.</li>
+<li><a class='localLink' href='http://schema.org/CancelAction'>CancelAction</a>: Unlike CancelAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Check out action" ;
@@ -3156,7 +3160,7 @@ schema:CivicStructure-openingHours
 <ul>
 <li>Days are specified using the following two-letter combinations: <code>Mo</code>, <code>Tu</code>, <code>We</code>, <code>Th</code>, <code>Fr</code>, <code>Sa</code>, <code>Su</code>.</li>
 <li>Times are specified using 24:00 time. For example, 3pm is specified as <code>15:00</code>. </li>
-<li>Here is an example: <code>&lt;time itemprop=\"openingHours\" datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>.</li>
+<li>Here is an example: <code>&lt;time itemprop='openingHours' datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>.</li>
 <li>If a business is open 7 days a week, then it can be specified as <code>&lt;time itemprop=&quot;openingHours&quot; datetime=&quot;Mo-Su&quot;&gt;Monday through Sunday, all day&lt;/time&gt;</code>.</li>
 </ul>
 """^^rdf:HTML ;
@@ -3167,9 +3171,9 @@ schema:Claim
   a sh:NodeShape ;
   schema:category "issue-1828" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """A <a class=\"localLink\" href=\"http://schema.org/Claim\">Claim</a> in Schema.org represents a specific, factually-oriented claim that could be the <a class=\"localLink\" href=\"http://schema.org/itemReviewed\">itemReviewed</a> in a <a class=\"localLink\" href=\"http://schema.org/ClaimReview\">ClaimReview</a>. The content of a claim can be summarized with the <a class=\"localLink\" href=\"http://schema.org/text\">text</a> property. Variations on well known claims can have their common identity indicated via <a class=\"localLink\" href=\"http://schema.org/sameAs\">sameAs</a> links, and summarized with a <a class=\"localLink\" href=\"http://schema.org/name\">name</a>. Ideally, a <a class=\"localLink\" href=\"http://schema.org/Claim\">Claim</a> description includes enough contextual information to minimize the risk of ambiguity or inclarity. In practice, many claims are better understood in the context in which they appear or the interpretations provided by claim reviews.<br/><br/>
+  rdfs:comment """A <a class='localLink' href='http://schema.org/Claim'>Claim</a> in Schema.org represents a specific, factually-oriented claim that could be the <a class='localLink' href='http://schema.org/itemReviewed'>itemReviewed</a> in a <a class='localLink' href='http://schema.org/ClaimReview'>ClaimReview</a>. The content of a claim can be summarized with the <a class='localLink' href='http://schema.org/text'>text</a> property. Variations on well known claims can have their common identity indicated via <a class='localLink' href='http://schema.org/sameAs'>sameAs</a> links, and summarized with a <a class='localLink' href='http://schema.org/name'>name</a>. Ideally, a <a class='localLink' href='http://schema.org/Claim'>Claim</a> description includes enough contextual information to minimize the risk of ambiguity or inclarity. In practice, many claims are better understood in the context in which they appear or the interpretations provided by claim reviews.<br/><br/>
 
-Beyond <a class=\"localLink\" href=\"http://schema.org/ClaimReview\">ClaimReview</a>, the Claim type can be associated with related creative works - for example a <a class=\"localLink\" href=\"http://schema.org/ScholaryArticle\">ScholaryArticle</a> or <a class=\"localLink\" href=\"http://schema.org/Question\">Question</a> might be <a class=\"localLink\" href=\"http://schema.org/about\">about</a> some <a class=\"localLink\" href=\"http://schema.org/Claim\">Claim</a>.<br/><br/>
+Beyond <a class='localLink' href='http://schema.org/ClaimReview'>ClaimReview</a>, the Claim type can be associated with related creative works - for example a <a class='localLink' href='http://schema.org/ScholaryArticle'>ScholaryArticle</a> or <a class='localLink' href='http://schema.org/Question'>Question</a> might be <a class='localLink' href='http://schema.org/about'>about</a> some <a class='localLink' href='http://schema.org/Claim'>Claim</a>.<br/><br/>
 
 At this time, Schema.org does not define any types of relationship between claims. This is a natural area for future exploration."""^^rdf:HTML ;
   rdfs:label "Claim" ;
@@ -3181,14 +3185,14 @@ schema:Claim-appearance
   a sh:PropertyShape ;
   sh:path schema:appearance ;
   sh:class schema:CreativeWork ;
-  sh:description "Indicates an occurence of a <a class=\"localLink\" href=\"http://schema.org/Claim\">Claim</a> in some <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>."^^rdf:HTML ;
+  sh:description "Indicates an occurence of a <a class='localLink' href='http://schema.org/Claim'>Claim</a> in some <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a>."^^rdf:HTML ;
   sh:name "appearance" ;
 .
 schema:Claim-firstAppearance
   a sh:PropertyShape ;
   sh:path schema:firstAppearance ;
   sh:class schema:CreativeWork ;
-  sh:description "Indicates the first known occurence of a <a class=\"localLink\" href=\"http://schema.org/Claim\">Claim</a> in some <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>."^^rdf:HTML ;
+  sh:description "Indicates the first known occurence of a <a class='localLink' href='http://schema.org/Claim'>Claim</a> in some <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a>."^^rdf:HTML ;
   sh:name "firstAppearance" ;
 .
 schema:ClaimReview
@@ -3361,7 +3365,7 @@ schema:Collection-collectionSize
   a sh:PropertyShape ;
   sh:path schema:collectionSize ;
   sh:datatype xsd:integer ;
-  sh:description "The number of items in the <a class=\"localLink\" href=\"http://schema.org/Collection\">Collection</a>."^^rdf:HTML ;
+  sh:description "The number of items in the <a class='localLink' href='http://schema.org/Collection'>Collection</a>."^^rdf:HTML ;
   sh:name "collectionSize"@en ;
 .
 schema:CollectionPage
@@ -3464,8 +3468,8 @@ schema:ComicIssue-variantCover
   sh:path schema:variantCover ;
   sh:datatype xsd:string ;
   sh:description """A description of the variant cover
-    for the issue, if the issue is a variant printing. For example, \"Bryan Hitch
-    Variant Cover\" or \"2nd Printing Variant\"."""^^rdf:HTML ;
+    for the issue, if the issue is a variant printing. For example, 'Bryan Hitch
+    Variant Cover' or '2nd Printing Variant'."""^^rdf:HTML ;
   sh:name "variantCover"@en ;
 .
 schema:ComicSeries
@@ -3474,8 +3478,8 @@ schema:ComicSeries
   schema:category "Comics"@en ;
   schema:isPartOf <http://bib.schema.org> ;
   rdfs:comment """A sequential publication of comic stories under a
-    unifying title, for example \"The Amazing Spider-Man\" or \"Groo the
-    Wanderer\"."""^^rdf:HTML ;
+    unifying title, for example 'The Amazing Spider-Man' or 'Groo the
+    Wanderer'."""^^rdf:HTML ;
   rdfs:label "Comic series" ;
   rdfs:subClassOf schema:Periodical ;
 .
@@ -3484,7 +3488,7 @@ schema:ComicStory
   a sh:NodeShape ;
   schema:category "Comics"@en ;
   schema:isPartOf <http://bib.schema.org> ;
-  rdfs:comment """The term \"story\" is any indivisible, re-printable
+  rdfs:comment """The term 'story' is any indivisible, re-printable
     unit of a comic, including the interior stories, covers, and backmatter. Most
     comics have at least two stories: a cover (ComicCoverArt) and an interior story."""^^rdf:HTML ;
   rdfs:label "Comic story" ;
@@ -3535,7 +3539,7 @@ schema:ComicStory-penciler
 schema:Comment
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A comment on an item - for example, a comment on a blog post. The comment's content is expressed via the <a class=\"localLink\" href=\"http://schema.org/text\">text</a> property, and its topic via <a class=\"localLink\" href=\"http://schema.org/about\">about</a>, properties shared with all CreativeWorks."^^rdf:HTML ;
+  rdfs:comment "A comment on an item - for example, a comment on a blog post. The comment's content is expressed via the <a class='localLink' href='http://schema.org/text'>text</a> property, and its topic via <a class='localLink' href='http://schema.org/about'>about</a>, properties shared with all CreativeWorks."^^rdf:HTML ;
   rdfs:label "Comment" ;
   rdfs:subClassOf schema:CreativeWork ;
   sh:property schema:Comment-downvoteCount ;
@@ -3604,7 +3608,7 @@ schema:CommunicateAction-about
 schema:CommunicateAction-inLanguage
   a sh:PropertyShape ;
   sh:path schema:inLanguage ;
-  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>."^^rdf:HTML ;
+  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>. See also <a class='localLink' href='http://schema.org/availableLanguage'>availableLanguage</a>."^^rdf:HTML ;
   sh:name "inLanguage" ;
   sh:or (
       [
@@ -3659,9 +3663,9 @@ schema:CompleteDataFeed
   a sh:NodeShape ;
   schema:category "issue-1397" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """A <a class=\"localLink\" href=\"http://schema.org/CompleteDataFeed\">CompleteDataFeed</a> is a <a class=\"localLink\" href=\"http://schema.org/DataFeed\">DataFeed</a> whose standard representation includes content for every item currently in the feed.<br/><br/>
+  rdfs:comment """A <a class='localLink' href='http://schema.org/CompleteDataFeed'>CompleteDataFeed</a> is a <a class='localLink' href='http://schema.org/DataFeed'>DataFeed</a> whose standard representation includes content for every item currently in the feed.<br/><br/>
 
-This is the equivalent of Atom's element as defined in Feed Paging and Archiving <a href=\"https://tools.ietf.org/html/rfc5005\">RFC 5005</a>, For example (and as defined for Atom), when using data from a feed that represents a collection of items that varies over time (e.g. \"Top Twenty Records\") there is no need to have newer entries mixed in alongside older, obsolete entries. By marking this feed as a CompleteDataFeed, old entries can be safely discarded when the feed is refreshed, since we can assume the feed has provided descriptions for all current items."""^^rdf:HTML ;
+This is the equivalent of Atom's element as defined in Feed Paging and Archiving <a href='https://tools.ietf.org/html/rfc5005'>RFC 5005</a>, For example (and as defined for Atom), when using data from a feed that represents a collection of items that varies over time (e.g. 'Top Twenty Records') there is no need to have newer entries mixed in alongside older, obsolete entries. By marking this feed as a CompleteDataFeed, old entries can be safely discarded when the feed is refreshed, since we can assume the feed has provided descriptions for all current items."""^^rdf:HTML ;
   rdfs:label "Complete data feed" ;
   rdfs:subClassOf schema:DataFeed ;
 .
@@ -3679,7 +3683,7 @@ schema:CompletedActionStatus
 schema:CompoundPriceSpecification
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A compound price specification is one that bundles multiple prices that all apply in combination for different dimensions of consumption. Use the name property of the attached unit price specification for indicating the dimension of a price component (e.g. \"electricity\" or \"final cleaning\")."^^rdf:HTML ;
+  rdfs:comment "A compound price specification is one that bundles multiple prices that all apply in combination for different dimensions of consumption. Use the name property of the attached unit price specification for indicating the dimension of a price component (e.g. 'electricity' or 'final cleaning')."^^rdf:HTML ;
   rdfs:label "Compound price specification" ;
   rdfs:subClassOf schema:PriceSpecification ;
   sh:property schema:CompoundPriceSpecification-priceComponent ;
@@ -3688,13 +3692,13 @@ schema:CompoundPriceSpecification-priceComponent
   a sh:PropertyShape ;
   sh:path schema:priceComponent ;
   sh:class schema:UnitPriceSpecification ;
-  sh:description "This property links to all <a class=\"localLink\" href=\"http://schema.org/UnitPriceSpecification\">UnitPriceSpecification</a> nodes that apply in parallel for the <a class=\"localLink\" href=\"http://schema.org/CompoundPriceSpecification\">CompoundPriceSpecification</a> node."^^rdf:HTML ;
+  sh:description "This property links to all <a class='localLink' href='http://schema.org/UnitPriceSpecification'>UnitPriceSpecification</a> nodes that apply in parallel for the <a class='localLink' href='http://schema.org/CompoundPriceSpecification'>CompoundPriceSpecification</a> node."^^rdf:HTML ;
   sh:name "priceComponent" ;
 .
 schema:ComputerLanguage
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "This type covers computer programming languages such as Scheme and Lisp, as well as other language-like computer representations. Natural languages are best represented with the <a class=\"localLink\" href=\"http://schema.org/Language\">Language</a> type."^^rdf:HTML ;
+  rdfs:comment "This type covers computer programming languages such as Scheme and Lisp, as well as other language-like computer representations. Natural languages are best represented with the <a class='localLink' href='http://schema.org/Language'>Language</a> type."^^rdf:HTML ;
   rdfs:label "Computer language" ;
   rdfs:subClassOf schema:Intangible ;
 .
@@ -3713,7 +3717,7 @@ schema:ConfirmAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/CancelAction\">CancelAction</a>: The antonym of ConfirmAction.</li>
+<li><a class='localLink' href='http://schema.org/CancelAction'>CancelAction</a>: The antonym of ConfirmAction.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Confirm action" ;
@@ -3724,7 +3728,7 @@ schema:Consortium
   a sh:NodeShape ;
   schema:category "issue-1559" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A Consortium is a membership <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> whose members are typically Organizations."^^rdf:HTML ;
+  rdfs:comment "A Consortium is a membership <a class='localLink' href='http://schema.org/Organization'>Organization</a> whose members are typically Organizations."^^rdf:HTML ;
   rdfs:label "Consortium" ;
   rdfs:subClassOf schema:Organization ;
 .
@@ -3798,7 +3802,7 @@ schema:ContactPoint-areaServed
 schema:ContactPoint-availableLanguage
   a sh:PropertyShape ;
   sh:path schema:availableLanguage ;
-  sh:description "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/inLanguage\">inLanguage</a>"^^rdf:HTML ;
+  sh:description "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>. See also <a class='localLink' href='http://schema.org/inLanguage'>inLanguage</a>"^^rdf:HTML ;
   sh:name "availableLanguage" ;
   sh:or (
       [
@@ -3847,7 +3851,7 @@ schema:ContactPoint-hoursAvailable
 schema:ContactPoint-productSupported
   a sh:PropertyShape ;
   sh:path schema:productSupported ;
-  sh:description "The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. \"iPhone\") or a general category of products or services (e.g. \"smartphones\")."^^rdf:HTML ;
+  sh:description "The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. 'iPhone') or a general category of products or services (e.g. 'smartphones')."^^rdf:HTML ;
   sh:name "productSupported" ;
   sh:or (
       [
@@ -3982,7 +3986,7 @@ schema:CorrectionComment
   a sh:NodeShape ;
   schema:category "issue-1950" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A <a class=\"localLink\" href=\"http://schema.org/comment\">comment</a> that corrects <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>."^^rdf:HTML ;
+  rdfs:comment "A <a class='localLink' href='http://schema.org/comment'>comment</a> that corrects <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a>."^^rdf:HTML ;
   rdfs:label "Correction comment" ;
   rdfs:subClassOf schema:Comment ;
 .
@@ -4010,13 +4014,13 @@ schema:Course-courseCode
   a sh:PropertyShape ;
   sh:path schema:courseCode ;
   sh:datatype xsd:string ;
-  sh:description "The identifier for the <a class=\"localLink\" href=\"http://schema.org/Course\">Course</a> used by the course <a class=\"localLink\" href=\"http://schema.org/provider\">provider</a> (e.g. CS101 or 6.001)."^^rdf:HTML ;
+  sh:description "The identifier for the <a class='localLink' href='http://schema.org/Course'>Course</a> used by the course <a class='localLink' href='http://schema.org/provider'>provider</a> (e.g. CS101 or 6.001)."^^rdf:HTML ;
   sh:name "courseCode" ;
 .
 schema:Course-coursePrerequisites
   a sh:PropertyShape ;
   sh:path schema:coursePrerequisites ;
-  sh:description "Requirements for taking the Course. May be completion of another <a class=\"localLink\" href=\"http://schema.org/Course\">Course</a> or a textual description like \"permission of instructor\". Requirements may be a pre-requisite competency, referenced using <a class=\"localLink\" href=\"http://schema.org/AlignmentObject\">AlignmentObject</a>."^^rdf:HTML ;
+  sh:description "Requirements for taking the Course. May be completion of another <a class='localLink' href='http://schema.org/Course'>Course</a> or a textual description like 'permission of instructor'. Requirements may be a pre-requisite competency, referenced using <a class='localLink' href='http://schema.org/AlignmentObject'>AlignmentObject</a>."^^rdf:HTML ;
   sh:name "coursePrerequisites" ;
   sh:or (
       [
@@ -4088,7 +4092,7 @@ schema:Course-occupationalCredentialAwarded
 schema:CourseInstance
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "An instance of a <a class=\"localLink\" href=\"http://schema.org/Course\">Course</a> which is distinct from other instances because it is offered at a different time or location or through different media or modes of study or to a specific section of students."^^rdf:HTML ;
+  rdfs:comment "An instance of a <a class='localLink' href='http://schema.org/Course'>Course</a> which is distinct from other instances because it is offered at a different time or location or through different media or modes of study or to a specific section of students."^^rdf:HTML ;
   rdfs:label "Course instance" ;
   rdfs:subClassOf schema:Event ;
   sh:property schema:CourseInstance-courseMode ;
@@ -4098,7 +4102,7 @@ schema:CourseInstance
 schema:CourseInstance-courseMode
   a sh:PropertyShape ;
   sh:path schema:courseMode ;
-  sh:description "The medium or means of delivery of the course instance or the mode of study, either as a text label (e.g. \"online\", \"onsite\" or \"blended\"; \"synchronous\" or \"asynchronous\"; \"full-time\" or \"part-time\") or as a URL reference to a term from a controlled vocabulary (e.g. https://ceds.ed.gov/element/001311#Asynchronous )."^^rdf:HTML ;
+  sh:description "The medium or means of delivery of the course instance or the mode of study, either as a text label (e.g. 'online', 'onsite' or 'blended'; 'synchronous' or 'asynchronous'; 'full-time' or 'part-time') or as a URL reference to a term from a controlled vocabulary (e.g. https://ceds.ed.gov/element/001311#Asynchronous )."^^rdf:HTML ;
   sh:name "courseMode" ;
   sh:or (
       [
@@ -4113,14 +4117,14 @@ schema:CourseInstance-courseWorkload
   a sh:PropertyShape ;
   sh:path schema:courseWorkload ;
   sh:datatype xsd:string ;
-  sh:description "The amount of work expected of students taking the course, often provided as a figure per week or per month, and may be broken down by type. For example, \"2 hours of lectures, 1 hour of lab work and 3 hours of independent study per week\"."^^rdf:HTML ;
+  sh:description "The amount of work expected of students taking the course, often provided as a figure per week or per month, and may be broken down by type. For example, '2 hours of lectures, 1 hour of lab work and 3 hours of independent study per week'."^^rdf:HTML ;
   sh:name "courseWorkload" ;
 .
 schema:CourseInstance-instructor
   a sh:PropertyShape ;
   sh:path schema:instructor ;
   sh:class schema:Person ;
-  sh:description "A person assigned to instruct or provide instructional assistance for the <a class=\"localLink\" href=\"http://schema.org/CourseInstance\">CourseInstance</a>."^^rdf:HTML ;
+  sh:description "A person assigned to instruct or provide instructional assistance for the <a class='localLink' href='http://schema.org/CourseInstance'>CourseInstance</a>."^^rdf:HTML ;
   sh:name "instructor" ;
 .
 schema:Courthouse
@@ -4144,8 +4148,8 @@ schema:CovidTestingFacility
   a sh:NodeShape ;
   schema:category "issue-2490" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """A CovidTestingFacility is a <a class=\"localLink\" href=\"http://schema.org/MedicalClinic\">MedicalClinic</a> where testing for the COVID-19 Coronavirus
-      disease is available. If the facility is being made available from an established <a class=\"localLink\" href=\"http://schema.org/Pharmacy\">Pharmacy</a>, <a class=\"localLink\" href=\"http://schema.org/Hotel\">Hotel</a>, or other
+  rdfs:comment """A CovidTestingFacility is a <a class='localLink' href='http://schema.org/MedicalClinic'>MedicalClinic</a> where testing for the COVID-19 Coronavirus
+      disease is available. If the facility is being made available from an established <a class='localLink' href='http://schema.org/Pharmacy'>Pharmacy</a>, <a class='localLink' href='http://schema.org/Hotel'>Hotel</a>, or other
       non-medical organization, multiple types can be listed. This makes it easier to re-use existing schema.org information
       about that place e.g. contact info, address, opening hours. Note that in an emergency, such information may not always be reliable."""^^rdf:HTML ;
   rdfs:label "Covid testing facility" ;
@@ -4280,7 +4284,7 @@ schema:CreativeWork-abstract
   a sh:PropertyShape ;
   sh:path schema:abstract ;
   sh:datatype xsd:string ;
-  sh:description "An abstract is a short description that summarizes a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>."^^rdf:HTML ;
+  sh:description "An abstract is a short description that summarizes a <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a>."^^rdf:HTML ;
   sh:name "abstract" ;
 .
 schema:CreativeWork-accessMode
@@ -4301,35 +4305,35 @@ schema:CreativeWork-accessibilityAPI
   a sh:PropertyShape ;
   sh:path schema:accessibilityAPI ;
   sh:datatype xsd:string ;
-  sh:description "Indicates that the resource is compatible with the referenced accessibility API (<a href=\"http://www.w3.org/wiki/WebSchemas/Accessibility\">WebSchemas wiki lists possible values</a>)."^^rdf:HTML ;
+  sh:description "Indicates that the resource is compatible with the referenced accessibility API (<a href='http://www.w3.org/wiki/WebSchemas/Accessibility'>WebSchemas wiki lists possible values</a>)."^^rdf:HTML ;
   sh:name "accessibilityAPI" ;
 .
 schema:CreativeWork-accessibilityControl
   a sh:PropertyShape ;
   sh:path schema:accessibilityControl ;
   sh:datatype xsd:string ;
-  sh:description "Identifies input methods that are sufficient to fully control the described resource (<a href=\"http://www.w3.org/wiki/WebSchemas/Accessibility\">WebSchemas wiki lists possible values</a>)."^^rdf:HTML ;
+  sh:description "Identifies input methods that are sufficient to fully control the described resource (<a href='http://www.w3.org/wiki/WebSchemas/Accessibility'>WebSchemas wiki lists possible values</a>)."^^rdf:HTML ;
   sh:name "accessibilityControl" ;
 .
 schema:CreativeWork-accessibilityFeature
   a sh:PropertyShape ;
   sh:path schema:accessibilityFeature ;
   sh:datatype xsd:string ;
-  sh:description "Content features of the resource, such as accessible media, alternatives and supported enhancements for accessibility (<a href=\"http://www.w3.org/wiki/WebSchemas/Accessibility\">WebSchemas wiki lists possible values</a>)."^^rdf:HTML ;
+  sh:description "Content features of the resource, such as accessible media, alternatives and supported enhancements for accessibility (<a href='http://www.w3.org/wiki/WebSchemas/Accessibility'>WebSchemas wiki lists possible values</a>)."^^rdf:HTML ;
   sh:name "accessibilityFeature" ;
 .
 schema:CreativeWork-accessibilityHazard
   a sh:PropertyShape ;
   sh:path schema:accessibilityHazard ;
   sh:datatype xsd:string ;
-  sh:description "A characteristic of the described resource that is physiologically dangerous to some users. Related to WCAG 2.0 guideline 2.3 (<a href=\"http://www.w3.org/wiki/WebSchemas/Accessibility\">WebSchemas wiki lists possible values</a>)."^^rdf:HTML ;
+  sh:description "A characteristic of the described resource that is physiologically dangerous to some users. Related to WCAG 2.0 guideline 2.3 (<a href='http://www.w3.org/wiki/WebSchemas/Accessibility'>WebSchemas wiki lists possible values</a>)."^^rdf:HTML ;
   sh:name "accessibilityHazard" ;
 .
 schema:CreativeWork-accessibilitySummary
   a sh:PropertyShape ;
   sh:path schema:accessibilitySummary ;
   sh:datatype xsd:string ;
-  sh:description "A human-readable summary of specific accessibility features or deficiencies, consistent with the other accessibility metadata but expressing subtleties such as \"short descriptions are present but long descriptions will be needed for non-visual users\" or \"short descriptions are present and no long descriptions are needed.\""^^rdf:HTML ;
+  sh:description "A human-readable summary of specific accessibility features or deficiencies, consistent with the other accessibility metadata but expressing subtleties such as 'short descriptions are present but long descriptions will be needed for non-visual users' or 'short descriptions are present and no long descriptions are needed.'"^^rdf:HTML ;
   sh:name "accessibilitySummary" ;
 .
 schema:CreativeWork-accountablePerson
@@ -4479,9 +4483,9 @@ schema:CreativeWork-conditionsOfAccess
   a sh:PropertyShape ;
   sh:path schema:conditionsOfAccess ;
   sh:datatype xsd:string ;
-  sh:description """Conditions that affect the availability of, or method(s) of access to, an item. Typically used for real world items such as an <a class=\"localLink\" href=\"http://schema.org/ArchiveComponent\">ArchiveComponent</a> held by an <a class=\"localLink\" href=\"http://schema.org/ArchiveOrganization\">ArchiveOrganization</a>. This property is not suitable for use as a general Web access control mechanism. It is expressed only in natural language.<br/><br/>
+  sh:description """Conditions that affect the availability of, or method(s) of access to, an item. Typically used for real world items such as an <a class='localLink' href='http://schema.org/ArchiveComponent'>ArchiveComponent</a> held by an <a class='localLink' href='http://schema.org/ArchiveOrganization'>ArchiveOrganization</a>. This property is not suitable for use as a general Web access control mechanism. It is expressed only in natural language.<br/><br/>
 
-For example \"Available by appointment from the Reading Room\" or \"Accessible only from logged-in accounts \"."""^^rdf:HTML ;
+For example 'Available by appointment from the Reading Room' or 'Accessible only from logged-in accounts '."""^^rdf:HTML ;
   sh:name "conditionsOfAccess" ;
 .
 schema:CreativeWork-contentLocation
@@ -4550,7 +4554,7 @@ schema:CreativeWork-copyrightYear
 schema:CreativeWork-correction
   a sh:PropertyShape ;
   sh:path schema:correction ;
-  sh:description "Indicates a correction to a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>, either via a <a class=\"localLink\" href=\"http://schema.org/CorrectionComment\">CorrectionComment</a>, textually or in another document."^^rdf:HTML ;
+  sh:description "Indicates a correction to a <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a>, either via a <a class='localLink' href='http://schema.org/CorrectionComment'>CorrectionComment</a>, textually or in another document."^^rdf:HTML ;
   sh:name "correction" ;
   sh:or (
       [
@@ -4644,11 +4648,11 @@ schema:CreativeWork-discussionUrl
 schema:CreativeWork-editEIDR
   a sh:PropertyShape ;
   sh:path schema:editEIDR ;
-  sh:description """An <a href=\"https://eidr.org/\">EIDR</a> (Entertainment Identifier Registry) <a class=\"localLink\" href=\"http://schema.org/identifier\">identifier</a> representing a specific edit / edition for a work of film or television.<br/><br/>
+  sh:description """An <a href='https://eidr.org/'>EIDR</a> (Entertainment Identifier Registry) <a class='localLink' href='http://schema.org/identifier'>identifier</a> representing a specific edit / edition for a work of film or television.<br/><br/>
 
-For example, the motion picture known as \"Ghostbusters\" whose <a class=\"localLink\" href=\"http://schema.org/titleEIDR\">titleEIDR</a> is \"10.5240/7EC7-228A-510A-053E-CBB8-J\", has several edits e.g. \"10.5240/1F2A-E1C5-680A-14C6-E76B-I\" and \"10.5240/8A35-3BEE-6497-5D12-9E4F-3\".<br/><br/>
+For example, the motion picture known as 'Ghostbusters' whose <a class='localLink' href='http://schema.org/titleEIDR'>titleEIDR</a> is '10.5240/7EC7-228A-510A-053E-CBB8-J', has several edits e.g. '10.5240/1F2A-E1C5-680A-14C6-E76B-I' and '10.5240/8A35-3BEE-6497-5D12-9E4F-3'.<br/><br/>
 
-Since schema.org types like <a class=\"localLink\" href=\"http://schema.org/Movie\">Movie</a> and <a class=\"localLink\" href=\"http://schema.org/TVEpisode\">TVEpisode</a> can be used for both works and their multiple expressions, it is possible to use <a class=\"localLink\" href=\"http://schema.org/titleEIDR\">titleEIDR</a> alone (for a general description), or alongside <a class=\"localLink\" href=\"http://schema.org/editEIDR\">editEIDR</a> for a more edit-specific description."""^^rdf:HTML ;
+Since schema.org types like <a class='localLink' href='http://schema.org/Movie'>Movie</a> and <a class='localLink' href='http://schema.org/TVEpisode'>TVEpisode</a> can be used for both works and their multiple expressions, it is possible to use <a class='localLink' href='http://schema.org/titleEIDR'>titleEIDR</a> alone (for a general description), or alongside <a class='localLink' href='http://schema.org/editEIDR'>editEIDR</a> for a more edit-specific description."""^^rdf:HTML ;
   sh:name "editEIDR" ;
   sh:or (
       [
@@ -4672,7 +4676,7 @@ schema:CreativeWork-educationalAlignment
   sh:class schema:AlignmentObject ;
   sh:description """An alignment to an established educational framework.<br/><br/>
 
-This property should not be used where the nature of the alignment can be described using a simple property, for example to express that a resource <a class=\"localLink\" href=\"http://schema.org/teaches\">teaches</a> or <a class=\"localLink\" href=\"http://schema.org/assesses\">assesses</a> a competency."""^^rdf:HTML ;
+This property should not be used where the nature of the alignment can be described using a simple property, for example to express that a resource <a class='localLink' href='http://schema.org/teaches'>teaches</a> or <a class='localLink' href='http://schema.org/assesses'>assesses</a> a competency."""^^rdf:HTML ;
   sh:name "educationalAlignment" ;
 .
 schema:CreativeWork-educationalLevel
@@ -4709,9 +4713,9 @@ schema:CreativeWork-encoding
 schema:CreativeWork-encodingFormat
   a sh:PropertyShape ;
   sh:path schema:encodingFormat ;
-  sh:description """Media type typically expressed using a MIME format (see <a href=\"http://www.iana.org/assignments/media-types/media-types.xhtml\">IANA site</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types\">MDN reference</a>) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).<br/><br/>
+  sh:description """Media type typically expressed using a MIME format (see <a href='http://www.iana.org/assignments/media-types/media-types.xhtml'>IANA site</a> and <a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types'>MDN reference</a>) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).<br/><br/>
 
-In cases where a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a> has several media type representations, <a class=\"localLink\" href=\"http://schema.org/encoding\">encoding</a> can be used to indicate each <a class=\"localLink\" href=\"http://schema.org/MediaObject\">MediaObject</a> alongside particular <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a> information.<br/><br/>
+In cases where a <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a> has several media type representations, <a class='localLink' href='http://schema.org/encoding'>encoding</a> can be used to indicate each <a class='localLink' href='http://schema.org/MediaObject'>MediaObject</a> alongside particular <a class='localLink' href='http://schema.org/encodingFormat'>encodingFormat</a> information.<br/><br/>
 
 Unregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry."""^^rdf:HTML ;
   sh:name "encodingFormat" ;
@@ -4742,13 +4746,13 @@ schema:CreativeWork-expires
   a sh:PropertyShape ;
   sh:path schema:expires ;
   sh:datatype xsd:date ;
-  sh:description "Date the content expires and is no longer useful or available. For example a <a class=\"localLink\" href=\"http://schema.org/VideoObject\">VideoObject</a> or <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a> whose availability or relevance is time-limited, or a <a class=\"localLink\" href=\"http://schema.org/ClaimReview\">ClaimReview</a> fact check whose publisher wants to indicate that it may no longer be relevant (or helpful to highlight) after some date."^^rdf:HTML ;
+  sh:description "Date the content expires and is no longer useful or available. For example a <a class='localLink' href='http://schema.org/VideoObject'>VideoObject</a> or <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a> whose availability or relevance is time-limited, or a <a class='localLink' href='http://schema.org/ClaimReview'>ClaimReview</a> fact check whose publisher wants to indicate that it may no longer be relevant (or helpful to highlight) after some date."^^rdf:HTML ;
   sh:name "expires" ;
 .
 schema:CreativeWork-fileFormat
   a sh:PropertyShape ;
   sh:path schema:fileFormat ;
-  sh:description "Media type, typically MIME format (see <a href=\"http://www.iana.org/assignments/media-types/media-types.xhtml\">IANA site</a>) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry."^^rdf:HTML ;
+  sh:description "Media type, typically MIME format (see <a href='http://www.iana.org/assignments/media-types/media-types.xhtml'>IANA site</a>) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry."^^rdf:HTML ;
   sh:name "fileFormat" ;
   sh:or (
       [
@@ -4804,7 +4808,7 @@ schema:CreativeWork-headline
 schema:CreativeWork-inLanguage
   a sh:PropertyShape ;
   sh:path schema:inLanguage ;
-  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>."^^rdf:HTML ;
+  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>. See also <a class='localLink' href='http://schema.org/availableLanguage'>availableLanguage</a>."^^rdf:HTML ;
   sh:name "inLanguage" ;
   sh:or (
       [
@@ -4936,7 +4940,7 @@ schema:CreativeWork-mainEntity
 schema:CreativeWork-maintainer
   a sh:PropertyShape ;
   sh:path schema:maintainer ;
-  sh:description "A maintainer of a <a class=\"localLink\" href=\"http://schema.org/Dataset\">Dataset</a>, software package (<a class=\"localLink\" href=\"http://schema.org/SoftwareApplication\">SoftwareApplication</a>), or other <a class=\"localLink\" href=\"http://schema.org/Project\">Project</a>. A maintainer is a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a> or <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> that manages contributions to, and/or publication of, some (typically complex) artifact. It is common for distributions of software and data to be based on \"upstream\" sources. When <a class=\"localLink\" href=\"http://schema.org/maintainer\">maintainer</a> is applied to a specific version of something e.g. a particular version or packaging of a <a class=\"localLink\" href=\"http://schema.org/Dataset\">Dataset</a>, it is always  possible that the upstream source has a different maintainer. The <a class=\"localLink\" href=\"http://schema.org/isBasedOn\">isBasedOn</a> property can be used to indicate such relationships between datasets to make the different maintenance roles clear. Similarly in the case of software, a package may have dedicated maintainers working on integration into software distributions such as Ubuntu, as well as upstream maintainers of the underlying work."^^rdf:HTML ;
+  sh:description "A maintainer of a <a class='localLink' href='http://schema.org/Dataset'>Dataset</a>, software package (<a class='localLink' href='http://schema.org/SoftwareApplication'>SoftwareApplication</a>), or other <a class='localLink' href='http://schema.org/Project'>Project</a>. A maintainer is a <a class='localLink' href='http://schema.org/Person'>Person</a> or <a class='localLink' href='http://schema.org/Organization'>Organization</a> that manages contributions to, and/or publication of, some (typically complex) artifact. It is common for distributions of software and data to be based on 'upstream' sources. When <a class='localLink' href='http://schema.org/maintainer'>maintainer</a> is applied to a specific version of something e.g. a particular version or packaging of a <a class='localLink' href='http://schema.org/Dataset'>Dataset</a>, it is always  possible that the upstream source has a different maintainer. The <a class='localLink' href='http://schema.org/isBasedOn'>isBasedOn</a> property can be used to indicate such relationships between datasets to make the different maintenance roles clear. Similarly in the case of software, a package may have dedicated maintainers working on integration into software distributions such as Ubuntu, as well as upstream maintainers of the underlying work."^^rdf:HTML ;
   sh:name "maintainer" ;
   sh:or (
       [
@@ -4988,7 +4992,7 @@ schema:CreativeWork-mentions
 schema:CreativeWork-offers
   a sh:PropertyShape ;
   sh:path schema:offers ;
-  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class=\"localLink\" href=\"http://schema.org/Demand\">Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
+  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class='localLink' href='http://schema.org/Demand'>Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
   sh:name "offers" ;
   sh:or (
       [
@@ -5072,9 +5076,9 @@ schema:CreativeWork-publisherImprint
 schema:CreativeWork-publishingPrinciples
   a sh:PropertyShape ;
   sh:path schema:publishingPrinciples ;
-  sh:description """The publishingPrinciples property indicates (typically via <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a>) a document describing the editorial principles of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (or individual e.g. a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a> (e.g. <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a>) the principles are those of the party primarily responsible for the creation of the <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>.<br/><br/>
+  sh:description """The publishingPrinciples property indicates (typically via <a class='localLink' href='http://schema.org/URL'>URL</a>) a document describing the editorial principles of an <a class='localLink' href='http://schema.org/Organization'>Organization</a> (or individual e.g. a <a class='localLink' href='http://schema.org/Person'>Person</a> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a> (e.g. <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a>) the principles are those of the party primarily responsible for the creation of the <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a>.<br/><br/>
 
-While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a <a class=\"localLink\" href=\"http://schema.org/funder\">funder</a>) can be expressed using schema.org terminology."""^^rdf:HTML ;
+While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a <a class='localLink' href='http://schema.org/funder'>funder</a>) can be expressed using schema.org terminology."""^^rdf:HTML ;
   sh:name "publishingPrinciples" ;
   sh:or (
       [
@@ -5131,7 +5135,7 @@ schema:CreativeWork-sdDatePublished
   a sh:PropertyShape ;
   sh:path schema:sdDatePublished ;
   sh:datatype xsd:date ;
-  sh:description "Indicates the date on which the current structured data was generated / published. Typically used alongside <a class=\"localLink\" href=\"http://schema.org/sdPublisher\">sdPublisher</a>"^^rdf:HTML ;
+  sh:description "Indicates the date on which the current structured data was generated / published. Typically used alongside <a class='localLink' href='http://schema.org/sdPublisher'>sdPublisher</a>"^^rdf:HTML ;
   sh:name "sdDatePublished" ;
 .
 schema:CreativeWork-sdLicense
@@ -5152,7 +5156,7 @@ schema:CreativeWork-sdPublisher
   a sh:PropertyShape ;
   sh:path schema:sdPublisher ;
   sh:description """Indicates the party responsible for generating and publishing the current structured data markup, typically in cases where the structured data is derived automatically from existing published content but published on a different site. For example, student projects and open data initiatives often re-publish existing content with more explicitly structured metadata. The
-<a class=\"localLink\" href=\"http://schema.org/sdPublisher\">sdPublisher</a> property helps make such practices more explicit."""^^rdf:HTML ;
+<a class='localLink' href='http://schema.org/sdPublisher'>sdPublisher</a> property helps make such practices more explicit."""^^rdf:HTML ;
   sh:name "sdPublisher" ;
   sh:or (
       [
@@ -5174,8 +5178,8 @@ schema:CreativeWork-spatial
   a sh:PropertyShape ;
   sh:path schema:spatial ;
   sh:class schema:Place ;
-  sh:description """The \"spatial\" property can be used in cases when more specific properties
-(e.g. <a class=\"localLink\" href=\"http://schema.org/locationCreated\">locationCreated</a>, <a class=\"localLink\" href=\"http://schema.org/spatialCoverage\">spatialCoverage</a>, <a class=\"localLink\" href=\"http://schema.org/contentLocation\">contentLocation</a>) are not known to be appropriate."""^^rdf:HTML ;
+  sh:description """The 'spatial' property can be used in cases when more specific properties
+(e.g. <a class='localLink' href='http://schema.org/locationCreated'>locationCreated</a>, <a class='localLink' href='http://schema.org/spatialCoverage'>spatialCoverage</a>, <a class='localLink' href='http://schema.org/contentLocation'>contentLocation</a>) are not known to be appropriate."""^^rdf:HTML ;
   sh:name "spatial" ;
 .
 schema:CreativeWork-spatialCoverage
@@ -5218,8 +5222,8 @@ schema:CreativeWork-teaches
 schema:CreativeWork-temporal
   a sh:PropertyShape ;
   sh:path schema:temporal ;
-  sh:description """The \"temporal\" property can be used in cases where more specific properties
-(e.g. <a class=\"localLink\" href=\"http://schema.org/temporalCoverage\">temporalCoverage</a>, <a class=\"localLink\" href=\"http://schema.org/dateCreated\">dateCreated</a>, <a class=\"localLink\" href=\"http://schema.org/dateModified\">dateModified</a>, <a class=\"localLink\" href=\"http://schema.org/datePublished\">datePublished</a>) are not known to be appropriate."""^^rdf:HTML ;
+  sh:description """The 'temporal' property can be used in cases where more specific properties
+(e.g. <a class='localLink' href='http://schema.org/temporalCoverage'>temporalCoverage</a>, <a class='localLink' href='http://schema.org/dateCreated'>dateCreated</a>, <a class='localLink' href='http://schema.org/dateModified'>dateModified</a>, <a class='localLink' href='http://schema.org/datePublished'>datePublished</a>) are not known to be appropriate."""^^rdf:HTML ;
   sh:name "temporal" ;
   sh:or (
       [
@@ -5233,11 +5237,11 @@ schema:CreativeWork-temporal
 schema:CreativeWork-temporalCoverage
   a sh:PropertyShape ;
   sh:path schema:temporalCoverage ;
-  sh:description """The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in <a href=\"https://en.wikipedia.org/wiki/ISO_8601#Time_intervals\">ISO 8601 time interval format</a>. In
-      the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written \"2011/2012\"). Other forms of content e.g. ScholarlyArticle, Book, TVSeries or TVEpisode may indicate their temporalCoverage in broader terms - textually or via well-known URL.
-      Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via \"1939/1945\".<br/><br/>
+  sh:description """The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in <a href='https://en.wikipedia.org/wiki/ISO_8601#Time_intervals'>ISO 8601 time interval format</a>. In
+      the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written '2011/2012'). Other forms of content e.g. ScholarlyArticle, Book, TVSeries or TVEpisode may indicate their temporalCoverage in broader terms - textually or via well-known URL.
+      Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via '1939/1945'.<br/><br/>
 
-Open-ended date ranges can be written with \"..\" in place of the end date. For example, \"2015-11/..\" indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated."""^^rdf:HTML ;
+Open-ended date ranges can be written with '..' in place of the end date. For example, '2015-11/..' indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated."""^^rdf:HTML ;
   sh:name "temporalCoverage" ;
   sh:or (
       [
@@ -5303,7 +5307,7 @@ schema:CreativeWork-typicalAgeRange
 schema:CreativeWork-usageInfo
   a sh:PropertyShape ;
   sh:path schema:usageInfo ;
-  sh:description """The schema.org <a class=\"localLink\" href=\"http://schema.org/usageInfo\">usageInfo</a> property indicates further information about a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>. This property is applicable both to works that are freely available and to those that require payment or other transactions. It can reference additional information e.g. community expectations on preferred linking and citation conventions, as well as purchasing details. For something that can be commercially licensed, usageInfo can provide detailed, resource-specific information about licensing options.<br/><br/>
+  sh:description """The schema.org <a class='localLink' href='http://schema.org/usageInfo'>usageInfo</a> property indicates further information about a <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a>. This property is applicable both to works that are freely available and to those that require payment or other transactions. It can reference additional information e.g. community expectations on preferred linking and citation conventions, as well as purchasing details. For something that can be commercially licensed, usageInfo can provide detailed, resource-specific information about licensing options.<br/><br/>
 
 This property can be used alongside the license property which indicates license(s) applicable to some piece of content. The usageInfo property can provide information about other licensing options, e.g. acquiring commercial usage rights for an image that is also available under non-commercial creative commons licenses."""^^rdf:HTML ;
   sh:name "usageInfo" ;
@@ -5393,7 +5397,7 @@ schema:CreativeWorkSeason-director
 schema:CreativeWorkSeason-endDate
   a sh:PropertyShape ;
   sh:path schema:endDate ;
-  sh:description "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The end date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "endDate" ;
   sh:or (
       [
@@ -5456,7 +5460,7 @@ schema:CreativeWorkSeason-seasonNumber
 schema:CreativeWorkSeason-startDate
   a sh:PropertyShape ;
   sh:path schema:startDate ;
-  sh:description "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The start date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "startDate" ;
   sh:or (
       [
@@ -5477,9 +5481,9 @@ schema:CreativeWorkSeason-trailer
 schema:CreativeWorkSeries
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment """A CreativeWorkSeries in schema.org is a group of related items, typically but not necessarily of the same kind. CreativeWorkSeries are usually organized into some order, often chronological. Unlike <a class=\"localLink\" href=\"http://schema.org/ItemList\">ItemList</a> which is a general purpose data structure for lists of things, the emphasis with CreativeWorkSeries is on published materials (written e.g. books and periodicals, or media such as tv, radio and games).<br/><br/>
+  rdfs:comment """A CreativeWorkSeries in schema.org is a group of related items, typically but not necessarily of the same kind. CreativeWorkSeries are usually organized into some order, often chronological. Unlike <a class='localLink' href='http://schema.org/ItemList'>ItemList</a> which is a general purpose data structure for lists of things, the emphasis with CreativeWorkSeries is on published materials (written e.g. books and periodicals, or media such as tv, radio and games).<br/><br/>
 
-Specific subtypes are available for describing <a class=\"localLink\" href=\"http://schema.org/TVSeries\">TVSeries</a>, <a class=\"localLink\" href=\"http://schema.org/RadioSeries\">RadioSeries</a>, <a class=\"localLink\" href=\"http://schema.org/MovieSeries\">MovieSeries</a>, <a class=\"localLink\" href=\"http://schema.org/BookSeries\">BookSeries</a>, <a class=\"localLink\" href=\"http://schema.org/Periodical\">Periodical</a> and <a class=\"localLink\" href=\"http://schema.org/VideoGameSeries\">VideoGameSeries</a>. In each case, the <a class=\"localLink\" href=\"http://schema.org/hasPart\">hasPart</a> / <a class=\"localLink\" href=\"http://schema.org/isPartOf\">isPartOf</a> properties can be used to relate the CreativeWorkSeries to its parts. The general CreativeWorkSeries type serves largely just to organize these more specific and practical subtypes.<br/><br/>
+Specific subtypes are available for describing <a class='localLink' href='http://schema.org/TVSeries'>TVSeries</a>, <a class='localLink' href='http://schema.org/RadioSeries'>RadioSeries</a>, <a class='localLink' href='http://schema.org/MovieSeries'>MovieSeries</a>, <a class='localLink' href='http://schema.org/BookSeries'>BookSeries</a>, <a class='localLink' href='http://schema.org/Periodical'>Periodical</a> and <a class='localLink' href='http://schema.org/VideoGameSeries'>VideoGameSeries</a>. In each case, the <a class='localLink' href='http://schema.org/hasPart'>hasPart</a> / <a class='localLink' href='http://schema.org/isPartOf'>isPartOf</a> properties can be used to relate the CreativeWorkSeries to its parts. The general CreativeWorkSeries type serves largely just to organize these more specific and practical subtypes.<br/><br/>
 
 It is common for properties applicable to an item from the series to be usefully applied to the containing group. Schema.org attempts to anticipate some of these cases, but publishers should be free to apply properties of the series parts to the series as a whole wherever they seem appropriate."""^^rdf:HTML ;
   rdfs:label "Creative work series" ;
@@ -5492,7 +5496,7 @@ It is common for properties applicable to an item from the series to be usefully
 schema:CreativeWorkSeries-endDate
   a sh:PropertyShape ;
   sh:path schema:endDate ;
-  sh:description "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The end date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "endDate" ;
   sh:or (
       [
@@ -5513,7 +5517,7 @@ schema:CreativeWorkSeries-issn
 schema:CreativeWorkSeries-startDate
   a sh:PropertyShape ;
   sh:path schema:startDate ;
-  sh:description "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The start date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "startDate" ;
   sh:or (
       [
@@ -5571,7 +5575,7 @@ schema:CriticReview
   a sh:NodeShape ;
   schema:category "issue-1589" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A <a class=\"localLink\" href=\"http://schema.org/CriticReview\">CriticReview</a> is a more specialized form of Review written or published by a source that is recognized for its reviewing activities. These can include online columns, travel and food guides, TV and radio shows, blogs and other independent Web sites. <a class=\"localLink\" href=\"http://schema.org/CriticReview\">CriticReview</a>s are typically more in-depth and professionally written. For simpler, casually written user/visitor/viewer/customer reviews, it is more appropriate to use the <a class=\"localLink\" href=\"http://schema.org/UserReview\">UserReview</a> type. Review aggregator sites such as Metacritic already separate out the site's user reviews from selected critic reviews that originate from third-party sources."^^rdf:HTML ;
+  rdfs:comment "A <a class='localLink' href='http://schema.org/CriticReview'>CriticReview</a> is a more specialized form of Review written or published by a source that is recognized for its reviewing activities. These can include online columns, travel and food guides, TV and radio shows, blogs and other independent Web sites. <a class='localLink' href='http://schema.org/CriticReview'>CriticReview</a>s are typically more in-depth and professionally written. For simpler, casually written user/visitor/viewer/customer reviews, it is more appropriate to use the <a class='localLink' href='http://schema.org/UserReview'>UserReview</a> type. Review aggregator sites such as Metacritic already separate out the site's user reviews from selected critic reviews that originate from third-party sources."^^rdf:HTML ;
   rdfs:label "Critic review" ;
   rdfs:subClassOf schema:Review ;
 .
@@ -5670,14 +5674,14 @@ schema:DataCatalog-dataset
 schema:DataCatalog-measurementTechnique
   a sh:PropertyShape ;
   sh:path schema:measurementTechnique ;
-  sh:description """A technique or technology used in a <a class=\"localLink\" href=\"http://schema.org/Dataset\">Dataset</a> (or <a class=\"localLink\" href=\"http://schema.org/DataDownload\">DataDownload</a>, <a class=\"localLink\" href=\"http://schema.org/DataCatalog\">DataCatalog</a>),
-corresponding to the method used for measuring the corresponding variable(s) (described using <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a>). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.<br/><br/>
+  sh:description """A technique or technology used in a <a class='localLink' href='http://schema.org/Dataset'>Dataset</a> (or <a class='localLink' href='http://schema.org/DataDownload'>DataDownload</a>, <a class='localLink' href='http://schema.org/DataCatalog'>DataCatalog</a>),
+corresponding to the method used for measuring the corresponding variable(s) (described using <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a>). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.<br/><br/>
 
-For example, if <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> is: molecule concentration, <a class=\"localLink\" href=\"http://schema.org/measurementTechnique\">measurementTechnique</a> could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\".<br/><br/>
+For example, if <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> is: molecule concentration, <a class='localLink' href='http://schema.org/measurementTechnique'>measurementTechnique</a> could be: 'mass spectrometry' or 'nmr spectroscopy' or 'colorimetry' or 'immunofluorescence'.<br/><br/>
 
-If the <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> is \"depression rating\", the <a class=\"localLink\" href=\"http://schema.org/measurementTechnique\">measurementTechnique</a> could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\".<br/><br/>
+If the <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> is 'depression rating', the <a class='localLink' href='http://schema.org/measurementTechnique'>measurementTechnique</a> could be 'Zung Scale' or 'HAM-D' or 'Beck Depression Inventory'.<br/><br/>
 
-If there are several <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> properties recorded for some given data object, use a <a class=\"localLink\" href=\"http://schema.org/PropertyValue\">PropertyValue</a> for each <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> and attach the corresponding <a class=\"localLink\" href=\"http://schema.org/measurementTechnique\">measurementTechnique</a>."""^^rdf:HTML ;
+If there are several <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> properties recorded for some given data object, use a <a class='localLink' href='http://schema.org/PropertyValue'>PropertyValue</a> for each <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> and attach the corresponding <a class='localLink' href='http://schema.org/measurementTechnique'>measurementTechnique</a>."""^^rdf:HTML ;
   sh:name "measurementTechnique" ;
   sh:or (
       [
@@ -5700,14 +5704,14 @@ schema:DataDownload
 schema:DataDownload-measurementTechnique
   a sh:PropertyShape ;
   sh:path schema:measurementTechnique ;
-  sh:description """A technique or technology used in a <a class=\"localLink\" href=\"http://schema.org/Dataset\">Dataset</a> (or <a class=\"localLink\" href=\"http://schema.org/DataDownload\">DataDownload</a>, <a class=\"localLink\" href=\"http://schema.org/DataCatalog\">DataCatalog</a>),
-corresponding to the method used for measuring the corresponding variable(s) (described using <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a>). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.<br/><br/>
+  sh:description """A technique or technology used in a <a class='localLink' href='http://schema.org/Dataset'>Dataset</a> (or <a class='localLink' href='http://schema.org/DataDownload'>DataDownload</a>, <a class='localLink' href='http://schema.org/DataCatalog'>DataCatalog</a>),
+corresponding to the method used for measuring the corresponding variable(s) (described using <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a>). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.<br/><br/>
 
-For example, if <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> is: molecule concentration, <a class=\"localLink\" href=\"http://schema.org/measurementTechnique\">measurementTechnique</a> could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\".<br/><br/>
+For example, if <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> is: molecule concentration, <a class='localLink' href='http://schema.org/measurementTechnique'>measurementTechnique</a> could be: 'mass spectrometry' or 'nmr spectroscopy' or 'colorimetry' or 'immunofluorescence'.<br/><br/>
 
-If the <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> is \"depression rating\", the <a class=\"localLink\" href=\"http://schema.org/measurementTechnique\">measurementTechnique</a> could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\".<br/><br/>
+If the <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> is 'depression rating', the <a class='localLink' href='http://schema.org/measurementTechnique'>measurementTechnique</a> could be 'Zung Scale' or 'HAM-D' or 'Beck Depression Inventory'.<br/><br/>
 
-If there are several <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> properties recorded for some given data object, use a <a class=\"localLink\" href=\"http://schema.org/PropertyValue\">PropertyValue</a> for each <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> and attach the corresponding <a class=\"localLink\" href=\"http://schema.org/measurementTechnique\">measurementTechnique</a>."""^^rdf:HTML ;
+If there are several <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> properties recorded for some given data object, use a <a class='localLink' href='http://schema.org/PropertyValue'>PropertyValue</a> for each <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> and attach the corresponding <a class='localLink' href='http://schema.org/measurementTechnique'>measurementTechnique</a>."""^^rdf:HTML ;
   sh:name "measurementTechnique" ;
   sh:or (
       [
@@ -5874,14 +5878,14 @@ schema:Dataset-issn
 schema:Dataset-measurementTechnique
   a sh:PropertyShape ;
   sh:path schema:measurementTechnique ;
-  sh:description """A technique or technology used in a <a class=\"localLink\" href=\"http://schema.org/Dataset\">Dataset</a> (or <a class=\"localLink\" href=\"http://schema.org/DataDownload\">DataDownload</a>, <a class=\"localLink\" href=\"http://schema.org/DataCatalog\">DataCatalog</a>),
-corresponding to the method used for measuring the corresponding variable(s) (described using <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a>). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.<br/><br/>
+  sh:description """A technique or technology used in a <a class='localLink' href='http://schema.org/Dataset'>Dataset</a> (or <a class='localLink' href='http://schema.org/DataDownload'>DataDownload</a>, <a class='localLink' href='http://schema.org/DataCatalog'>DataCatalog</a>),
+corresponding to the method used for measuring the corresponding variable(s) (described using <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a>). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.<br/><br/>
 
-For example, if <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> is: molecule concentration, <a class=\"localLink\" href=\"http://schema.org/measurementTechnique\">measurementTechnique</a> could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\".<br/><br/>
+For example, if <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> is: molecule concentration, <a class='localLink' href='http://schema.org/measurementTechnique'>measurementTechnique</a> could be: 'mass spectrometry' or 'nmr spectroscopy' or 'colorimetry' or 'immunofluorescence'.<br/><br/>
 
-If the <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> is \"depression rating\", the <a class=\"localLink\" href=\"http://schema.org/measurementTechnique\">measurementTechnique</a> could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\".<br/><br/>
+If the <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> is 'depression rating', the <a class='localLink' href='http://schema.org/measurementTechnique'>measurementTechnique</a> could be 'Zung Scale' or 'HAM-D' or 'Beck Depression Inventory'.<br/><br/>
 
-If there are several <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> properties recorded for some given data object, use a <a class=\"localLink\" href=\"http://schema.org/PropertyValue\">PropertyValue</a> for each <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> and attach the corresponding <a class=\"localLink\" href=\"http://schema.org/measurementTechnique\">measurementTechnique</a>."""^^rdf:HTML ;
+If there are several <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> properties recorded for some given data object, use a <a class='localLink' href='http://schema.org/PropertyValue'>PropertyValue</a> for each <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> and attach the corresponding <a class='localLink' href='http://schema.org/measurementTechnique'>measurementTechnique</a>."""^^rdf:HTML ;
   sh:name "measurementTechnique" ;
   sh:or (
       [
@@ -5909,7 +5913,7 @@ schema:Dataset-variableMeasured
 schema:Dataset-variablesMeasured
   a sh:PropertyShape ;
   sh:path schema:variablesMeasured ;
-  sh:description "Originally named <a class=\"localLink\" href=\"http://schema.org/variablesMeasured\">variablesMeasured</a>, The <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue."^^rdf:HTML ;
+  sh:description "Originally named <a class='localLink' href='http://schema.org/variablesMeasured'>variablesMeasured</a>, The <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue."^^rdf:HTML ;
   sh:name "variablesMeasured" ;
   sh:or (
       [
@@ -5924,7 +5928,7 @@ schema:Date
   a schema:DataType ;
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A date value in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>."^^rdf:HTML ;
+  rdfs:comment "A date value in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>."^^rdf:HTML ;
   rdfs:label "Date" ;
   rdfs:subClassOf rdfs:Resource ;
 .
@@ -5940,7 +5944,7 @@ schema:DatedMoneySpecification
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:supersededBy schema:MonetaryAmount ;
-  rdfs:comment "A DatedMoneySpecification represents monetary values with optional start and end dates. For example, this could represent an employee's salary over a specific period of time. <strong>Note:</strong> This type has been superseded by <a class=\"localLink\" href=\"http://schema.org/MonetaryAmount\">MonetaryAmount</a> use of that type is recommended"^^rdf:HTML ;
+  rdfs:comment "A DatedMoneySpecification represents monetary values with optional start and end dates. For example, this could represent an employee's salary over a specific period of time. <strong>Note:</strong> This type has been superseded by <a class='localLink' href='http://schema.org/MonetaryAmount'>MonetaryAmount</a> use of that type is recommended"^^rdf:HTML ;
   rdfs:label "Dated money specification" ;
   rdfs:subClassOf schema:StructuredValue ;
   sh:property schema:DatedMoneySpecification-amount ;
@@ -5968,13 +5972,13 @@ schema:DatedMoneySpecification-currency
   sh:datatype xsd:string ;
   sh:description """The currency in which the monetary amount is expressed.<br/><br/>
 
-Use standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\"."""^^rdf:HTML ;
+Use standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR'."""^^rdf:HTML ;
   sh:name "currency" ;
 .
 schema:DatedMoneySpecification-endDate
   a sh:PropertyShape ;
   sh:path schema:endDate ;
-  sh:description "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The end date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "endDate" ;
   sh:or (
       [
@@ -5988,7 +5992,7 @@ schema:DatedMoneySpecification-endDate
 schema:DatedMoneySpecification-startDate
   a sh:PropertyShape ;
   sh:path schema:startDate ;
-  sh:description "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The start date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "startDate" ;
   sh:or (
       [
@@ -6004,7 +6008,7 @@ schema:DayOfWeek
   a sh:NodeShape ;
   rdfs:comment """The day of the week, e.g. used to specify to which day the opening hours of an OpeningHoursSpecification refer.<br/><br/>
 
-Originally, URLs from <a href=\"http://purl.org/goodrelations/v1\">GoodRelations</a> were used (for <a class=\"localLink\" href=\"http://schema.org/Monday\">Monday</a>, <a class=\"localLink\" href=\"http://schema.org/Tuesday\">Tuesday</a>, <a class=\"localLink\" href=\"http://schema.org/Wednesday\">Wednesday</a>, <a class=\"localLink\" href=\"http://schema.org/Thursday\">Thursday</a>, <a class=\"localLink\" href=\"http://schema.org/Friday\">Friday</a>, <a class=\"localLink\" href=\"http://schema.org/Saturday\">Saturday</a>, <a class=\"localLink\" href=\"http://schema.org/Sunday\">Sunday</a> plus a special entry for <a class=\"localLink\" href=\"http://schema.org/PublicHolidays\">PublicHolidays</a>); these have now been integrated directly into schema.org."""^^rdf:HTML ;
+Originally, URLs from <a href='http://purl.org/goodrelations/v1'>GoodRelations</a> were used (for <a class='localLink' href='http://schema.org/Monday'>Monday</a>, <a class='localLink' href='http://schema.org/Tuesday'>Tuesday</a>, <a class='localLink' href='http://schema.org/Wednesday'>Wednesday</a>, <a class='localLink' href='http://schema.org/Thursday'>Thursday</a>, <a class='localLink' href='http://schema.org/Friday'>Friday</a>, <a class='localLink' href='http://schema.org/Saturday'>Saturday</a>, <a class='localLink' href='http://schema.org/Sunday'>Sunday</a> plus a special entry for <a class='localLink' href='http://schema.org/PublicHolidays'>PublicHolidays</a>); these have now been integrated directly into schema.org."""^^rdf:HTML ;
   rdfs:label "Day of week" ;
   rdfs:subClassOf schema:Enumeration ;
 .
@@ -6040,7 +6044,7 @@ Examples: a delivery destination when shopping. Region where regional pricing is
 
 Requirement 1:
 Country: US
-States: \"NY\", \"CA\"<br/><br/>
+States: 'NY', 'CA'<br/><br/>
 
 Requirement 2:
 Country: US
@@ -6058,7 +6062,7 @@ Region = state, canton, prefecture, autonomous community..."""^^rdf:HTML ;
 schema:DefinedRegion-addressCountry
   a sh:PropertyShape ;
   sh:path schema:addressCountry ;
-  sh:description "The country. For example, USA. You can also provide the two-letter <a href=\"http://en.wikipedia.org/wiki/ISO_3166-1\">ISO 3166-1 alpha-2 country code</a>."^^rdf:HTML ;
+  sh:description "The country. For example, USA. You can also provide the two-letter <a href='http://en.wikipedia.org/wiki/ISO_3166-1'>ISO 3166-1 alpha-2 country code</a>."^^rdf:HTML ;
   sh:name "addressCountry" ;
   sh:or (
       [
@@ -6073,7 +6077,7 @@ schema:DefinedRegion-addressRegion
   a sh:PropertyShape ;
   sh:path schema:addressRegion ;
   sh:datatype xsd:string ;
-  sh:description "The region in which the locality is, and which is in the country. For example, California or another appropriate first-level <a href=\"https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_country\">Administrative division</a>"^^rdf:HTML ;
+  sh:description "The region in which the locality is, and which is in the country. For example, California or another appropriate first-level <a href='https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_country'>Administrative division</a>"^^rdf:HTML ;
   sh:name "addressRegion" ;
 .
 schema:DefinedRegion-postalCode
@@ -6111,7 +6115,7 @@ schema:DefinedTerm
 schema:DefinedTerm-inDefinedTermSet
   a sh:PropertyShape ;
   sh:path schema:inDefinedTermSet ;
-  sh:description "A <a class=\"localLink\" href=\"http://schema.org/DefinedTermSet\">DefinedTermSet</a> that contains this term."^^rdf:HTML ;
+  sh:description "A <a class='localLink' href='http://schema.org/DefinedTermSet'>DefinedTermSet</a> that contains this term."^^rdf:HTML ;
   sh:name "inDefinedTermSet" ;
   sh:or (
       [
@@ -6126,7 +6130,7 @@ schema:DefinedTerm-termCode
   a sh:PropertyShape ;
   sh:path schema:termCode ;
   sh:datatype xsd:string ;
-  sh:description "A code that identifies this <a class=\"localLink\" href=\"http://schema.org/DefinedTerm\">DefinedTerm</a> within a <a class=\"localLink\" href=\"http://schema.org/DefinedTermSet\">DefinedTermSet</a>"^^rdf:HTML ;
+  sh:description "A code that identifies this <a class='localLink' href='http://schema.org/DefinedTerm'>DefinedTerm</a> within a <a class='localLink' href='http://schema.org/DefinedTermSet'>DefinedTermSet</a>"^^rdf:HTML ;
   sh:name "termCode" ;
 .
 schema:DefinedTermSet
@@ -6151,7 +6155,7 @@ schema:DefinitiveLegalValue
   schema:category "issue-1156" ;
   schema:isPartOf <http://pending.schema.org> ;
   rdfs:comment """Indicates a document for which the text is conclusively what the law says and is legally binding. (e.g. The digitally signed version of an Official Journal.)
-  Something \"Definitive\" is considered to be also <a class=\"localLink\" href=\"http://schema.org/AuthoritativeLegalValue\">AuthoritativeLegalValue</a>.""" ;
+  Something 'Definitive' is considered to be also <a class='localLink' href='http://schema.org/AuthoritativeLegalValue'>AuthoritativeLegalValue</a>.""" ;
   rdfs:label "Definitive legal value" ;
 .
 schema:DeleteAction
@@ -6204,7 +6208,7 @@ schema:DeliveryChargeSpecification-eligibleRegion
   sh:path schema:eligibleRegion ;
   sh:description """The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.<br/><br/>
 
-See also <a class=\"localLink\" href=\"http://schema.org/ineligibleRegion\">ineligibleRegion</a>."""^^rdf:HTML ;
+See also <a class='localLink' href='http://schema.org/ineligibleRegion'>ineligibleRegion</a>."""^^rdf:HTML ;
   sh:name "eligibleRegion" ;
   sh:or (
       [
@@ -6223,7 +6227,7 @@ schema:DeliveryChargeSpecification-ineligibleRegion
   sh:path schema:ineligibleRegion ;
   sh:description """The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.<br/><br/>
 
-See also <a class=\"localLink\" href=\"http://schema.org/eligibleRegion\">eligibleRegion</a>."""^^rdf:HTML ;
+See also <a class='localLink' href='http://schema.org/eligibleRegion'>eligibleRegion</a>."""^^rdf:HTML ;
   sh:name "ineligibleRegion" ;
   sh:or (
       [
@@ -6302,7 +6306,7 @@ schema:DeliveryTimeSettings
   a sh:NodeShape ;
   schema:category "issue-2506" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A DeliveryTimeSettings represents re-usable pieces of shipping information, relating to timing. It is designed for publication on an URL that may be referenced via the <a class=\"localLink\" href=\"http://schema.org/shippingSettingsLink\">shippingSettingsLink</a> property of a <a class=\"localLink\" href=\"http://schema.org/OfferShippingSpecification\">OfferShippingSpecification</a>. Several occurrences can be published, distinguished (and identified/referenced) by their different values for <a class=\"localLink\" href=\"http://schema.org/shippingLabel\">shippingLabel</a>."^^rdf:HTML ;
+  rdfs:comment "A DeliveryTimeSettings represents re-usable pieces of shipping information, relating to timing. It is designed for publication on an URL that may be referenced via the <a class='localLink' href='http://schema.org/shippingSettingsLink'>shippingSettingsLink</a> property of a <a class='localLink' href='http://schema.org/OfferShippingSpecification'>OfferShippingSpecification</a>. Several occurrences can be published, distinguished (and identified/referenced) by their different values for <a class='localLink' href='http://schema.org/shippingLabel'>shippingLabel</a>."^^rdf:HTML ;
   rdfs:label "Delivery time settings" ;
   rdfs:subClassOf schema:StructuredValue ;
   sh:property schema:DeliveryTimeSettings-deliveryTime ;
@@ -6327,7 +6331,7 @@ schema:DeliveryTimeSettings-transitTimeLabel
   a sh:PropertyShape ;
   sh:path schema:transitTimeLabel ;
   sh:datatype xsd:string ;
-  sh:description "Label to match an <a class=\"localLink\" href=\"http://schema.org/OfferShippingDetails\">OfferShippingDetails</a> with a <a class=\"localLink\" href=\"http://schema.org/DeliveryTimeSettings\">DeliveryTimeSettings</a> (within the context of a <a class=\"localLink\" href=\"http://schema.org/shippingSettingsLink\">shippingSettingsLink</a> cross-reference)."^^rdf:HTML ;
+  sh:description "Label to match an <a class='localLink' href='http://schema.org/OfferShippingDetails'>OfferShippingDetails</a> with a <a class='localLink' href='http://schema.org/DeliveryTimeSettings'>DeliveryTimeSettings</a> (within the context of a <a class='localLink' href='http://schema.org/shippingSettingsLink'>shippingSettingsLink</a> cross-reference)."^^rdf:HTML ;
   sh:name "transitTimeLabel" ;
 .
 schema:Demand
@@ -6506,7 +6510,7 @@ schema:Demand-eligibleRegion
   sh:path schema:eligibleRegion ;
   sh:description """The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.<br/><br/>
 
-See also <a class=\"localLink\" href=\"http://schema.org/ineligibleRegion\">ineligibleRegion</a>."""^^rdf:HTML ;
+See also <a class='localLink' href='http://schema.org/ineligibleRegion'>ineligibleRegion</a>."""^^rdf:HTML ;
   sh:name "eligibleRegion" ;
   sh:or (
       [
@@ -6531,35 +6535,35 @@ schema:Demand-gtin
   a sh:PropertyShape ;
   sh:path schema:gtin ;
   sh:datatype xsd:string ;
-  sh:description "A Global Trade Item Number (<a href=\"https://www.gs1.org/standards/id-keys/gtin\">GTIN</a>). GTINs identify trade items, including products and services, using numeric identification codes. The <a class=\"localLink\" href=\"http://schema.org/gtin\">gtin</a> property generalizes the earlier <a class=\"localLink\" href=\"http://schema.org/gtin8\">gtin8</a>, <a class=\"localLink\" href=\"http://schema.org/gtin12\">gtin12</a>, <a class=\"localLink\" href=\"http://schema.org/gtin13\">gtin13</a>, and <a class=\"localLink\" href=\"http://schema.org/gtin14\">gtin14</a> properties. The GS1 <a href=\"https://www.gs1.org/standards/Digital-Link/\">digital link specifications</a> express GTINs as URLs. A correct <a class=\"localLink\" href=\"http://schema.org/gtin\">gtin</a> value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a <a href=\"https://www.gs1.org/services/check-digit-calculator\">valid GS1 check digit</a> and meet the other rules for valid GTINs. See also <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1's GTIN Summary</a> and <a href=\"https://en.wikipedia.org/wiki/Global_Trade_Item_Number\">Wikipedia</a> for more details. Left-padding of the gtin values is not required or encouraged."^^rdf:HTML ;
+  sh:description "A Global Trade Item Number (<a href='https://www.gs1.org/standards/id-keys/gtin'>GTIN</a>). GTINs identify trade items, including products and services, using numeric identification codes. The <a class='localLink' href='http://schema.org/gtin'>gtin</a> property generalizes the earlier <a class='localLink' href='http://schema.org/gtin8'>gtin8</a>, <a class='localLink' href='http://schema.org/gtin12'>gtin12</a>, <a class='localLink' href='http://schema.org/gtin13'>gtin13</a>, and <a class='localLink' href='http://schema.org/gtin14'>gtin14</a> properties. The GS1 <a href='https://www.gs1.org/standards/Digital-Link/'>digital link specifications</a> express GTINs as URLs. A correct <a class='localLink' href='http://schema.org/gtin'>gtin</a> value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a 'GS1 Digital Link' URL based on such a string. The numeric component should also have a <a href='https://www.gs1.org/services/check-digit-calculator'>valid GS1 check digit</a> and meet the other rules for valid GTINs. See also <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1's GTIN Summary</a> and <a href='https://en.wikipedia.org/wiki/Global_Trade_Item_Number'>Wikipedia</a> for more details. Left-padding of the gtin values is not required or encouraged."^^rdf:HTML ;
   sh:name "gtin" ;
 .
 schema:Demand-gtin12
   a sh:PropertyShape ;
   sh:path schema:gtin12 ;
   sh:datatype xsd:string ;
-  sh:description "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
+  sh:description "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
   sh:name "gtin12" ;
 .
 schema:Demand-gtin13
   a sh:PropertyShape ;
   sh:path schema:gtin13 ;
   sh:datatype xsd:string ;
-  sh:description "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceeding zero. See <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
+  sh:description "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceeding zero. See <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
   sh:name "gtin13" ;
 .
 schema:Demand-gtin14
   a sh:PropertyShape ;
   sh:path schema:gtin14 ;
   sh:datatype xsd:string ;
-  sh:description "The GTIN-14 code of the product, or the product to which the offer refers. See <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
+  sh:description "The GTIN-14 code of the product, or the product to which the offer refers. See <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
   sh:name "gtin14" ;
 .
 schema:Demand-gtin8
   a sh:PropertyShape ;
   sh:path schema:gtin8 ;
   sh:datatype xsd:string ;
-  sh:description "The <a href=\"http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx\">GTIN-8</a> code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
+  sh:description "The <a href='http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx'>GTIN-8</a> code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
   sh:name "gtin8" ;
 .
 schema:Demand-includesObject
@@ -6574,7 +6578,7 @@ schema:Demand-ineligibleRegion
   sh:path schema:ineligibleRegion ;
   sh:description """The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.<br/><br/>
 
-See also <a class=\"localLink\" href=\"http://schema.org/eligibleRegion\">eligibleRegion</a>."""^^rdf:HTML ;
+See also <a class='localLink' href='http://schema.org/eligibleRegion'>eligibleRegion</a>."""^^rdf:HTML ;
   sh:name "ineligibleRegion" ;
   sh:or (
       [
@@ -6605,7 +6609,7 @@ schema:Demand-itemCondition
 schema:Demand-itemOffered
   a sh:PropertyShape ;
   sh:path schema:itemOffered ;
-  sh:description "An item being offered (or demanded). The transactional nature of the offer or demand is documented using <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a>, e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
+  sh:description "An item being offered (or demanded). The transactional nature of the offer or demand is documented using <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a>, e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
   sh:name "itemOffered" ;
   sh:or (
       [
@@ -6985,7 +6989,7 @@ schema:DigitalDocument-hasDigitalDocumentPermission
   a sh:PropertyShape ;
   sh:path schema:hasDigitalDocumentPermission ;
   sh:class schema:DigitalDocumentPermission ;
-  sh:description "A permission related to the access to this document (e.g. permission to read or write an electronic document). For a public document, specify a grantee with an Audience with audienceType equal to \"public\"."^^rdf:HTML ;
+  sh:description "A permission related to the access to this document (e.g. permission to read or write an electronic document). For a public document, specify a grantee with an Audience with audienceType equal to 'public'."^^rdf:HTML ;
   sh:name "hasDigitalDocumentPermission" ;
 .
 schema:DigitalDocumentPermission
@@ -7676,7 +7680,7 @@ schema:DryCleaningOrLaundry
 schema:Duration
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "Quantity: Duration (use <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 duration format</a>)."^^rdf:HTML ;
+  rdfs:comment "Quantity: Duration (use <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 duration format</a>)."^^rdf:HTML ;
   rdfs:label "Duration" ;
   rdfs:subClassOf schema:Quantity ;
 .
@@ -7808,7 +7812,7 @@ schema:EducationalOccupationalCredential-competencyRequired
 schema:EducationalOccupationalCredential-credentialCategory
   a sh:PropertyShape ;
   sh:path schema:credentialCategory ;
-  sh:description "The category or type of credential being described, for example \"degreeâ€, â€œcertificateâ€, â€œbadgeâ€, or more specific term."^^rdf:HTML ;
+  sh:description "The category or type of credential being described, for example 'degreeâ€, â€œcertificateâ€, â€œbadgeâ€, or more specific term."^^rdf:HTML ;
   sh:name "credentialCategory" ;
   sh:or (
       [
@@ -7933,7 +7937,7 @@ schema:EducationalOccupationalProgram-educationalCredentialAwarded
 schema:EducationalOccupationalProgram-educationalProgramMode
   a sh:PropertyShape ;
   sh:path schema:educationalProgramMode ;
-  sh:description "Similar to courseMode, The medium or means of delivery of the program as a whole. The value may either be a text label (e.g. \"online\", \"onsite\" or \"blended\"; \"synchronous\" or \"asynchronous\"; \"full-time\" or \"part-time\") or a URL reference to a term from a controlled vocabulary (e.g. https://ceds.ed.gov/element/001311#Asynchronous )."^^rdf:HTML ;
+  sh:description "Similar to courseMode, The medium or means of delivery of the program as a whole. The value may either be a text label (e.g. 'online', 'onsite' or 'blended'; 'synchronous' or 'asynchronous'; 'full-time' or 'part-time') or a URL reference to a term from a controlled vocabulary (e.g. https://ceds.ed.gov/element/001311#Asynchronous )."^^rdf:HTML ;
   sh:name "educationalProgramMode" ;
   sh:or (
       [
@@ -7947,7 +7951,7 @@ schema:EducationalOccupationalProgram-educationalProgramMode
 schema:EducationalOccupationalProgram-endDate
   a sh:PropertyShape ;
   sh:path schema:endDate ;
-  sh:description "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The end date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "endDate" ;
   sh:or (
       [
@@ -7996,7 +8000,7 @@ schema:EducationalOccupationalProgram-numberOfCredits
 schema:EducationalOccupationalProgram-occupationalCategory
   a sh:PropertyShape ;
   sh:path schema:occupationalCategory ;
-  sh:description """A category describing the job, preferably using a term from a taxonomy such as <a href=\"http://www.onetcenter.org/taxonomy.html\">BLS O*NET-SOC</a>, <a href=\"https://www.ilo.org/public/english/bureau/stat/isco/isco08/\">ISCO-08</a> or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.<br/><br/>
+  sh:description """A category describing the job, preferably using a term from a taxonomy such as <a href='http://www.onetcenter.org/taxonomy.html'>BLS O*NET-SOC</a>, <a href='https://www.ilo.org/public/english/bureau/stat/isco/isco08/'>ISCO-08</a> or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.<br/><br/>
 
 Note: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC."""^^rdf:HTML ;
   sh:name "occupationalCategory" ;
@@ -8029,7 +8033,7 @@ schema:EducationalOccupationalProgram-occupationalCredentialAwarded
 schema:EducationalOccupationalProgram-offers
   a sh:PropertyShape ;
   sh:path schema:offers ;
-  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class=\"localLink\" href=\"http://schema.org/Demand\">Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
+  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class='localLink' href='http://schema.org/Demand'>Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
   sh:name "offers" ;
   sh:or (
       [
@@ -8098,7 +8102,7 @@ schema:EducationalOccupationalProgram-salaryUponCompletion
 schema:EducationalOccupationalProgram-startDate
   a sh:PropertyShape ;
   sh:path schema:startDate ;
-  sh:description "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The start date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "startDate" ;
   sh:or (
       [
@@ -8127,7 +8131,7 @@ schema:EducationalOccupationalProgram-timeOfDay
   a sh:PropertyShape ;
   sh:path schema:timeOfDay ;
   sh:datatype xsd:string ;
-  sh:description "The time of day the program normally runs. For example, \"evenings\"."^^rdf:HTML ;
+  sh:description "The time of day the program normally runs. For example, 'evenings'."^^rdf:HTML ;
   sh:name "timeOfDay" ;
 .
 schema:EducationalOccupationalProgram-timeToComplete
@@ -8253,7 +8257,7 @@ schema:EmployeeRole-salaryCurrency
   a sh:PropertyShape ;
   sh:path schema:salaryCurrency ;
   sh:datatype xsd:string ;
-  sh:description "The currency (coded using <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217</a> ) used for the main salary information in this job posting or for this employee."^^rdf:HTML ;
+  sh:description "The currency (coded using <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217</a> ) used for the main salary information in this job posting or for this employee."^^rdf:HTML ;
   sh:name "salaryCurrency" ;
 .
 schema:EmployerAggregateRating
@@ -8269,7 +8273,7 @@ schema:EmployerReview
   a sh:NodeShape ;
   schema:category "issue-1576" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "An <a class=\"localLink\" href=\"http://schema.org/EmployerReview\">EmployerReview</a> is a review of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> regarding its role as an employer, written by a current or former employee of that organization."^^rdf:HTML ;
+  rdfs:comment "An <a class='localLink' href='http://schema.org/EmployerReview'>EmployerReview</a> is a review of an <a class='localLink' href='http://schema.org/Organization'>Organization</a> regarding its role as an employer, written by a current or former employee of that organization."^^rdf:HTML ;
   rdfs:label "Employer review" ;
   rdfs:subClassOf schema:Review ;
 .
@@ -8312,11 +8316,11 @@ schema:EndorsementRating
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:category "issue-1293" ;
-  rdfs:comment """An EndorsementRating is a rating that expresses some level of endorsement, for example inclusion in a \"critic's pick\" blog, a
-\"Like\" or \"+1\" on a social network. It can be considered the <a class=\"localLink\" href=\"http://schema.org/result\">result</a> of an <a class=\"localLink\" href=\"http://schema.org/EndorseAction\">EndorseAction</a> in which the <a class=\"localLink\" href=\"http://schema.org/object\">object</a> of the action is rated positively by
-some <a class=\"localLink\" href=\"http://schema.org/agent\">agent</a>. As is common elsewhere in schema.org, it is sometimes more useful to describe the results of such an action without explicitly describing the <a class=\"localLink\" href=\"http://schema.org/Action\">Action</a>.<br/><br/>
+  rdfs:comment """An EndorsementRating is a rating that expresses some level of endorsement, for example inclusion in a 'critic's pick' blog, a
+'Like' or '+1' on a social network. It can be considered the <a class='localLink' href='http://schema.org/result'>result</a> of an <a class='localLink' href='http://schema.org/EndorseAction'>EndorseAction</a> in which the <a class='localLink' href='http://schema.org/object'>object</a> of the action is rated positively by
+some <a class='localLink' href='http://schema.org/agent'>agent</a>. As is common elsewhere in schema.org, it is sometimes more useful to describe the results of such an action without explicitly describing the <a class='localLink' href='http://schema.org/Action'>Action</a>.<br/><br/>
 
-An <a class=\"localLink\" href=\"http://schema.org/EndorsementRating\">EndorsementRating</a> may be part of a numeric scale or organized system, but this is not required: having an explicit type for indicating a positive,
+An <a class='localLink' href='http://schema.org/EndorsementRating'>EndorsementRating</a> may be part of a numeric scale or organized system, but this is not required: having an explicit type for indicating a positive,
 endorsement rating is particularly useful in the absence of numeric scales as it helps consumers understand that the rating is broadly positive."""^^rdf:HTML ;
   rdfs:label "Endorsement rating" ;
   rdfs:subClassOf schema:Rating ;
@@ -8347,8 +8351,8 @@ schema:EngineSpecification-engineDisplacement
   sh:description """The volume swept by all of the pistons inside the cylinders of an internal combustion engine in a single movement. <br/><br/>
 
 Typical unit code(s): CMQ for cubic centimeter, LTR for liters, INQ for cubic inches
-* Note 1: You can link to information about how the given value has been determined using the <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a> property.
-* Note 2: You can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges."""^^rdf:HTML ;
+* Note 1: You can link to information about how the given value has been determined using the <a class='localLink' href='http://schema.org/valueReference'>valueReference</a> property.
+* Note 2: You can use <a class='localLink' href='http://schema.org/minValue'>minValue</a> and <a class='localLink' href='http://schema.org/maxValue'>maxValue</a> to indicate ranges."""^^rdf:HTML ;
   sh:name "engineDisplacement" ;
 .
 schema:EngineSpecification-enginePower
@@ -8359,9 +8363,9 @@ schema:EngineSpecification-enginePower
     Typical unit code(s): KWT for kilowatt, BHP for brake horsepower, N12 for metric horsepower (PS, with 1 PS = 735,49875 W)<br/><br/>
 
 <ul>
-<li>Note 1: There are many different ways of measuring an engine's power. For an overview, see  <a href=\"http://en.wikipedia.org/wiki/Horsepower#Engine_power_test_codes\">http://en.wikipedia.org/wiki/Horsepower#Engine<em>power</em>test_codes</a>.</li>
-<li>Note 2: You can link to information about how the given value has been determined using the <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a> property.</li>
-<li>Note 3: You can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>
+<li>Note 1: There are many different ways of measuring an engine's power. For an overview, see  <a href='http://en.wikipedia.org/wiki/Horsepower#Engine_power_test_codes'>http://en.wikipedia.org/wiki/Horsepower#Engine<em>power</em>test_codes</a>.</li>
+<li>Note 2: You can link to information about how the given value has been determined using the <a class='localLink' href='http://schema.org/valueReference'>valueReference</a> property.</li>
+<li>Note 3: You can use <a class='localLink' href='http://schema.org/minValue'>minValue</a> and <a class='localLink' href='http://schema.org/maxValue'>maxValue</a> to indicate ranges.</li>
 </ul>
 """^^rdf:HTML ;
   sh:name "enginePower" ;
@@ -8409,8 +8413,8 @@ schema:EngineSpecification-torque
 Typical unit code(s): NU for newton metre (N m), F17 for pound-force per foot, or F48 for pound-force per inch<br/><br/>
 
 <ul>
-<li>Note 1: You can link to information about how the given value has been determined (e.g. reference RPM) using the <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a> property.</li>
-<li>Note 2: You can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>
+<li>Note 1: You can link to information about how the given value has been determined (e.g. reference RPM) using the <a class='localLink' href='http://schema.org/valueReference'>valueReference</a> property.</li>
+<li>Note 2: You can use <a class='localLink' href='http://schema.org/minValue'>minValue</a> and <a class='localLink' href='http://schema.org/maxValue'>maxValue</a> to indicate ranges.</li>
 </ul>
 """^^rdf:HTML ;
   sh:name "torque" ;
@@ -8627,7 +8631,7 @@ schema:Episode-trailer
 schema:Event
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the <a class=\"localLink\" href=\"http://schema.org/offers\">offers</a> property. Repeated events may be structured as separate Event objects."^^rdf:HTML ;
+  rdfs:comment "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the <a class='localLink' href='http://schema.org/offers'>offers</a> property. Repeated events may be structured as separate Event objects."^^rdf:HTML ;
   rdfs:label "Event" ;
   rdfs:subClassOf schema:Thing ;
   owl:equivalentClass <http://purl.org/dc/dcmitype/Event> ;
@@ -8780,13 +8784,13 @@ schema:Event-duration
   a sh:PropertyShape ;
   sh:path schema:duration ;
   sh:datatype xsd:duration ;
-  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>."^^rdf:HTML ;
+  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>."^^rdf:HTML ;
   sh:name "duration" ;
 .
 schema:Event-endDate
   a sh:PropertyShape ;
   sh:path schema:endDate ;
-  sh:description "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The end date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "endDate" ;
   sh:or (
       [
@@ -8808,11 +8812,11 @@ schema:Event-eventSchedule
   a sh:PropertyShape ;
   sh:path schema:eventSchedule ;
   sh:class schema:Schedule ;
-  sh:description """Associates an <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> with a <a class=\"localLink\" href=\"http://schema.org/Schedule\">Schedule</a>. There are circumstances where it is preferable to share a schedule for a series of
+  sh:description """Associates an <a class='localLink' href='http://schema.org/Event'>Event</a> with a <a class='localLink' href='http://schema.org/Schedule'>Schedule</a>. There are circumstances where it is preferable to share a schedule for a series of
       repeating events rather than data on the individual events themselves. For example, a website or application might prefer to publish a schedule for a weekly
-      gym class rather than provide data on every event. A schedule could be processed by applications to add forthcoming events to a calendar. An <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> that
-      is associated with a <a class=\"localLink\" href=\"http://schema.org/Schedule\">Schedule</a> using this property should not have <a class=\"localLink\" href=\"http://schema.org/startDate\">startDate</a> or <a class=\"localLink\" href=\"http://schema.org/endDate\">endDate</a> properties. These are instead defined within the associated
-      <a class=\"localLink\" href=\"http://schema.org/Schedule\">Schedule</a>, this avoids any ambiguity for clients using the data. The property might have repeated values to specify different schedules, e.g. for different months
+      gym class rather than provide data on every event. A schedule could be processed by applications to add forthcoming events to a calendar. An <a class='localLink' href='http://schema.org/Event'>Event</a> that
+      is associated with a <a class='localLink' href='http://schema.org/Schedule'>Schedule</a> using this property should not have <a class='localLink' href='http://schema.org/startDate'>startDate</a> or <a class='localLink' href='http://schema.org/endDate'>endDate</a> properties. These are instead defined within the associated
+      <a class='localLink' href='http://schema.org/Schedule'>Schedule</a>, this avoids any ambiguity for clients using the data. The property might have repeated values to specify different schedules, e.g. for different months
       or seasons."""^^rdf:HTML ;
   sh:name "eventSchedule" ;
 .
@@ -8840,7 +8844,7 @@ schema:Event-funder
 schema:Event-inLanguage
   a sh:PropertyShape ;
   sh:path schema:inLanguage ;
-  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>."^^rdf:HTML ;
+  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>. See also <a class='localLink' href='http://schema.org/availableLanguage'>availableLanguage</a>."^^rdf:HTML ;
   sh:name "inLanguage" ;
   sh:or (
       [
@@ -8889,20 +8893,20 @@ schema:Event-maximumPhysicalAttendeeCapacity
   a sh:PropertyShape ;
   sh:path schema:maximumPhysicalAttendeeCapacity ;
   sh:datatype xsd:integer ;
-  sh:description "The maximum physical attendee capacity of an <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> whose <a class=\"localLink\" href=\"http://schema.org/eventAttendanceMode\">eventAttendanceMode</a> is <a class=\"localLink\" href=\"http://schema.org/OfflineEventAttendanceMode\">OfflineEventAttendanceMode</a> (or the offline aspects, in the case of a <a class=\"localLink\" href=\"http://schema.org/MixedEventAttendanceMode\">MixedEventAttendanceMode</a>)."^^rdf:HTML ;
+  sh:description "The maximum physical attendee capacity of an <a class='localLink' href='http://schema.org/Event'>Event</a> whose <a class='localLink' href='http://schema.org/eventAttendanceMode'>eventAttendanceMode</a> is <a class='localLink' href='http://schema.org/OfflineEventAttendanceMode'>OfflineEventAttendanceMode</a> (or the offline aspects, in the case of a <a class='localLink' href='http://schema.org/MixedEventAttendanceMode'>MixedEventAttendanceMode</a>)."^^rdf:HTML ;
   sh:name "maximumPhysicalAttendeeCapacity" ;
 .
 schema:Event-maximumVirtualAttendeeCapacity
   a sh:PropertyShape ;
   sh:path schema:maximumVirtualAttendeeCapacity ;
   sh:datatype xsd:integer ;
-  sh:description "The maximum physical attendee capacity of an <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> whose <a class=\"localLink\" href=\"http://schema.org/eventAttendanceMode\">eventAttendanceMode</a> is <a class=\"localLink\" href=\"http://schema.org/OnlineEventAttendanceMode\">OnlineEventAttendanceMode</a> (or the online aspects, in the case of a <a class=\"localLink\" href=\"http://schema.org/MixedEventAttendanceMode\">MixedEventAttendanceMode</a>)."^^rdf:HTML ;
+  sh:description "The maximum physical attendee capacity of an <a class='localLink' href='http://schema.org/Event'>Event</a> whose <a class='localLink' href='http://schema.org/eventAttendanceMode'>eventAttendanceMode</a> is <a class='localLink' href='http://schema.org/OnlineEventAttendanceMode'>OnlineEventAttendanceMode</a> (or the online aspects, in the case of a <a class='localLink' href='http://schema.org/MixedEventAttendanceMode'>MixedEventAttendanceMode</a>)."^^rdf:HTML ;
   sh:name "maximumVirtualAttendeeCapacity" ;
 .
 schema:Event-offers
   a sh:PropertyShape ;
   sh:path schema:offers ;
-  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class=\"localLink\" href=\"http://schema.org/Demand\">Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
+  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class='localLink' href='http://schema.org/Demand'>Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
   sh:name "offers" ;
   sh:or (
       [
@@ -9000,7 +9004,7 @@ schema:Event-sponsor
 schema:Event-startDate
   a sh:PropertyShape ;
   sh:path schema:startDate ;
-  sh:description "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The start date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "startDate" ;
   sh:or (
       [
@@ -9084,7 +9088,7 @@ schema:EventCancelled
 .
 schema:EventMovedOnline
   a schema:EventStatusType ;
-  rdfs:comment "Indicates that the event was changed to allow online participation. See <a class=\"localLink\" href=\"http://schema.org/eventAttendanceMode\">eventAttendanceMode</a> for specifics of whether it is now fully or partially online." ;
+  rdfs:comment "Indicates that the event was changed to allow online participation. See <a class='localLink' href='http://schema.org/eventAttendanceMode'>eventAttendanceMode</a> for specifics of whether it is now fully or partially online." ;
   rdfs:label "Event moved online" ;
 .
 schema:EventPostponed
@@ -9102,7 +9106,7 @@ schema:EventReservation
   a sh:NodeShape ;
   rdfs:comment """A reservation for an event like a concert, sporting event, or lecture.<br/><br/>
 
-Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a>."""^^rdf:HTML ;
+Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use <a class='localLink' href='http://schema.org/Offer'>Offer</a>."""^^rdf:HTML ;
   rdfs:label "Event reservation" ;
   rdfs:subClassOf schema:Reservation ;
 .
@@ -9116,13 +9120,13 @@ schema:EventSeries
   a sh:NodeShape ;
   schema:category "issue-447" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """A series of <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a>s. Included events can relate with the series using the <a class=\"localLink\" href=\"http://schema.org/superEvent\">superEvent</a> property.<br/><br/>
+  rdfs:comment """A series of <a class='localLink' href='http://schema.org/Event'>Event</a>s. Included events can relate with the series using the <a class='localLink' href='http://schema.org/superEvent'>superEvent</a> property.<br/><br/>
 
-An EventSeries is a collection of events that share some unifying characteristic. For example, \"The Olympic Games\" is a series, which
-is repeated regularly. The \"2012 London Olympics\" can be presented both as an <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> in the series \"Olympic Games\", and as an
-<a class=\"localLink\" href=\"http://schema.org/EventSeries\">EventSeries</a> that included a number of sporting competitions as Events.<br/><br/>
+An EventSeries is a collection of events that share some unifying characteristic. For example, 'The Olympic Games' is a series, which
+is repeated regularly. The '2012 London Olympics' can be presented both as an <a class='localLink' href='http://schema.org/Event'>Event</a> in the series 'Olympic Games', and as an
+<a class='localLink' href='http://schema.org/EventSeries'>EventSeries</a> that included a number of sporting competitions as Events.<br/><br/>
 
-The nature of the association between the events in an <a class=\"localLink\" href=\"http://schema.org/EventSeries\">EventSeries</a> can vary, but typical examples could
+The nature of the association between the events in an <a class='localLink' href='http://schema.org/EventSeries'>EventSeries</a> can vary, but typical examples could
 include a thematic event series (e.g. topical meetups or classes), or a series of regular events that share a location, attendee group and/or organizers.<br/><br/>
 
 EventSeries has been defined as a kind of Event to make it easy for publishers to use it in an Event context without
@@ -9183,7 +9187,7 @@ schema:ExchangeRateSpecification-currency
   sh:datatype xsd:string ;
   sh:description """The currency in which the monetary amount is expressed.<br/><br/>
 
-Use standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\"."""^^rdf:HTML ;
+Use standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR'."""^^rdf:HTML ;
   sh:name "currency" ;
 .
 schema:ExchangeRateSpecification-currentExchangeRate
@@ -9464,7 +9468,7 @@ schema:FAQPage
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:category "issue-1723" ;
-  rdfs:comment "A <a class=\"localLink\" href=\"http://schema.org/FAQPage\">FAQPage</a> is a <a class=\"localLink\" href=\"http://schema.org/WebPage\">WebPage</a> presenting one or more \"<a href=\"https://en.wikipedia.org/wiki/FAQ\">Frequently asked questions</a>\" (see also <a class=\"localLink\" href=\"http://schema.org/QAPage\">QAPage</a>)."^^rdf:HTML ;
+  rdfs:comment "A <a class='localLink' href='http://schema.org/FAQPage'>FAQPage</a> is a <a class='localLink' href='http://schema.org/WebPage'>WebPage</a> presenting one or more '<a href='https://en.wikipedia.org/wiki/FAQ'>Frequently asked questions</a>' (see also <a class='localLink' href='http://schema.org/QAPage'>QAPage</a>)."^^rdf:HTML ;
   rdfs:label "FAQPage" ;
   rdfs:subClassOf schema:WebPage ;
 .
@@ -9630,7 +9634,7 @@ schema:FindAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/SearchAction\">SearchAction</a>: FindAction is generally lead by a SearchAction, but not necessarily.</li>
+<li><a class='localLink' href='http://schema.org/SearchAction'>SearchAction</a>: FindAction is generally lead by a SearchAction, but not necessarily.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Find action" ;
@@ -9675,7 +9679,7 @@ schema:Flight
 schema:Flight-aircraft
   a sh:PropertyShape ;
   sh:path schema:aircraft ;
-  sh:description "The kind of aircraft (e.g., \"Boeing 747\")."^^rdf:HTML ;
+  sh:description "The kind of aircraft (e.g., 'Boeing 747')."^^rdf:HTML ;
   sh:name "aircraft" ;
   sh:or (
       [
@@ -9803,7 +9807,7 @@ schema:FlightReservation
   a sh:NodeShape ;
   rdfs:comment """A reservation for air travel.<br/><br/>
 
-Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a>."""^^rdf:HTML ;
+Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use <a class='localLink' href='http://schema.org/Offer'>Offer</a>."""^^rdf:HTML ;
   rdfs:label "Flight reservation" ;
   rdfs:subClassOf schema:Reservation ;
   sh:property schema:FlightReservation-boardingGroup ;
@@ -9858,7 +9862,7 @@ schema:FloorPlan
   a sh:NodeShape ;
   schema:category "issue-2373" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A FloorPlan is an explicit representation of a collection of similar accommodations, allowing the provision of common information (room counts, sizes, layout diagrams) and offers for rental or sale. In typical use, some <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a> has an <a class=\"localLink\" href=\"http://schema.org/accommodationFloorPlan\">accommodationFloorPlan</a> which is a <a class=\"localLink\" href=\"http://schema.org/FloorPlan\">FloorPlan</a>.  A FloorPlan is always in the context of a particular place, either a larger <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a> or a single <a class=\"localLink\" href=\"http://schema.org/Apartment\">Apartment</a>. The visual/spatial aspects of a floor plan (i.e. room layout, <a href=\"https://en.wikipedia.org/wiki/Floor_plan\">see wikipedia</a>) can be indicated using <a class=\"localLink\" href=\"http://schema.org/image\">image</a>."^^rdf:HTML ;
+  rdfs:comment "A FloorPlan is an explicit representation of a collection of similar accommodations, allowing the provision of common information (room counts, sizes, layout diagrams) and offers for rental or sale. In typical use, some <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a> has an <a class='localLink' href='http://schema.org/accommodationFloorPlan'>accommodationFloorPlan</a> which is a <a class='localLink' href='http://schema.org/FloorPlan'>FloorPlan</a>.  A FloorPlan is always in the context of a particular place, either a larger <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a> or a single <a class='localLink' href='http://schema.org/Apartment'>Apartment</a>. The visual/spatial aspects of a floor plan (i.e. room layout, <a href='https://en.wikipedia.org/wiki/Floor_plan'>see wikipedia</a>) can be indicated using <a class='localLink' href='http://schema.org/image'>image</a>."^^rdf:HTML ;
   rdfs:label "Floor plan" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:FloorPlan-amenityFeature ;
@@ -9899,27 +9903,27 @@ schema:FloorPlan-numberOfAccommodationUnits
   a sh:PropertyShape ;
   sh:path schema:numberOfAccommodationUnits ;
   sh:class schema:QuantitativeValue ;
-  sh:description "Indicates the total (available plus unavailable) number of accommodation units in an <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a>, or the number of accommodation units for a specific <a class=\"localLink\" href=\"http://schema.org/FloorPlan\">FloorPlan</a> (within its specific <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a>). See also <a class=\"localLink\" href=\"http://schema.org/numberOfAvailableAccommodationUnits\">numberOfAvailableAccommodationUnits</a>."^^rdf:HTML ;
+  sh:description "Indicates the total (available plus unavailable) number of accommodation units in an <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a>, or the number of accommodation units for a specific <a class='localLink' href='http://schema.org/FloorPlan'>FloorPlan</a> (within its specific <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a>). See also <a class='localLink' href='http://schema.org/numberOfAvailableAccommodationUnits'>numberOfAvailableAccommodationUnits</a>."^^rdf:HTML ;
   sh:name "numberOfAccommodationUnits" ;
 .
 schema:FloorPlan-numberOfAvailableAccommodationUnits
   a sh:PropertyShape ;
   sh:path schema:numberOfAvailableAccommodationUnits ;
   sh:class schema:QuantitativeValue ;
-  sh:description "Indicates the number of available accommodation units in an <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a>, or the number of accommodation units for a specific <a class=\"localLink\" href=\"http://schema.org/FloorPlan\">FloorPlan</a> (within its specific <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a>). See also <a class=\"localLink\" href=\"http://schema.org/numberOfAccommodationUnits\">numberOfAccommodationUnits</a>."^^rdf:HTML ;
+  sh:description "Indicates the number of available accommodation units in an <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a>, or the number of accommodation units for a specific <a class='localLink' href='http://schema.org/FloorPlan'>FloorPlan</a> (within its specific <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a>). See also <a class='localLink' href='http://schema.org/numberOfAccommodationUnits'>numberOfAccommodationUnits</a>."^^rdf:HTML ;
   sh:name "numberOfAvailableAccommodationUnits" ;
 .
 schema:FloorPlan-numberOfBathroomsTotal
   a sh:PropertyShape ;
   sh:path schema:numberOfBathroomsTotal ;
   sh:datatype xsd:integer ;
-  sh:description "The total integer number of bathrooms in a some <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>, following real estate conventions as <a href=\"https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field\">documented in RESO</a>: \"The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.\". See also <a class=\"localLink\" href=\"http://schema.org/numberOfRooms\">numberOfRooms</a>."^^rdf:HTML ;
+  sh:description "The total integer number of bathrooms in a some <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>, following real estate conventions as <a href='https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field'>documented in RESO</a>: 'The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.'. See also <a class='localLink' href='http://schema.org/numberOfRooms'>numberOfRooms</a>."^^rdf:HTML ;
   sh:name "numberOfBathroomsTotal" ;
 .
 schema:FloorPlan-numberOfBedrooms
   a sh:PropertyShape ;
   sh:path schema:numberOfBedrooms ;
-  sh:description "The total integer number of bedrooms in a some <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>, <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a> or <a class=\"localLink\" href=\"http://schema.org/FloorPlan\">FloorPlan</a>."^^rdf:HTML ;
+  sh:description "The total integer number of bedrooms in a some <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>, <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a> or <a class='localLink' href='http://schema.org/FloorPlan'>FloorPlan</a>."^^rdf:HTML ;
   sh:name "numberOfBedrooms" ;
   sh:or (
       [
@@ -9934,14 +9938,14 @@ schema:FloorPlan-numberOfFullBathrooms
   a sh:PropertyShape ;
   sh:path schema:numberOfFullBathrooms ;
   sh:datatype xsd:float ;
-  sh:description "Number of full bathrooms - The total number of full and Â¾ bathrooms in an <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>. This corresponds to the <a href=\"https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field\">BathroomsFull field in RESO</a>."^^rdf:HTML ;
+  sh:description "Number of full bathrooms - The total number of full and Â¾ bathrooms in an <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>. This corresponds to the <a href='https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field'>BathroomsFull field in RESO</a>."^^rdf:HTML ;
   sh:name "numberOfFullBathrooms" ;
 .
 schema:FloorPlan-numberOfPartialBathrooms
   a sh:PropertyShape ;
   sh:path schema:numberOfPartialBathrooms ;
   sh:datatype xsd:float ;
-  sh:description "Number of partial bathrooms - The total number of half and Â¼ bathrooms in an <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>. This corresponds to the <a href=\"https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field\">BathroomsPartial field in RESO</a>."^^rdf:HTML ;
+  sh:description "Number of partial bathrooms - The total number of half and Â¼ bathrooms in an <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>. This corresponds to the <a href='https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field'>BathroomsPartial field in RESO</a>."^^rdf:HTML ;
   sh:name "numberOfPartialBathrooms" ;
 .
 schema:FloorPlan-numberOfRooms
@@ -9988,11 +9992,11 @@ schema:FollowAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/BefriendAction\">BefriendAction</a>: Unlike BefriendAction, FollowAction implies that the connection is <em>not</em> necessarily reciprocal.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/SubscribeAction\">SubscribeAction</a>: Unlike SubscribeAction, FollowAction implies that the follower acts as an active agent constantly/actively polling for updates.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/RegisterAction\">RegisterAction</a>: Unlike RegisterAction, FollowAction implies that the agent is interested in continuing receiving updates from the object.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/JoinAction\">JoinAction</a>: Unlike JoinAction, FollowAction implies that the agent is interested in getting updates from the object.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/TrackAction\">TrackAction</a>: Unlike TrackAction, FollowAction refers to the polling of updates of all aspects of animate objects rather than the location of inanimate objects (e.g. you track a package, but you don't follow it).</li>
+<li><a class='localLink' href='http://schema.org/BefriendAction'>BefriendAction</a>: Unlike BefriendAction, FollowAction implies that the connection is <em>not</em> necessarily reciprocal.</li>
+<li><a class='localLink' href='http://schema.org/SubscribeAction'>SubscribeAction</a>: Unlike SubscribeAction, FollowAction implies that the follower acts as an active agent constantly/actively polling for updates.</li>
+<li><a class='localLink' href='http://schema.org/RegisterAction'>RegisterAction</a>: Unlike RegisterAction, FollowAction implies that the agent is interested in continuing receiving updates from the object.</li>
+<li><a class='localLink' href='http://schema.org/JoinAction'>JoinAction</a>: Unlike JoinAction, FollowAction implies that the agent is interested in getting updates from the object.</li>
+<li><a class='localLink' href='http://schema.org/TrackAction'>TrackAction</a>: Unlike TrackAction, FollowAction refers to the polling of updates of all aspects of animate objects rather than the location of inanimate objects (e.g. you track a package, but you don't follow it).</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Follow action" ;
@@ -10190,8 +10194,8 @@ schema:FundingAgency
   a sh:NodeShape ;
   schema:category "issue-383" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """A FundingAgency is an organization that implements one or more <a class=\"localLink\" href=\"http://schema.org/FundingScheme\">FundingScheme</a>s and manages
-    the granting process (via <a class=\"localLink\" href=\"http://schema.org/Grant\">Grant</a>s, typically <a class=\"localLink\" href=\"http://schema.org/MonetaryGrant\">MonetaryGrant</a>s).
+  rdfs:comment """A FundingAgency is an organization that implements one or more <a class='localLink' href='http://schema.org/FundingScheme'>FundingScheme</a>s and manages
+    the granting process (via <a class='localLink' href='http://schema.org/Grant'>Grant</a>s, typically <a class='localLink' href='http://schema.org/MonetaryGrant'>MonetaryGrant</a>s).
     A funding agency is not always required for grant funding, e.g. philanthropic giving, corporate sponsorship etc.<br/><br/>
 
 <pre><code>Examples of funding agencies include ERC, REA, NIH, Bill and Melinda Gates Foundation...
@@ -10207,7 +10211,7 @@ schema:FundingScheme
   schema:isPartOf <http://pending.schema.org> ;
   rdfs:comment """A FundingScheme combines organizational, project and policy aspects of grant-based funding
     that sets guidelines, principles and mechanisms to support other kinds of projects and activities.
-    Funding is typically organized via <a class=\"localLink\" href=\"http://schema.org/Grant\">Grant</a> funding. Examples of funding schemes: Swiss Priority Programmes (SPPs); EU Framework 7 (FP7); Horizon 2020; the NIH-R01 Grant Program; Wellcome institutional strategic support fund. For large scale public sector funding, the management and administration of grant awards is often handled by other, dedicated, organizations - <a class=\"localLink\" href=\"http://schema.org/FundingAgency\">FundingAgency</a>s such as ERC, REA, ..."""^^rdf:HTML ;
+    Funding is typically organized via <a class='localLink' href='http://schema.org/Grant'>Grant</a> funding. Examples of funding schemes: Swiss Priority Programmes (SPPs); EU Framework 7 (FP7); Horizon 2020; the NIH-R01 Grant Program; Wellcome institutional strategic support fund. For large scale public sector funding, the management and administration of grant awards is often handled by other, dedicated, organizations - <a class='localLink' href='http://schema.org/FundingAgency'>FundingAgency</a>s such as ERC, REA, ..."""^^rdf:HTML ;
   rdfs:label "Funding scheme" ;
   rdfs:subClassOf schema:Organization ;
 .
@@ -10441,7 +10445,7 @@ schema:GeoCoordinates-address
 schema:GeoCoordinates-addressCountry
   a sh:PropertyShape ;
   sh:path schema:addressCountry ;
-  sh:description "The country. For example, USA. You can also provide the two-letter <a href=\"http://en.wikipedia.org/wiki/ISO_3166-1\">ISO 3166-1 alpha-2 country code</a>."^^rdf:HTML ;
+  sh:description "The country. For example, USA. You can also provide the two-letter <a href='http://en.wikipedia.org/wiki/ISO_3166-1'>ISO 3166-1 alpha-2 country code</a>."^^rdf:HTML ;
   sh:name "addressCountry" ;
   sh:or (
       [
@@ -10455,7 +10459,7 @@ schema:GeoCoordinates-addressCountry
 schema:GeoCoordinates-elevation
   a sh:PropertyShape ;
   sh:path schema:elevation ;
-  sh:description "The elevation of a location (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>). Values may be of the form 'NUMBER UNIT<em>OF</em>MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters."^^rdf:HTML ;
+  sh:description "The elevation of a location (<a href='https://en.wikipedia.org/wiki/World_Geodetic_System'>WGS 84</a>). Values may be of the form 'NUMBER UNIT<em>OF</em>MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters."^^rdf:HTML ;
   sh:name "elevation" ;
   sh:or (
       [
@@ -10469,7 +10473,7 @@ schema:GeoCoordinates-elevation
 schema:GeoCoordinates-latitude
   a sh:PropertyShape ;
   sh:path schema:latitude ;
-  sh:description "The latitude of a location. For example <code>37.42242</code> (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>)."^^rdf:HTML ;
+  sh:description "The latitude of a location. For example <code>37.42242</code> (<a href='https://en.wikipedia.org/wiki/World_Geodetic_System'>WGS 84</a>)."^^rdf:HTML ;
   sh:name "latitude" ;
   sh:or (
       [
@@ -10483,7 +10487,7 @@ schema:GeoCoordinates-latitude
 schema:GeoCoordinates-longitude
   a sh:PropertyShape ;
   sh:path schema:longitude ;
-  sh:description "The longitude of a location. For example <code>-122.08585</code> (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>)."^^rdf:HTML ;
+  sh:description "The longitude of a location. For example <code>-122.08585</code> (<a href='https://en.wikipedia.org/wiki/World_Geodetic_System'>WGS 84</a>)."^^rdf:HTML ;
   sh:name "longitude" ;
   sh:or (
       [
@@ -10533,7 +10537,7 @@ schema:GeoShape-address
 schema:GeoShape-addressCountry
   a sh:PropertyShape ;
   sh:path schema:addressCountry ;
-  sh:description "The country. For example, USA. You can also provide the two-letter <a href=\"http://en.wikipedia.org/wiki/ISO_3166-1\">ISO 3166-1 alpha-2 country code</a>."^^rdf:HTML ;
+  sh:description "The country. For example, USA. You can also provide the two-letter <a href='http://en.wikipedia.org/wiki/ISO_3166-1'>ISO 3166-1 alpha-2 country code</a>."^^rdf:HTML ;
   sh:name "addressCountry" ;
   sh:or (
       [
@@ -10561,7 +10565,7 @@ schema:GeoShape-circle
 schema:GeoShape-elevation
   a sh:PropertyShape ;
   sh:path schema:elevation ;
-  sh:description "The elevation of a location (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>). Values may be of the form 'NUMBER UNIT<em>OF</em>MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters."^^rdf:HTML ;
+  sh:description "The elevation of a location (<a href='https://en.wikipedia.org/wiki/World_Geodetic_System'>WGS 84</a>). Values may be of the form 'NUMBER UNIT<em>OF</em>MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters."^^rdf:HTML ;
   sh:name "elevation" ;
   sh:or (
       [
@@ -10615,7 +10619,7 @@ schema:GeospatialGeometry
 schema:GeospatialGeometry-geoContains
   a sh:PropertyShape ;
   sh:path schema:geoContains ;
-  sh:description "Represents a relationship between two geometries (or the places they represent), relating a containing geometry to a contained geometry. \"a contains b iff no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a\". As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents a relationship between two geometries (or the places they represent), relating a containing geometry to a contained geometry. 'a contains b iff no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a'. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoContains" ;
   sh:or (
       [
@@ -10629,7 +10633,7 @@ schema:GeospatialGeometry-geoContains
 schema:GeospatialGeometry-geoCoveredBy
   a sh:PropertyShape ;
   sh:path schema:geoCoveredBy ;
-  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that covers it. As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that covers it. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoCoveredBy" ;
   sh:or (
       [
@@ -10643,7 +10647,7 @@ schema:GeospatialGeometry-geoCoveredBy
 schema:GeospatialGeometry-geoCovers
   a sh:PropertyShape ;
   sh:path schema:geoCovers ;
-  sh:description "Represents a relationship between two geometries (or the places they represent), relating a covering geometry to a covered geometry. \"Every point of b is a point of (the interior or boundary of) a\". As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents a relationship between two geometries (or the places they represent), relating a covering geometry to a covered geometry. 'Every point of b is a point of (the interior or boundary of) a'. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoCovers" ;
   sh:or (
       [
@@ -10657,7 +10661,7 @@ schema:GeospatialGeometry-geoCovers
 schema:GeospatialGeometry-geoCrosses
   a sh:PropertyShape ;
   sh:path schema:geoCrosses ;
-  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that crosses it: \"a crosses b: they have some but not all interior points in common, and the dimension of the intersection is less than that of at least one of them\". As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that crosses it: 'a crosses b: they have some but not all interior points in common, and the dimension of the intersection is less than that of at least one of them'. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoCrosses" ;
   sh:or (
       [
@@ -10671,7 +10675,7 @@ schema:GeospatialGeometry-geoCrosses
 schema:GeospatialGeometry-geoDisjoint
   a sh:PropertyShape ;
   sh:path schema:geoDisjoint ;
-  sh:description "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: they have no point in common. They form a set of disconnected geometries.\" (a symmetric relationship, as defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>)"^^rdf:HTML ;
+  sh:description "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: they have no point in common. They form a set of disconnected geometries.' (a symmetric relationship, as defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>)"^^rdf:HTML ;
   sh:name "geoDisjoint" ;
   sh:or (
       [
@@ -10685,7 +10689,7 @@ schema:GeospatialGeometry-geoDisjoint
 schema:GeospatialGeometry-geoEquals
   a sh:PropertyShape ;
   sh:path schema:geoEquals ;
-  sh:description "Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>. \"Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other\" (a symmetric relationship)"^^rdf:HTML ;
+  sh:description "Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>. 'Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other' (a symmetric relationship)"^^rdf:HTML ;
   sh:name "geoEquals" ;
   sh:or (
       [
@@ -10699,7 +10703,7 @@ schema:GeospatialGeometry-geoEquals
 schema:GeospatialGeometry-geoIntersects
   a sh:PropertyShape ;
   sh:path schema:geoIntersects ;
-  sh:description "Represents spatial relations in which two geometries (or the places they represent) have at least one point in common. As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents spatial relations in which two geometries (or the places they represent) have at least one point in common. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoIntersects" ;
   sh:or (
       [
@@ -10713,7 +10717,7 @@ schema:GeospatialGeometry-geoIntersects
 schema:GeospatialGeometry-geoOverlaps
   a sh:PropertyShape ;
   sh:path schema:geoOverlaps ;
-  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that geospatially overlaps it, i.e. they have some but not all points in common. As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that geospatially overlaps it, i.e. they have some but not all points in common. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoOverlaps" ;
   sh:or (
       [
@@ -10727,7 +10731,7 @@ schema:GeospatialGeometry-geoOverlaps
 schema:GeospatialGeometry-geoTouches
   a sh:PropertyShape ;
   sh:path schema:geoTouches ;
-  sh:description "Represents spatial relations in which two geometries (or the places they represent) touch: they have at least one boundary point in common, but no interior points.\" (a symmetric relationship, as defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a> )"^^rdf:HTML ;
+  sh:description "Represents spatial relations in which two geometries (or the places they represent) touch: they have at least one boundary point in common, but no interior points.' (a symmetric relationship, as defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a> )"^^rdf:HTML ;
   sh:name "geoTouches" ;
   sh:or (
       [
@@ -10741,7 +10745,7 @@ schema:GeospatialGeometry-geoTouches
 schema:GeospatialGeometry-geoWithin
   a sh:PropertyShape ;
   sh:path schema:geoWithin ;
-  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to one that contains it, i.e. it is inside (i.e. within) its interior. As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to one that contains it, i.e. it is inside (i.e. within) its interior. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoWithin" ;
   sh:or (
       [
@@ -10767,8 +10771,8 @@ schema:GiveAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/TakeAction\">TakeAction</a>: Reciprocal of GiveAction.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/SendAction\">SendAction</a>: Unlike SendAction, GiveAction implies that ownership is being transferred (e.g. I may send my laptop to you, but that doesn't mean I'm giving it to you).</li>
+<li><a class='localLink' href='http://schema.org/TakeAction'>TakeAction</a>: Reciprocal of GiveAction.</li>
+<li><a class='localLink' href='http://schema.org/SendAction'>SendAction</a>: Unlike SendAction, GiveAction implies that ownership is being transferred (e.g. I may send my laptop to you, but that doesn't mean I'm giving it to you).</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Give action" ;
@@ -10879,12 +10883,12 @@ schema:Grant
   a sh:NodeShape ;
   schema:category "issue-383" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """A grant, typically financial or otherwise quantifiable, of resources. Typically a <a class=\"localLink\" href=\"http://schema.org/funder\">funder</a> sponsors some <a class=\"localLink\" href=\"http://schema.org/MonetaryAmount\">MonetaryAmount</a> to an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> or <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a>,
-    sometimes not necessarily via a dedicated or long-lived <a class=\"localLink\" href=\"http://schema.org/Project\">Project</a>, resulting in one or more outputs, or <a class=\"localLink\" href=\"http://schema.org/fundedItem\">fundedItem</a>s. For financial sponsorship, indicate the <a class=\"localLink\" href=\"http://schema.org/funder\">funder</a> of a <a class=\"localLink\" href=\"http://schema.org/MonetaryGrant\">MonetaryGrant</a>. For non-financial support, indicate <a class=\"localLink\" href=\"http://schema.org/sponsor\">sponsor</a> of <a class=\"localLink\" href=\"http://schema.org/Grant\">Grant</a>s of resources (e.g. office space).<br/><br/>
+  rdfs:comment """A grant, typically financial or otherwise quantifiable, of resources. Typically a <a class='localLink' href='http://schema.org/funder'>funder</a> sponsors some <a class='localLink' href='http://schema.org/MonetaryAmount'>MonetaryAmount</a> to an <a class='localLink' href='http://schema.org/Organization'>Organization</a> or <a class='localLink' href='http://schema.org/Person'>Person</a>,
+    sometimes not necessarily via a dedicated or long-lived <a class='localLink' href='http://schema.org/Project'>Project</a>, resulting in one or more outputs, or <a class='localLink' href='http://schema.org/fundedItem'>fundedItem</a>s. For financial sponsorship, indicate the <a class='localLink' href='http://schema.org/funder'>funder</a> of a <a class='localLink' href='http://schema.org/MonetaryGrant'>MonetaryGrant</a>. For non-financial support, indicate <a class='localLink' href='http://schema.org/sponsor'>sponsor</a> of <a class='localLink' href='http://schema.org/Grant'>Grant</a>s of resources (e.g. office space).<br/><br/>
 
-Grants support  activities directed towards some agreed collective goals, often but not always organized as <a class=\"localLink\" href=\"http://schema.org/Project\">Project</a>s. Long-lived projects are sometimes sponsored by a variety of grants over time, but it is also common for a project to be associated with a single grant.<br/><br/>
+Grants support  activities directed towards some agreed collective goals, often but not always organized as <a class='localLink' href='http://schema.org/Project'>Project</a>s. Long-lived projects are sometimes sponsored by a variety of grants over time, but it is also common for a project to be associated with a single grant.<br/><br/>
 
-The amount of a <a class=\"localLink\" href=\"http://schema.org/Grant\">Grant</a> is represented using <a class=\"localLink\" href=\"http://schema.org/amount\">amount</a> as a <a class=\"localLink\" href=\"http://schema.org/MonetaryAmount\">MonetaryAmount</a>."""^^rdf:HTML ;
+The amount of a <a class='localLink' href='http://schema.org/Grant'>Grant</a> is represented using <a class='localLink' href='http://schema.org/amount'>amount</a> as a <a class='localLink' href='http://schema.org/MonetaryAmount'>MonetaryAmount</a>."""^^rdf:HTML ;
   rdfs:label "Grant" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:Grant-fundedItem ;
@@ -10894,7 +10898,7 @@ schema:Grant-fundedItem
   a sh:PropertyShape ;
   sh:path schema:fundedItem ;
   sh:class schema:Thing ;
-  sh:description "Indicates an item funded or sponsored through a <a class=\"localLink\" href=\"http://schema.org/Grant\">Grant</a>."^^rdf:HTML ;
+  sh:description "Indicates an item funded or sponsored through a <a class='localLink' href='http://schema.org/Grant'>Grant</a>."^^rdf:HTML ;
   sh:name "fundedItem" ;
 .
 schema:Grant-sponsor
@@ -10935,7 +10939,7 @@ schema:Guide
   a sh:NodeShape ;
   schema:category "issue-2405" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "<a class=\"localLink\" href=\"http://schema.org/Guide\">Guide</a> is a page or article that recommend specific products or services, or aspects of a thing for a user to consider. A <a class=\"localLink\" href=\"http://schema.org/Guide\">Guide</a> may represent a Buying Guide and detail aspects of products or services for a user to consider. A <a class=\"localLink\" href=\"http://schema.org/Guide\">Guide</a> may represent a Product Guide and recommend specific products or services. A <a class=\"localLink\" href=\"http://schema.org/Guide\">Guide</a> may represent a Ranked List and recommend specific products or services with ranking."^^rdf:HTML ;
+  rdfs:comment "<a class='localLink' href='http://schema.org/Guide'>Guide</a> is a page or article that recommend specific products or services, or aspects of a thing for a user to consider. A <a class='localLink' href='http://schema.org/Guide'>Guide</a> may represent a Buying Guide and detail aspects of products or services for a user to consider. A <a class='localLink' href='http://schema.org/Guide'>Guide</a> may represent a Product Guide and recommend specific products or services. A <a class='localLink' href='http://schema.org/Guide'>Guide</a> may represent a Ranked List and recommend specific products or services with ranking."^^rdf:HTML ;
   rdfs:label "Guide" ;
   rdfs:subClassOf schema:CreativeWork ;
   sh:property schema:Guide-reviewAspect ;
@@ -10966,7 +10970,7 @@ schema:Hackathon
   a sh:NodeShape ;
   schema:category "issue-2526" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A <a href=\"https://en.wikipedia.org/wiki/Hackathon\">hackathon</a> event."^^rdf:HTML ;
+  rdfs:comment "A <a href='https://en.wikipedia.org/wiki/Hackathon'>hackathon</a> event."^^rdf:HTML ;
   rdfs:label "Hackathon" ;
   rdfs:subClassOf schema:Event ;
 .
@@ -11012,7 +11016,7 @@ schema:HealthAspectEnumeration
   a sh:NodeShape ;
   schema:category "issue-2374" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "HealthAspectEnumeration enumerates several aspects of health content online, each of which might be described using <a class=\"localLink\" href=\"http://schema.org/hasHealthAspect\">hasHealthAspect</a> and <a class=\"localLink\" href=\"http://schema.org/HealthTopicContent\">HealthTopicContent</a>."^^rdf:HTML ;
+  rdfs:comment "HealthAspectEnumeration enumerates several aspects of health content online, each of which might be described using <a class='localLink' href='http://schema.org/hasHealthAspect'>hasHealthAspect</a> and <a class='localLink' href='http://schema.org/HealthTopicContent'>HealthTopicContent</a>."^^rdf:HTML ;
   rdfs:label "Health aspect enumeration" ;
   rdfs:subClassOf schema:Enumeration ;
 .
@@ -11108,7 +11112,7 @@ schema:HealthInsurancePlan-includesHealthPlanNetwork
 schema:HealthInsurancePlan-usesHealthPlanIdStandard
   a sh:PropertyShape ;
   sh:path schema:usesHealthPlanIdStandard ;
-  sh:description "The standard for interpreting thePlan ID. The preferred is \"HIOS\". See the Centers for Medicare &amp; Medicaid Services for more details."^^rdf:HTML ;
+  sh:description "The standard for interpreting thePlan ID. The preferred is 'HIOS'. See the Centers for Medicare &amp; Medicaid Services for more details."^^rdf:HTML ;
   sh:name "usesHealthPlanIdStandard" ;
   sh:or (
       [
@@ -11239,7 +11243,7 @@ schema:HealthTopicContent
   a sh:NodeShape ;
   schema:category "issue-2374" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "<a class=\"localLink\" href=\"http://schema.org/HealthTopicContent\">HealthTopicContent</a> is <a class=\"localLink\" href=\"http://schema.org/WebContent\">WebContent</a> that is about some aspect of a health topic, e.g. a condition, its symptoms or treatments. Such content may be comprised of several parts or sections and use different types of media. Multiple instances of <a class=\"localLink\" href=\"http://schema.org/WebContent\">WebContent</a> (and hence <a class=\"localLink\" href=\"http://schema.org/HealthTopicContent\">HealthTopicContent</a>) can be related using <a class=\"localLink\" href=\"http://schema.org/hasPart\">hasPart</a> / <a class=\"localLink\" href=\"http://schema.org/isPartOf\">isPartOf</a> where there is some kind of content hierarchy, and their content described with <a class=\"localLink\" href=\"http://schema.org/about\">about</a> and <a class=\"localLink\" href=\"http://schema.org/mentions\">mentions</a> e.g. building upon the existing <a class=\"localLink\" href=\"http://schema.org/MedicalCondition\">MedicalCondition</a> vocabulary."^^rdf:HTML ;
+  rdfs:comment "<a class='localLink' href='http://schema.org/HealthTopicContent'>HealthTopicContent</a> is <a class='localLink' href='http://schema.org/WebContent'>WebContent</a> that is about some aspect of a health topic, e.g. a condition, its symptoms or treatments. Such content may be comprised of several parts or sections and use different types of media. Multiple instances of <a class='localLink' href='http://schema.org/WebContent'>WebContent</a> (and hence <a class='localLink' href='http://schema.org/HealthTopicContent'>HealthTopicContent</a>) can be related using <a class='localLink' href='http://schema.org/hasPart'>hasPart</a> / <a class='localLink' href='http://schema.org/isPartOf'>isPartOf</a> where there is some kind of content hierarchy, and their content described with <a class='localLink' href='http://schema.org/about'>about</a> and <a class='localLink' href='http://schema.org/mentions'>mentions</a> e.g. building upon the existing <a class='localLink' href='http://schema.org/MedicalCondition'>MedicalCondition</a> vocabulary."^^rdf:HTML ;
   rdfs:label "Health topic content" ;
   rdfs:subClassOf schema:WebContent ;
   sh:property schema:HealthTopicContent-hasHealthAspect ;
@@ -11248,7 +11252,7 @@ schema:HealthTopicContent-hasHealthAspect
   a sh:PropertyShape ;
   sh:path schema:hasHealthAspect ;
   sh:class schema:HealthAspectEnumeration ;
-  sh:description "Indicates the aspect or aspects specifically addressed in some <a class=\"localLink\" href=\"http://schema.org/HealthTopicContent\">HealthTopicContent</a>. For example, that the content is an overview, or that it talks about treatment, self-care, treatments or their side-effects."^^rdf:HTML ;
+  sh:description "Indicates the aspect or aspects specifically addressed in some <a class='localLink' href='http://schema.org/HealthTopicContent'>HealthTopicContent</a>. For example, that the content is an overview, or that it talks about treatment, self-care, treatments or their side-effects."^^rdf:HTML ;
   sh:name "hasHealthAspect" ;
 .
 schema:HearingImpairedSupported
@@ -11293,9 +11297,9 @@ schema:HomeAndConstructionBusiness
   a sh:NodeShape ;
   rdfs:comment """A construction business.<br/><br/>
 
-A HomeAndConstructionBusiness is a <a class=\"localLink\" href=\"http://schema.org/LocalBusiness\">LocalBusiness</a> that provides services around homes and buildings.<br/><br/>
+A HomeAndConstructionBusiness is a <a class='localLink' href='http://schema.org/LocalBusiness'>LocalBusiness</a> that provides services around homes and buildings.<br/><br/>
 
-As a <a class=\"localLink\" href=\"http://schema.org/LocalBusiness\">LocalBusiness</a> it can be described as a <a class=\"localLink\" href=\"http://schema.org/provider\">provider</a> of one or more <a class=\"localLink\" href=\"http://schema.org/Service\">Service</a>(s)."""^^rdf:HTML ;
+As a <a class='localLink' href='http://schema.org/LocalBusiness'>LocalBusiness</a> it can be described as a <a class='localLink' href='http://schema.org/provider'>provider</a> of one or more <a class='localLink' href='http://schema.org/Service'>Service</a>(s)."""^^rdf:HTML ;
   rdfs:label "Home and construction business" ;
   rdfs:subClassOf schema:LocalBusiness ;
 .
@@ -11344,7 +11348,7 @@ schema:Hospital-availableService
 schema:Hospital-healthcareReportingData
   a sh:PropertyShape ;
   sh:path schema:healthcareReportingData ;
-  sh:description "Indicates data describing a hospital, e.g. a CDC <a class=\"localLink\" href=\"http://schema.org/CDCPMDRecord\">CDCPMDRecord</a> or as some kind of <a class=\"localLink\" href=\"http://schema.org/Dataset\">Dataset</a>."^^rdf:HTML ;
+  sh:description "Indicates data describing a hospital, e.g. a CDC <a class='localLink' href='http://schema.org/CDCPMDRecord'>CDCPMDRecord</a> or as some kind of <a class='localLink' href='http://schema.org/Dataset'>Dataset</a>."^^rdf:HTML ;
   sh:name "healthcareReportingData" ;
   sh:or (
       [
@@ -11367,7 +11371,7 @@ schema:Hostel
   a sh:NodeShape ;
   rdfs:comment """A hostel - cheap accommodation, often in shared dormitories.
 <br /><br />
-See also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
+See also the <a href='/docs/hotels.html'>dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
   rdfs:label "Hostel" ;
   rdfs:subClassOf schema:LodgingBusiness ;
 .
@@ -11376,7 +11380,7 @@ schema:Hotel
   a sh:NodeShape ;
   rdfs:comment """A hotel is an establishment that provides lodging paid on a short-term basis (Source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel).
 <br /><br />
-See also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
+See also the <a href='/docs/hotels.html'>dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
   rdfs:label "Hotel" ;
   rdfs:subClassOf schema:LodgingBusiness ;
 .
@@ -11385,7 +11389,7 @@ schema:HotelRoom
   a sh:NodeShape ;
   rdfs:comment """A hotel room is a single room in a hotel.
 <br /><br />
-See also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
+See also the <a href='/docs/hotels.html'>dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
   rdfs:label "Hotel room" ;
   rdfs:subClassOf schema:Room ;
   sh:property schema:HotelRoom-bed ;
@@ -11420,7 +11424,7 @@ Typical unit code(s): C62 for person"""^^rdf:HTML ;
 schema:House
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (Source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/House\">http://en.wikipedia.org/wiki/House</a>)."^^rdf:HTML ;
+  rdfs:comment "A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (Source: Wikipedia, the free encyclopedia, see <a href='http://en.wikipedia.org/wiki/House'>http://en.wikipedia.org/wiki/House</a>)."^^rdf:HTML ;
   rdfs:label "House" ;
   rdfs:subClassOf schema:Accommodation ;
   sh:property schema:House-numberOfRooms ;
@@ -11488,14 +11492,14 @@ schema:HowTo-performTime
   a sh:PropertyShape ;
   sh:path schema:performTime ;
   sh:datatype xsd:duration ;
-  sh:description "The length of time it takes to perform instructions or a direction (not including time to prepare the supplies), in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 duration format</a>."^^rdf:HTML ;
+  sh:description "The length of time it takes to perform instructions or a direction (not including time to prepare the supplies), in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 duration format</a>."^^rdf:HTML ;
   sh:name "performTime" ;
 .
 schema:HowTo-prepTime
   a sh:PropertyShape ;
   sh:path schema:prepTime ;
   sh:datatype xsd:duration ;
-  sh:description "The length of time it takes to prepare the items to be used in instructions or a direction, in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 duration format</a>."^^rdf:HTML ;
+  sh:description "The length of time it takes to prepare the items to be used in instructions or a direction, in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 duration format</a>."^^rdf:HTML ;
   sh:name "prepTime" ;
 .
 schema:HowTo-step
@@ -11567,7 +11571,7 @@ schema:HowTo-totalTime
   a sh:PropertyShape ;
   sh:path schema:totalTime ;
   sh:datatype xsd:duration ;
-  sh:description "The total time required to perform instructions or a direction (including time to prepare the supplies), in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 duration format</a>."^^rdf:HTML ;
+  sh:description "The total time required to perform instructions or a direction (including time to prepare the supplies), in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 duration format</a>."^^rdf:HTML ;
   sh:name "totalTime" ;
 .
 schema:HowTo-yield
@@ -11646,14 +11650,14 @@ schema:HowToDirection-performTime
   a sh:PropertyShape ;
   sh:path schema:performTime ;
   sh:datatype xsd:duration ;
-  sh:description "The length of time it takes to perform instructions or a direction (not including time to prepare the supplies), in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 duration format</a>."^^rdf:HTML ;
+  sh:description "The length of time it takes to perform instructions or a direction (not including time to prepare the supplies), in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 duration format</a>."^^rdf:HTML ;
   sh:name "performTime" ;
 .
 schema:HowToDirection-prepTime
   a sh:PropertyShape ;
   sh:path schema:prepTime ;
   sh:datatype xsd:duration ;
-  sh:description "The length of time it takes to prepare the items to be used in instructions or a direction, in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 duration format</a>."^^rdf:HTML ;
+  sh:description "The length of time it takes to prepare the items to be used in instructions or a direction, in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 duration format</a>."^^rdf:HTML ;
   sh:name "prepTime" ;
 .
 schema:HowToDirection-supply
@@ -11688,7 +11692,7 @@ schema:HowToDirection-totalTime
   a sh:PropertyShape ;
   sh:path schema:totalTime ;
   sh:datatype xsd:duration ;
-  sh:description "The total time required to perform instructions or a direction (including time to prepare the supplies), in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 duration format</a>."^^rdf:HTML ;
+  sh:description "The total time required to perform instructions or a direction (including time to prepare the supplies), in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 duration format</a>."^^rdf:HTML ;
   sh:name "totalTime" ;
 .
 schema:HowToItem
@@ -11825,7 +11829,7 @@ schema:ImageObject
 schema:ImageObject-caption
   a sh:PropertyShape ;
   sh:path schema:caption ;
-  sh:description "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a>."^^rdf:HTML ;
+  sh:description "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the <a class='localLink' href='http://schema.org/encodingFormat'>encodingFormat</a>."^^rdf:HTML ;
   sh:name "caption" ;
   sh:or (
       [
@@ -12051,7 +12055,7 @@ schema:InteractionCounter-interactionType
   a sh:PropertyShape ;
   sh:path schema:interactionType ;
   sh:class schema:Action ;
-  sh:description "The Action representing the type of interaction. For up votes, +1s, etc. use <a class=\"localLink\" href=\"http://schema.org/LikeAction\">LikeAction</a>. For down votes use <a class=\"localLink\" href=\"http://schema.org/DislikeAction\">DislikeAction</a>. Otherwise, use the most specific Action."^^rdf:HTML ;
+  sh:description "The Action representing the type of interaction. For up votes, +1s, etc. use <a class='localLink' href='http://schema.org/LikeAction'>LikeAction</a>. For down votes use <a class='localLink' href='http://schema.org/DislikeAction'>DislikeAction</a>. Otherwise, use the most specific Action."^^rdf:HTML ;
   sh:name "interactionType" ;
 .
 schema:InteractionCounter-userInteractionCount
@@ -12337,7 +12341,7 @@ schema:ItemList
 schema:ItemList-itemListElement
   a sh:PropertyShape ;
   sh:path schema:itemListElement ;
-  sh:description """For itemListElement values, you can use simple strings (e.g. \"Peter\", \"Paul\", \"Mary\"), existing entities, or use ListItem.<br/><br/>
+  sh:description """For itemListElement values, you can use simple strings (e.g. 'Peter', 'Paul', 'Mary'), existing entities, or use ListItem.<br/><br/>
 
 Text values are best if the elements in the list are plain strings. Existing entities are best for a simple, unordered list of existing things in your data. ListItem is used with ordered lists when you want to provide additional context about the element in that list or when the same item might be in different places in different lists.<br/><br/>
 
@@ -12652,7 +12656,7 @@ schema:JobPosting-jobStartDate
 schema:JobPosting-occupationalCategory
   a sh:PropertyShape ;
   sh:path schema:occupationalCategory ;
-  sh:description """A category describing the job, preferably using a term from a taxonomy such as <a href=\"http://www.onetcenter.org/taxonomy.html\">BLS O*NET-SOC</a>, <a href=\"https://www.ilo.org/public/english/bureau/stat/isco/isco08/\">ISCO-08</a> or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.<br/><br/>
+  sh:description """A category describing the job, preferably using a term from a taxonomy such as <a href='http://www.onetcenter.org/taxonomy.html'>BLS O*NET-SOC</a>, <a href='https://www.ilo.org/public/english/bureau/stat/isco/isco08/'>ISCO-08</a> or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.<br/><br/>
 
 Note: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC."""^^rdf:HTML ;
   sh:name "occupationalCategory" ;
@@ -12714,7 +12718,7 @@ schema:JobPosting-salaryCurrency
   a sh:PropertyShape ;
   sh:path schema:salaryCurrency ;
   sh:datatype xsd:string ;
-  sh:description "The currency (coded using <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217</a> ) used for the main salary information in this job posting or for this employee."^^rdf:HTML ;
+  sh:description "The currency (coded using <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217</a> ) used for the main salary information in this job posting or for this employee."^^rdf:HTML ;
   sh:name "salaryCurrency" ;
 .
 schema:JobPosting-securityClearanceRequirement
@@ -12812,9 +12816,9 @@ schema:JoinAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/RegisterAction\">RegisterAction</a>: Unlike RegisterAction, JoinAction refers to joining a group/team of people.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/SubscribeAction\">SubscribeAction</a>: Unlike SubscribeAction, JoinAction does not imply that you'll be receiving updates.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/FollowAction\">FollowAction</a>: Unlike FollowAction, JoinAction does not imply that you'll be polling for updates.</li>
+<li><a class='localLink' href='http://schema.org/RegisterAction'>RegisterAction</a>: Unlike RegisterAction, JoinAction refers to joining a group/team of people.</li>
+<li><a class='localLink' href='http://schema.org/SubscribeAction'>SubscribeAction</a>: Unlike SubscribeAction, JoinAction does not imply that you'll be receiving updates.</li>
+<li><a class='localLink' href='http://schema.org/FollowAction'>FollowAction</a>: Unlike FollowAction, JoinAction does not imply that you'll be polling for updates.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Join action" ;
@@ -12902,7 +12906,7 @@ schema:LandmarksOrHistoricalBuildings
 schema:Language
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in <a href=\"https://en.wikipedia.org/wiki/IETF_language_tag\">BCP 47</a> can be used via the <a class=\"localLink\" href=\"http://schema.org/alternateName\">alternateName</a> property. The Language type previously also covered programming languages such as Scheme and Lisp, which are now best represented using <a class=\"localLink\" href=\"http://schema.org/ComputerLanguage\">ComputerLanguage</a>."^^rdf:HTML ;
+  rdfs:comment "Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal language code tags expressed in <a href='https://en.wikipedia.org/wiki/IETF_language_tag'>BCP 47</a> can be used via the <a class='localLink' href='http://schema.org/alternateName'>alternateName</a> property. The Language type previously also covered programming languages such as Scheme and Lisp, which are now best represented using <a class='localLink' href='http://schema.org/ComputerLanguage'>ComputerLanguage</a>."^^rdf:HTML ;
   rdfs:label "Language" ;
   rdfs:subClassOf schema:Intangible ;
 .
@@ -12919,8 +12923,8 @@ schema:LeaveAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/JoinAction\">JoinAction</a>: The antonym of LeaveAction.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/UnRegisterAction\">UnRegisterAction</a>: Unlike UnRegisterAction, LeaveAction implies leaving a group/team of people rather than a service.</li>
+<li><a class='localLink' href='http://schema.org/JoinAction'>JoinAction</a>: The antonym of LeaveAction.</li>
+<li><a class='localLink' href='http://schema.org/UnRegisterAction'>UnRegisterAction</a>: Unlike UnRegisterAction, LeaveAction implies leaving a group/team of people rather than a service.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Leave action" ;
@@ -12953,7 +12957,7 @@ schema:LegalService
   a sh:NodeShape ;
   rdfs:comment """A LegalService is a business that provides legally-oriented services, advice and representation, e.g. law firms.<br/><br/>
 
-As a <a class=\"localLink\" href=\"http://schema.org/LocalBusiness\">LocalBusiness</a> it can be described as a <a class=\"localLink\" href=\"http://schema.org/provider\">provider</a> of one or more <a class=\"localLink\" href=\"http://schema.org/Service\">Service</a>(s)."""^^rdf:HTML ;
+As a <a class='localLink' href='http://schema.org/LocalBusiness'>LocalBusiness</a> it can be described as a <a class='localLink' href='http://schema.org/provider'>provider</a> of one or more <a class='localLink' href='http://schema.org/Service'>Service</a>(s)."""^^rdf:HTML ;
   rdfs:label "Legal service" ;
   rdfs:subClassOf schema:LocalBusiness ;
 .
@@ -13006,14 +13010,14 @@ schema:Legislation-legislationApplies
   a sh:PropertyShape ;
   sh:path schema:legislationApplies ;
   sh:class schema:Legislation ;
-  sh:description "Indicates that this legislation (or part of a legislation) somehow transfers another legislation in a different legislative context. This is an informative link, and it has no legal value. For legally-binding links of transposition, use the <a href=\"/legislationTransposes\">legislationTransposes</a> property. For example an informative consolidated law of a European Union's member state \"applies\" the consolidated version of the European Directive implemented in it."^^rdf:HTML ;
+  sh:description "Indicates that this legislation (or part of a legislation) somehow transfers another legislation in a different legislative context. This is an informative link, and it has no legal value. For legally-binding links of transposition, use the <a href='/legislationTransposes'>legislationTransposes</a> property. For example an informative consolidated law of a European Union's member state 'applies' the consolidated version of the European Directive implemented in it."^^rdf:HTML ;
   sh:name "legislationApplies" ;
 .
 schema:Legislation-legislationChanges
   a sh:PropertyShape ;
   sh:path schema:legislationChanges ;
   sh:class schema:Legislation ;
-  sh:description "Another legislation that this legislation changes. This encompasses the notions of amendment, replacement, correction, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change. The property is to be used to express the existence of a change relationship between two acts rather than the existence of a consolidated version of the text that shows the result of the change. For consolidation relationships, use the <a href=\"/legislationConsolidates\">legislationConsolidates</a> property."^^rdf:HTML ;
+  sh:description "Another legislation that this legislation changes. This encompasses the notions of amendment, replacement, correction, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change. The property is to be used to express the existence of a change relationship between two acts rather than the existence of a consolidated version of the text that shows the result of the change. For consolidation relationships, use the <a href='/legislationConsolidates'>legislationConsolidates</a> property."^^rdf:HTML ;
   sh:name "legislationChanges" ;
 .
 schema:Legislation-legislationConsolidates
@@ -13034,7 +13038,7 @@ schema:Legislation-legislationDateVersion
   a sh:PropertyShape ;
   sh:path schema:legislationDateVersion ;
   sh:datatype xsd:date ;
-  sh:description "The point-in-time at which the provided description of the legislation is valid (e.g. : when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of 2015-04-12 of the \"National Insurance Contributions Act 2015\")"^^rdf:HTML ;
+  sh:description "The point-in-time at which the provided description of the legislation is valid (e.g. : when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of 2015-04-12 of the 'National Insurance Contributions Act 2015')"^^rdf:HTML ;
   sh:name "legislationDateVersion" ;
 .
 schema:Legislation-legislationIdentifier
@@ -13075,7 +13079,7 @@ schema:Legislation-legislationLegalForce
 schema:Legislation-legislationPassedBy
   a sh:PropertyShape ;
   sh:path schema:legislationPassedBy ;
-  sh:description "The person or organization that originally passed or made the law : typically parliament (for primary legislation) or government (for secondary legislation). This indicates the \"legal author\" of the law, as opposed to its physical author."^^rdf:HTML ;
+  sh:description "The person or organization that originally passed or made the law : typically parliament (for primary legislation) or government (for secondary legislation). This indicates the 'legal author' of the law, as opposed to its physical author."^^rdf:HTML ;
   sh:name "legislationPassedBy" ;
   sh:or (
       [
@@ -13110,7 +13114,7 @@ schema:Legislation-legislationTransposes
 schema:Legislation-legislationType
   a sh:PropertyShape ;
   sh:path schema:legislationType ;
-  sh:description "The type of the legislation. Examples of values are \"law\", \"act\", \"directive\", \"decree\", \"regulation\", \"statutory instrument\", \"loi organique\", \"rÃ¨glement grand-ducal\", etc., depending on the country."^^rdf:HTML ;
+  sh:description "The type of the legislation. Examples of values are 'law', 'act', 'directive', 'decree', 'regulation', 'statutory instrument', 'loi organique', 'rÃ¨glement grand-ducal', etc., depending on the country."^^rdf:HTML ;
   sh:name "legislationType" ;
   sh:or (
       [
@@ -13136,7 +13140,7 @@ schema:LegislationObject-legislationLegalValue
   a sh:PropertyShape ;
   sh:path schema:legislationLegalValue ;
   sh:class schema:LegalValueLevel ;
-  sh:description "The legal value of this legislation file. The same legislation can be written in multiple files with different legal values. Typically a digitally signed PDF have a \"stronger\" legal value than the HTML file of the same act."^^rdf:HTML ;
+  sh:description "The legal value of this legislation file. The same legislation can be written in multiple files with different legal values. Typically a digitally signed PDF have a 'stronger' legal value than the HTML file of the same act."^^rdf:HTML ;
   sh:name "legislationLegalValue" ;
 .
 schema:LegislativeBuilding
@@ -13160,7 +13164,7 @@ schema:LendAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/BorrowAction\">BorrowAction</a>: Reciprocal of LendAction.</li>
+<li><a class='localLink' href='http://schema.org/BorrowAction'>BorrowAction</a>: Reciprocal of LendAction.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Lend action" ;
@@ -13186,7 +13190,7 @@ schema:LibrarySystem
   a sh:NodeShape ;
   schema:category "issue-1495" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A <a class=\"localLink\" href=\"http://schema.org/LibrarySystem\">LibrarySystem</a> is a collaborative system amongst several libraries."^^rdf:HTML ;
+  rdfs:comment "A <a class='localLink' href='http://schema.org/LibrarySystem'>LibrarySystem</a> is a collaborative system amongst several libraries."^^rdf:HTML ;
   rdfs:label "Library system" ;
   rdfs:subClassOf schema:Organization ;
 .
@@ -13239,7 +13243,7 @@ schema:LinkRole
 schema:LinkRole-inLanguage
   a sh:PropertyShape ;
   sh:path schema:inLanguage ;
-  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>."^^rdf:HTML ;
+  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>. See also <a class='localLink' href='http://schema.org/availableLanguage'>availableLanguage</a>."^^rdf:HTML ;
   sh:name "inLanguage" ;
   sh:or (
       [
@@ -13403,7 +13407,7 @@ schema:LoanOrCredit-currency
   sh:datatype xsd:string ;
   sh:description """The currency in which the monetary amount is expressed.<br/><br/>
 
-Use standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\"."""^^rdf:HTML ;
+Use standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR'."""^^rdf:HTML ;
   sh:name "currency" ;
 .
 schema:LoanOrCredit-gracePeriod
@@ -13486,7 +13490,7 @@ schema:LocalBusiness-branchOf
   a sh:PropertyShape ;
   sh:path schema:branchOf ;
   sh:class schema:Organization ;
-  sh:description "The larger organization that this local business is a branch of, if any. Not to be confused with (anatomical)<a class=\"localLink\" href=\"http://schema.org/branch\">branch</a>."^^rdf:HTML ;
+  sh:description "The larger organization that this local business is a branch of, if any. Not to be confused with (anatomical)<a class='localLink' href='http://schema.org/branch'>branch</a>."^^rdf:HTML ;
   sh:name "branchOf" ;
 .
 schema:LocalBusiness-currenciesAccepted
@@ -13495,7 +13499,7 @@ schema:LocalBusiness-currenciesAccepted
   sh:datatype xsd:string ;
   sh:description """The currency accepted.<br/><br/>
 
-Use standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\"."""^^rdf:HTML ;
+Use standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR'."""^^rdf:HTML ;
   sh:name "currenciesAccepted" ;
 .
 schema:LocalBusiness-openingHours
@@ -13507,7 +13511,7 @@ schema:LocalBusiness-openingHours
 <ul>
 <li>Days are specified using the following two-letter combinations: <code>Mo</code>, <code>Tu</code>, <code>We</code>, <code>Th</code>, <code>Fr</code>, <code>Sa</code>, <code>Su</code>.</li>
 <li>Times are specified using 24:00 time. For example, 3pm is specified as <code>15:00</code>. </li>
-<li>Here is an example: <code>&lt;time itemprop=\"openingHours\" datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>.</li>
+<li>Here is an example: <code>&lt;time itemprop='openingHours' datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>.</li>
 <li>If a business is open 7 days a week, then it can be specified as <code>&lt;time itemprop=&quot;openingHours&quot; datetime=&quot;Mo-Su&quot;&gt;Monday through Sunday, all day&lt;/time&gt;</code>.</li>
 </ul>
 """^^rdf:HTML ;
@@ -13618,7 +13622,7 @@ schema:LodgingBusiness-audience
 schema:LodgingBusiness-availableLanguage
   a sh:PropertyShape ;
   sh:path schema:availableLanguage ;
-  sh:description "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/inLanguage\">inLanguage</a>"^^rdf:HTML ;
+  sh:description "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>. See also <a class='localLink' href='http://schema.org/inLanguage'>inLanguage</a>"^^rdf:HTML ;
   sh:name "availableLanguage" ;
   sh:or (
       [
@@ -14014,7 +14018,7 @@ schema:MediaObject-duration
   a sh:PropertyShape ;
   sh:path schema:duration ;
   sh:datatype xsd:duration ;
-  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>."^^rdf:HTML ;
+  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>."^^rdf:HTML ;
   sh:name "duration" ;
 .
 schema:MediaObject-embedUrl
@@ -14034,9 +14038,9 @@ schema:MediaObject-encodesCreativeWork
 schema:MediaObject-encodingFormat
   a sh:PropertyShape ;
   sh:path schema:encodingFormat ;
-  sh:description """Media type typically expressed using a MIME format (see <a href=\"http://www.iana.org/assignments/media-types/media-types.xhtml\">IANA site</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types\">MDN reference</a>) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).<br/><br/>
+  sh:description """Media type typically expressed using a MIME format (see <a href='http://www.iana.org/assignments/media-types/media-types.xhtml'>IANA site</a> and <a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types'>MDN reference</a>) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).<br/><br/>
 
-In cases where a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a> has several media type representations, <a class=\"localLink\" href=\"http://schema.org/encoding\">encoding</a> can be used to indicate each <a class=\"localLink\" href=\"http://schema.org/MediaObject\">MediaObject</a> alongside particular <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a> information.<br/><br/>
+In cases where a <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a> has several media type representations, <a class='localLink' href='http://schema.org/encoding'>encoding</a> can be used to indicate each <a class='localLink' href='http://schema.org/MediaObject'>MediaObject</a> alongside particular <a class='localLink' href='http://schema.org/encodingFormat'>encodingFormat</a> information.<br/><br/>
 
 Unregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry."""^^rdf:HTML ;
   sh:name "encodingFormat" ;
@@ -14097,7 +14101,7 @@ schema:MediaObject-regionsAllowed
   a sh:PropertyShape ;
   sh:path schema:regionsAllowed ;
   sh:class schema:Place ;
-  sh:description "The regions where the media is allowed. If not specified, then it's assumed to be allowed everywhere. Specify the countries in <a href=\"http://en.wikipedia.org/wiki/ISO_3166\">ISO 3166 format</a>."^^rdf:HTML ;
+  sh:description "The regions where the media is allowed. If not specified, then it's assumed to be allowed everywhere. Specify the countries in <a href='http://en.wikipedia.org/wiki/ISO_3166'>ISO 3166 format</a>."^^rdf:HTML ;
   sh:name "regionsAllowed" ;
 .
 schema:MediaObject-requiresSubscription
@@ -14157,8 +14161,8 @@ schema:MediaReview
   schema:category "issue-2450" ;
   schema:isPartOf <http://pending.schema.org> ;
   rdfs:comment """(editorial work in progress, this definition is incomplete and unreviewed)
-    A <a class=\"localLink\" href=\"http://schema.org/MediaReview\">MediaReview</a> is a more specialized form of Review dedicated to the evaluation of media content online, typically in the context of fact-checking and misinformation.
-    For more general reviews of media in the broader sense, use <a class=\"localLink\" href=\"http://schema.org/UserReview\">UserReview</a>, <a class=\"localLink\" href=\"http://schema.org/CriticReview\">CriticReview</a> or other <a class=\"localLink\" href=\"http://schema.org/Review\">Review</a> types."""^^rdf:HTML ;
+    A <a class='localLink' href='http://schema.org/MediaReview'>MediaReview</a> is a more specialized form of Review dedicated to the evaluation of media content online, typically in the context of fact-checking and misinformation.
+    For more general reviews of media in the broader sense, use <a class='localLink' href='http://schema.org/UserReview'>UserReview</a>, <a class='localLink' href='http://schema.org/CriticReview'>CriticReview</a> or other <a class='localLink' href='http://schema.org/Review'>Review</a> types."""^^rdf:HTML ;
   rdfs:label "Media review" ;
   rdfs:subClassOf schema:Review ;
   sh:property schema:MediaReview-mediaAuthenticityCategory ;
@@ -14946,7 +14950,7 @@ schema:MedicalScholarlyArticle-publicationType
   a sh:PropertyShape ;
   sh:path schema:publicationType ;
   sh:datatype xsd:string ;
-  sh:description "The type of the medical article, taken from the US NLM MeSH publication type catalog. See also <a href=\"http://www.nlm.nih.gov/mesh/pubtypes.html\">MeSH documentation</a>."^^rdf:HTML ;
+  sh:description "The type of the medical article, taken from the US NLM MeSH publication type catalog. See also <a href='http://www.nlm.nih.gov/mesh/pubtypes.html'>MeSH documentation</a>."^^rdf:HTML ;
   sh:name "publicationType" ;
 .
 schema:MedicalSign
@@ -15241,9 +15245,9 @@ schema:MedicineSystem
 schema:MeetingRoom
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment """A meeting room, conference room, or conference hall is a room provided for singular events such as business conferences and meetings (Source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Conference_hall\">http://en.wikipedia.org/wiki/Conference_hall</a>).
+  rdfs:comment """A meeting room, conference room, or conference hall is a room provided for singular events such as business conferences and meetings (Source: Wikipedia, the free encyclopedia, see <a href='http://en.wikipedia.org/wiki/Conference_hall'>http://en.wikipedia.org/wiki/Conference_hall</a>).
 <br /><br />
-See also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
+See also the <a href='/docs/hotels.html'>dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
   rdfs:label "Meeting room" ;
   rdfs:subClassOf schema:Room ;
 .
@@ -15312,7 +15316,7 @@ schema:MenuItem-nutrition
 schema:MenuItem-offers
   a sh:PropertyShape ;
   sh:path schema:offers ;
-  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class=\"localLink\" href=\"http://schema.org/Demand\">Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
+  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class='localLink' href='http://schema.org/Demand'>Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
   sh:name "offers" ;
   sh:or (
       [
@@ -15381,7 +15385,7 @@ schema:MerchantReturnPolicy
   a sh:NodeShape ;
   schema:category "issue-2288" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A MerchantReturnPolicy provides information about product return policies associated with an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> or <a class=\"localLink\" href=\"http://schema.org/Product\">Product</a>."^^rdf:HTML ;
+  rdfs:comment "A MerchantReturnPolicy provides information about product return policies associated with an <a class='localLink' href='http://schema.org/Organization'>Organization</a> or <a class='localLink' href='http://schema.org/Product'>Product</a>."^^rdf:HTML ;
   rdfs:label "Merchant return policy" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:MerchantReturnPolicy-inStoreReturnsOffered ;
@@ -15660,7 +15664,7 @@ schema:Monday
 schema:MonetaryAmount
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A monetary value or range. This type can be used to describe an amount of money such as $50 USD, or a range as in describing a bank account being suitable for a balance between Â£1,000 and Â£1,000,000 GBP, or the value of a salary, etc. It is recommended to use <a class=\"localLink\" href=\"http://schema.org/PriceSpecification\">PriceSpecification</a> Types to describe the price of an Offer, Invoice, etc."^^rdf:HTML ;
+  rdfs:comment "A monetary value or range. This type can be used to describe an amount of money such as $50 USD, or a range as in describing a bank account being suitable for a balance between Â£1,000 and Â£1,000,000 GBP, or the value of a salary, etc. It is recommended to use <a class='localLink' href='http://schema.org/PriceSpecification'>PriceSpecification</a> Types to describe the price of an Offer, Invoice, etc."^^rdf:HTML ;
   rdfs:label "Monetary amount" ;
   rdfs:subClassOf schema:StructuredValue ;
   sh:property schema:MonetaryAmount-currency ;
@@ -15676,7 +15680,7 @@ schema:MonetaryAmount-currency
   sh:datatype xsd:string ;
   sh:description """The currency in which the monetary amount is expressed.<br/><br/>
 
-Use standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\"."""^^rdf:HTML ;
+Use standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR'."""^^rdf:HTML ;
   sh:name "currency" ;
 .
 schema:MonetaryAmount-maxValue
@@ -15727,8 +15731,8 @@ schema:MonetaryAmount-value
   sh:description """The value of the quantitative value or property value node.<br/><br/>
 
 <ul>
-<li>For <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> and <a class=\"localLink\" href=\"http://schema.org/MonetaryAmount\">MonetaryAmount</a>, the recommended type for values is 'Number'.</li>
-<li>For <a class=\"localLink\" href=\"http://schema.org/PropertyValue\">PropertyValue</a>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.</li>
+<li>For <a class='localLink' href='http://schema.org/QuantitativeValue'>QuantitativeValue</a> and <a class='localLink' href='http://schema.org/MonetaryAmount'>MonetaryAmount</a>, the recommended type for values is 'Number'.</li>
+<li>For <a class='localLink' href='http://schema.org/PropertyValue'>PropertyValue</a>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.</li>
 <li>Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.</li>
 <li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.</li>
 </ul>
@@ -15764,7 +15768,7 @@ schema:MonetaryAmountDistribution-currency
   sh:datatype xsd:string ;
   sh:description """The currency in which the monetary amount is expressed.<br/><br/>
 
-Use standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\"."""^^rdf:HTML ;
+Use standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR'."""^^rdf:HTML ;
   sh:name "currency" ;
 .
 schema:MonetaryGrant
@@ -15882,7 +15886,7 @@ schema:Motel
   a sh:NodeShape ;
   rdfs:comment """A motel.
 <br /><br />
-See also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
+See also the <a href='/docs/hotels.html'>dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
   rdfs:label "Motel" ;
   rdfs:subClassOf schema:LodgingBusiness ;
 .
@@ -15931,7 +15935,7 @@ schema:MoveAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/TransferAction\">TransferAction</a>: Unlike TransferAction, the subject of the move is a living Person or Organization rather than an inanimate object.</li>
+<li><a class='localLink' href='http://schema.org/TransferAction'>TransferAction</a>: Unlike TransferAction, the subject of the move is a living Person or Organization rather than an inanimate object.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Move action" ;
@@ -16010,7 +16014,7 @@ schema:Movie-duration
   a sh:PropertyShape ;
   sh:path schema:duration ;
   sh:datatype xsd:duration ;
-  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>."^^rdf:HTML ;
+  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>."^^rdf:HTML ;
   sh:name "duration" ;
 .
 schema:Movie-musicBy
@@ -16037,7 +16041,7 @@ schema:Movie-productionCompany
 schema:Movie-subtitleLanguage
   a sh:PropertyShape ;
   sh:path schema:subtitleLanguage ;
-  sh:description "Languages in which subtitles/captions are available, in <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard format</a>."^^rdf:HTML ;
+  sh:description "Languages in which subtitles/captions are available, in <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard format</a>."^^rdf:HTML ;
   sh:name "subtitleLanguage" ;
   sh:or (
       [
@@ -16051,11 +16055,11 @@ schema:Movie-subtitleLanguage
 schema:Movie-titleEIDR
   a sh:PropertyShape ;
   sh:path schema:titleEIDR ;
-  sh:description """An <a href=\"https://eidr.org/\">EIDR</a> (Entertainment Identifier Registry) <a class=\"localLink\" href=\"http://schema.org/identifier\">identifier</a> representing at the most general/abstract level, a work of film or television.<br/><br/>
+  sh:description """An <a href='https://eidr.org/'>EIDR</a> (Entertainment Identifier Registry) <a class='localLink' href='http://schema.org/identifier'>identifier</a> representing at the most general/abstract level, a work of film or television.<br/><br/>
 
-For example, the motion picture known as \"Ghostbusters\" has a titleEIDR of  \"10.5240/7EC7-228A-510A-053E-CBB8-J\". This title (or work) may have several variants, which EIDR calls \"edits\". See <a class=\"localLink\" href=\"http://schema.org/editEIDR\">editEIDR</a>.<br/><br/>
+For example, the motion picture known as 'Ghostbusters' has a titleEIDR of  '10.5240/7EC7-228A-510A-053E-CBB8-J'. This title (or work) may have several variants, which EIDR calls 'edits'. See <a class='localLink' href='http://schema.org/editEIDR'>editEIDR</a>.<br/><br/>
 
-Since schema.org types like <a class=\"localLink\" href=\"http://schema.org/Movie\">Movie</a> and <a class=\"localLink\" href=\"http://schema.org/TVEpisode\">TVEpisode</a> can be used for both works and their multiple expressions, it is possible to use <a class=\"localLink\" href=\"http://schema.org/titleEIDR\">titleEIDR</a> alone (for a general description), or alongside <a class=\"localLink\" href=\"http://schema.org/editEIDR\">editEIDR</a> for a more edit-specific description."""^^rdf:HTML ;
+Since schema.org types like <a class='localLink' href='http://schema.org/Movie'>Movie</a> and <a class='localLink' href='http://schema.org/TVEpisode'>TVEpisode</a> can be used for both works and their multiple expressions, it is possible to use <a class='localLink' href='http://schema.org/titleEIDR'>titleEIDR</a> alone (for a general description), or alongside <a class='localLink' href='http://schema.org/editEIDR'>editEIDR</a> for a more edit-specific description."""^^rdf:HTML ;
   sh:name "titleEIDR" ;
   sh:or (
       [
@@ -16563,7 +16567,7 @@ schema:MusicRecording-duration
   a sh:PropertyShape ;
   sh:path schema:duration ;
   sh:datatype xsd:duration ;
-  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>."^^rdf:HTML ;
+  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>."^^rdf:HTML ;
   sh:name "duration" ;
 .
 schema:MusicRecording-inAlbum
@@ -16617,7 +16621,7 @@ schema:MusicRelease-catalogNumber
 schema:MusicRelease-creditedTo
   a sh:PropertyShape ;
   sh:path schema:creditedTo ;
-  sh:description "The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \"Stefani Germanotta Band\", but by Lady Gaga."^^rdf:HTML ;
+  sh:description "The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to 'Stefani Germanotta Band', but by Lady Gaga."^^rdf:HTML ;
   sh:name "creditedTo" ;
   sh:or (
       [
@@ -16632,7 +16636,7 @@ schema:MusicRelease-duration
   a sh:PropertyShape ;
   sh:path schema:duration ;
   sh:datatype xsd:duration ;
-  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>."^^rdf:HTML ;
+  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>."^^rdf:HTML ;
   sh:name "duration" ;
 .
 schema:MusicRelease-musicReleaseFormat
@@ -16729,7 +16733,7 @@ schema:Nerve-branch
   a sh:PropertyShape ;
   sh:path schema:branch ;
   sh:class schema:AnatomicalStructure ;
-  sh:description "The branches that delineate from the nerve bundle. Not to be confused with <a class=\"localLink\" href=\"http://schema.org/branchOf\">branchOf</a>."^^rdf:HTML ;
+  sh:description "The branches that delineate from the nerve bundle. Not to be confused with <a class='localLink' href='http://schema.org/branchOf'>branchOf</a>."^^rdf:HTML ;
   sh:name "branch" ;
 .
 schema:Nerve-nerveMotor
@@ -16782,7 +16786,7 @@ schema:NewsArticle
   a sh:NodeShape ;
   rdfs:comment """A NewsArticle is an article whose content reports news, or provides background context and supporting materials for understanding the news.<br/><br/>
 
-A more detailed overview of <a href=\"/docs/news.html\">schema.org News markup</a> is also available."""^^rdf:HTML ;
+A more detailed overview of <a href='/docs/news.html'>schema.org News markup</a> is also available."""^^rdf:HTML ;
   rdfs:label "News article" ;
   rdfs:subClassOf schema:Article ;
   sh:property schema:NewsArticle-dateline ;
@@ -16795,11 +16799,11 @@ schema:NewsArticle-dateline
   a sh:PropertyShape ;
   sh:path schema:dateline ;
   sh:datatype xsd:string ;
-  sh:description """A <a href=\"https://en.wikipedia.org/wiki/Dateline\">dateline</a> is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placename is provided.<br/><br/>
+  sh:description """A <a href='https://en.wikipedia.org/wiki/Dateline'>dateline</a> is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placename is provided.<br/><br/>
 
-Structured representations of dateline-related information can also be expressed more explicitly using <a class=\"localLink\" href=\"http://schema.org/locationCreated\">locationCreated</a> (which represents where a work was created e.g. where a news report was written).  For location depicted or described in the content, use <a class=\"localLink\" href=\"http://schema.org/contentLocation\">contentLocation</a>.<br/><br/>
+Structured representations of dateline-related information can also be expressed more explicitly using <a class='localLink' href='http://schema.org/locationCreated'>locationCreated</a> (which represents where a work was created e.g. where a news report was written).  For location depicted or described in the content, use <a class='localLink' href='http://schema.org/contentLocation'>contentLocation</a>.<br/><br/>
 
-Dateline summaries are oriented more towards human readers than towards automated processing, and can vary substantially. Some examples: \"BEIRUT, Lebanon, June 2.\", \"Paris, France\", \"December 19, 2017 11:43AM Reporting from Washington\", \"Beijing/Moscow\", \"QUEZON CITY, Philippines\"."""^^rdf:HTML ;
+Dateline summaries are oriented more towards human readers than towards automated processing, and can vary substantially. Some examples: 'BEIRUT, Lebanon, June 2.', 'Paris, France', 'December 19, 2017 11:43AM Reporting from Washington', 'Beijing/Moscow', 'QUEZON CITY, Philippines'."""^^rdf:HTML ;
   sh:name "dateline" ;
 .
 schema:NewsArticle-printColumn
@@ -16853,7 +16857,7 @@ schema:NewsMediaOrganization
 schema:NewsMediaOrganization-actionableFeedbackPolicy
   a sh:PropertyShape ;
   sh:path schema:actionableFeedbackPolicy ;
-  sh:description "For a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a> or other news-related <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a>, a statement about public engagement activities (for news media, the newsroomâ€™s), including involving the public - digitally or otherwise -- in coverage decisions, reporting and activities after publication."^^rdf:HTML ;
+  sh:description "For a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a> or other news-related <a class='localLink' href='http://schema.org/Organization'>Organization</a>, a statement about public engagement activities (for news media, the newsroomâ€™s), including involving the public - digitally or otherwise -- in coverage decisions, reporting and activities after publication."^^rdf:HTML ;
   sh:name "actionableFeedbackPolicy" ;
   sh:or (
       [
@@ -16867,7 +16871,7 @@ schema:NewsMediaOrganization-actionableFeedbackPolicy
 schema:NewsMediaOrganization-correctionsPolicy
   a sh:PropertyShape ;
   sh:path schema:correctionsPolicy ;
-  sh:description "For an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (e.g. <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>), a statement describing (in news media, the newsroomâ€™s) disclosure and correction policy for errors."^^rdf:HTML ;
+  sh:description "For an <a class='localLink' href='http://schema.org/Organization'>Organization</a> (e.g. <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>), a statement describing (in news media, the newsroomâ€™s) disclosure and correction policy for errors."^^rdf:HTML ;
   sh:name "correctionsPolicy" ;
   sh:or (
       [
@@ -16881,7 +16885,7 @@ schema:NewsMediaOrganization-correctionsPolicy
 schema:NewsMediaOrganization-diversityPolicy
   a sh:PropertyShape ;
   sh:path schema:diversityPolicy ;
-  sh:description "Statement on diversity policy by an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> e.g. a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>. For a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>, a statement describing the newsroomâ€™s diversity policy on both staffing and sources, typically providing staffing data."^^rdf:HTML ;
+  sh:description "Statement on diversity policy by an <a class='localLink' href='http://schema.org/Organization'>Organization</a> e.g. a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>. For a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>, a statement describing the newsroomâ€™s diversity policy on both staffing and sources, typically providing staffing data."^^rdf:HTML ;
   sh:name "diversityPolicy" ;
   sh:or (
       [
@@ -16895,7 +16899,7 @@ schema:NewsMediaOrganization-diversityPolicy
 schema:NewsMediaOrganization-diversityStaffingReport
   a sh:PropertyShape ;
   sh:path schema:diversityStaffingReport ;
-  sh:description "For an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (often but not necessarily a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>), a report on staffing diversity issues. In a news context this might be for example ASNE or RTDNA (US) reports, or self-reported."^^rdf:HTML ;
+  sh:description "For an <a class='localLink' href='http://schema.org/Organization'>Organization</a> (often but not necessarily a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>), a report on staffing diversity issues. In a news context this might be for example ASNE or RTDNA (US) reports, or self-reported."^^rdf:HTML ;
   sh:name "diversityStaffingReport" ;
   sh:or (
       [
@@ -16909,7 +16913,7 @@ schema:NewsMediaOrganization-diversityStaffingReport
 schema:NewsMediaOrganization-ethicsPolicy
   a sh:PropertyShape ;
   sh:path schema:ethicsPolicy ;
-  sh:description "Statement about ethics policy, e.g. of a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a> regarding journalistic and publishing practices, or of a <a class=\"localLink\" href=\"http://schema.org/Restaurant\">Restaurant</a>, a page describing food source policies. In the case of a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>, an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization."^^rdf:HTML ;
+  sh:description "Statement about ethics policy, e.g. of a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a> regarding journalistic and publishing practices, or of a <a class='localLink' href='http://schema.org/Restaurant'>Restaurant</a>, a page describing food source policies. In the case of a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>, an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization."^^rdf:HTML ;
   sh:name "ethicsPolicy" ;
   sh:or (
       [
@@ -16923,7 +16927,7 @@ schema:NewsMediaOrganization-ethicsPolicy
 schema:NewsMediaOrganization-masthead
   a sh:PropertyShape ;
   sh:path schema:masthead ;
-  sh:description "For a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>, a link to the masthead page or a page listing top editorial management."^^rdf:HTML ;
+  sh:description "For a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>, a link to the masthead page or a page listing top editorial management."^^rdf:HTML ;
   sh:name "masthead" ;
   sh:or (
       [
@@ -16937,7 +16941,7 @@ schema:NewsMediaOrganization-masthead
 schema:NewsMediaOrganization-missionCoveragePrioritiesPolicy
   a sh:PropertyShape ;
   sh:path schema:missionCoveragePrioritiesPolicy ;
-  sh:description "For a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>, a statement on coverage priorities, including any public agenda or stance on issues."^^rdf:HTML ;
+  sh:description "For a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>, a statement on coverage priorities, including any public agenda or stance on issues."^^rdf:HTML ;
   sh:name "missionCoveragePrioritiesPolicy" ;
   sh:or (
       [
@@ -16951,7 +16955,7 @@ schema:NewsMediaOrganization-missionCoveragePrioritiesPolicy
 schema:NewsMediaOrganization-noBylinesPolicy
   a sh:PropertyShape ;
   sh:path schema:noBylinesPolicy ;
-  sh:description "For a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a> or other news-related <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a>, a statement explaining when authors of articles are not named in bylines."^^rdf:HTML ;
+  sh:description "For a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a> or other news-related <a class='localLink' href='http://schema.org/Organization'>Organization</a>, a statement explaining when authors of articles are not named in bylines."^^rdf:HTML ;
   sh:name "noBylinesPolicy" ;
   sh:or (
       [
@@ -16965,7 +16969,7 @@ schema:NewsMediaOrganization-noBylinesPolicy
 schema:NewsMediaOrganization-ownershipFundingInfo
   a sh:PropertyShape ;
   sh:path schema:ownershipFundingInfo ;
-  sh:description "For an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (often but not necessarily a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the <a class=\"localLink\" href=\"http://schema.org/funder\">funder</a> is also available and can be used to make basic funder information machine-readable."^^rdf:HTML ;
+  sh:description "For an <a class='localLink' href='http://schema.org/Organization'>Organization</a> (often but not necessarily a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the <a class='localLink' href='http://schema.org/funder'>funder</a> is also available and can be used to make basic funder information machine-readable."^^rdf:HTML ;
   sh:name "ownershipFundingInfo" ;
   sh:or (
       [
@@ -16985,7 +16989,7 @@ schema:NewsMediaOrganization-ownershipFundingInfo
 schema:NewsMediaOrganization-unnamedSourcesPolicy
   a sh:PropertyShape ;
   sh:path schema:unnamedSourcesPolicy ;
-  sh:description "For an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (typically a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>), a statement about policy on use of unnamed sources and the decision process required."^^rdf:HTML ;
+  sh:description "For an <a class='localLink' href='http://schema.org/Organization'>Organization</a> (typically a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>), a statement about policy on use of unnamed sources and the decision process required."^^rdf:HTML ;
   sh:name "unnamedSourcesPolicy" ;
   sh:or (
       [
@@ -16999,7 +17003,7 @@ schema:NewsMediaOrganization-unnamedSourcesPolicy
 schema:NewsMediaOrganization-verificationFactCheckingPolicy
   a sh:PropertyShape ;
   sh:path schema:verificationFactCheckingPolicy ;
-  sh:description "Disclosure about verification and fact-checking processes for a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a> or other fact-checking <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a>."^^rdf:HTML ;
+  sh:description "Disclosure about verification and fact-checking processes for a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a> or other fact-checking <a class='localLink' href='http://schema.org/Organization'>Organization</a>."^^rdf:HTML ;
   sh:name "verificationFactCheckingPolicy" ;
   sh:or (
       [
@@ -17476,8 +17480,8 @@ schema:Observation
   a sh:NodeShape ;
   schema:category "issue-2291" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """Instances of the class <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a> are used to specify observations about an entity (which may or may not be an instance of a <a class=\"localLink\" href=\"http://schema.org/StatisticalPopulation\">StatisticalPopulation</a>), at a particular time. The principal properties of an <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a> are <a class=\"localLink\" href=\"http://schema.org/observedNode\">observedNode</a>, <a class=\"localLink\" href=\"http://schema.org/measuredProperty\">measuredProperty</a>, <a class=\"localLink\" href=\"http://schema.org/measuredValue\">measuredValue</a> (or <a class=\"localLink\" href=\"http://schema.org/median\">median</a>, etc.) and <a class=\"localLink\" href=\"http://schema.org/observationDate\">observationDate</a> (<a class=\"localLink\" href=\"http://schema.org/measuredProperty\">measuredProperty</a> properties can, but need not always, be W3C RDF Data Cube \"measure properties\", as in the <a href=\"https://www.w3.org/TR/vocab-data-cube/#dsd-example\">lifeExpectancy example</a>).
-See also <a class=\"localLink\" href=\"http://schema.org/StatisticalPopulation\">StatisticalPopulation</a>, and the <a href=\"/docs/data-and-datasets.html\">data and datasets</a> overview for more details."""^^rdf:HTML ;
+  rdfs:comment """Instances of the class <a class='localLink' href='http://schema.org/Observation'>Observation</a> are used to specify observations about an entity (which may or may not be an instance of a <a class='localLink' href='http://schema.org/StatisticalPopulation'>StatisticalPopulation</a>), at a particular time. The principal properties of an <a class='localLink' href='http://schema.org/Observation'>Observation</a> are <a class='localLink' href='http://schema.org/observedNode'>observedNode</a>, <a class='localLink' href='http://schema.org/measuredProperty'>measuredProperty</a>, <a class='localLink' href='http://schema.org/measuredValue'>measuredValue</a> (or <a class='localLink' href='http://schema.org/median'>median</a>, etc.) and <a class='localLink' href='http://schema.org/observationDate'>observationDate</a> (<a class='localLink' href='http://schema.org/measuredProperty'>measuredProperty</a> properties can, but need not always, be W3C RDF Data Cube 'measure properties', as in the <a href='https://www.w3.org/TR/vocab-data-cube/#dsd-example'>lifeExpectancy example</a>).
+See also <a class='localLink' href='http://schema.org/StatisticalPopulation'>StatisticalPopulation</a>, and the <a href='/docs/data-and-datasets.html'>data and datasets</a> overview for more details."""^^rdf:HTML ;
   rdfs:label "Observation" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:Observation-marginOfError ;
@@ -17490,35 +17494,35 @@ schema:Observation-marginOfError
   a sh:PropertyShape ;
   sh:path schema:marginOfError ;
   sh:datatype xsd:dateTime ;
-  sh:description "A marginOfError for an <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>."^^rdf:HTML ;
+  sh:description "A marginOfError for an <a class='localLink' href='http://schema.org/Observation'>Observation</a>."^^rdf:HTML ;
   sh:name "marginOfError" ;
 .
 schema:Observation-measuredProperty
   a sh:PropertyShape ;
   sh:path schema:measuredProperty ;
   sh:class rdf:Property ;
-  sh:description "The measuredProperty of an <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>, either a schema.org property, a property from other RDF-compatible systems e.g. W3C RDF Data Cube, or schema.org extensions such as <a href=\"https://www.gs1.org/voc/?show=properties\">GS1's</a>."^^rdf:HTML ;
+  sh:description "The measuredProperty of an <a class='localLink' href='http://schema.org/Observation'>Observation</a>, either a schema.org property, a property from other RDF-compatible systems e.g. W3C RDF Data Cube, or schema.org extensions such as <a href='https://www.gs1.org/voc/?show=properties'>GS1's</a>."^^rdf:HTML ;
   sh:name "measuredProperty" ;
 .
 schema:Observation-measuredValue
   a sh:PropertyShape ;
   sh:path schema:measuredValue ;
   sh:class schema:DataType ;
-  sh:description "The measuredValue of an <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>."^^rdf:HTML ;
+  sh:description "The measuredValue of an <a class='localLink' href='http://schema.org/Observation'>Observation</a>."^^rdf:HTML ;
   sh:name "measuredValue" ;
 .
 schema:Observation-observationDate
   a sh:PropertyShape ;
   sh:path schema:observationDate ;
   sh:datatype xsd:dateTime ;
-  sh:description "The observationDate of an <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>."^^rdf:HTML ;
+  sh:description "The observationDate of an <a class='localLink' href='http://schema.org/Observation'>Observation</a>."^^rdf:HTML ;
   sh:name "observationDate" ;
 .
 schema:Observation-observedNode
   a sh:PropertyShape ;
   sh:path schema:observedNode ;
   sh:class schema:StatisticalPopulation ;
-  sh:description "The observedNode of an <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>, often a <a class=\"localLink\" href=\"http://schema.org/StatisticalPopulation\">StatisticalPopulation</a>."^^rdf:HTML ;
+  sh:description "The observedNode of an <a class='localLink' href='http://schema.org/Observation'>Observation</a>, often a <a class='localLink' href='http://schema.org/StatisticalPopulation'>StatisticalPopulation</a>."^^rdf:HTML ;
   sh:name "observedNode" ;
 .
 schema:Observational
@@ -17598,7 +17602,7 @@ schema:Occupation-occupationLocation
 schema:Occupation-occupationalCategory
   a sh:PropertyShape ;
   sh:path schema:occupationalCategory ;
-  sh:description """A category describing the job, preferably using a term from a taxonomy such as <a href=\"http://www.onetcenter.org/taxonomy.html\">BLS O*NET-SOC</a>, <a href=\"https://www.ilo.org/public/english/bureau/stat/isco/isco08/\">ISCO-08</a> or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.<br/><br/>
+  sh:description """A category describing the job, preferably using a term from a taxonomy such as <a href='http://www.onetcenter.org/taxonomy.html'>BLS O*NET-SOC</a>, <a href='https://www.ilo.org/public/english/bureau/stat/isco/isco08/'>ISCO-08</a> or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.<br/><br/>
 
 Note: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC."""^^rdf:HTML ;
   sh:name "occupationalCategory" ;
@@ -17672,9 +17676,9 @@ schema:Offer
   a sh:NodeShape ;
   rdfs:comment """An offer to transfer some rights to an item or to provide a service â€” for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book.<br/><br/>
 
-Note: As the <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> property, which identifies the form of offer (e.g. sell, lease, repair, dispose), defaults to http://purl.org/goodrelations/v1#Sell; an Offer without a defined businessFunction value can be assumed to be an offer to sell.<br/><br/>
+Note: As the <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> property, which identifies the form of offer (e.g. sell, lease, repair, dispose), defaults to http://purl.org/goodrelations/v1#Sell; an Offer without a defined businessFunction value can be assumed to be an offer to sell.<br/><br/>
 
-For <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GTIN</a>-related fields, see <a href=\"http://www.gs1.org/barcodes/support/check_digit_calculator\">Check Digit calculator</a> and <a href=\"http://www.gs1us.org/resources/standards/gtin-validation-guide\">validation guide</a> from <a href=\"http://www.gs1.org/\">GS1</a>."""^^rdf:HTML ;
+For <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GTIN</a>-related fields, see <a href='http://www.gs1.org/barcodes/support/check_digit_calculator'>Check Digit calculator</a> and <a href='http://www.gs1us.org/resources/standards/gtin-validation-guide'>validation guide</a> from <a href='http://www.gs1.org/'>GS1</a>."""^^rdf:HTML ;
   rdfs:label "Offer" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:Offer-acceptedPaymentMethod ;
@@ -17892,7 +17896,7 @@ schema:Offer-eligibleRegion
   sh:path schema:eligibleRegion ;
   sh:description """The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.<br/><br/>
 
-See also <a class=\"localLink\" href=\"http://schema.org/ineligibleRegion\">ineligibleRegion</a>."""^^rdf:HTML ;
+See also <a class='localLink' href='http://schema.org/ineligibleRegion'>ineligibleRegion</a>."""^^rdf:HTML ;
   sh:name "eligibleRegion" ;
   sh:or (
       [
@@ -17917,35 +17921,35 @@ schema:Offer-gtin
   a sh:PropertyShape ;
   sh:path schema:gtin ;
   sh:datatype xsd:string ;
-  sh:description "A Global Trade Item Number (<a href=\"https://www.gs1.org/standards/id-keys/gtin\">GTIN</a>). GTINs identify trade items, including products and services, using numeric identification codes. The <a class=\"localLink\" href=\"http://schema.org/gtin\">gtin</a> property generalizes the earlier <a class=\"localLink\" href=\"http://schema.org/gtin8\">gtin8</a>, <a class=\"localLink\" href=\"http://schema.org/gtin12\">gtin12</a>, <a class=\"localLink\" href=\"http://schema.org/gtin13\">gtin13</a>, and <a class=\"localLink\" href=\"http://schema.org/gtin14\">gtin14</a> properties. The GS1 <a href=\"https://www.gs1.org/standards/Digital-Link/\">digital link specifications</a> express GTINs as URLs. A correct <a class=\"localLink\" href=\"http://schema.org/gtin\">gtin</a> value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a <a href=\"https://www.gs1.org/services/check-digit-calculator\">valid GS1 check digit</a> and meet the other rules for valid GTINs. See also <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1's GTIN Summary</a> and <a href=\"https://en.wikipedia.org/wiki/Global_Trade_Item_Number\">Wikipedia</a> for more details. Left-padding of the gtin values is not required or encouraged."^^rdf:HTML ;
+  sh:description "A Global Trade Item Number (<a href='https://www.gs1.org/standards/id-keys/gtin'>GTIN</a>). GTINs identify trade items, including products and services, using numeric identification codes. The <a class='localLink' href='http://schema.org/gtin'>gtin</a> property generalizes the earlier <a class='localLink' href='http://schema.org/gtin8'>gtin8</a>, <a class='localLink' href='http://schema.org/gtin12'>gtin12</a>, <a class='localLink' href='http://schema.org/gtin13'>gtin13</a>, and <a class='localLink' href='http://schema.org/gtin14'>gtin14</a> properties. The GS1 <a href='https://www.gs1.org/standards/Digital-Link/'>digital link specifications</a> express GTINs as URLs. A correct <a class='localLink' href='http://schema.org/gtin'>gtin</a> value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a 'GS1 Digital Link' URL based on such a string. The numeric component should also have a <a href='https://www.gs1.org/services/check-digit-calculator'>valid GS1 check digit</a> and meet the other rules for valid GTINs. See also <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1's GTIN Summary</a> and <a href='https://en.wikipedia.org/wiki/Global_Trade_Item_Number'>Wikipedia</a> for more details. Left-padding of the gtin values is not required or encouraged."^^rdf:HTML ;
   sh:name "gtin" ;
 .
 schema:Offer-gtin12
   a sh:PropertyShape ;
   sh:path schema:gtin12 ;
   sh:datatype xsd:string ;
-  sh:description "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
+  sh:description "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
   sh:name "gtin12" ;
 .
 schema:Offer-gtin13
   a sh:PropertyShape ;
   sh:path schema:gtin13 ;
   sh:datatype xsd:string ;
-  sh:description "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceeding zero. See <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
+  sh:description "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceeding zero. See <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
   sh:name "gtin13" ;
 .
 schema:Offer-gtin14
   a sh:PropertyShape ;
   sh:path schema:gtin14 ;
   sh:datatype xsd:string ;
-  sh:description "The GTIN-14 code of the product, or the product to which the offer refers. See <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
+  sh:description "The GTIN-14 code of the product, or the product to which the offer refers. See <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
   sh:name "gtin14" ;
 .
 schema:Offer-gtin8
   a sh:PropertyShape ;
   sh:path schema:gtin8 ;
   sh:datatype xsd:string ;
-  sh:description "The <a href=\"http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx\">GTIN-8</a> code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
+  sh:description "The <a href='http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx'>GTIN-8</a> code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
   sh:name "gtin8" ;
 .
 schema:Offer-includesObject
@@ -17960,7 +17964,7 @@ schema:Offer-ineligibleRegion
   sh:path schema:ineligibleRegion ;
   sh:description """The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.<br/><br/>
 
-See also <a class=\"localLink\" href=\"http://schema.org/eligibleRegion\">eligibleRegion</a>."""^^rdf:HTML ;
+See also <a class='localLink' href='http://schema.org/eligibleRegion'>eligibleRegion</a>."""^^rdf:HTML ;
   sh:name "ineligibleRegion" ;
   sh:or (
       [
@@ -17991,7 +17995,7 @@ schema:Offer-itemCondition
 schema:Offer-itemOffered
   a sh:PropertyShape ;
   sh:path schema:itemOffered ;
-  sh:description "An item being offered (or demanded). The transactional nature of the offer or demand is documented using <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a>, e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
+  sh:description "An item being offered (or demanded). The transactional nature of the offer or demand is documented using <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a>, e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
   sh:name "itemOffered" ;
   sh:or (
       [
@@ -18020,7 +18024,7 @@ schema:Offer-itemOffered
 schema:Offer-leaseLength
   a sh:PropertyShape ;
   sh:path schema:leaseLength ;
-  sh:description "Length of the lease for some <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>, either particular to some <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a> or in some cases intrinsic to the property."^^rdf:HTML ;
+  sh:description "Length of the lease for some <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>, either particular to some <a class='localLink' href='http://schema.org/Offer'>Offer</a> or in some cases intrinsic to the property."^^rdf:HTML ;
   sh:name "leaseLength" ;
   sh:or (
       [
@@ -18060,9 +18064,9 @@ schema:Offer-price
 Usage guidelines:<br/><br/>
 
 <ul>
-<li>Use the <a class=\"localLink\" href=\"http://schema.org/priceCurrency\">priceCurrency</a> property (with standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\") instead of including <a href=\"http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign\">ambiguous symbols</a> such as '$' in the value.</li>
+<li>Use the <a class='localLink' href='http://schema.org/priceCurrency'>priceCurrency</a> property (with standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR') instead of including <a href='http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign'>ambiguous symbols</a> such as '$' in the value.</li>
 <li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.</li>
-<li>Note that both <a href=\"http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute\">RDFa</a> and Microdata syntax allow the use of a \"content=\" attribute for publishing simple machine-readable values alongside more human-friendly formatting.</li>
+<li>Note that both <a href='http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute'>RDFa</a> and Microdata syntax allow the use of a 'content=' attribute for publishing simple machine-readable values alongside more human-friendly formatting.</li>
 <li>Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.</li>
 </ul>
 """^^rdf:HTML ;
@@ -18080,9 +18084,9 @@ schema:Offer-priceCurrency
   a sh:PropertyShape ;
   sh:path schema:priceCurrency ;
   sh:datatype xsd:string ;
-  sh:description """The currency of the price, or a price component when attached to <a class=\"localLink\" href=\"http://schema.org/PriceSpecification\">PriceSpecification</a> and its subtypes.<br/><br/>
+  sh:description """The currency of the price, or a price component when attached to <a class='localLink' href='http://schema.org/PriceSpecification'>PriceSpecification</a> and its subtypes.<br/><br/>
 
-Use standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\"."""^^rdf:HTML ;
+Use standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR'."""^^rdf:HTML ;
   sh:name "priceCurrency" ;
 .
 schema:Offer-priceSpecification
@@ -18138,7 +18142,7 @@ schema:Offer-shippingDetails
   a sh:PropertyShape ;
   sh:path schema:shippingDetails ;
   sh:class schema:OfferShippingDetails ;
-  sh:description "Indicates information about the shipping policies and options associated with an <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a>."^^rdf:HTML ;
+  sh:description "Indicates information about the shipping policies and options associated with an <a class='localLink' href='http://schema.org/Offer'>Offer</a>."^^rdf:HTML ;
   sh:name "shippingDetails" ;
 .
 schema:Offer-sku
@@ -18195,8 +18199,8 @@ schema:OfferForLease
   a sh:NodeShape ;
   schema:category "issue-2348" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """An <a class=\"localLink\" href=\"http://schema.org/OfferForLease\">OfferForLease</a> in Schema.org represents an <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a> to lease out something, i.e. an <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a> whose
-  <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> is <a href=\"http://purl.org/goodrelations/v1#LeaseOut.\">lease out</a>. See <a href=\"https://en.wikipedia.org/wiki/GoodRelations\">Good Relations</a> for
+  rdfs:comment """An <a class='localLink' href='http://schema.org/OfferForLease'>OfferForLease</a> in Schema.org represents an <a class='localLink' href='http://schema.org/Offer'>Offer</a> to lease out something, i.e. an <a class='localLink' href='http://schema.org/Offer'>Offer</a> whose
+  <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> is <a href='http://purl.org/goodrelations/v1#LeaseOut.'>lease out</a>. See <a href='https://en.wikipedia.org/wiki/GoodRelations'>Good Relations</a> for
   background on the underlying concepts."""^^rdf:HTML ;
   rdfs:label "Offer for lease" ;
   rdfs:subClassOf schema:Offer ;
@@ -18206,8 +18210,8 @@ schema:OfferForPurchase
   a sh:NodeShape ;
   schema:category "issue-2348" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """An <a class=\"localLink\" href=\"http://schema.org/OfferForPurchase\">OfferForPurchase</a> in Schema.org represents an <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a> to sell something, i.e. an <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a> whose
-  <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> is <a href=\"http://purl.org/goodrelations/v1#Sell.\">sell</a>. See <a href=\"https://en.wikipedia.org/wiki/GoodRelations\">Good Relations</a> for
+  rdfs:comment """An <a class='localLink' href='http://schema.org/OfferForPurchase'>OfferForPurchase</a> in Schema.org represents an <a class='localLink' href='http://schema.org/Offer'>Offer</a> to sell something, i.e. an <a class='localLink' href='http://schema.org/Offer'>Offer</a> whose
+  <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> is <a href='http://purl.org/goodrelations/v1#Sell.'>sell</a>. See <a href='https://en.wikipedia.org/wiki/GoodRelations'>Good Relations</a> for
   background on the underlying concepts."""^^rdf:HTML ;
   rdfs:label "Offer for purchase" ;
   rdfs:subClassOf schema:Offer ;
@@ -18257,7 +18261,7 @@ schema:OfferShippingDetails-doesNotShip
   a sh:PropertyShape ;
   sh:path schema:doesNotShip ;
   sh:datatype xsd:boolean ;
-  sh:description "Indicates, as part of an <a class=\"localLink\" href=\"http://schema.org/OfferShippingDetails\">OfferShippingDetails</a>, when shipping to a particular <a class=\"localLink\" href=\"http://schema.org/shippingDestination\">shippingDestination</a> is not available."^^rdf:HTML ;
+  sh:description "Indicates, as part of an <a class='localLink' href='http://schema.org/OfferShippingDetails'>OfferShippingDetails</a>, when shipping to a particular <a class='localLink' href='http://schema.org/shippingDestination'>shippingDestination</a> is not available."^^rdf:HTML ;
   sh:name "doesNotShip" ;
 .
 schema:OfferShippingDetails-shippingDestination
@@ -18271,20 +18275,20 @@ schema:OfferShippingDetails-shippingLabel
   a sh:PropertyShape ;
   sh:path schema:shippingLabel ;
   sh:datatype xsd:string ;
-  sh:description "Label to match an <a class=\"localLink\" href=\"http://schema.org/OfferShippingDetails\">OfferShippingDetails</a> with a <a class=\"localLink\" href=\"http://schema.org/ShippingRateSettings\">ShippingRateSettings</a> (within the context of a <a class=\"localLink\" href=\"http://schema.org/shippingSettingsLink\">shippingSettingsLink</a> cross-reference)."^^rdf:HTML ;
+  sh:description "Label to match an <a class='localLink' href='http://schema.org/OfferShippingDetails'>OfferShippingDetails</a> with a <a class='localLink' href='http://schema.org/ShippingRateSettings'>ShippingRateSettings</a> (within the context of a <a class='localLink' href='http://schema.org/shippingSettingsLink'>shippingSettingsLink</a> cross-reference)."^^rdf:HTML ;
   sh:name "shippingLabel" ;
 .
 schema:OfferShippingDetails-shippingRate
   a sh:PropertyShape ;
   sh:path schema:shippingRate ;
   sh:class schema:MonetaryAmount ;
-  sh:description "The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values (of the <a class=\"localLink\" href=\"http://schema.org/MonetaryAmount\">MonetaryAmount</a>) are most appropriate."^^rdf:HTML ;
+  sh:description "The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values (of the <a class='localLink' href='http://schema.org/MonetaryAmount'>MonetaryAmount</a>) are most appropriate."^^rdf:HTML ;
   sh:name "shippingRate" ;
 .
 schema:OfferShippingDetails-shippingSettingsLink
   a sh:PropertyShape ;
   sh:path schema:shippingSettingsLink ;
-  sh:description "Link to a page containing <a class=\"localLink\" href=\"http://schema.org/ShippingRateSettings\">ShippingRateSettings</a> and <a class=\"localLink\" href=\"http://schema.org/DeliveryTimeSettings\">DeliveryTimeSettings</a> details."^^rdf:HTML ;
+  sh:description "Link to a page containing <a class='localLink' href='http://schema.org/ShippingRateSettings'>ShippingRateSettings</a> and <a class='localLink' href='http://schema.org/DeliveryTimeSettings'>DeliveryTimeSettings</a> details."^^rdf:HTML ;
   sh:name "shippingSettingsLink" ;
   sh:nodeKind sh:IRI ;
 .
@@ -18292,7 +18296,7 @@ schema:OfferShippingDetails-transitTimeLabel
   a sh:PropertyShape ;
   sh:path schema:transitTimeLabel ;
   sh:datatype xsd:string ;
-  sh:description "Label to match an <a class=\"localLink\" href=\"http://schema.org/OfferShippingDetails\">OfferShippingDetails</a> with a <a class=\"localLink\" href=\"http://schema.org/DeliveryTimeSettings\">DeliveryTimeSettings</a> (within the context of a <a class=\"localLink\" href=\"http://schema.org/shippingSettingsLink\">shippingSettingsLink</a> cross-reference)."^^rdf:HTML ;
+  sh:description "Label to match an <a class='localLink' href='http://schema.org/OfferShippingDetails'>OfferShippingDetails</a> with a <a class='localLink' href='http://schema.org/DeliveryTimeSettings'>DeliveryTimeSettings</a> (within the context of a <a class='localLink' href='http://schema.org/shippingSettingsLink'>shippingSettingsLink</a> cross-reference)."^^rdf:HTML ;
   sh:name "transitTimeLabel" ;
 .
 schema:OfficeEquipmentStore
@@ -18306,7 +18310,7 @@ schema:OfficialLegalValue
   a schema:LegalValueLevel ;
   schema:category "issue-1156" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "All the documents published by an official publisher should have at least the legal value level \"OfficialLegalValue\". This indicates that the document was published by an organisation with the public task of making it available (e.g. a consolidated version of a EU directive published by the EU Office of Publications)." ;
+  rdfs:comment "All the documents published by an official publisher should have at least the legal value level 'OfficialLegalValue'. This indicates that the document was published by an organisation with the public task of making it available (e.g. a consolidated version of a EU directive published by the EU Office of Publications)." ;
   rdfs:label "Official legal value" ;
 .
 schema:OfflineEventAttendanceMode
@@ -18385,9 +18389,9 @@ schema:OpeningHoursSpecification
   a sh:NodeShape ;
   rdfs:comment """A structured value providing information about the opening hours of a place or a certain service inside a place.<br/><br/>
 
-The place is <strong>open</strong> if the <a class=\"localLink\" href=\"http://schema.org/opens\">opens</a> property is specified, and <strong>closed</strong> otherwise.<br/><br/>
+The place is <strong>open</strong> if the <a class='localLink' href='http://schema.org/opens'>opens</a> property is specified, and <strong>closed</strong> otherwise.<br/><br/>
 
-If the value for the <a class=\"localLink\" href=\"http://schema.org/closes\">closes</a> property is less than the value for the <a class=\"localLink\" href=\"http://schema.org/opens\">opens</a> property then the hour range is assumed to span over the next day."""^^rdf:HTML ;
+If the value for the <a class='localLink' href='http://schema.org/closes'>closes</a> property is less than the value for the <a class='localLink' href='http://schema.org/opens'>opens</a> property then the hour range is assumed to span over the next day."""^^rdf:HTML ;
   rdfs:label "Opening hours specification" ;
   rdfs:subClassOf schema:StructuredValue ;
   sh:property schema:OpeningHoursSpecification-closes ;
@@ -18450,7 +18454,7 @@ schema:OpinionNewsArticle
   a sh:NodeShape ;
   schema:category "issue-1525" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "An <a class=\"localLink\" href=\"http://schema.org/OpinionNewsArticle\">OpinionNewsArticle</a> is a <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a> that primarily expresses opinions rather than journalistic reporting of news and events. For example, a <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a> consisting of a column or <a class=\"localLink\" href=\"http://schema.org/Blog\">Blog</a>/<a class=\"localLink\" href=\"http://schema.org/BlogPosting\">BlogPosting</a> entry in the Opinions section of a news publication."^^rdf:HTML ;
+  rdfs:comment "An <a class='localLink' href='http://schema.org/OpinionNewsArticle'>OpinionNewsArticle</a> is a <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a> that primarily expresses opinions rather than journalistic reporting of news and events. For example, a <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a> consisting of a column or <a class='localLink' href='http://schema.org/Blog'>Blog</a>/<a class='localLink' href='http://schema.org/BlogPosting'>BlogPosting</a> entry in the Opinions section of a news publication."^^rdf:HTML ;
   rdfs:label "Opinion news article" ;
   rdfs:subClassOf schema:NewsArticle ;
 .
@@ -18574,7 +18578,7 @@ schema:Order-discountCurrency
   sh:datatype xsd:string ;
   sh:description """The currency of the discount.<br/><br/>
 
-Use standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\"."""^^rdf:HTML ;
+Use standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR'."""^^rdf:HTML ;
   sh:name "discountCurrency" ;
 .
 schema:Order-isGift
@@ -18906,7 +18910,7 @@ schema:Organization
 schema:Organization-actionableFeedbackPolicy
   a sh:PropertyShape ;
   sh:path schema:actionableFeedbackPolicy ;
-  sh:description "For a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a> or other news-related <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a>, a statement about public engagement activities (for news media, the newsroomâ€™s), including involving the public - digitally or otherwise -- in coverage decisions, reporting and activities after publication."^^rdf:HTML ;
+  sh:description "For a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a> or other news-related <a class='localLink' href='http://schema.org/Organization'>Organization</a>, a statement about public engagement activities (for news media, the newsroomâ€™s), including involving the public - digitally or otherwise -- in coverage decisions, reporting and activities after publication."^^rdf:HTML ;
   sh:name "actionableFeedbackPolicy" ;
   sh:or (
       [
@@ -19010,7 +19014,7 @@ schema:Organization-contactPoints
 schema:Organization-correctionsPolicy
   a sh:PropertyShape ;
   sh:path schema:correctionsPolicy ;
-  sh:description "For an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (e.g. <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>), a statement describing (in news media, the newsroomâ€™s) disclosure and correction policy for errors."^^rdf:HTML ;
+  sh:description "For an <a class='localLink' href='http://schema.org/Organization'>Organization</a> (e.g. <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>), a statement describing (in news media, the newsroomâ€™s) disclosure and correction policy for errors."^^rdf:HTML ;
   sh:name "correctionsPolicy" ;
   sh:or (
       [
@@ -19038,7 +19042,7 @@ schema:Organization-dissolutionDate
 schema:Organization-diversityPolicy
   a sh:PropertyShape ;
   sh:path schema:diversityPolicy ;
-  sh:description "Statement on diversity policy by an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> e.g. a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>. For a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>, a statement describing the newsroomâ€™s diversity policy on both staffing and sources, typically providing staffing data."^^rdf:HTML ;
+  sh:description "Statement on diversity policy by an <a class='localLink' href='http://schema.org/Organization'>Organization</a> e.g. a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>. For a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>, a statement describing the newsroomâ€™s diversity policy on both staffing and sources, typically providing staffing data."^^rdf:HTML ;
   sh:name "diversityPolicy" ;
   sh:or (
       [
@@ -19052,7 +19056,7 @@ schema:Organization-diversityPolicy
 schema:Organization-diversityStaffingReport
   a sh:PropertyShape ;
   sh:path schema:diversityStaffingReport ;
-  sh:description "For an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (often but not necessarily a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>), a report on staffing diversity issues. In a news context this might be for example ASNE or RTDNA (US) reports, or self-reported."^^rdf:HTML ;
+  sh:description "For an <a class='localLink' href='http://schema.org/Organization'>Organization</a> (often but not necessarily a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>), a report on staffing diversity issues. In a news context this might be for example ASNE or RTDNA (US) reports, or self-reported."^^rdf:HTML ;
   sh:name "diversityStaffingReport" ;
   sh:or (
       [
@@ -19094,7 +19098,7 @@ schema:Organization-employees
 schema:Organization-ethicsPolicy
   a sh:PropertyShape ;
   sh:path schema:ethicsPolicy ;
-  sh:description "Statement about ethics policy, e.g. of a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a> regarding journalistic and publishing practices, or of a <a class=\"localLink\" href=\"http://schema.org/Restaurant\">Restaurant</a>, a page describing food source policies. In the case of a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>, an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization."^^rdf:HTML ;
+  sh:description "Statement about ethics policy, e.g. of a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a> regarding journalistic and publishing practices, or of a <a class='localLink' href='http://schema.org/Restaurant'>Restaurant</a>, a page describing food source policies. In the case of a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>, an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization."^^rdf:HTML ;
   sh:name "ethicsPolicy" ;
   sh:or (
       [
@@ -19172,7 +19176,7 @@ schema:Organization-globalLocationNumber
   a sh:PropertyShape ;
   sh:path schema:globalLocationNumber ;
   sh:datatype xsd:string ;
-  sh:description "The <a href=\"http://www.gs1.org/gln\">Global Location Number</a> (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations."^^rdf:HTML ;
+  sh:description "The <a href='http://www.gs1.org/gln'>Global Location Number</a> (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations."^^rdf:HTML ;
   sh:name "globalLocationNumber" ;
 .
 schema:Organization-hasCredential
@@ -19227,7 +19231,7 @@ schema:Organization-isicV4
 schema:Organization-knowsAbout
   a sh:PropertyShape ;
   sh:path schema:knowsAbout ;
-  sh:description "Of a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a>, and less typically of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a>, to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or <a class=\"localLink\" href=\"http://schema.org/JobPosting\">JobPosting</a> descriptions."^^rdf:HTML ;
+  sh:description "Of a <a class='localLink' href='http://schema.org/Person'>Person</a>, and less typically of an <a class='localLink' href='http://schema.org/Organization'>Organization</a>, to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or <a class='localLink' href='http://schema.org/JobPosting'>JobPosting</a> descriptions."^^rdf:HTML ;
   sh:name "knowsAbout" ;
   sh:or (
       [
@@ -19244,7 +19248,7 @@ schema:Organization-knowsAbout
 schema:Organization-knowsLanguage
   a sh:PropertyShape ;
   sh:path schema:knowsLanguage ;
-  sh:description "Of a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a>, and less typically of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a>, to indicate a known language. We do not distinguish skill levels or reading/writing/speaking/signing here. Use language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>."^^rdf:HTML ;
+  sh:description "Of a <a class='localLink' href='http://schema.org/Person'>Person</a>, and less typically of an <a class='localLink' href='http://schema.org/Organization'>Organization</a>, to indicate a known language. We do not distinguish skill levels or reading/writing/speaking/signing here. Use language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>."^^rdf:HTML ;
   sh:name "knowsLanguage" ;
   sh:or (
       [
@@ -19376,7 +19380,7 @@ schema:Organization-numberOfEmployees
 schema:Organization-ownershipFundingInfo
   a sh:PropertyShape ;
   sh:path schema:ownershipFundingInfo ;
-  sh:description "For an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (often but not necessarily a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the <a class=\"localLink\" href=\"http://schema.org/funder\">funder</a> is also available and can be used to make basic funder information machine-readable."^^rdf:HTML ;
+  sh:description "For an <a class='localLink' href='http://schema.org/Organization'>Organization</a> (often but not necessarily a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the <a class='localLink' href='http://schema.org/funder'>funder</a> is also available and can be used to make basic funder information machine-readable."^^rdf:HTML ;
   sh:name "ownershipFundingInfo" ;
   sh:or (
       [
@@ -19411,15 +19415,15 @@ schema:Organization-parentOrganization
   a sh:PropertyShape ;
   sh:path schema:parentOrganization ;
   sh:class schema:Organization ;
-  sh:description "The larger organization that this organization is a <a class=\"localLink\" href=\"http://schema.org/subOrganization\">subOrganization</a> of, if any."^^rdf:HTML ;
+  sh:description "The larger organization that this organization is a <a class='localLink' href='http://schema.org/subOrganization'>subOrganization</a> of, if any."^^rdf:HTML ;
   sh:name "parentOrganization" ;
 .
 schema:Organization-publishingPrinciples
   a sh:PropertyShape ;
   sh:path schema:publishingPrinciples ;
-  sh:description """The publishingPrinciples property indicates (typically via <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a>) a document describing the editorial principles of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (or individual e.g. a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a> (e.g. <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a>) the principles are those of the party primarily responsible for the creation of the <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>.<br/><br/>
+  sh:description """The publishingPrinciples property indicates (typically via <a class='localLink' href='http://schema.org/URL'>URL</a>) a document describing the editorial principles of an <a class='localLink' href='http://schema.org/Organization'>Organization</a> (or individual e.g. a <a class='localLink' href='http://schema.org/Person'>Person</a> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a> (e.g. <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a>) the principles are those of the party primarily responsible for the creation of the <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a>.<br/><br/>
 
-While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a <a class=\"localLink\" href=\"http://schema.org/funder\">funder</a>) can be expressed using schema.org terminology."""^^rdf:HTML ;
+While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a <a class='localLink' href='http://schema.org/funder'>funder</a>) can be expressed using schema.org terminology."""^^rdf:HTML ;
   sh:name "publishingPrinciples" ;
   sh:or (
       [
@@ -19513,7 +19517,7 @@ schema:Organization-telephone
 schema:Organization-unnamedSourcesPolicy
   a sh:PropertyShape ;
   sh:path schema:unnamedSourcesPolicy ;
-  sh:description "For an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (typically a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>), a statement about policy on use of unnamed sources and the decision process required."^^rdf:HTML ;
+  sh:description "For an <a class='localLink' href='http://schema.org/Organization'>Organization</a> (typically a <a class='localLink' href='http://schema.org/NewsMediaOrganization'>NewsMediaOrganization</a>), a statement about policy on use of unnamed sources and the decision process required."^^rdf:HTML ;
   sh:name "unnamedSourcesPolicy" ;
   sh:or (
       [
@@ -20228,7 +20232,7 @@ schema:Periodical
   a sh:NodeShape ;
   rdfs:comment """A publication in any medium issued in successive parts bearing numerical or chronological designations and intended, such as a magazine, scholarly journal, or newspaper to continue indefinitely.<br/><br/>
 
-See also <a href=\"http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html\">blog post</a>."""^^rdf:HTML ;
+See also <a href='http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html'>blog post</a>."""^^rdf:HTML ;
   rdfs:label "Periodical" ;
   rdfs:subClassOf schema:CreativeWorkSeries ;
   owl:equivalentClass <http://purl.org/ontology/bibo/Periodical> ;
@@ -20461,7 +20465,7 @@ schema:Person-callSign
   a sh:PropertyShape ;
   sh:path schema:callSign ;
   sh:datatype xsd:string ;
-  sh:description "A <a href=\"https://en.wikipedia.org/wiki/Call_sign\">callsign</a>, as used in broadcasting and radio communications to identify people, radio and TV stations, or vehicles."^^rdf:HTML ;
+  sh:description "A <a href='https://en.wikipedia.org/wiki/Call_sign'>callsign</a>, as used in broadcasting and radio communications to identify people, radio and TV stations, or vehicles."^^rdf:HTML ;
   sh:name "callSign" ;
 .
 schema:Person-children
@@ -20572,7 +20576,7 @@ schema:Person-funder
 schema:Person-gender
   a sh:PropertyShape ;
   sh:path schema:gender ;
-  sh:description "Gender of something, typically a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a>, but possibly also fictional characters, animals, etc. While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender. The <a class=\"localLink\" href=\"http://schema.org/gender\">gender</a> property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender <a class=\"localLink\" href=\"http://schema.org/SportsTeam\">SportsTeam</a> can be indicated with a text value of \"Mixed\"."^^rdf:HTML ;
+  sh:description "Gender of something, typically a <a class='localLink' href='http://schema.org/Person'>Person</a>, but possibly also fictional characters, animals, etc. While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender. The <a class='localLink' href='http://schema.org/gender'>gender</a> property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender <a class='localLink' href='http://schema.org/SportsTeam'>SportsTeam</a> can be indicated with a text value of 'Mixed'."^^rdf:HTML ;
   sh:name "gender" ;
   sh:or (
       [
@@ -20594,7 +20598,7 @@ schema:Person-globalLocationNumber
   a sh:PropertyShape ;
   sh:path schema:globalLocationNumber ;
   sh:datatype xsd:string ;
-  sh:description "The <a href=\"http://www.gs1.org/gln\">Global Location Number</a> (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations."^^rdf:HTML ;
+  sh:description "The <a href='http://www.gs1.org/gln'>Global Location Number</a> (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations."^^rdf:HTML ;
   sh:name "globalLocationNumber" ;
 .
 schema:Person-hasCredential
@@ -20705,7 +20709,7 @@ schema:Person-knows
 schema:Person-knowsAbout
   a sh:PropertyShape ;
   sh:path schema:knowsAbout ;
-  sh:description "Of a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a>, and less typically of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a>, to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or <a class=\"localLink\" href=\"http://schema.org/JobPosting\">JobPosting</a> descriptions."^^rdf:HTML ;
+  sh:description "Of a <a class='localLink' href='http://schema.org/Person'>Person</a>, and less typically of an <a class='localLink' href='http://schema.org/Organization'>Organization</a>, to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or <a class='localLink' href='http://schema.org/JobPosting'>JobPosting</a> descriptions."^^rdf:HTML ;
   sh:name "knowsAbout" ;
   sh:or (
       [
@@ -20722,7 +20726,7 @@ schema:Person-knowsAbout
 schema:Person-knowsLanguage
   a sh:PropertyShape ;
   sh:path schema:knowsLanguage ;
-  sh:description "Of a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a>, and less typically of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a>, to indicate a known language. We do not distinguish skill levels or reading/writing/speaking/signing here. Use language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>."^^rdf:HTML ;
+  sh:description "Of a <a class='localLink' href='http://schema.org/Person'>Person</a>, and less typically of an <a class='localLink' href='http://schema.org/Organization'>Organization</a>, to indicate a known language. We do not distinguish skill levels or reading/writing/speaking/signing here. Use language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>."^^rdf:HTML ;
   sh:name "knowsLanguage" ;
   sh:or (
       [
@@ -20820,9 +20824,9 @@ schema:Person-performerIn
 schema:Person-publishingPrinciples
   a sh:PropertyShape ;
   sh:path schema:publishingPrinciples ;
-  sh:description """The publishingPrinciples property indicates (typically via <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a>) a document describing the editorial principles of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (or individual e.g. a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a> (e.g. <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a>) the principles are those of the party primarily responsible for the creation of the <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>.<br/><br/>
+  sh:description """The publishingPrinciples property indicates (typically via <a class='localLink' href='http://schema.org/URL'>URL</a>) a document describing the editorial principles of an <a class='localLink' href='http://schema.org/Organization'>Organization</a> (or individual e.g. a <a class='localLink' href='http://schema.org/Person'>Person</a> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a> (e.g. <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a>) the principles are those of the party primarily responsible for the creation of the <a class='localLink' href='http://schema.org/CreativeWork'>CreativeWork</a>.<br/><br/>
 
-While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a <a class=\"localLink\" href=\"http://schema.org/funder\">funder</a>) can be expressed using schema.org terminology."""^^rdf:HTML ;
+While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a <a class='localLink' href='http://schema.org/funder'>funder</a>) can be expressed using schema.org terminology."""^^rdf:HTML ;
   sh:name "publishingPrinciples" ;
   sh:or (
       [
@@ -21195,9 +21199,9 @@ schema:Place-branchCode
   a sh:PropertyShape ;
   sh:path schema:branchCode ;
   sh:datatype xsd:string ;
-  sh:description """A short textual code (also called \"store code\") that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.<br/><br/>
+  sh:description """A short textual code (also called 'store code') that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.<br/><br/>
 
-For example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code \"3047\" is a branchCode for a particular branch."""^^rdf:HTML ;
+For example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code '3047' is a branchCode for a particular branch."""^^rdf:HTML ;
   sh:name "branchCode" ;
 .
 schema:Place-containedIn
@@ -21259,7 +21263,7 @@ schema:Place-geo
 schema:Place-geoContains
   a sh:PropertyShape ;
   sh:path schema:geoContains ;
-  sh:description "Represents a relationship between two geometries (or the places they represent), relating a containing geometry to a contained geometry. \"a contains b iff no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a\". As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents a relationship between two geometries (or the places they represent), relating a containing geometry to a contained geometry. 'a contains b iff no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a'. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoContains" ;
   sh:or (
       [
@@ -21273,7 +21277,7 @@ schema:Place-geoContains
 schema:Place-geoCoveredBy
   a sh:PropertyShape ;
   sh:path schema:geoCoveredBy ;
-  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that covers it. As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that covers it. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoCoveredBy" ;
   sh:or (
       [
@@ -21287,7 +21291,7 @@ schema:Place-geoCoveredBy
 schema:Place-geoCovers
   a sh:PropertyShape ;
   sh:path schema:geoCovers ;
-  sh:description "Represents a relationship between two geometries (or the places they represent), relating a covering geometry to a covered geometry. \"Every point of b is a point of (the interior or boundary of) a\". As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents a relationship between two geometries (or the places they represent), relating a covering geometry to a covered geometry. 'Every point of b is a point of (the interior or boundary of) a'. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoCovers" ;
   sh:or (
       [
@@ -21301,7 +21305,7 @@ schema:Place-geoCovers
 schema:Place-geoCrosses
   a sh:PropertyShape ;
   sh:path schema:geoCrosses ;
-  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that crosses it: \"a crosses b: they have some but not all interior points in common, and the dimension of the intersection is less than that of at least one of them\". As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that crosses it: 'a crosses b: they have some but not all interior points in common, and the dimension of the intersection is less than that of at least one of them'. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoCrosses" ;
   sh:or (
       [
@@ -21315,7 +21319,7 @@ schema:Place-geoCrosses
 schema:Place-geoDisjoint
   a sh:PropertyShape ;
   sh:path schema:geoDisjoint ;
-  sh:description "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: they have no point in common. They form a set of disconnected geometries.\" (a symmetric relationship, as defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>)"^^rdf:HTML ;
+  sh:description "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: they have no point in common. They form a set of disconnected geometries.' (a symmetric relationship, as defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>)"^^rdf:HTML ;
   sh:name "geoDisjoint" ;
   sh:or (
       [
@@ -21329,7 +21333,7 @@ schema:Place-geoDisjoint
 schema:Place-geoEquals
   a sh:PropertyShape ;
   sh:path schema:geoEquals ;
-  sh:description "Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>. \"Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other\" (a symmetric relationship)"^^rdf:HTML ;
+  sh:description "Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>. 'Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other' (a symmetric relationship)"^^rdf:HTML ;
   sh:name "geoEquals" ;
   sh:or (
       [
@@ -21343,7 +21347,7 @@ schema:Place-geoEquals
 schema:Place-geoIntersects
   a sh:PropertyShape ;
   sh:path schema:geoIntersects ;
-  sh:description "Represents spatial relations in which two geometries (or the places they represent) have at least one point in common. As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents spatial relations in which two geometries (or the places they represent) have at least one point in common. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoIntersects" ;
   sh:or (
       [
@@ -21357,7 +21361,7 @@ schema:Place-geoIntersects
 schema:Place-geoOverlaps
   a sh:PropertyShape ;
   sh:path schema:geoOverlaps ;
-  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that geospatially overlaps it, i.e. they have some but not all points in common. As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that geospatially overlaps it, i.e. they have some but not all points in common. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoOverlaps" ;
   sh:or (
       [
@@ -21371,7 +21375,7 @@ schema:Place-geoOverlaps
 schema:Place-geoTouches
   a sh:PropertyShape ;
   sh:path schema:geoTouches ;
-  sh:description "Represents spatial relations in which two geometries (or the places they represent) touch: they have at least one boundary point in common, but no interior points.\" (a symmetric relationship, as defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a> )"^^rdf:HTML ;
+  sh:description "Represents spatial relations in which two geometries (or the places they represent) touch: they have at least one boundary point in common, but no interior points.' (a symmetric relationship, as defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a> )"^^rdf:HTML ;
   sh:name "geoTouches" ;
   sh:or (
       [
@@ -21385,7 +21389,7 @@ schema:Place-geoTouches
 schema:Place-geoWithin
   a sh:PropertyShape ;
   sh:path schema:geoWithin ;
-  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to one that contains it, i.e. it is inside (i.e. within) its interior. As defined in <a href=\"https://en.wikipedia.org/wiki/DE-9IM\">DE-9IM</a>."^^rdf:HTML ;
+  sh:description "Represents a relationship between two geometries (or the places they represent), relating a geometry to one that contains it, i.e. it is inside (i.e. within) its interior. As defined in <a href='https://en.wikipedia.org/wiki/DE-9IM'>DE-9IM</a>."^^rdf:HTML ;
   sh:name "geoWithin" ;
   sh:or (
       [
@@ -21400,14 +21404,14 @@ schema:Place-globalLocationNumber
   a sh:PropertyShape ;
   sh:path schema:globalLocationNumber ;
   sh:datatype xsd:string ;
-  sh:description "The <a href=\"http://www.gs1.org/gln\">Global Location Number</a> (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations."^^rdf:HTML ;
+  sh:description "The <a href='http://www.gs1.org/gln'>Global Location Number</a> (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations."^^rdf:HTML ;
   sh:name "globalLocationNumber" ;
 .
 schema:Place-hasDriveThroughService
   a sh:PropertyShape ;
   sh:path schema:hasDriveThroughService ;
   sh:datatype xsd:boolean ;
-  sh:description "Indicates whether some facility (e.g. <a class=\"localLink\" href=\"http://schema.org/FoodEstablishment\">FoodEstablishment</a>, <a class=\"localLink\" href=\"http://schema.org/CovidTestingFacility\">CovidTestingFacility</a>) offers a service that can be used by driving through in a car. In the case of <a class=\"localLink\" href=\"http://schema.org/CovidTestingFacility\">CovidTestingFacility</a> such facilities could potentially help with social distancing from other potentially-infected users."^^rdf:HTML ;
+  sh:description "Indicates whether some facility (e.g. <a class='localLink' href='http://schema.org/FoodEstablishment'>FoodEstablishment</a>, <a class='localLink' href='http://schema.org/CovidTestingFacility'>CovidTestingFacility</a>) offers a service that can be used by driving through in a car. In the case of <a class='localLink' href='http://schema.org/CovidTestingFacility'>CovidTestingFacility</a> such facilities could potentially help with social distancing from other potentially-infected users."^^rdf:HTML ;
   sh:name "hasDriveThroughService" ;
 .
 schema:Place-hasMap
@@ -21441,7 +21445,7 @@ schema:Place-isicV4
 schema:Place-latitude
   a sh:PropertyShape ;
   sh:path schema:latitude ;
-  sh:description "The latitude of a location. For example <code>37.42242</code> (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>)."^^rdf:HTML ;
+  sh:description "The latitude of a location. For example <code>37.42242</code> (<a href='https://en.wikipedia.org/wiki/World_Geodetic_System'>WGS 84</a>)."^^rdf:HTML ;
   sh:name "latitude" ;
   sh:or (
       [
@@ -21469,7 +21473,7 @@ schema:Place-logo
 schema:Place-longitude
   a sh:PropertyShape ;
   sh:path schema:longitude ;
-  sh:description "The longitude of a location. For example <code>-122.08585</code> (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>)."^^rdf:HTML ;
+  sh:description "The longitude of a location. For example <code>-122.08585</code> (<a href='https://en.wikipedia.org/wiki/World_Geodetic_System'>WGS 84</a>)."^^rdf:HTML ;
   sh:name "longitude" ;
   sh:or (
       [
@@ -21540,7 +21544,7 @@ schema:Place-publicAccess
   a sh:PropertyShape ;
   sh:path schema:publicAccess ;
   sh:datatype xsd:boolean ;
-  sh:description "A flag to signal that the <a class=\"localLink\" href=\"http://schema.org/Place\">Place</a> is open to public visitors.  If this property is omitted there is no assumed default boolean value"^^rdf:HTML ;
+  sh:description "A flag to signal that the <a class='localLink' href='http://schema.org/Place'>Place</a> is open to public visitors.  If this property is omitted there is no assumed default boolean value"^^rdf:HTML ;
   sh:name "publicAccess" ;
 .
 schema:Place-review
@@ -21577,7 +21581,7 @@ schema:Place-specialOpeningHoursSpecification
   sh:class schema:OpeningHoursSpecification ;
   sh:description """The special opening hours of a certain place.<br/><br/>
 
-Use this to explicitly override general opening hours brought in scope by <a class=\"localLink\" href=\"http://schema.org/openingHoursSpecification\">openingHoursSpecification</a> or <a class=\"localLink\" href=\"http://schema.org/openingHours\">openingHours</a>."""^^rdf:HTML ;
+Use this to explicitly override general opening hours brought in scope by <a class='localLink' href='http://schema.org/openingHoursSpecification'>openingHoursSpecification</a> or <a class='localLink' href='http://schema.org/openingHours'>openingHours</a>."""^^rdf:HTML ;
   sh:name "specialOpeningHoursSpecification" ;
 .
 schema:Place-telephone
@@ -21590,7 +21594,7 @@ schema:Place-telephone
 schema:Place-tourBookingPage
   a sh:PropertyShape ;
   sh:path schema:tourBookingPage ;
-  sh:description "A page providing information on how to book a tour of some <a class=\"localLink\" href=\"http://schema.org/Place\">Place</a>, such as an <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a> or <a class=\"localLink\" href=\"http://schema.org/ApartmentComplex\">ApartmentComplex</a> in a real estate setting, as well as other kinds of tours as appropriate."^^rdf:HTML ;
+  sh:description "A page providing information on how to book a tour of some <a class='localLink' href='http://schema.org/Place'>Place</a>, such as an <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a> or <a class='localLink' href='http://schema.org/ApartmentComplex'>ApartmentComplex</a> in a real estate setting, as well as other kinds of tours as appropriate."^^rdf:HTML ;
   sh:name "tourBookingPage" ;
   sh:nodeKind sh:IRI ;
 .
@@ -21634,7 +21638,7 @@ schema:Play
   a sh:NodeShape ;
   schema:category "issue-1816" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note the peformance of a Play would be a <a class=\"localLink\" href=\"http://schema.org/TheaterEvent\">TheaterEvent</a> - the <em>Play</em> being the <a class=\"localLink\" href=\"http://schema.org/workPerformed\">workPerformed</a>."^^rdf:HTML ;
+  rdfs:comment "A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note the peformance of a Play would be a <a class='localLink' href='http://schema.org/TheaterEvent'>TheaterEvent</a> - the <em>Play</em> being the <a class='localLink' href='http://schema.org/workPerformed'>workPerformed</a>."^^rdf:HTML ;
   rdfs:label "Play" ;
   rdfs:subClassOf schema:CreativeWork ;
 .
@@ -21646,8 +21650,8 @@ schema:PlayAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/ListenAction\">ListenAction</a>: Unlike ListenAction (which is under ConsumeAction), PlayAction refers to performing for an audience or at an event, rather than consuming music.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/WatchAction\">WatchAction</a>: Unlike WatchAction (which is under ConsumeAction), PlayAction refers to showing/displaying for an audience or at an event, rather than consuming visual content.</li>
+<li><a class='localLink' href='http://schema.org/ListenAction'>ListenAction</a>: Unlike ListenAction (which is under ConsumeAction), PlayAction refers to performing for an audience or at an event, rather than consuming music.</li>
+<li><a class='localLink' href='http://schema.org/WatchAction'>WatchAction</a>: Unlike WatchAction (which is under ConsumeAction), PlayAction refers to showing/displaying for an audience or at an event, rather than consuming visual content.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Play action" ;
@@ -21770,7 +21774,7 @@ schema:PostalAddress
 schema:PostalAddress-addressCountry
   a sh:PropertyShape ;
   sh:path schema:addressCountry ;
-  sh:description "The country. For example, USA. You can also provide the two-letter <a href=\"http://en.wikipedia.org/wiki/ISO_3166-1\">ISO 3166-1 alpha-2 country code</a>."^^rdf:HTML ;
+  sh:description "The country. For example, USA. You can also provide the two-letter <a href='http://en.wikipedia.org/wiki/ISO_3166-1'>ISO 3166-1 alpha-2 country code</a>."^^rdf:HTML ;
   sh:name "addressCountry" ;
   sh:or (
       [
@@ -21792,7 +21796,7 @@ schema:PostalAddress-addressRegion
   a sh:PropertyShape ;
   sh:path schema:addressRegion ;
   sh:datatype xsd:string ;
-  sh:description "The region in which the locality is, and which is in the country. For example, California or another appropriate first-level <a href=\"https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_country\">Administrative division</a>"^^rdf:HTML ;
+  sh:description "The region in which the locality is, and which is in the country. For example, California or another appropriate first-level <a href='https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_country'>Administrative division</a>"^^rdf:HTML ;
   sh:name "addressRegion" ;
 .
 schema:PostalAddress-postOfficeBoxNumber
@@ -21821,7 +21825,7 @@ schema:PostalCodeRangeSpecification
   a sh:NodeShape ;
   schema:category "issue-2506" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "Indicates a range of postalcodes, usually defined as the set of valid codes between <a class=\"localLink\" href=\"http://schema.org/postalCodeBegin\">postalCodeBegin</a> and <a class=\"localLink\" href=\"http://schema.org/postalCodeEnd\">postalCodeEnd</a>, inclusively."^^rdf:HTML ;
+  rdfs:comment "Indicates a range of postalcodes, usually defined as the set of valid codes between <a class='localLink' href='http://schema.org/postalCodeBegin'>postalCodeBegin</a> and <a class='localLink' href='http://schema.org/postalCodeEnd'>postalCodeEnd</a>, inclusively."^^rdf:HTML ;
   rdfs:label "Postal code range specification" ;
   rdfs:subClassOf schema:StructuredValue ;
   sh:property schema:PostalCodeRangeSpecification-postalCodeBegin ;
@@ -21838,7 +21842,7 @@ schema:PostalCodeRangeSpecification-postalCodeEnd
   a sh:PropertyShape ;
   sh:path schema:postalCodeEnd ;
   sh:datatype xsd:string ;
-  sh:description "Last postal code in the range (included). Needs to be after <a class=\"localLink\" href=\"http://schema.org/postalCodeBegin\">postalCodeBegin</a>."^^rdf:HTML ;
+  sh:description "Last postal code in the range (included). Needs to be after <a class='localLink' href='http://schema.org/postalCodeBegin'>postalCodeBegin</a>."^^rdf:HTML ;
   sh:name "postalCodeEnd" ;
 .
 schema:Poster
@@ -21918,7 +21922,7 @@ schema:PreventionIndication
 schema:PriceSpecification
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A structured value representing a price or price range. Typically, only the subclasses of this type are used for markup. It is recommended to use <a class=\"localLink\" href=\"http://schema.org/MonetaryAmount\">MonetaryAmount</a> to describe independent amounts of money such as a salary, credit card limits, etc."^^rdf:HTML ;
+  rdfs:comment "A structured value representing a price or price range. Typically, only the subclasses of this type are used for markup. It is recommended to use <a class='localLink' href='http://schema.org/MonetaryAmount'>MonetaryAmount</a> to describe independent amounts of money such as a salary, credit card limits, etc."^^rdf:HTML ;
   rdfs:label "Price specification" ;
   rdfs:subClassOf schema:StructuredValue ;
   sh:property schema:PriceSpecification-eligibleQuantity ;
@@ -21967,9 +21971,9 @@ schema:PriceSpecification-price
 Usage guidelines:<br/><br/>
 
 <ul>
-<li>Use the <a class=\"localLink\" href=\"http://schema.org/priceCurrency\">priceCurrency</a> property (with standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\") instead of including <a href=\"http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign\">ambiguous symbols</a> such as '$' in the value.</li>
+<li>Use the <a class='localLink' href='http://schema.org/priceCurrency'>priceCurrency</a> property (with standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR') instead of including <a href='http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign'>ambiguous symbols</a> such as '$' in the value.</li>
 <li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.</li>
-<li>Note that both <a href=\"http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute\">RDFa</a> and Microdata syntax allow the use of a \"content=\" attribute for publishing simple machine-readable values alongside more human-friendly formatting.</li>
+<li>Note that both <a href='http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute'>RDFa</a> and Microdata syntax allow the use of a 'content=' attribute for publishing simple machine-readable values alongside more human-friendly formatting.</li>
 <li>Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.</li>
 </ul>
 """^^rdf:HTML ;
@@ -21987,9 +21991,9 @@ schema:PriceSpecification-priceCurrency
   a sh:PropertyShape ;
   sh:path schema:priceCurrency ;
   sh:datatype xsd:string ;
-  sh:description """The currency of the price, or a price component when attached to <a class=\"localLink\" href=\"http://schema.org/PriceSpecification\">PriceSpecification</a> and its subtypes.<br/><br/>
+  sh:description """The currency of the price, or a price component when attached to <a class='localLink' href='http://schema.org/PriceSpecification'>PriceSpecification</a> and its subtypes.<br/><br/>
 
-Use standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\"."""^^rdf:HTML ;
+Use standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR'."""^^rdf:HTML ;
   sh:name "priceCurrency" ;
 .
 schema:PriceSpecification-validFrom
@@ -22182,35 +22186,35 @@ schema:Product-gtin
   a sh:PropertyShape ;
   sh:path schema:gtin ;
   sh:datatype xsd:string ;
-  sh:description "A Global Trade Item Number (<a href=\"https://www.gs1.org/standards/id-keys/gtin\">GTIN</a>). GTINs identify trade items, including products and services, using numeric identification codes. The <a class=\"localLink\" href=\"http://schema.org/gtin\">gtin</a> property generalizes the earlier <a class=\"localLink\" href=\"http://schema.org/gtin8\">gtin8</a>, <a class=\"localLink\" href=\"http://schema.org/gtin12\">gtin12</a>, <a class=\"localLink\" href=\"http://schema.org/gtin13\">gtin13</a>, and <a class=\"localLink\" href=\"http://schema.org/gtin14\">gtin14</a> properties. The GS1 <a href=\"https://www.gs1.org/standards/Digital-Link/\">digital link specifications</a> express GTINs as URLs. A correct <a class=\"localLink\" href=\"http://schema.org/gtin\">gtin</a> value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a <a href=\"https://www.gs1.org/services/check-digit-calculator\">valid GS1 check digit</a> and meet the other rules for valid GTINs. See also <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1's GTIN Summary</a> and <a href=\"https://en.wikipedia.org/wiki/Global_Trade_Item_Number\">Wikipedia</a> for more details. Left-padding of the gtin values is not required or encouraged."^^rdf:HTML ;
+  sh:description "A Global Trade Item Number (<a href='https://www.gs1.org/standards/id-keys/gtin'>GTIN</a>). GTINs identify trade items, including products and services, using numeric identification codes. The <a class='localLink' href='http://schema.org/gtin'>gtin</a> property generalizes the earlier <a class='localLink' href='http://schema.org/gtin8'>gtin8</a>, <a class='localLink' href='http://schema.org/gtin12'>gtin12</a>, <a class='localLink' href='http://schema.org/gtin13'>gtin13</a>, and <a class='localLink' href='http://schema.org/gtin14'>gtin14</a> properties. The GS1 <a href='https://www.gs1.org/standards/Digital-Link/'>digital link specifications</a> express GTINs as URLs. A correct <a class='localLink' href='http://schema.org/gtin'>gtin</a> value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a 'GS1 Digital Link' URL based on such a string. The numeric component should also have a <a href='https://www.gs1.org/services/check-digit-calculator'>valid GS1 check digit</a> and meet the other rules for valid GTINs. See also <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1's GTIN Summary</a> and <a href='https://en.wikipedia.org/wiki/Global_Trade_Item_Number'>Wikipedia</a> for more details. Left-padding of the gtin values is not required or encouraged."^^rdf:HTML ;
   sh:name "gtin" ;
 .
 schema:Product-gtin12
   a sh:PropertyShape ;
   sh:path schema:gtin12 ;
   sh:datatype xsd:string ;
-  sh:description "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
+  sh:description "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
   sh:name "gtin12" ;
 .
 schema:Product-gtin13
   a sh:PropertyShape ;
   sh:path schema:gtin13 ;
   sh:datatype xsd:string ;
-  sh:description "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceeding zero. See <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
+  sh:description "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceeding zero. See <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
   sh:name "gtin13" ;
 .
 schema:Product-gtin14
   a sh:PropertyShape ;
   sh:path schema:gtin14 ;
   sh:datatype xsd:string ;
-  sh:description "The GTIN-14 code of the product, or the product to which the offer refers. See <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
+  sh:description "The GTIN-14 code of the product, or the product to which the offer refers. See <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
   sh:name "gtin14" ;
 .
 schema:Product-gtin8
   a sh:PropertyShape ;
   sh:path schema:gtin8 ;
   sh:datatype xsd:string ;
-  sh:description "The <a href=\"http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx\">GTIN-8</a> code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See <a href=\"http://www.gs1.org/barcodes/technical/idkeys/gtin\">GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
+  sh:description "The <a href='http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx'>GTIN-8</a> code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See <a href='http://www.gs1.org/barcodes/technical/idkeys/gtin'>GS1 GTIN Summary</a> for more details."^^rdf:HTML ;
   sh:name "gtin8" ;
 .
 schema:Product-hasMerchantReturnPolicy
@@ -22353,13 +22357,13 @@ schema:Product-nsn
   a sh:PropertyShape ;
   sh:path schema:nsn ;
   sh:datatype xsd:string ;
-  sh:description "Indicates the <a href=\"https://en.wikipedia.org/wiki/NATO_Stock_Number\">NATO stock number</a> (nsn) of a <a class=\"localLink\" href=\"http://schema.org/Product\">Product</a>."^^rdf:HTML ;
+  sh:description "Indicates the <a href='https://en.wikipedia.org/wiki/NATO_Stock_Number'>NATO stock number</a> (nsn) of a <a class='localLink' href='http://schema.org/Product'>Product</a>."^^rdf:HTML ;
   sh:name "nsn" ;
 .
 schema:Product-offers
   a sh:PropertyShape ;
   sh:path schema:offers ;
-  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class=\"localLink\" href=\"http://schema.org/Demand\">Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
+  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class='localLink' href='http://schema.org/Demand'>Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
   sh:name "offers" ;
   sh:or (
       [
@@ -22374,7 +22378,7 @@ schema:Product-productID
   a sh:PropertyShape ;
   sh:path schema:productID ;
   sh:datatype xsd:string ;
-  sh:description "The product identifier, such as ISBN. For example: <code>meta itemprop=\"productID\" content=\"isbn:123-456-789\"</code>."^^rdf:HTML ;
+  sh:description "The product identifier, such as ISBN. For example: <code>meta itemprop='productID' content='isbn:123-456-789'</code>."^^rdf:HTML ;
   sh:name "productID" ;
 .
 schema:Product-productionDate
@@ -22510,7 +22514,7 @@ schema:ProductReturnPolicy
   schema:category "issue-2288" ;
   schema:isPartOf <http://attic.schema.org> ;
   schema:supersededBy schema:MerchantReturnPolicy ;
-  rdfs:comment "A ProductReturnPolicy provides information about product return policies associated with an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> or <a class=\"localLink\" href=\"http://schema.org/Product\">Product</a>."^^rdf:HTML ;
+  rdfs:comment "A ProductReturnPolicy provides information about product return policies associated with an <a class='localLink' href='http://schema.org/Organization'>Organization</a> or <a class='localLink' href='http://schema.org/Product'>Product</a>."^^rdf:HTML ;
   rdfs:label "Product return policy" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:ProductReturnPolicy-productReturnDays ;
@@ -22549,11 +22553,11 @@ schema:ProductReturnUnspecified
 schema:ProfessionalService
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment """Original definition: \"provider of professional services.\"<br/><br/>
+  rdfs:comment """Original definition: 'provider of professional services.'<br/><br/>
 
-The general <a class=\"localLink\" href=\"http://schema.org/ProfessionalService\">ProfessionalService</a> type for local businesses was deprecated due to confusion with <a class=\"localLink\" href=\"http://schema.org/Service\">Service</a>. For reference, the types that it included were: <a class=\"localLink\" href=\"http://schema.org/Dentist\">Dentist</a>,
-        <a class=\"localLink\" href=\"http://schema.org/AccountingService\">AccountingService</a>, <a class=\"localLink\" href=\"http://schema.org/Attorney\">Attorney</a>, <a class=\"localLink\" href=\"http://schema.org/Notary\">Notary</a>, as well as types for several kinds of <a class=\"localLink\" href=\"http://schema.org/HomeAndConstructionBusiness\">HomeAndConstructionBusiness</a>: <a class=\"localLink\" href=\"http://schema.org/Electrician\">Electrician</a>, <a class=\"localLink\" href=\"http://schema.org/GeneralContractor\">GeneralContractor</a>,
-        <a class=\"localLink\" href=\"http://schema.org/HousePainter\">HousePainter</a>, <a class=\"localLink\" href=\"http://schema.org/Locksmith\">Locksmith</a>, <a class=\"localLink\" href=\"http://schema.org/Plumber\">Plumber</a>, <a class=\"localLink\" href=\"http://schema.org/RoofingContractor\">RoofingContractor</a>. <a class=\"localLink\" href=\"http://schema.org/LegalService\">LegalService</a> was introduced as a more inclusive supertype of <a class=\"localLink\" href=\"http://schema.org/Attorney\">Attorney</a>."""^^rdf:HTML ;
+The general <a class='localLink' href='http://schema.org/ProfessionalService'>ProfessionalService</a> type for local businesses was deprecated due to confusion with <a class='localLink' href='http://schema.org/Service'>Service</a>. For reference, the types that it included were: <a class='localLink' href='http://schema.org/Dentist'>Dentist</a>,
+        <a class='localLink' href='http://schema.org/AccountingService'>AccountingService</a>, <a class='localLink' href='http://schema.org/Attorney'>Attorney</a>, <a class='localLink' href='http://schema.org/Notary'>Notary</a>, as well as types for several kinds of <a class='localLink' href='http://schema.org/HomeAndConstructionBusiness'>HomeAndConstructionBusiness</a>: <a class='localLink' href='http://schema.org/Electrician'>Electrician</a>, <a class='localLink' href='http://schema.org/GeneralContractor'>GeneralContractor</a>,
+        <a class='localLink' href='http://schema.org/HousePainter'>HousePainter</a>, <a class='localLink' href='http://schema.org/Locksmith'>Locksmith</a>, <a class='localLink' href='http://schema.org/Plumber'>Plumber</a>, <a class='localLink' href='http://schema.org/RoofingContractor'>RoofingContractor</a>. <a class='localLink' href='http://schema.org/LegalService'>LegalService</a> was introduced as a more inclusive supertype of <a class='localLink' href='http://schema.org/Attorney'>Attorney</a>."""^^rdf:HTML ;
   rdfs:label "Professional service" ;
   rdfs:subClassOf schema:LocalBusiness ;
 .
@@ -22574,7 +22578,7 @@ schema:PrognosisHealthAspect
 schema:ProgramMembership
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "Used to describe membership in a loyalty programs (e.g. \"StarAliance\"), traveler clubs (e.g. \"AAA\"), purchase clubs (\"Safeway Club\"), etc."^^rdf:HTML ;
+  rdfs:comment "Used to describe membership in a loyalty programs (e.g. 'StarAliance'), traveler clubs (e.g. 'AAA'), purchase clubs ('Safeway Club'), etc."^^rdf:HTML ;
   rdfs:label "Program membership" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:ProgramMembership-hostingOrganization ;
@@ -22653,7 +22657,7 @@ schema:Project
   schema:category "issue-383" ;
   schema:isPartOf <http://pending.schema.org> ;
   rdfs:comment """An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim.
-Use properties from <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a>, <a class=\"localLink\" href=\"http://schema.org/subOrganization\">subOrganization</a>/<a class=\"localLink\" href=\"http://schema.org/parentOrganization\">parentOrganization</a> to indicate project sub-structures."""^^rdf:HTML ;
+Use properties from <a class='localLink' href='http://schema.org/Organization'>Organization</a>, <a class='localLink' href='http://schema.org/subOrganization'>subOrganization</a>/<a class='localLink' href='http://schema.org/parentOrganization'>parentOrganization</a> to indicate project sub-structures."""^^rdf:HTML ;
   rdfs:label "Project" ;
   rdfs:subClassOf schema:Organization ;
 .
@@ -22673,7 +22677,7 @@ schema:PronounceableText
 schema:PronounceableText-inLanguage
   a sh:PropertyShape ;
   sh:path schema:inLanguage ;
-  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>."^^rdf:HTML ;
+  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>. See also <a class='localLink' href='http://schema.org/availableLanguage'>availableLanguage</a>."^^rdf:HTML ;
   sh:name "inLanguage" ;
   sh:or (
       [
@@ -22688,14 +22692,14 @@ schema:PronounceableText-phoneticText
   a sh:PropertyShape ;
   sh:path schema:phoneticText ;
   sh:datatype xsd:string ;
-  sh:description "Representation of a text <a class=\"localLink\" href=\"http://schema.org/textValue\">textValue</a> using the specified <a class=\"localLink\" href=\"http://schema.org/speechToTextMarkup\">speechToTextMarkup</a>. For example the city name of Houston in IPA: /ËˆhjuËstÉ™n/."^^rdf:HTML ;
+  sh:description "Representation of a text <a class='localLink' href='http://schema.org/textValue'>textValue</a> using the specified <a class='localLink' href='http://schema.org/speechToTextMarkup'>speechToTextMarkup</a>. For example the city name of Houston in IPA: /ËˆhjuËstÉ™n/."^^rdf:HTML ;
   sh:name "phoneticText" ;
 .
 schema:PronounceableText-speechToTextMarkup
   a sh:PropertyShape ;
   sh:path schema:speechToTextMarkup ;
   sh:datatype xsd:string ;
-  sh:description "Form of markup used. eg. <a href=\"https://www.w3.org/TR/speech-synthesis11\">SSML</a> or <a href=\"https://www.wikidata.org/wiki/Property:P898\">IPA</a>."^^rdf:HTML ;
+  sh:description "Form of markup used. eg. <a href='https://www.w3.org/TR/speech-synthesis11'>SSML</a> or <a href='https://www.wikidata.org/wiki/Property:P898'>IPA</a>."^^rdf:HTML ;
   sh:name "speechToTextMarkup" ;
 .
 schema:PronounceableText-textValue
@@ -22732,14 +22736,14 @@ schema:PropertyValue-maxValue
 schema:PropertyValue-measurementTechnique
   a sh:PropertyShape ;
   sh:path schema:measurementTechnique ;
-  sh:description """A technique or technology used in a <a class=\"localLink\" href=\"http://schema.org/Dataset\">Dataset</a> (or <a class=\"localLink\" href=\"http://schema.org/DataDownload\">DataDownload</a>, <a class=\"localLink\" href=\"http://schema.org/DataCatalog\">DataCatalog</a>),
-corresponding to the method used for measuring the corresponding variable(s) (described using <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a>). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.<br/><br/>
+  sh:description """A technique or technology used in a <a class='localLink' href='http://schema.org/Dataset'>Dataset</a> (or <a class='localLink' href='http://schema.org/DataDownload'>DataDownload</a>, <a class='localLink' href='http://schema.org/DataCatalog'>DataCatalog</a>),
+corresponding to the method used for measuring the corresponding variable(s) (described using <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a>). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.<br/><br/>
 
-For example, if <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> is: molecule concentration, <a class=\"localLink\" href=\"http://schema.org/measurementTechnique\">measurementTechnique</a> could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\".<br/><br/>
+For example, if <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> is: molecule concentration, <a class='localLink' href='http://schema.org/measurementTechnique'>measurementTechnique</a> could be: 'mass spectrometry' or 'nmr spectroscopy' or 'colorimetry' or 'immunofluorescence'.<br/><br/>
 
-If the <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> is \"depression rating\", the <a class=\"localLink\" href=\"http://schema.org/measurementTechnique\">measurementTechnique</a> could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\".<br/><br/>
+If the <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> is 'depression rating', the <a class='localLink' href='http://schema.org/measurementTechnique'>measurementTechnique</a> could be 'Zung Scale' or 'HAM-D' or 'Beck Depression Inventory'.<br/><br/>
 
-If there are several <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> properties recorded for some given data object, use a <a class=\"localLink\" href=\"http://schema.org/PropertyValue\">PropertyValue</a> for each <a class=\"localLink\" href=\"http://schema.org/variableMeasured\">variableMeasured</a> and attach the corresponding <a class=\"localLink\" href=\"http://schema.org/measurementTechnique\">measurementTechnique</a>."""^^rdf:HTML ;
+If there are several <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> properties recorded for some given data object, use a <a class='localLink' href='http://schema.org/PropertyValue'>PropertyValue</a> for each <a class='localLink' href='http://schema.org/variableMeasured'>variableMeasured</a> and attach the corresponding <a class='localLink' href='http://schema.org/measurementTechnique'>measurementTechnique</a>."""^^rdf:HTML ;
   sh:name "measurementTechnique" ;
   sh:or (
       [
@@ -22802,8 +22806,8 @@ schema:PropertyValue-value
   sh:description """The value of the quantitative value or property value node.<br/><br/>
 
 <ul>
-<li>For <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> and <a class=\"localLink\" href=\"http://schema.org/MonetaryAmount\">MonetaryAmount</a>, the recommended type for values is 'Number'.</li>
-<li>For <a class=\"localLink\" href=\"http://schema.org/PropertyValue\">PropertyValue</a>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.</li>
+<li>For <a class='localLink' href='http://schema.org/QuantitativeValue'>QuantitativeValue</a> and <a class='localLink' href='http://schema.org/MonetaryAmount'>MonetaryAmount</a>, the recommended type for values is 'Number'.</li>
+<li>For <a class='localLink' href='http://schema.org/PropertyValue'>PropertyValue</a>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.</li>
 <li>Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.</li>
 <li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.</li>
 </ul>
@@ -22904,7 +22908,7 @@ schema:PropertyValueSpecification-readonlyValue
   a sh:PropertyShape ;
   sh:path schema:readonlyValue ;
   sh:datatype xsd:boolean ;
-  sh:description "Whether or not a property is mutable.  Default is false. Specifying this for a property that also has a value makes it act similar to a \"hidden\" input in an HTML form."^^rdf:HTML ;
+  sh:description "Whether or not a property is mutable.  Default is false. Specifying this for a property that also has a value makes it act similar to a 'hidden' input in an HTML form."^^rdf:HTML ;
   sh:name "readonlyValue" ;
 .
 schema:PropertyValueSpecification-stepValue
@@ -22979,7 +22983,7 @@ schema:PublicHealth
 .
 schema:PublicHolidays
   a schema:DayOfWeek ;
-  rdfs:comment "This stands for any day that is a public holiday; it is a placeholder for all official public holidays in some particular location. While not technically a \"day of the week\", it can be used with <a class=\"localLink\" href=\"http://schema.org/OpeningHoursSpecification\">OpeningHoursSpecification</a>. In the context of an opening hours specification it can be used to indicate opening hours on public holidays, overriding general opening hours for the day of the week on which a public holiday occurs." ;
+  rdfs:comment "This stands for any day that is a public holiday; it is a placeholder for all official public holidays in some particular location. While not technically a 'day of the week', it can be used with <a class='localLink' href='http://schema.org/OpeningHoursSpecification'>OpeningHoursSpecification</a>. In the context of an opening hours specification it can be used to indicate opening hours on public holidays, overriding general opening hours for the day of the week on which a public holiday occurs." ;
   rdfs:label "Public holidays" ;
 .
 schema:PublicSwimmingPool
@@ -23049,7 +23053,7 @@ schema:PublicationIssue
   a sh:NodeShape ;
   rdfs:comment """A part of a successively published publication such as a periodical or publication volume, often numbered, usually containing a grouping of works such as articles.<br/><br/>
 
-See also <a href=\"http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html\">blog post</a>."""^^rdf:HTML ;
+See also <a href='http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html'>blog post</a>."""^^rdf:HTML ;
   rdfs:label "Publication issue" ;
   rdfs:subClassOf schema:CreativeWork ;
   owl:equivalentClass <http://purl.org/ontology/bibo/Issue> ;
@@ -23061,7 +23065,7 @@ See also <a href=\"http://blog.schema.org/2014/09/schemaorg-support-for-bibliogr
 schema:PublicationIssue-issueNumber
   a sh:PropertyShape ;
   sh:path schema:issueNumber ;
-  sh:description "Identifies the issue of publication; for example, \"iii\" or \"2\"."^^rdf:HTML ;
+  sh:description "Identifies the issue of publication; for example, 'iii' or '2'."^^rdf:HTML ;
   sh:name "issueNumber" ;
   sh:or (
       [
@@ -23075,7 +23079,7 @@ schema:PublicationIssue-issueNumber
 schema:PublicationIssue-pageEnd
   a sh:PropertyShape ;
   sh:path schema:pageEnd ;
-  sh:description "The page on which the work ends; for example \"138\" or \"xvi\"."^^rdf:HTML ;
+  sh:description "The page on which the work ends; for example '138' or 'xvi'."^^rdf:HTML ;
   sh:name "pageEnd" ;
   sh:or (
       [
@@ -23089,7 +23093,7 @@ schema:PublicationIssue-pageEnd
 schema:PublicationIssue-pageStart
   a sh:PropertyShape ;
   sh:path schema:pageStart ;
-  sh:description "The page on which the work starts; for example \"135\" or \"xiii\"."^^rdf:HTML ;
+  sh:description "The page on which the work starts; for example '135' or 'xiii'."^^rdf:HTML ;
   sh:name "pageStart" ;
   sh:or (
       [
@@ -23104,7 +23108,7 @@ schema:PublicationIssue-pagination
   a sh:PropertyShape ;
   sh:path schema:pagination ;
   sh:datatype xsd:string ;
-  sh:description "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\"."^^rdf:HTML ;
+  sh:description "Any description of pages that is not separated into pageStart and pageEnd; for example, '1-6, 9, 55' or '10-12, 46-49'."^^rdf:HTML ;
   sh:name "pagination" ;
 .
 schema:PublicationVolume
@@ -23112,7 +23116,7 @@ schema:PublicationVolume
   a sh:NodeShape ;
   rdfs:comment """A part of a successively published publication such as a periodical or multi-volume work, often numbered. It may represent a time span, such as a year.<br/><br/>
 
-See also <a href=\"http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html\">blog post</a>."""^^rdf:HTML ;
+See also <a href='http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html'>blog post</a>."""^^rdf:HTML ;
   rdfs:label "Publication volume" ;
   rdfs:subClassOf schema:CreativeWork ;
   sh:property schema:PublicationVolume-pageEnd ;
@@ -23123,7 +23127,7 @@ See also <a href=\"http://blog.schema.org/2014/09/schemaorg-support-for-bibliogr
 schema:PublicationVolume-pageEnd
   a sh:PropertyShape ;
   sh:path schema:pageEnd ;
-  sh:description "The page on which the work ends; for example \"138\" or \"xvi\"."^^rdf:HTML ;
+  sh:description "The page on which the work ends; for example '138' or 'xvi'."^^rdf:HTML ;
   sh:name "pageEnd" ;
   sh:or (
       [
@@ -23137,7 +23141,7 @@ schema:PublicationVolume-pageEnd
 schema:PublicationVolume-pageStart
   a sh:PropertyShape ;
   sh:path schema:pageStart ;
-  sh:description "The page on which the work starts; for example \"135\" or \"xiii\"."^^rdf:HTML ;
+  sh:description "The page on which the work starts; for example '135' or 'xiii'."^^rdf:HTML ;
   sh:name "pageStart" ;
   sh:or (
       [
@@ -23152,13 +23156,13 @@ schema:PublicationVolume-pagination
   a sh:PropertyShape ;
   sh:path schema:pagination ;
   sh:datatype xsd:string ;
-  sh:description "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\"."^^rdf:HTML ;
+  sh:description "Any description of pages that is not separated into pageStart and pageEnd; for example, '1-6, 9, 55' or '10-12, 46-49'."^^rdf:HTML ;
   sh:name "pagination" ;
 .
 schema:PublicationVolume-volumeNumber
   a sh:PropertyShape ;
   sh:path schema:volumeNumber ;
-  sh:description "Identifies the volume of publication or multi-part work; for example, \"iii\" or \"2\"."^^rdf:HTML ;
+  sh:description "Identifies the volume of publication or multi-part work; for example, 'iii' or '2'."^^rdf:HTML ;
   sh:name "volumeNumber" ;
   sh:or (
       [
@@ -23336,8 +23340,8 @@ schema:QuantitativeValue-value
   sh:description """The value of the quantitative value or property value node.<br/><br/>
 
 <ul>
-<li>For <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> and <a class=\"localLink\" href=\"http://schema.org/MonetaryAmount\">MonetaryAmount</a>, the recommended type for values is 'Number'.</li>
-<li>For <a class=\"localLink\" href=\"http://schema.org/PropertyValue\">PropertyValue</a>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.</li>
+<li>For <a class='localLink' href='http://schema.org/QuantitativeValue'>QuantitativeValue</a> and <a class='localLink' href='http://schema.org/MonetaryAmount'>MonetaryAmount</a>, the recommended type for values is 'Number'.</li>
+<li>For <a class='localLink' href='http://schema.org/PropertyValue'>PropertyValue</a>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.</li>
 <li>Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.</li>
 <li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.</li>
 </ul>
@@ -23399,7 +23403,7 @@ schema:QuantitativeValueDistribution-duration
   a sh:PropertyShape ;
   sh:path schema:duration ;
   sh:datatype xsd:duration ;
-  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>."^^rdf:HTML ;
+  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>."^^rdf:HTML ;
   sh:name "duration" ;
 .
 schema:QuantitativeValueDistribution-median
@@ -23510,7 +23514,7 @@ schema:Quotation
   a sh:NodeShape ;
   schema:category "issue-271" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use <a class=\"localLink\" href=\"http://schema.org/isBasedOn\">isBasedOn</a> to link to source/origin. The <a class=\"localLink\" href=\"http://schema.org/recordedIn\">recordedIn</a> property can be used to reference a Quotation from an <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a>."^^rdf:HTML ;
+  rdfs:comment "A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use <a class='localLink' href='http://schema.org/isBasedOn'>isBasedOn</a> to link to source/origin. The <a class='localLink' href='http://schema.org/recordedIn'>recordedIn</a> property can be used to reference a Quotation from an <a class='localLink' href='http://schema.org/Event'>Event</a>."^^rdf:HTML ;
   rdfs:label "Quotation" ;
   rdfs:subClassOf schema:CreativeWork ;
   sh:property schema:Quotation-spokenByCharacter ;
@@ -23539,7 +23543,7 @@ schema:QuoteAction
 schema:RVPark
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A place offering space for \"Recreational Vehicles\", Caravans, mobile homes and the like."^^rdf:HTML ;
+  rdfs:comment "A place offering space for 'Recreational Vehicles', Caravans, mobile homes and the like."^^rdf:HTML ;
   rdfs:label "RVPark" ;
   rdfs:subClassOf schema:CivicStructure ;
 .
@@ -23786,7 +23790,7 @@ schema:Rating-ratingExplanation
   a sh:PropertyShape ;
   sh:path schema:ratingExplanation ;
   sh:datatype xsd:string ;
-  sh:description "A short explanation (e.g. one to two sentences) providing background context and other information that led to the conclusion expressed in the rating. This is particularly applicable to ratings associated with \"fact check\" markup using <a class=\"localLink\" href=\"http://schema.org/ClaimReview\">ClaimReview</a>."^^rdf:HTML ;
+  sh:description "A short explanation (e.g. one to two sentences) providing background context and other information that led to the conclusion expressed in the rating. This is particularly applicable to ratings associated with 'fact check' markup using <a class='localLink' href='http://schema.org/ClaimReview'>ClaimReview</a>."^^rdf:HTML ;
   sh:name "ratingExplanation" ;
 .
 schema:Rating-ratingValue
@@ -23863,8 +23867,8 @@ schema:RealEstateListing
   a sh:NodeShape ;
   schema:category "issue-2348" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """A <a class=\"localLink\" href=\"http://schema.org/RealEstateListing\">RealEstateListing</a> is a listing that describes one or more real-estate <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a>s (whose <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> is typically to lease out, or to sell).
-  The <a class=\"localLink\" href=\"http://schema.org/RealEstateListing\">RealEstateListing</a> type itself represents the overall listing, as manifested in some <a class=\"localLink\" href=\"http://schema.org/WebPage\">WebPage</a>."""^^rdf:HTML ;
+  rdfs:comment """A <a class='localLink' href='http://schema.org/RealEstateListing'>RealEstateListing</a> is a listing that describes one or more real-estate <a class='localLink' href='http://schema.org/Offer'>Offer</a>s (whose <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> is typically to lease out, or to sell).
+  The <a class='localLink' href='http://schema.org/RealEstateListing'>RealEstateListing</a> type itself represents the overall listing, as manifested in some <a class='localLink' href='http://schema.org/WebPage'>WebPage</a>."""^^rdf:HTML ;
   rdfs:label "Real estate listing" ;
   rdfs:subClassOf schema:WebPage ;
   sh:property schema:RealEstateListing-datePosted ;
@@ -23887,7 +23891,7 @@ schema:RealEstateListing-datePosted
 schema:RealEstateListing-leaseLength
   a sh:PropertyShape ;
   sh:path schema:leaseLength ;
-  sh:description "Length of the lease for some <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>, either particular to some <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a> or in some cases intrinsic to the property."^^rdf:HTML ;
+  sh:description "Length of the lease for some <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>, either particular to some <a class='localLink' href='http://schema.org/Offer'>Offer</a> or in some cases intrinsic to the property."^^rdf:HTML ;
   sh:name "leaseLength" ;
   sh:or (
       [
@@ -23911,8 +23915,8 @@ schema:ReceiveAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/SendAction\">SendAction</a>: The reciprocal of ReceiveAction.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/TakeAction\">TakeAction</a>: Unlike TakeAction, ReceiveAction does not imply that the ownership has been transfered (e.g. I can receive a package, but it does not mean the package is now mine).</li>
+<li><a class='localLink' href='http://schema.org/SendAction'>SendAction</a>: The reciprocal of ReceiveAction.</li>
+<li><a class='localLink' href='http://schema.org/TakeAction'>TakeAction</a>: Unlike TakeAction, ReceiveAction does not imply that the ownership has been transfered (e.g. I can receive a package, but it does not mean the package is now mine).</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Receive action" ;
@@ -23947,7 +23951,7 @@ schema:ReceiveAction-sender
 schema:Recipe
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via <a class=\"localLink\" href=\"http://schema.org/suitableForDiet\">suitableForDiet</a>. The <a class=\"localLink\" href=\"http://schema.org/keywords\">keywords</a> property can also be used to add more detail."^^rdf:HTML ;
+  rdfs:comment "A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via <a class='localLink' href='http://schema.org/suitableForDiet'>suitableForDiet</a>. The <a class='localLink' href='http://schema.org/keywords'>keywords</a> property can also be used to add more detail."^^rdf:HTML ;
   rdfs:label "Recipe" ;
   rdfs:subClassOf schema:HowTo ;
   sh:property schema:Recipe-cookTime ;
@@ -23965,7 +23969,7 @@ schema:Recipe-cookTime
   a sh:PropertyShape ;
   sh:path schema:cookTime ;
   sh:datatype xsd:duration ;
-  sh:description "The time it takes to actually cook the dish, in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 duration format</a>."^^rdf:HTML ;
+  sh:description "The time it takes to actually cook the dish, in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 duration format</a>."^^rdf:HTML ;
   sh:name "cookTime" ;
 .
 schema:Recipe-cookingMethod
@@ -24053,7 +24057,7 @@ schema:Recommendation
   a sh:NodeShape ;
   schema:category "issue-2405" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "<a class=\"localLink\" href=\"http://schema.org/Recommendation\">Recommendation</a> is a type of <a class=\"localLink\" href=\"http://schema.org/Review\">Review</a> that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concrete things, as in the case of a ranked list or product guide. A <a class=\"localLink\" href=\"http://schema.org/Guide\">Guide</a> may list multiple recommendations for different categories. For example, in a <a class=\"localLink\" href=\"http://schema.org/Guide\">Guide</a> about which TVs to buy, the author may have several <a class=\"localLink\" href=\"http://schema.org/Recommendation\">Recommendation</a>s."^^rdf:HTML ;
+  rdfs:comment "<a class='localLink' href='http://schema.org/Recommendation'>Recommendation</a> is a type of <a class='localLink' href='http://schema.org/Review'>Review</a> that suggests or proposes something as the best option or best course of action. Recommendations may be for products or services, or other concrete things, as in the case of a ranked list or product guide. A <a class='localLink' href='http://schema.org/Guide'>Guide</a> may list multiple recommendations for different categories. For example, in a <a class='localLink' href='http://schema.org/Guide'>Guide</a> about which TVs to buy, the author may have several <a class='localLink' href='http://schema.org/Recommendation'>Recommendation</a>s."^^rdf:HTML ;
   rdfs:label "Recommendation" ;
   rdfs:subClassOf schema:Review ;
   sh:property schema:Recommendation-category ;
@@ -24121,9 +24125,9 @@ schema:RegisterAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/JoinAction\">JoinAction</a>: Unlike JoinAction, RegisterAction implies you are registering to be a user of a service, <em>not</em> a group/team of people.</li>
+<li><a class='localLink' href='http://schema.org/JoinAction'>JoinAction</a>: Unlike JoinAction, RegisterAction implies you are registering to be a user of a service, <em>not</em> a group/team of people.</li>
 <li>[FollowAction]]: Unlike FollowAction, RegisterAction doesn't imply that the agent is expecting to poll for updates from the object.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/SubscribeAction\">SubscribeAction</a>: Unlike SubscribeAction, RegisterAction doesn't imply that the agent is expecting updates from the object.</li>
+<li><a class='localLink' href='http://schema.org/SubscribeAction'>SubscribeAction</a>: Unlike SubscribeAction, RegisterAction doesn't imply that the agent is expecting updates from the object.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Register action" ;
@@ -24149,7 +24153,7 @@ schema:RejectAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/AcceptAction\">AcceptAction</a>: The antonym of RejectAction.</li>
+<li><a class='localLink' href='http://schema.org/AcceptAction'>AcceptAction</a>: The antonym of RejectAction.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Reject action" ;
@@ -24332,12 +24336,12 @@ schema:ReplaceAction-replacer
 schema:ReplyAction
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment """The act of responding to a question/message asked/sent by the object. Related to <a class=\"localLink\" href=\"http://schema.org/AskAction\">AskAction</a><br/><br/>
+  rdfs:comment """The act of responding to a question/message asked/sent by the object. Related to <a class='localLink' href='http://schema.org/AskAction'>AskAction</a><br/><br/>
 
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/AskAction\">AskAction</a>: Appears generally as an origin of a ReplyAction.</li>
+<li><a class='localLink' href='http://schema.org/AskAction'>AskAction</a>: Appears generally as an origin of a ReplyAction.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Reply action" ;
@@ -24371,14 +24375,14 @@ schema:ReportageNewsArticle
   a sh:NodeShape ;
   schema:category "issue-1525" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """The <a class=\"localLink\" href=\"http://schema.org/ReportageNewsArticle\">ReportageNewsArticle</a> type is a subtype of <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a> representing
+  rdfs:comment """The <a class='localLink' href='http://schema.org/ReportageNewsArticle'>ReportageNewsArticle</a> type is a subtype of <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a> representing
  news articles which are the result of journalistic news reporting conventions.<br/><br/>
 
-In practice many news publishers produce a wide variety of article types, many of which might be considered a <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a> but not a <a class=\"localLink\" href=\"http://schema.org/ReportageNewsArticle\">ReportageNewsArticle</a>. For example, opinion pieces, reviews, analysis, sponsored or satirical articles, or articles that combine several of these elements.<br/><br/>
+In practice many news publishers produce a wide variety of article types, many of which might be considered a <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a> but not a <a class='localLink' href='http://schema.org/ReportageNewsArticle'>ReportageNewsArticle</a>. For example, opinion pieces, reviews, analysis, sponsored or satirical articles, or articles that combine several of these elements.<br/><br/>
 
-The <a class=\"localLink\" href=\"http://schema.org/ReportageNewsArticle\">ReportageNewsArticle</a> type is based on a stricter ideal for \"news\" as a work of journalism, with articles based on factual information either observed or verified by the author, or reported and verified from knowledgeable sources.  This often includes perspectives from multiple viewpoints on a particular issue (distinguishing news reports from public relations or propaganda).  News reports in the <a class=\"localLink\" href=\"http://schema.org/ReportageNewsArticle\">ReportageNewsArticle</a> sense de-emphasize the opinion of the author, with commentary and value judgements typically expressed elsewhere.<br/><br/>
+The <a class='localLink' href='http://schema.org/ReportageNewsArticle'>ReportageNewsArticle</a> type is based on a stricter ideal for 'news' as a work of journalism, with articles based on factual information either observed or verified by the author, or reported and verified from knowledgeable sources.  This often includes perspectives from multiple viewpoints on a particular issue (distinguishing news reports from public relations or propaganda).  News reports in the <a class='localLink' href='http://schema.org/ReportageNewsArticle'>ReportageNewsArticle</a> sense de-emphasize the opinion of the author, with commentary and value judgements typically expressed elsewhere.<br/><br/>
 
-A <a class=\"localLink\" href=\"http://schema.org/ReportageNewsArticle\">ReportageNewsArticle</a> which goes deeper into analysis can also be marked with an additional type of <a class=\"localLink\" href=\"http://schema.org/AnalysisNewsArticle\">AnalysisNewsArticle</a>."""^^rdf:HTML ;
+A <a class='localLink' href='http://schema.org/ReportageNewsArticle'>ReportageNewsArticle</a> which goes deeper into analysis can also be marked with an additional type of <a class='localLink' href='http://schema.org/AnalysisNewsArticle'>AnalysisNewsArticle</a>."""^^rdf:HTML ;
   rdfs:label "Reportage news article" ;
   rdfs:subClassOf schema:NewsArticle ;
 .
@@ -24409,7 +24413,7 @@ schema:Reservation
   a sh:NodeShape ;
   rdfs:comment """Describes a reservation for travel, dining or an event. Some reservations require tickets. <br/><br/>
 
-Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, restaurant reservations, flights, or rental cars, use <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a>."""^^rdf:HTML ;
+Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, restaurant reservations, flights, or rental cars, use <a class='localLink' href='http://schema.org/Offer'>Offer</a>."""^^rdf:HTML ;
   rdfs:label "Reservation" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:Reservation-bookingAgent ;
@@ -24472,9 +24476,9 @@ schema:Reservation-priceCurrency
   a sh:PropertyShape ;
   sh:path schema:priceCurrency ;
   sh:datatype xsd:string ;
-  sh:description """The currency of the price, or a price component when attached to <a class=\"localLink\" href=\"http://schema.org/PriceSpecification\">PriceSpecification</a> and its subtypes.<br/><br/>
+  sh:description """The currency of the price, or a price component when attached to <a class='localLink' href='http://schema.org/PriceSpecification'>PriceSpecification</a> and its subtypes.<br/><br/>
 
-Use standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\"."""^^rdf:HTML ;
+Use standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR'."""^^rdf:HTML ;
   sh:name "priceCurrency" ;
 .
 schema:Reservation-programMembershipUsed
@@ -24615,7 +24619,7 @@ schema:ReserveAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/ScheduleAction\">ScheduleAction</a></a>: Unlike ScheduleAction, ReserveAction reserves concrete objects (e.g. a table, a hotel) towards a time slot / spatial allocation.</li>
+<li><a class='localLink' href='http://schema.org/ScheduleAction'>ScheduleAction</a></a>: Unlike ScheduleAction, ReserveAction reserves concrete objects (e.g. a table, a hotel) towards a time slot / spatial allocation.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Reserve action" ;
@@ -24640,15 +24644,15 @@ schema:Residence-accommodationFloorPlan
   a sh:PropertyShape ;
   sh:path schema:accommodationFloorPlan ;
   sh:class schema:FloorPlan ;
-  sh:description "A floorplan of some <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>."^^rdf:HTML ;
+  sh:description "A floorplan of some <a class='localLink' href='http://schema.org/Accommodation'>Accommodation</a>."^^rdf:HTML ;
   sh:name "accommodationFloorPlan" ;
 .
 schema:Resort
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment """A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishment operated by a single company (Source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Resort\">http://en.wikipedia.org/wiki/Resort</a>).
+  rdfs:comment """A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishment operated by a single company (Source: Wikipedia, the free encyclopedia, see <a href='http://en.wikipedia.org/wiki/Resort'>http://en.wikipedia.org/wiki/Resort</a>).
 <br /><br />
-See also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
+See also the <a href='/docs/hotels.html'>dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
   rdfs:label "Resort" ;
   rdfs:subClassOf schema:LodgingBusiness ;
 .
@@ -24785,7 +24789,7 @@ schema:Review-reviewRating
   a sh:PropertyShape ;
   sh:path schema:reviewRating ;
   sh:class schema:Rating ;
-  sh:description "The rating given in this review. Note that reviews can themselves be rated. The <code>reviewRating</code> applies to rating given by the review. The <a class=\"localLink\" href=\"http://schema.org/aggregateRating\">aggregateRating</a> property applies to the review itself, as a creative work."^^rdf:HTML ;
+  sh:description "The rating given in this review. Note that reviews can themselves be rated. The <code>reviewRating</code> applies to rating given by the review. The <a class='localLink' href='http://schema.org/aggregateRating'>aggregateRating</a> property applies to the review itself, as a creative work."^^rdf:HTML ;
   sh:name "reviewRating" ;
 .
 schema:ReviewAction
@@ -24808,7 +24812,7 @@ schema:ReviewNewsArticle
   a sh:NodeShape ;
   schema:category "issue-1525" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a> and <a class=\"localLink\" href=\"http://schema.org/CriticReview\">CriticReview</a> providing a professional critic's assessment of a service, product, performance, or artistic or literary work."^^rdf:HTML ;
+  rdfs:comment "A <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a> and <a class='localLink' href='http://schema.org/CriticReview'>CriticReview</a> providing a professional critic's assessment of a service, product, performance, or artistic or literary work."^^rdf:HTML ;
   rdfs:label "Review news article" ;
   rdfs:subClassOf schema:CriticReview ;
   rdfs:subClassOf schema:NewsArticle ;
@@ -24843,7 +24847,7 @@ schema:Role
   a sh:NodeShape ;
   rdfs:comment """Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a particular time period. Or that a Person's 'actor' role in a Movie was for some particular characterName. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like 'member' or 'actor'.<br/><br/>
 
-See also <a href=\"http://blog.schema.org/2014/06/introducing-role.html\">blog post</a>."""^^rdf:HTML ;
+See also <a href='http://blog.schema.org/2014/06/introducing-role.html'>blog post</a>."""^^rdf:HTML ;
   rdfs:label "Role" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:Role-endDate ;
@@ -24854,7 +24858,7 @@ See also <a href=\"http://blog.schema.org/2014/06/introducing-role.html\">blog p
 schema:Role-endDate
   a sh:PropertyShape ;
   sh:path schema:endDate ;
-  sh:description "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The end date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "endDate" ;
   sh:or (
       [
@@ -24896,7 +24900,7 @@ schema:Role-roleName
 schema:Role-startDate
   a sh:PropertyShape ;
   sh:path schema:startDate ;
-  sh:description "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The start date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "startDate" ;
   sh:or (
       [
@@ -24917,9 +24921,9 @@ schema:RoofingContractor
 schema:Room
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment """A room is a distinguishable space within a structure, usually separated from other spaces by interior walls. (Source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Room\">http://en.wikipedia.org/wiki/Room</a>).
+  rdfs:comment """A room is a distinguishable space within a structure, usually separated from other spaces by interior walls. (Source: Wikipedia, the free encyclopedia, see <a href='http://en.wikipedia.org/wiki/Room'>http://en.wikipedia.org/wiki/Room</a>).
 <br /><br />
-See also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
+See also the <a href='/docs/hotels.html'>dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
   rdfs:label "Room" ;
   rdfs:subClassOf schema:Accommodation ;
 .
@@ -24988,7 +24992,7 @@ schema:SatiricalArticle
   a sh:NodeShape ;
   schema:category "issue-1525" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "An <a class=\"localLink\" href=\"http://schema.org/Article\">Article</a> whose content is primarily <a href=\"https://en.wikipedia.org/wiki/Satire\">[satirical]</a> in nature, i.e. unlikely to be literally true. A satirical article is sometimes but not necessarily also a <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a>. <a class=\"localLink\" href=\"http://schema.org/ScholarlyArticle\">ScholarlyArticle</a>s are also sometimes satirized."^^rdf:HTML ;
+  rdfs:comment "An <a class='localLink' href='http://schema.org/Article'>Article</a> whose content is primarily <a href='https://en.wikipedia.org/wiki/Satire'>[satirical]</a> in nature, i.e. unlikely to be literally true. A satirical article is sometimes but not necessarily also a <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a>. <a class='localLink' href='http://schema.org/ScholarlyArticle'>ScholarlyArticle</a>s are also sometimes satirized."^^rdf:HTML ;
   rdfs:label "Satirical article" ;
   rdfs:subClassOf schema:Article ;
 .
@@ -25003,7 +25007,7 @@ schema:Schedule
   a sh:NodeShape ;
   schema:category "issue-1457" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """A schedule defines a repeating time period used to describe a regularly occurring <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a>. At a minimum a schedule will specify <a class=\"localLink\" href=\"http://schema.org/repeatFrequency\">repeatFrequency</a> which describes the interval between occurences of the event. Additional information can be provided to specify the schedule more precisely.
+  rdfs:comment """A schedule defines a repeating time period used to describe a regularly occurring <a class='localLink' href='http://schema.org/Event'>Event</a>. At a minimum a schedule will specify <a class='localLink' href='http://schema.org/repeatFrequency'>repeatFrequency</a> which describes the interval between occurences of the event. Additional information can be provided to specify the schedule more precisely.
       This includes identifying the day(s) of the week or month when the recurring event will take place, in addition to its start and end time. Schedules may also
       have start and end dates to indicate when they are active, e.g. to define a limited calendar of events."""^^rdf:HTML ;
   rdfs:label "Schedule" ;
@@ -25024,7 +25028,7 @@ schema:Schedule
 schema:Schedule-byDay
   a sh:PropertyShape ;
   sh:path schema:byDay ;
-  sh:description "Defines the day(s) of the week on which a recurring <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> takes place. May be specified using either <a class=\"localLink\" href=\"http://schema.org/DayOfWeek\">DayOfWeek</a>, or alternatively <a class=\"localLink\" href=\"http://schema.org/Text\">Text</a> conforming to iCal's syntax for byDay recurrence rules"^^rdf:HTML ;
+  sh:description "Defines the day(s) of the week on which a recurring <a class='localLink' href='http://schema.org/Event'>Event</a> takes place. May be specified using either <a class='localLink' href='http://schema.org/DayOfWeek'>DayOfWeek</a>, or alternatively <a class='localLink' href='http://schema.org/Text'>Text</a> conforming to iCal's syntax for byDay recurrence rules"^^rdf:HTML ;
   sh:name "byDay" ;
   sh:or (
       [
@@ -25039,27 +25043,27 @@ schema:Schedule-byMonth
   a sh:PropertyShape ;
   sh:path schema:byMonth ;
   sh:datatype xsd:integer ;
-  sh:description "Defines the month(s) of the year on which a recurring <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> takes place. Specified as an <a class=\"localLink\" href=\"http://schema.org/Integer\">Integer</a> between 1-12. January is 1."^^rdf:HTML ;
+  sh:description "Defines the month(s) of the year on which a recurring <a class='localLink' href='http://schema.org/Event'>Event</a> takes place. Specified as an <a class='localLink' href='http://schema.org/Integer'>Integer</a> between 1-12. January is 1."^^rdf:HTML ;
   sh:name "byMonth" ;
 .
 schema:Schedule-byMonthDay
   a sh:PropertyShape ;
   sh:path schema:byMonthDay ;
   sh:datatype xsd:integer ;
-  sh:description "Defines the day(s) of the month on which a recurring <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> takes place. Specified as an <a class=\"localLink\" href=\"http://schema.org/Integer\">Integer</a> between 1-31."^^rdf:HTML ;
+  sh:description "Defines the day(s) of the month on which a recurring <a class='localLink' href='http://schema.org/Event'>Event</a> takes place. Specified as an <a class='localLink' href='http://schema.org/Integer'>Integer</a> between 1-31."^^rdf:HTML ;
   sh:name "byMonthDay" ;
 .
 schema:Schedule-duration
   a sh:PropertyShape ;
   sh:path schema:duration ;
   sh:datatype xsd:duration ;
-  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>."^^rdf:HTML ;
+  sh:description "The duration of the item (movie, audio recording, event, etc.) in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>."^^rdf:HTML ;
   sh:name "duration" ;
 .
 schema:Schedule-endDate
   a sh:PropertyShape ;
   sh:path schema:endDate ;
-  sh:description "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The end date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "endDate" ;
   sh:or (
       [
@@ -25089,9 +25093,9 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
 schema:Schedule-exceptDate
   a sh:PropertyShape ;
   sh:path schema:exceptDate ;
-  sh:description """Defines a <a class=\"localLink\" href=\"http://schema.org/Date\">Date</a> or <a class=\"localLink\" href=\"http://schema.org/DateTime\">DateTime</a> during which a scheduled <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> will not take place. The property allows exceptions to
-      a <a class=\"localLink\" href=\"http://schema.org/Schedule\">Schedule</a> to be specified. If an exception is specified as a <a class=\"localLink\" href=\"http://schema.org/DateTime\">DateTime</a> then only the event that would have started at that specific date and time
-      should be excluded from the schedule. If an exception is specified as a <a class=\"localLink\" href=\"http://schema.org/Date\">Date</a> then any event that is scheduled for that 24 hour period should be
+  sh:description """Defines a <a class='localLink' href='http://schema.org/Date'>Date</a> or <a class='localLink' href='http://schema.org/DateTime'>DateTime</a> during which a scheduled <a class='localLink' href='http://schema.org/Event'>Event</a> will not take place. The property allows exceptions to
+      a <a class='localLink' href='http://schema.org/Schedule'>Schedule</a> to be specified. If an exception is specified as a <a class='localLink' href='http://schema.org/DateTime'>DateTime</a> then only the event that would have started at that specific date and time
+      should be excluded from the schedule. If an exception is specified as a <a class='localLink' href='http://schema.org/Date'>Date</a> then any event that is scheduled for that 24 hour period should be
       excluded from the schedule. This allows a whole day to be excluded from the schedule without having to itemise every scheduled event."""^^rdf:HTML ;
   sh:name "exceptDate" ;
   sh:or (
@@ -25107,14 +25111,14 @@ schema:Schedule-repeatCount
   a sh:PropertyShape ;
   sh:path schema:repeatCount ;
   sh:datatype xsd:integer ;
-  sh:description "Defines the number of times a recurring <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> will take place"^^rdf:HTML ;
+  sh:description "Defines the number of times a recurring <a class='localLink' href='http://schema.org/Event'>Event</a> will take place"^^rdf:HTML ;
   sh:name "repeatCount" ;
 .
 schema:Schedule-repeatFrequency
   a sh:PropertyShape ;
   sh:path schema:repeatFrequency ;
-  sh:description """Defines the frequency at which <a class=\"localLink\" href=\"http://schema.org/Events\">Events</a> will occur according to a schedule <a class=\"localLink\" href=\"http://schema.org/Schedule\">Schedule</a>. The intervals between
-      events should be defined as a <a class=\"localLink\" href=\"http://schema.org/Duration\">Duration</a> of time."""^^rdf:HTML ;
+  sh:description """Defines the frequency at which <a class='localLink' href='http://schema.org/Events'>Events</a> will occur according to a schedule <a class='localLink' href='http://schema.org/Schedule'>Schedule</a>. The intervals between
+      events should be defined as a <a class='localLink' href='http://schema.org/Duration'>Duration</a> of time."""^^rdf:HTML ;
   sh:name "repeatFrequency" ;
   sh:or (
       [
@@ -25129,13 +25133,13 @@ schema:Schedule-scheduleTimezone
   a sh:PropertyShape ;
   sh:path schema:scheduleTimezone ;
   sh:datatype xsd:string ;
-  sh:description "Indicates the timezone for which the time(s) indicated in the <a class=\"localLink\" href=\"http://schema.org/Schedule\">Schedule</a> are given. The value provided should be among those listed in the IANA Time Zone Database."^^rdf:HTML ;
+  sh:description "Indicates the timezone for which the time(s) indicated in the <a class='localLink' href='http://schema.org/Schedule'>Schedule</a> are given. The value provided should be among those listed in the IANA Time Zone Database."^^rdf:HTML ;
   sh:name "scheduleTimezone" ;
 .
 schema:Schedule-startDate
   a sh:PropertyShape ;
   sh:path schema:startDate ;
-  sh:description "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>)."^^rdf:HTML ;
+  sh:description "The start date and time of the item (in <a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601 date format</a>)."^^rdf:HTML ;
   sh:name "startDate" ;
   sh:or (
       [
@@ -25170,7 +25174,7 @@ schema:ScheduleAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/ReserveAction\">ReserveAction</a>: Unlike ReserveAction, ScheduleAction allocates future actions (e.g. an event, a task, etc) towards a time slot / spatial allocation.</li>
+<li><a class='localLink' href='http://schema.org/ReserveAction'>ReserveAction</a>: Unlike ReserveAction, ScheduleAction allocates future actions (e.g. an event, a task, etc) towards a time slot / spatial allocation.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Schedule action" ;
@@ -25212,7 +25216,7 @@ schema:ScreeningEvent
 schema:ScreeningEvent-subtitleLanguage
   a sh:PropertyShape ;
   sh:path schema:subtitleLanguage ;
-  sh:description "Languages in which subtitles/captions are available, in <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard format</a>."^^rdf:HTML ;
+  sh:description "Languages in which subtitles/captions are available, in <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard format</a>."^^rdf:HTML ;
   sh:name "subtitleLanguage" ;
   sh:or (
       [
@@ -25266,7 +25270,7 @@ schema:SearchAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/FindAction\">FindAction</a>: SearchAction generally leads to a FindAction, but not necessarily.</li>
+<li><a class='localLink' href='http://schema.org/FindAction'>FindAction</a>: SearchAction generally leads to a FindAction, but not necessarily.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Search action" ;
@@ -25396,8 +25400,8 @@ schema:SendAction
   rdfs:comment """The act of physically/electronically dispatching an object for transfer from an origin to a destination.Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/ReceiveAction\">ReceiveAction</a>: The reciprocal of SendAction.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/GiveAction\">GiveAction</a>: Unlike GiveAction, SendAction does not imply the transfer of ownership (e.g. I can send you my laptop, but I'm not necessarily giving it to you).</li>
+<li><a class='localLink' href='http://schema.org/ReceiveAction'>ReceiveAction</a>: The reciprocal of SendAction.</li>
+<li><a class='localLink' href='http://schema.org/GiveAction'>GiveAction</a>: Unlike GiveAction, SendAction does not imply the transfer of ownership (e.g. I can send you my laptop, but I'm not necessarily giving it to you).</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Send action" ;
@@ -25435,7 +25439,7 @@ schema:SendAction-recipient
 schema:Series
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also <a class=\"localLink\" href=\"http://schema.org/CreativeWorkSeries\">CreativeWorkSeries</a>, <a class=\"localLink\" href=\"http://schema.org/EventSeries\">EventSeries</a>."^^rdf:HTML ;
+  rdfs:comment "A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also <a class='localLink' href='http://schema.org/CreativeWorkSeries'>CreativeWorkSeries</a>, <a class='localLink' href='http://schema.org/EventSeries'>EventSeries</a>."^^rdf:HTML ;
   rdfs:label "Series" ;
   rdfs:subClassOf schema:Intangible ;
 .
@@ -25625,7 +25629,7 @@ schema:Service-logo
 schema:Service-offers
   a sh:PropertyShape ;
   sh:path schema:offers ;
-  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class=\"localLink\" href=\"http://schema.org/Demand\">Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
+  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class='localLink' href='http://schema.org/Demand'>Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
   sh:name "offers" ;
   sh:or (
       [
@@ -25755,7 +25759,7 @@ schema:ServiceChannel
 schema:ServiceChannel-availableLanguage
   a sh:PropertyShape ;
   sh:path schema:availableLanguage ;
-  sh:description "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/inLanguage\">inLanguage</a>"^^rdf:HTML ;
+  sh:description "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>. See also <a class='localLink' href='http://schema.org/inLanguage'>inLanguage</a>"^^rdf:HTML ;
   sh:name "availableLanguage" ;
   sh:or (
       [
@@ -25855,7 +25859,7 @@ schema:ShippingDeliveryTime-cutoffTime
   a sh:PropertyShape ;
   sh:path schema:cutoffTime ;
   sh:datatype xsd:string ;
-  sh:description """Order cutoff time allows merchants to describe the time after which they will no longer process orders received on that day. For orders processed after cutoff time, one day gets added to the delivery time estimate. This property is expected to be most typically used via the <a class=\"localLink\" href=\"http://schema.org/ShippingRateSettings\">ShippingRateSettings</a> publication pattern. The time is indicated using the time notation from the ISO-8601 DateTime format, e.g.
+  sh:description """Order cutoff time allows merchants to describe the time after which they will no longer process orders received on that day. For orders processed after cutoff time, one day gets added to the delivery time estimate. This property is expected to be most typically used via the <a class='localLink' href='http://schema.org/ShippingRateSettings'>ShippingRateSettings</a> publication pattern. The time is indicated using the time notation from the ISO-8601 DateTime format, e.g.
       14:45:15Z would represent a daily cutoff at 14:45h UTC."""^^rdf:HTML ;
   sh:name "cutoffTime" ;
 .
@@ -25863,7 +25867,7 @@ schema:ShippingDeliveryTime-handlingTime
   a sh:PropertyShape ;
   sh:path schema:handlingTime ;
   sh:class schema:QuantitativeValue ;
-  sh:description "The typical delay between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup. Typical properties: minValue, maxValue, unitCode (d for DAY).  This is by common convention assumed to mean business days (if a unitCode is used, coded as \"d\"), i.e. only counting days when the business normally operates."^^rdf:HTML ;
+  sh:description "The typical delay between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup. Typical properties: minValue, maxValue, unitCode (d for DAY).  This is by common convention assumed to mean business days (if a unitCode is used, coded as 'd'), i.e. only counting days when the business normally operates."^^rdf:HTML ;
   sh:name "handlingTime" ;
 .
 schema:ShippingDeliveryTime-transitTime
@@ -25878,7 +25882,7 @@ schema:ShippingRateSettings
   a sh:NodeShape ;
   schema:category "issue-2506" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A ShippingRateSettings represents re-usable pieces of shipping information. It is designed for publication on an URL that may be referenced via the <a class=\"localLink\" href=\"http://schema.org/shippingSettingsLink\">shippingSettingsLink</a> property of a <a class=\"localLink\" href=\"http://schema.org/OfferShippingSpecification\">OfferShippingSpecification</a>. Several occurrences can be published, distinguished and matched (i.e. identified/referenced) by their different values for <a class=\"localLink\" href=\"http://schema.org/shippingLabel\">shippingLabel</a>."^^rdf:HTML ;
+  rdfs:comment "A ShippingRateSettings represents re-usable pieces of shipping information. It is designed for publication on an URL that may be referenced via the <a class='localLink' href='http://schema.org/shippingSettingsLink'>shippingSettingsLink</a> property of a <a class='localLink' href='http://schema.org/OfferShippingSpecification'>OfferShippingSpecification</a>. Several occurrences can be published, distinguished and matched (i.e. identified/referenced) by their different values for <a class='localLink' href='http://schema.org/shippingLabel'>shippingLabel</a>."^^rdf:HTML ;
   rdfs:label "Shipping rate settings" ;
   rdfs:subClassOf schema:StructuredValue ;
   sh:property schema:ShippingRateSettings-doesNotShip ;
@@ -25892,13 +25896,13 @@ schema:ShippingRateSettings-doesNotShip
   a sh:PropertyShape ;
   sh:path schema:doesNotShip ;
   sh:datatype xsd:boolean ;
-  sh:description "Indicates, as part of an <a class=\"localLink\" href=\"http://schema.org/OfferShippingDetails\">OfferShippingDetails</a>, when shipping to a particular <a class=\"localLink\" href=\"http://schema.org/shippingDestination\">shippingDestination</a> is not available."^^rdf:HTML ;
+  sh:description "Indicates, as part of an <a class='localLink' href='http://schema.org/OfferShippingDetails'>OfferShippingDetails</a>, when shipping to a particular <a class='localLink' href='http://schema.org/shippingDestination'>shippingDestination</a> is not available."^^rdf:HTML ;
   sh:name "doesNotShip" ;
 .
 schema:ShippingRateSettings-freeShippingThreshold
   a sh:PropertyShape ;
   sh:path schema:freeShippingThreshold ;
-  sh:description "A monetary value above which (or equal to) the shipping rate becomes free. Intended to be used via an <a class=\"localLink\" href=\"http://schema.org/OfferShippingSpecification\">OfferShippingSpecification</a> with <a class=\"localLink\" href=\"http://schema.org/shippingSettingsLink\">shippingSettingsLink</a> matching this <a class=\"localLink\" href=\"http://schema.org/ShippingSettings\">ShippingSettings</a>."^^rdf:HTML ;
+  sh:description "A monetary value above which (or equal to) the shipping rate becomes free. Intended to be used via an <a class='localLink' href='http://schema.org/OfferShippingSpecification'>OfferShippingSpecification</a> with <a class='localLink' href='http://schema.org/shippingSettingsLink'>shippingSettingsLink</a> matching this <a class='localLink' href='http://schema.org/ShippingSettings'>ShippingSettings</a>."^^rdf:HTML ;
   sh:name "freeShippingThreshold" ;
   sh:or (
       [
@@ -25913,7 +25917,7 @@ schema:ShippingRateSettings-isUnlabelledFallback
   a sh:PropertyShape ;
   sh:path schema:isUnlabelledFallback ;
   sh:datatype xsd:boolean ;
-  sh:description "This can be marked 'true' to indicate that some published ShippingRateSettings are intended to apply to all <a class=\"localLink\" href=\"http://schema.org/OfferShippingDetails\">OfferShippingDetails</a> published by the same merchant, when referenced by a <a class=\"localLink\" href=\"http://schema.org/shippingSettingsLink\">shippingSettingsLink</a> in those settings. It is not meaningful to use a 'true' value for this property alongside a shippingLabel, since this property is for use with unlabelled ShippingRateSettings."^^rdf:HTML ;
+  sh:description "This can be marked 'true' to indicate that some published ShippingRateSettings are intended to apply to all <a class='localLink' href='http://schema.org/OfferShippingDetails'>OfferShippingDetails</a> published by the same merchant, when referenced by a <a class='localLink' href='http://schema.org/shippingSettingsLink'>shippingSettingsLink</a> in those settings. It is not meaningful to use a 'true' value for this property alongside a shippingLabel, since this property is for use with unlabelled ShippingRateSettings."^^rdf:HTML ;
   sh:name "isUnlabelledFallback" ;
 .
 schema:ShippingRateSettings-shippingDestination
@@ -25927,14 +25931,14 @@ schema:ShippingRateSettings-shippingLabel
   a sh:PropertyShape ;
   sh:path schema:shippingLabel ;
   sh:datatype xsd:string ;
-  sh:description "Label to match an <a class=\"localLink\" href=\"http://schema.org/OfferShippingDetails\">OfferShippingDetails</a> with a <a class=\"localLink\" href=\"http://schema.org/ShippingRateSettings\">ShippingRateSettings</a> (within the context of a <a class=\"localLink\" href=\"http://schema.org/shippingSettingsLink\">shippingSettingsLink</a> cross-reference)."^^rdf:HTML ;
+  sh:description "Label to match an <a class='localLink' href='http://schema.org/OfferShippingDetails'>OfferShippingDetails</a> with a <a class='localLink' href='http://schema.org/ShippingRateSettings'>ShippingRateSettings</a> (within the context of a <a class='localLink' href='http://schema.org/shippingSettingsLink'>shippingSettingsLink</a> cross-reference)."^^rdf:HTML ;
   sh:name "shippingLabel" ;
 .
 schema:ShippingRateSettings-shippingRate
   a sh:PropertyShape ;
   sh:path schema:shippingRate ;
   sh:class schema:MonetaryAmount ;
-  sh:description "The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values (of the <a class=\"localLink\" href=\"http://schema.org/MonetaryAmount\">MonetaryAmount</a>) are most appropriate."^^rdf:HTML ;
+  sh:description "The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values (of the <a class='localLink' href='http://schema.org/MonetaryAmount'>MonetaryAmount</a>) are most appropriate."^^rdf:HTML ;
   sh:name "shippingRate" ;
 .
 schema:ShoeStore
@@ -26424,7 +26428,7 @@ schema:SpeakableSpecification
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:category "issue-1389" ;
-  rdfs:comment "A SpeakableSpecification indicates (typically via <a class=\"localLink\" href=\"http://schema.org/xpath\">xpath</a> or <a class=\"localLink\" href=\"http://schema.org/cssSelector\">cssSelector</a>) sections of a document that are highlighted as particularly <a class=\"localLink\" href=\"http://schema.org/speakable\">speakable</a>. Instances of this type are expected to be used primarily as values of the <a class=\"localLink\" href=\"http://schema.org/speakable\">speakable</a> property."^^rdf:HTML ;
+  rdfs:comment "A SpeakableSpecification indicates (typically via <a class='localLink' href='http://schema.org/xpath'>xpath</a> or <a class='localLink' href='http://schema.org/cssSelector'>cssSelector</a>) sections of a document that are highlighted as particularly <a class='localLink' href='http://schema.org/speakable'>speakable</a>. Instances of this type are expected to be used primarily as values of the <a class='localLink' href='http://schema.org/speakable'>speakable</a> property."^^rdf:HTML ;
   rdfs:label "Speakable specification" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:SpeakableSpecification-cssSelector ;
@@ -26434,14 +26438,14 @@ schema:SpeakableSpecification-cssSelector
   a sh:PropertyShape ;
   sh:path schema:cssSelector ;
   sh:class schema:CssSelectorType ;
-  sh:description "A CSS selector, e.g. of a <a class=\"localLink\" href=\"http://schema.org/SpeakableSpecification\">SpeakableSpecification</a> or <a class=\"localLink\" href=\"http://schema.org/WebPageElement\">WebPageElement</a>. In the latter case, multiple matches within a page can constitute a single conceptual \"Web page element\"."^^rdf:HTML ;
+  sh:description "A CSS selector, e.g. of a <a class='localLink' href='http://schema.org/SpeakableSpecification'>SpeakableSpecification</a> or <a class='localLink' href='http://schema.org/WebPageElement'>WebPageElement</a>. In the latter case, multiple matches within a page can constitute a single conceptual 'Web page element'."^^rdf:HTML ;
   sh:name "cssSelector" ;
 .
 schema:SpeakableSpecification-xpath
   a sh:PropertyShape ;
   sh:path schema:xpath ;
   sh:class schema:XPathType ;
-  sh:description "An XPath, e.g. of a <a class=\"localLink\" href=\"http://schema.org/SpeakableSpecification\">SpeakableSpecification</a> or <a class=\"localLink\" href=\"http://schema.org/WebPageElement\">WebPageElement</a>. In the latter case, multiple matches within a page can constitute a single conceptual \"Web page element\"."^^rdf:HTML ;
+  sh:description "An XPath, e.g. of a <a class='localLink' href='http://schema.org/SpeakableSpecification'>SpeakableSpecification</a> or <a class='localLink' href='http://schema.org/WebPageElement'>WebPageElement</a>. In the latter case, multiple matches within a page can constitute a single conceptual 'Web page element'."^^rdf:HTML ;
   sh:name "xpath" ;
 .
 schema:SpecialAnnouncement
@@ -26454,35 +26458,35 @@ schema:SpecialAnnouncement
       locally-oriented organization, for example schools, pharmacies, healthcare providers,  community groups, police,
       local government.<br/><br/>
 
-For work in progress guidelines on Coronavirus-related markup see <a href=\"https://docs.google.com/document/d/14ikaGCKxo50rRM7nvKSlbUpjyIk2WMQd3IkB1lItlrM/edit#\">this doc</a>.<br/><br/>
+For work in progress guidelines on Coronavirus-related markup see <a href='https://docs.google.com/document/d/14ikaGCKxo50rRM7nvKSlbUpjyIk2WMQd3IkB1lItlrM/edit#'>this doc</a>.<br/><br/>
 
-The motivating scenario for SpecialAnnouncement is the <a href=\"https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic\">Coronavirus pandemic</a>, and the initial vocabulary is oriented to this urgent situation. Schema.org
+The motivating scenario for SpecialAnnouncement is the <a href='https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic'>Coronavirus pandemic</a>, and the initial vocabulary is oriented to this urgent situation. Schema.org
 expect to improve the markup iteratively as it is deployed and as feedback emerges from use. In addition to our
-usual <a href=\"https://github.com/schemaorg/schemaorg/issues/2490\">Github entry</a>, feedback comments can also be provided in <a href=\"https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#\">this document</a>.<br/><br/>
+usual <a href='https://github.com/schemaorg/schemaorg/issues/2490'>Github entry</a>, feedback comments can also be provided in <a href='https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#'>this document</a>.<br/><br/>
 
-While this schema is designed to communicate urgent crisis-related information, it is not the same as an emergency warning technology like <a href=\"https://en.wikipedia.org/wiki/Common_Alerting_Protocol\">CAP</a>, although there may be overlaps. The intent is to cover
+While this schema is designed to communicate urgent crisis-related information, it is not the same as an emergency warning technology like <a href='https://en.wikipedia.org/wiki/Common_Alerting_Protocol'>CAP</a>, although there may be overlaps. The intent is to cover
 the kinds of everyday practical information being posted to existing websites during an emergency situation.<br/><br/>
 
 Several kinds of information can be provided:<br/><br/>
 
-We encourage the provision of \"name\", \"text\", \"datePosted\", \"expires\" (if appropriate), \"category\" and
-\"url\" as a simple baseline. It is important to provide a value for \"category\" where possible, most ideally as a well known
-URL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be \"https://en.wikipedia.org/w/index.php?title=2019-20_coronavirus_pandemic\" or \"https://www.wikidata.org/wiki/Q81068910\".<br/><br/>
+We encourage the provision of 'name', 'text', 'datePosted', 'expires' (if appropriate), 'category' and
+'url' as a simple baseline. It is important to provide a value for 'category' where possible, most ideally as a well known
+URL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be 'https://en.wikipedia.org/w/index.php?title=2019-20_coronavirus_pandemic' or 'https://www.wikidata.org/wiki/Q81068910'.<br/><br/>
 
-For many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a <a class=\"localLink\" href=\"http://schema.org/WebContent\">WebContent</a> type, and provide the url as a property of that, alongside at least a simple \"<a class=\"localLink\" href=\"http://schema.org/text\">text</a>\" summary of the page. It is
+For many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a <a class='localLink' href='http://schema.org/WebContent'>WebContent</a> type, and provide the url as a property of that, alongside at least a simple '<a class='localLink' href='http://schema.org/text'>text</a>' summary of the page. It is
 unlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously.<br/><br/>
 
-We expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, <a class=\"localLink\" href=\"http://schema.org/openingHours\">openingHours</a>, <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a>, <a class=\"localLink\" href=\"http://schema.org/FAQPage\">FAQPage</a> etc. By linking to those pages from a <a class=\"localLink\" href=\"http://schema.org/SpecialAnnouncement\">SpecialAnnouncement</a> you can help make it clearer that the events are related to the situation (e.g. Coronavirus) indicated by the <a class=\"localLink\" href=\"http://schema.org/category\">category</a> property of the <a class=\"localLink\" href=\"http://schema.org/SpecialAnnouncement\">SpecialAnnouncement</a>.<br/><br/>
+We expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, <a class='localLink' href='http://schema.org/openingHours'>openingHours</a>, <a class='localLink' href='http://schema.org/Event'>Event</a>, <a class='localLink' href='http://schema.org/FAQPage'>FAQPage</a> etc. By linking to those pages from a <a class='localLink' href='http://schema.org/SpecialAnnouncement'>SpecialAnnouncement</a> you can help make it clearer that the events are related to the situation (e.g. Coronavirus) indicated by the <a class='localLink' href='http://schema.org/category'>category</a> property of the <a class='localLink' href='http://schema.org/SpecialAnnouncement'>SpecialAnnouncement</a>.<br/><br/>
 
-Many <a class=\"localLink\" href=\"http://schema.org/SpecialAnnouncement\">SpecialAnnouncement</a>s will relate to particular regions and to identifiable local organizations. Use <a class=\"localLink\" href=\"http://schema.org/spatialCoverage\">spatialCoverage</a> for the region, and <a class=\"localLink\" href=\"http://schema.org/announcementLocation\">announcementLocation</a> to indicate specific <a class=\"localLink\" href=\"http://schema.org/LocalBusiness\">LocalBusiness</a>es and <a class=\"localLink\" href=\"http://schema.org/CivicStructures\">CivicStructures</a>. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both <a class=\"localLink\" href=\"http://schema.org/spatialCoverage\">spatialCoverage</a> and <a class=\"localLink\" href=\"http://schema.org/announcementLocation\">announcementLocation</a>.<br/><br/>
+Many <a class='localLink' href='http://schema.org/SpecialAnnouncement'>SpecialAnnouncement</a>s will relate to particular regions and to identifiable local organizations. Use <a class='localLink' href='http://schema.org/spatialCoverage'>spatialCoverage</a> for the region, and <a class='localLink' href='http://schema.org/announcementLocation'>announcementLocation</a> to indicate specific <a class='localLink' href='http://schema.org/LocalBusiness'>LocalBusiness</a>es and <a class='localLink' href='http://schema.org/CivicStructures'>CivicStructures</a>. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both <a class='localLink' href='http://schema.org/spatialCoverage'>spatialCoverage</a> and <a class='localLink' href='http://schema.org/announcementLocation'>announcementLocation</a>.<br/><br/>
 
-The <a class=\"localLink\" href=\"http://schema.org/about\">about</a> property can be used to indicate entities that are the focus of the announcement. We now recommend using <a class=\"localLink\" href=\"http://schema.org/about\">about</a> only
-for representing non-location entities (e.g. a <a class=\"localLink\" href=\"http://schema.org/Course\">Course</a> or a <a class=\"localLink\" href=\"http://schema.org/RadioStation\">RadioStation</a>). For places, use <a class=\"localLink\" href=\"http://schema.org/announcementLocation\">announcementLocation</a> and <a class=\"localLink\" href=\"http://schema.org/spatialCoverage\">spatialCoverage</a>. Consumers of this markup should be aware that the initial design encouraged the use of /about for locations too.<br/><br/>
+The <a class='localLink' href='http://schema.org/about'>about</a> property can be used to indicate entities that are the focus of the announcement. We now recommend using <a class='localLink' href='http://schema.org/about'>about</a> only
+for representing non-location entities (e.g. a <a class='localLink' href='http://schema.org/Course'>Course</a> or a <a class='localLink' href='http://schema.org/RadioStation'>RadioStation</a>). For places, use <a class='localLink' href='http://schema.org/announcementLocation'>announcementLocation</a> and <a class='localLink' href='http://schema.org/spatialCoverage'>spatialCoverage</a>. Consumers of this markup should be aware that the initial design encouraged the use of /about for locations too.<br/><br/>
 
-The basic content of <a class=\"localLink\" href=\"http://schema.org/SpecialAnnouncement\">SpecialAnnouncement</a> is similar to that of an <a href=\"https://en.wikipedia.org/wiki/RSS\">RSS</a> or <a href=\"https://en.wikipedia.org/wiki/Atom_(Web_standard)\">Atom</a> feed. For publishers without such feeds, basic feed-like information can be shared by posting
-<a class=\"localLink\" href=\"http://schema.org/SpecialAnnouncement\">SpecialAnnouncement</a> updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed
-with the <a class=\"localLink\" href=\"http://schema.org/webFeed\">webFeed</a> property. This can be a simple URL, or an inline <a class=\"localLink\" href=\"http://schema.org/DataFeed\">DataFeed</a> object, with <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a> providing
-media type information e.g. \"application/rss+xml\" or \"application/atom+xml\"."""^^rdf:HTML ;
+The basic content of <a class='localLink' href='http://schema.org/SpecialAnnouncement'>SpecialAnnouncement</a> is similar to that of an <a href='https://en.wikipedia.org/wiki/RSS'>RSS</a> or <a href='https://en.wikipedia.org/wiki/Atom_(Web_standard)'>Atom</a> feed. For publishers without such feeds, basic feed-like information can be shared by posting
+<a class='localLink' href='http://schema.org/SpecialAnnouncement'>SpecialAnnouncement</a> updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed
+with the <a class='localLink' href='http://schema.org/webFeed'>webFeed</a> property. This can be a simple URL, or an inline <a class='localLink' href='http://schema.org/DataFeed'>DataFeed</a> object, with <a class='localLink' href='http://schema.org/encodingFormat'>encodingFormat</a> providing
+media type information e.g. 'application/rss+xml' or 'application/atom+xml'."""^^rdf:HTML ;
   rdfs:label "Special announcement" ;
   rdfs:subClassOf schema:CreativeWork ;
   sh:property schema:SpecialAnnouncement-announcementLocation ;
@@ -26502,7 +26506,7 @@ media type information e.g. \"application/rss+xml\" or \"application/atom+xml\".
 schema:SpecialAnnouncement-announcementLocation
   a sh:PropertyShape ;
   sh:path schema:announcementLocation ;
-  sh:description "Indicates a specific <a class=\"localLink\" href=\"http://schema.org/CivicStructure\">CivicStructure</a> or <a class=\"localLink\" href=\"http://schema.org/LocalBusiness\">LocalBusiness</a> associated with the SpecialAnnouncement. For example, a specific testing facility or business with special opening hours. For a larger geographic region like a quarantine of an entire region, use <a class=\"localLink\" href=\"http://schema.org/spatialCoverage\">spatialCoverage</a>."^^rdf:HTML ;
+  sh:description "Indicates a specific <a class='localLink' href='http://schema.org/CivicStructure'>CivicStructure</a> or <a class='localLink' href='http://schema.org/LocalBusiness'>LocalBusiness</a> associated with the SpecialAnnouncement. For example, a specific testing facility or business with special opening hours. For a larger geographic region like a quarantine of an entire region, use <a class='localLink' href='http://schema.org/spatialCoverage'>spatialCoverage</a>."^^rdf:HTML ;
   sh:name "announcementLocation" ;
   sh:or (
       [
@@ -26564,8 +26568,8 @@ schema:SpecialAnnouncement-diseasePreventionInfo
 schema:SpecialAnnouncement-diseaseSpreadStatistics
   a sh:PropertyShape ;
   sh:path schema:diseaseSpreadStatistics ;
-  sh:description """Statistical information about the spread of a disease, either as <a class=\"localLink\" href=\"http://schema.org/WebContent\">WebContent</a>, or
-  described directly as a <a class=\"localLink\" href=\"http://schema.org/Dataset\">Dataset</a>, or the specific <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>s in the dataset. When a <a class=\"localLink\" href=\"http://schema.org/WebContent\">WebContent</a> URL is
+  sh:description """Statistical information about the spread of a disease, either as <a class='localLink' href='http://schema.org/WebContent'>WebContent</a>, or
+  described directly as a <a class='localLink' href='http://schema.org/Dataset'>Dataset</a>, or the specific <a class='localLink' href='http://schema.org/Observation'>Observation</a>s in the dataset. When a <a class='localLink' href='http://schema.org/WebContent'>WebContent</a> URL is
   provided, the page indicated might also contain more such markup."""^^rdf:HTML ;
   sh:name "diseaseSpreadStatistics" ;
   sh:or (
@@ -26586,7 +26590,7 @@ schema:SpecialAnnouncement-diseaseSpreadStatistics
 schema:SpecialAnnouncement-gettingTestedInfo
   a sh:PropertyShape ;
   sh:path schema:gettingTestedInfo ;
-  sh:description "Information about getting tested (for a <a class=\"localLink\" href=\"http://schema.org/MedicalCondition\">MedicalCondition</a>), e.g. in the context of a pandemic."^^rdf:HTML ;
+  sh:description "Information about getting tested (for a <a class='localLink' href='http://schema.org/MedicalCondition'>MedicalCondition</a>), e.g. in the context of a pandemic."^^rdf:HTML ;
   sh:name "gettingTestedInfo" ;
   sh:or (
       [
@@ -26607,7 +26611,7 @@ schema:SpecialAnnouncement-governmentBenefitsInfo
 schema:SpecialAnnouncement-newsUpdatesAndGuidelines
   a sh:PropertyShape ;
   sh:path schema:newsUpdatesAndGuidelines ;
-  sh:description "Indicates a page with news updates and guidelines. This could often be (but is not required to be) the main page containing <a class=\"localLink\" href=\"http://schema.org/SpecialAnnouncement\">SpecialAnnouncement</a> markup on a site."^^rdf:HTML ;
+  sh:description "Indicates a page with news updates and guidelines. This could often be (but is not required to be) the main page containing <a class='localLink' href='http://schema.org/SpecialAnnouncement'>SpecialAnnouncement</a> markup on a site."^^rdf:HTML ;
   sh:name "newsUpdatesAndGuidelines" ;
   sh:or (
       [
@@ -26843,7 +26847,7 @@ schema:SportsTeam-coach
 schema:SportsTeam-gender
   a sh:PropertyShape ;
   sh:path schema:gender ;
-  sh:description "Gender of something, typically a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a>, but possibly also fictional characters, animals, etc. While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender. The <a class=\"localLink\" href=\"http://schema.org/gender\">gender</a> property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender <a class=\"localLink\" href=\"http://schema.org/SportsTeam\">SportsTeam</a> can be indicated with a text value of \"Mixed\"."^^rdf:HTML ;
+  sh:description "Gender of something, typically a <a class='localLink' href='http://schema.org/Person'>Person</a>, but possibly also fictional characters, animals, etc. While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender. The <a class='localLink' href='http://schema.org/gender'>gender</a> property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender <a class='localLink' href='http://schema.org/SportsTeam'>SportsTeam</a> can be indicated with a text value of 'Mixed'."^^rdf:HTML ;
   sh:name "gender" ;
   sh:or (
       [
@@ -26888,9 +26892,9 @@ schema:StatisticalPopulation
   a sh:NodeShape ;
   schema:category "issue-2291" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. The property <a class=\"localLink\" href=\"http://schema.org/populationType\">populationType</a> is used to specify the type. Any property that can be used on instances of that type can appear on the statistical population. For example, a <a class=\"localLink\" href=\"http://schema.org/StatisticalPopulation\">StatisticalPopulation</a> representing all <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a>s with a <a class=\"localLink\" href=\"http://schema.org/homeLocation\">homeLocation</a> of East Podunk California, would be described by applying the appropriate <a class=\"localLink\" href=\"http://schema.org/homeLocation\">homeLocation</a> and <a class=\"localLink\" href=\"http://schema.org/populationType\">populationType</a> properties to a <a class=\"localLink\" href=\"http://schema.org/StatisticalPopulation\">StatisticalPopulation</a> item that stands for that set of people.
-The properties <a class=\"localLink\" href=\"http://schema.org/numConstraints\">numConstraints</a> and <a class=\"localLink\" href=\"http://schema.org/constrainingProperties\">constrainingProperties</a> are used to specify which of the populations properties are used to specify the population. Note that the sense of \"population\" used here is the general sense of a statistical
-population, and does not imply that the population consists of people. For example, a <a class=\"localLink\" href=\"http://schema.org/populationType\">populationType</a> of <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> or <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a> could be used. See also <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>, and the <a href=\"/docs/data-and-datasets.html\">data and datasets</a> overview for more details."""^^rdf:HTML ;
+  rdfs:comment """A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. The property <a class='localLink' href='http://schema.org/populationType'>populationType</a> is used to specify the type. Any property that can be used on instances of that type can appear on the statistical population. For example, a <a class='localLink' href='http://schema.org/StatisticalPopulation'>StatisticalPopulation</a> representing all <a class='localLink' href='http://schema.org/Person'>Person</a>s with a <a class='localLink' href='http://schema.org/homeLocation'>homeLocation</a> of East Podunk California, would be described by applying the appropriate <a class='localLink' href='http://schema.org/homeLocation'>homeLocation</a> and <a class='localLink' href='http://schema.org/populationType'>populationType</a> properties to a <a class='localLink' href='http://schema.org/StatisticalPopulation'>StatisticalPopulation</a> item that stands for that set of people.
+The properties <a class='localLink' href='http://schema.org/numConstraints'>numConstraints</a> and <a class='localLink' href='http://schema.org/constrainingProperties'>constrainingProperties</a> are used to specify which of the populations properties are used to specify the population. Note that the sense of 'population' used here is the general sense of a statistical
+population, and does not imply that the population consists of people. For example, a <a class='localLink' href='http://schema.org/populationType'>populationType</a> of <a class='localLink' href='http://schema.org/Event'>Event</a> or <a class='localLink' href='http://schema.org/NewsArticle'>NewsArticle</a> could be used. See also <a class='localLink' href='http://schema.org/Observation'>Observation</a>, and the <a href='/docs/data-and-datasets.html'>data and datasets</a> overview for more details."""^^rdf:HTML ;
   rdfs:label "Statistical population" ;
   rdfs:subClassOf schema:Intangible ;
   sh:property schema:StatisticalPopulation-constrainingProperty ;
@@ -26901,22 +26905,22 @@ schema:StatisticalPopulation-constrainingProperty
   a sh:PropertyShape ;
   sh:path schema:constrainingProperty ;
   sh:datatype xsd:integer ;
-  sh:description """Indicates a property used as a constraint to define a <a class=\"localLink\" href=\"http://schema.org/StatisticalPopulation\">StatisticalPopulation</a> with respect to the set of entities
-  corresponding to an indicated type (via <a class=\"localLink\" href=\"http://schema.org/populationType\">populationType</a>)."""^^rdf:HTML ;
+  sh:description """Indicates a property used as a constraint to define a <a class='localLink' href='http://schema.org/StatisticalPopulation'>StatisticalPopulation</a> with respect to the set of entities
+  corresponding to an indicated type (via <a class='localLink' href='http://schema.org/populationType'>populationType</a>)."""^^rdf:HTML ;
   sh:name "constrainingProperty" ;
 .
 schema:StatisticalPopulation-numConstraints
   a sh:PropertyShape ;
   sh:path schema:numConstraints ;
   sh:datatype xsd:integer ;
-  sh:description "Indicates the number of constraints (not counting <a class=\"localLink\" href=\"http://schema.org/populationType\">populationType</a>) defined for a particular <a class=\"localLink\" href=\"http://schema.org/StatisticalPopulation\">StatisticalPopulation</a>. This helps applications understand if they have access to a sufficiently complete description of a <a class=\"localLink\" href=\"http://schema.org/StatisticalPopulation\">StatisticalPopulation</a>."^^rdf:HTML ;
+  sh:description "Indicates the number of constraints (not counting <a class='localLink' href='http://schema.org/populationType'>populationType</a>) defined for a particular <a class='localLink' href='http://schema.org/StatisticalPopulation'>StatisticalPopulation</a>. This helps applications understand if they have access to a sufficiently complete description of a <a class='localLink' href='http://schema.org/StatisticalPopulation'>StatisticalPopulation</a>."^^rdf:HTML ;
   sh:name "numConstraints" ;
 .
 schema:StatisticalPopulation-populationType
   a sh:PropertyShape ;
   sh:path schema:populationType ;
   sh:class rdfs:Class ;
-  sh:description "Indicates the populationType common to all members of a <a class=\"localLink\" href=\"http://schema.org/StatisticalPopulation\">StatisticalPopulation</a>."^^rdf:HTML ;
+  sh:description "Indicates the populationType common to all members of a <a class='localLink' href='http://schema.org/StatisticalPopulation'>StatisticalPopulation</a>."^^rdf:HTML ;
   sh:name "populationType" ;
 .
 schema:SteeringPositionValue
@@ -26982,9 +26986,9 @@ schema:SubscribeAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/FollowAction\">FollowAction</a>: Unlike FollowAction, SubscribeAction implies that the subscriber acts as a passive agent being constantly/actively pushed for updates.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/RegisterAction\">RegisterAction</a>: Unlike RegisterAction, SubscribeAction implies that the agent is interested in continuing receiving updates from the object.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/JoinAction\">JoinAction</a>: Unlike JoinAction, SubscribeAction implies that the agent is interested in continuing receiving updates from the object.</li>
+<li><a class='localLink' href='http://schema.org/FollowAction'>FollowAction</a>: Unlike FollowAction, SubscribeAction implies that the subscriber acts as a passive agent being constantly/actively pushed for updates.</li>
+<li><a class='localLink' href='http://schema.org/RegisterAction'>RegisterAction</a>: Unlike RegisterAction, SubscribeAction implies that the agent is interested in continuing receiving updates from the object.</li>
+<li><a class='localLink' href='http://schema.org/JoinAction'>JoinAction</a>: Unlike JoinAction, SubscribeAction implies that the agent is interested in continuing receiving updates from the object.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Subscribe action" ;
@@ -27025,9 +27029,9 @@ schema:SubwayStation
 schema:Suite
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment """A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (Source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Suite_(hotel)\">http://en.wikipedia.org/wiki/Suite_(hotel)</a>).
+  rdfs:comment """A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (Source: Wikipedia, the free encyclopedia, see <a href='http://en.wikipedia.org/wiki/Suite_(hotel)'>http://en.wikipedia.org/wiki/Suite_(hotel)</a>).
 <br /><br />
-See also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
+See also the <a href='/docs/hotels.html'>dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>."""^^rdf:HTML ;
   rdfs:label "Suite" ;
   rdfs:subClassOf schema:Accommodation ;
   sh:property schema:Suite-bed ;
@@ -27221,7 +27225,7 @@ schema:TVEpisode-partOfTVSeries
 schema:TVEpisode-subtitleLanguage
   a sh:PropertyShape ;
   sh:path schema:subtitleLanguage ;
-  sh:description "Languages in which subtitles/captions are available, in <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard format</a>."^^rdf:HTML ;
+  sh:description "Languages in which subtitles/captions are available, in <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard format</a>."^^rdf:HTML ;
   sh:name "subtitleLanguage" ;
   sh:or (
       [
@@ -27235,11 +27239,11 @@ schema:TVEpisode-subtitleLanguage
 schema:TVEpisode-titleEIDR
   a sh:PropertyShape ;
   sh:path schema:titleEIDR ;
-  sh:description """An <a href=\"https://eidr.org/\">EIDR</a> (Entertainment Identifier Registry) <a class=\"localLink\" href=\"http://schema.org/identifier\">identifier</a> representing at the most general/abstract level, a work of film or television.<br/><br/>
+  sh:description """An <a href='https://eidr.org/'>EIDR</a> (Entertainment Identifier Registry) <a class='localLink' href='http://schema.org/identifier'>identifier</a> representing at the most general/abstract level, a work of film or television.<br/><br/>
 
-For example, the motion picture known as \"Ghostbusters\" has a titleEIDR of  \"10.5240/7EC7-228A-510A-053E-CBB8-J\". This title (or work) may have several variants, which EIDR calls \"edits\". See <a class=\"localLink\" href=\"http://schema.org/editEIDR\">editEIDR</a>.<br/><br/>
+For example, the motion picture known as 'Ghostbusters' has a titleEIDR of  '10.5240/7EC7-228A-510A-053E-CBB8-J'. This title (or work) may have several variants, which EIDR calls 'edits'. See <a class='localLink' href='http://schema.org/editEIDR'>editEIDR</a>.<br/><br/>
 
-Since schema.org types like <a class=\"localLink\" href=\"http://schema.org/Movie\">Movie</a> and <a class=\"localLink\" href=\"http://schema.org/TVEpisode\">TVEpisode</a> can be used for both works and their multiple expressions, it is possible to use <a class=\"localLink\" href=\"http://schema.org/titleEIDR\">titleEIDR</a> alone (for a general description), or alongside <a class=\"localLink\" href=\"http://schema.org/editEIDR\">editEIDR</a> for a more edit-specific description."""^^rdf:HTML ;
+Since schema.org types like <a class='localLink' href='http://schema.org/Movie'>Movie</a> and <a class='localLink' href='http://schema.org/TVEpisode'>TVEpisode</a> can be used for both works and their multiple expressions, it is possible to use <a class='localLink' href='http://schema.org/titleEIDR'>titleEIDR</a> alone (for a general description), or alongside <a class='localLink' href='http://schema.org/editEIDR'>editEIDR</a> for a more edit-specific description."""^^rdf:HTML ;
   sh:name "titleEIDR" ;
   sh:or (
       [
@@ -27431,8 +27435,8 @@ schema:TakeAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/GiveAction\">GiveAction</a>: The reciprocal of TakeAction.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/ReceiveAction\">ReceiveAction</a>: Unlike ReceiveAction, TakeAction implies that ownership has been transfered.</li>
+<li><a class='localLink' href='http://schema.org/GiveAction'>GiveAction</a>: The reciprocal of TakeAction.</li>
+<li><a class='localLink' href='http://schema.org/ReceiveAction'>ReceiveAction</a>: Unlike ReceiveAction, TakeAction implies that ownership has been transfered.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Take action" ;
@@ -27458,7 +27462,7 @@ schema:TaxiReservation
   a sh:NodeShape ;
   rdfs:comment """A reservation for a taxi.<br/><br/>
 
-Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a>."""^^rdf:HTML ;
+Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use <a class='localLink' href='http://schema.org/Offer'>Offer</a>."""^^rdf:HTML ;
   rdfs:label "Taxi reservation" ;
   rdfs:subClassOf schema:Reservation ;
   sh:property schema:TaxiReservation-partySize ;
@@ -27697,7 +27701,7 @@ schema:Thing-disambiguatingDescription
 schema:Thing-identifier
   a sh:PropertyShape ;
   sh:path schema:identifier ;
-  sh:description "The identifier property represents any kind of identifier for any kind of <a class=\"localLink\" href=\"http://schema.org/Thing\">Thing</a>, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See <a href=\"/docs/datamodel.html#identifierBg\">background notes</a> for more details."^^rdf:HTML ;
+  sh:description "The identifier property represents any kind of identifier for any kind of <a class='localLink' href='http://schema.org/Thing'>Thing</a>, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See <a href='/docs/datamodel.html#identifierBg'>background notes</a> for more details."^^rdf:HTML ;
   sh:name "identifier" ;
   sh:or (
       [
@@ -27714,7 +27718,7 @@ schema:Thing-identifier
 schema:Thing-image
   a sh:PropertyShape ;
   sh:path schema:image ;
-  sh:description "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>."^^rdf:HTML ;
+  sh:description "An image of the item. This can be a <a class='localLink' href='http://schema.org/URL'>URL</a> or a fully described <a class='localLink' href='http://schema.org/ImageObject'>ImageObject</a>."^^rdf:HTML ;
   sh:name "image" ;
   sh:or (
       [
@@ -27728,7 +27732,7 @@ schema:Thing-image
 schema:Thing-mainEntityOfPage
   a sh:PropertyShape ;
   sh:path schema:mainEntityOfPage ;
-  sh:description "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See <a href=\"/docs/datamodel.html#mainEntityBackground\">background notes</a> for details."^^rdf:HTML ;
+  sh:description "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See <a href='/docs/datamodel.html#mainEntityBackground'>background notes</a> for details."^^rdf:HTML ;
   sh:name "mainEntityOfPage" ;
   sh:or (
       [
@@ -27833,9 +27837,9 @@ schema:Ticket-priceCurrency
   a sh:PropertyShape ;
   sh:path schema:priceCurrency ;
   sh:datatype xsd:string ;
-  sh:description """The currency of the price, or a price component when attached to <a class=\"localLink\" href=\"http://schema.org/PriceSpecification\">PriceSpecification</a> and its subtypes.<br/><br/>
+  sh:description """The currency of the price, or a price component when attached to <a class='localLink' href='http://schema.org/PriceSpecification'>PriceSpecification</a> and its subtypes.<br/><br/>
 
-Use standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\"."""^^rdf:HTML ;
+Use standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR'."""^^rdf:HTML ;
   sh:name "priceCurrency" ;
 .
 schema:Ticket-ticketNumber
@@ -27916,7 +27920,7 @@ schema:Time
   a schema:DataType ;
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A point in time recurring on multiple days in the form hh:mm:ss[Z|(+|-)hh:mm] (see <a href=\"http://www.w3.org/TR/xmlschema-2/#time\">XML schema for details</a>)."^^rdf:HTML ;
+  rdfs:comment "A point in time recurring on multiple days in the form hh:mm:ss[Z|(+|-)hh:mm] (see <a href='http://www.w3.org/TR/xmlschema-2/#time'>XML schema for details</a>)."^^rdf:HTML ;
   rdfs:label "Time" ;
   rdfs:subClassOf rdfs:Resource ;
 .
@@ -27963,7 +27967,7 @@ schema:TollFree
 schema:TouristAttraction
   a rdfs:Class ;
   a sh:NodeShape ;
-  rdfs:comment "A tourist attraction.  In principle any Thing can be a <a class=\"localLink\" href=\"http://schema.org/TouristAttraction\">TouristAttraction</a>, from a <a class=\"localLink\" href=\"http://schema.org/Mountain\">Mountain</a> and <a class=\"localLink\" href=\"http://schema.org/LandmarksOrHistoricalBuildings\">LandmarksOrHistoricalBuildings</a> to a <a class=\"localLink\" href=\"http://schema.org/LocalBusiness\">LocalBusiness</a>.  This Type can be used on its own to describe a general <a class=\"localLink\" href=\"http://schema.org/TouristAttraction\">TouristAttraction</a>, or be used as an <a class=\"localLink\" href=\"http://schema.org/additionalType\">additionalType</a> to add tourist attraction properties to any other type.  (See examples below)"^^rdf:HTML ;
+  rdfs:comment "A tourist attraction.  In principle any Thing can be a <a class='localLink' href='http://schema.org/TouristAttraction'>TouristAttraction</a>, from a <a class='localLink' href='http://schema.org/Mountain'>Mountain</a> and <a class='localLink' href='http://schema.org/LandmarksOrHistoricalBuildings'>LandmarksOrHistoricalBuildings</a> to a <a class='localLink' href='http://schema.org/LocalBusiness'>LocalBusiness</a>.  This Type can be used on its own to describe a general <a class='localLink' href='http://schema.org/TouristAttraction'>TouristAttraction</a>, or be used as an <a class='localLink' href='http://schema.org/additionalType'>additionalType</a> to add tourist attraction properties to any other type.  (See examples below)"^^rdf:HTML ;
   rdfs:label "Tourist attraction" ;
   rdfs:subClassOf schema:Place ;
   sh:property schema:TouristAttraction-availableLanguage ;
@@ -27972,7 +27976,7 @@ schema:TouristAttraction
 schema:TouristAttraction-availableLanguage
   a sh:PropertyShape ;
   sh:path schema:availableLanguage ;
-  sh:description "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/inLanguage\">inLanguage</a>"^^rdf:HTML ;
+  sh:description "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>. See also <a class='localLink' href='http://schema.org/inLanguage'>inLanguage</a>"^^rdf:HTML ;
   sh:name "availableLanguage" ;
   sh:or (
       [
@@ -28002,7 +28006,7 @@ schema:TouristDestination
   a sh:NodeShape ;
   schema:category "issue-1810" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """A tourist destination. In principle any <a class=\"localLink\" href=\"http://schema.org/Place\">Place</a> can be a <a class=\"localLink\" href=\"http://schema.org/TouristDestination\">TouristDestination</a> from a <a class=\"localLink\" href=\"http://schema.org/City\">City</a>, <a class=\"localLink\" href=\"http://schema.org/Region\">Region</a> or <a class=\"localLink\" href=\"http://schema.org/Country\">Country</a> to an <a class=\"localLink\" href=\"http://schema.org/AmusementPark\">AmusementPark</a> or <a class=\"localLink\" href=\"http://schema.org/Hotel\">Hotel</a>. This Type can be used on its own to describe a general <a class=\"localLink\" href=\"http://schema.org/TouristDestination\">TouristDestination</a>, or be used as an <a class=\"localLink\" href=\"http://schema.org/additionalType\">additionalType</a> to add tourist relevant properties to any other <a class=\"localLink\" href=\"http://schema.org/Place\">Place</a>.  A <a class=\"localLink\" href=\"http://schema.org/TouristDestination\">TouristDestination</a> is defined as a <a class=\"localLink\" href=\"http://schema.org/Place\">Place</a> that contains, or is colocated with, one or more <a class=\"localLink\" href=\"http://schema.org/TouristAttraction\">TouristAttraction</a>s, often linked by a similar theme or interest to a particular <a class=\"localLink\" href=\"http://schema.org/touristType\">touristType</a>. The <a href=\"http://www2.unwto.org/\">UNWTO</a> defines Destination (main destination of a tourism trip) as the place visited that is central to the decision to take the trip.
+  rdfs:comment """A tourist destination. In principle any <a class='localLink' href='http://schema.org/Place'>Place</a> can be a <a class='localLink' href='http://schema.org/TouristDestination'>TouristDestination</a> from a <a class='localLink' href='http://schema.org/City'>City</a>, <a class='localLink' href='http://schema.org/Region'>Region</a> or <a class='localLink' href='http://schema.org/Country'>Country</a> to an <a class='localLink' href='http://schema.org/AmusementPark'>AmusementPark</a> or <a class='localLink' href='http://schema.org/Hotel'>Hotel</a>. This Type can be used on its own to describe a general <a class='localLink' href='http://schema.org/TouristDestination'>TouristDestination</a>, or be used as an <a class='localLink' href='http://schema.org/additionalType'>additionalType</a> to add tourist relevant properties to any other <a class='localLink' href='http://schema.org/Place'>Place</a>.  A <a class='localLink' href='http://schema.org/TouristDestination'>TouristDestination</a> is defined as a <a class='localLink' href='http://schema.org/Place'>Place</a> that contains, or is colocated with, one or more <a class='localLink' href='http://schema.org/TouristAttraction'>TouristAttraction</a>s, often linked by a similar theme or interest to a particular <a class='localLink' href='http://schema.org/touristType'>touristType</a>. The <a href='http://www2.unwto.org/'>UNWTO</a> defines Destination (main destination of a tourism trip) as the place visited that is central to the decision to take the trip.
   (See examples below)."""^^rdf:HTML ;
   rdfs:label "Tourist destination" ;
   rdfs:subClassOf schema:Place ;
@@ -28042,7 +28046,7 @@ schema:TouristTrip
   a sh:NodeShape ;
   schema:category "issue-1810" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment """A tourist trip. A created itinerary of visits to one or more places of interest (<a class=\"localLink\" href=\"http://schema.org/TouristAttraction\">TouristAttraction</a>/<a class=\"localLink\" href=\"http://schema.org/TouristDestination\">TouristDestination</a>) often linked by a similar theme, geographic area, or interest to a particular <a class=\"localLink\" href=\"http://schema.org/touristType\">touristType</a>. The <a href=\"http://www2.unwto.org/\">UNWTO</a> defines tourism trip as the Trip taken by visitors.
+  rdfs:comment """A tourist trip. A created itinerary of visits to one or more places of interest (<a class='localLink' href='http://schema.org/TouristAttraction'>TouristAttraction</a>/<a class='localLink' href='http://schema.org/TouristDestination'>TouristDestination</a>) often linked by a similar theme, geographic area, or interest to a particular <a class='localLink' href='http://schema.org/touristType'>touristType</a>. The <a href='http://www2.unwto.org/'>UNWTO</a> defines tourism trip as the Trip taken by visitors.
   (See examples below)."""^^rdf:HTML ;
   rdfs:label "Tourist trip" ;
   rdfs:subClassOf schema:Trip ;
@@ -28083,8 +28087,8 @@ schema:TrackAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/FollowAction\">FollowAction</a>: Unlike FollowAction, TrackAction refers to the interest on the location of innanimates objects.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/SubscribeAction\">SubscribeAction</a>: Unlike SubscribeAction, TrackAction refers to  the interest on the location of innanimate objects.</li>
+<li><a class='localLink' href='http://schema.org/FollowAction'>FollowAction</a>: Unlike FollowAction, TrackAction refers to the interest on the location of innanimates objects.</li>
+<li><a class='localLink' href='http://schema.org/SubscribeAction'>SubscribeAction</a>: Unlike SubscribeAction, TrackAction refers to  the interest on the location of innanimate objects.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Track action" ;
@@ -28116,9 +28120,9 @@ schema:TradeAction-price
 Usage guidelines:<br/><br/>
 
 <ul>
-<li>Use the <a class=\"localLink\" href=\"http://schema.org/priceCurrency\">priceCurrency</a> property (with standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\") instead of including <a href=\"http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign\">ambiguous symbols</a> such as '$' in the value.</li>
+<li>Use the <a class='localLink' href='http://schema.org/priceCurrency'>priceCurrency</a> property (with standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR') instead of including <a href='http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign'>ambiguous symbols</a> such as '$' in the value.</li>
 <li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.</li>
-<li>Note that both <a href=\"http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute\">RDFa</a> and Microdata syntax allow the use of a \"content=\" attribute for publishing simple machine-readable values alongside more human-friendly formatting.</li>
+<li>Note that both <a href='http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute'>RDFa</a> and Microdata syntax allow the use of a 'content=' attribute for publishing simple machine-readable values alongside more human-friendly formatting.</li>
 <li>Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.</li>
 </ul>
 """^^rdf:HTML ;
@@ -28136,9 +28140,9 @@ schema:TradeAction-priceCurrency
   a sh:PropertyShape ;
   sh:path schema:priceCurrency ;
   sh:datatype xsd:string ;
-  sh:description """The currency of the price, or a price component when attached to <a class=\"localLink\" href=\"http://schema.org/PriceSpecification\">PriceSpecification</a> and its subtypes.<br/><br/>
+  sh:description """The currency of the price, or a price component when attached to <a class='localLink' href='http://schema.org/PriceSpecification'>PriceSpecification</a> and its subtypes.<br/><br/>
 
-Use standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\"."""^^rdf:HTML ;
+Use standard formats: <a href='http://en.wikipedia.org/wiki/ISO_4217'>ISO 4217 currency format</a> e.g. 'USD'; <a href='https://en.wikipedia.org/wiki/List_of_cryptocurrencies'>Ticker symbol</a> for cryptocurrencies e.g. 'BTC'; well known names for <a href='https://en.wikipedia.org/wiki/Local_exchange_trading_system'>Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. 'Ithaca HOUR'."""^^rdf:HTML ;
   sh:name "priceCurrency" ;
 .
 schema:TradeAction-priceSpecification
@@ -28159,7 +28163,7 @@ schema:TrainReservation
   a sh:NodeShape ;
   rdfs:comment """A reservation for train travel.<br/><br/>
 
-Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use <a class=\"localLink\" href=\"http://schema.org/Offer\">Offer</a>."""^^rdf:HTML ;
+Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages with individual confirmations of reservations. For offers of tickets, use <a class='localLink' href='http://schema.org/Offer'>Offer</a>."""^^rdf:HTML ;
   rdfs:label "Train reservation" ;
   rdfs:subClassOf schema:Reservation ;
 .
@@ -28335,7 +28339,7 @@ schema:Trip-departureTime
 schema:Trip-itinerary
   a sh:PropertyShape ;
   sh:path schema:itinerary ;
-  sh:description "Destination(s) ( <a class=\"localLink\" href=\"http://schema.org/Place\">Place</a> ) that make up a trip. For a trip where destination order is important use <a class=\"localLink\" href=\"http://schema.org/ItemList\">ItemList</a> to specify that order (see examples)."^^rdf:HTML ;
+  sh:description "Destination(s) ( <a class='localLink' href='http://schema.org/Place'>Place</a> ) that make up a trip. For a trip where destination order is important use <a class='localLink' href='http://schema.org/ItemList'>ItemList</a> to specify that order (see examples)."^^rdf:HTML ;
   sh:name "itinerary" ;
   sh:or (
       [
@@ -28349,7 +28353,7 @@ schema:Trip-itinerary
 schema:Trip-offers
   a sh:PropertyShape ;
   sh:path schema:offers ;
-  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class=\"localLink\" href=\"http://schema.org/businessFunction\">businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class=\"localLink\" href=\"http://schema.org/Demand\">Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
+  sh:description "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use <a class='localLink' href='http://schema.org/businessFunction'>businessFunction</a> to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a <a class='localLink' href='http://schema.org/Demand'>Demand</a>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer."^^rdf:HTML ;
   sh:name "offers" ;
   sh:or (
       [
@@ -28364,7 +28368,7 @@ schema:Trip-partOfTrip
   a sh:PropertyShape ;
   sh:path schema:partOfTrip ;
   sh:class schema:Trip ;
-  sh:description "Identifies that this <a class=\"localLink\" href=\"http://schema.org/Trip\">Trip</a> is a subTrip of another Trip.  For example Day 1, Day 2, etc. of a multi-day trip."^^rdf:HTML ;
+  sh:description "Identifies that this <a class='localLink' href='http://schema.org/Trip'>Trip</a> is a subTrip of another Trip.  For example Day 1, Day 2, etc. of a multi-day trip."^^rdf:HTML ;
   sh:name "partOfTrip" ;
 .
 schema:Trip-provider
@@ -28385,7 +28389,7 @@ schema:Trip-subTrip
   a sh:PropertyShape ;
   sh:path schema:subTrip ;
   sh:class schema:Trip ;
-  sh:description "Identifies a <a class=\"localLink\" href=\"http://schema.org/Trip\">Trip</a> that is a subTrip of this Trip.  For example Day 1, Day 2, etc. of a multi-day trip."^^rdf:HTML ;
+  sh:description "Identifies a <a class='localLink' href='http://schema.org/Trip'>Trip</a> that is a subTrip of this Trip.  For example Day 1, Day 2, etc. of a multi-day trip."^^rdf:HTML ;
   sh:name "subTrip" ;
 .
 schema:TripleBlindedTrial
@@ -28520,8 +28524,8 @@ schema:UnRegisterAction
 Related actions:<br/><br/>
 
 <ul>
-<li><a class=\"localLink\" href=\"http://schema.org/RegisterAction\">RegisterAction</a>: antonym of UnRegisterAction.</li>
-<li><a class=\"localLink\" href=\"http://schema.org/LeaveAction\">LeaveAction</a>: Unlike LeaveAction, UnRegisterAction implies that you are unregistering from a service you werer previously registered, rather than leaving a team/group of people.</li>
+<li><a class='localLink' href='http://schema.org/RegisterAction'>RegisterAction</a>: antonym of UnRegisterAction.</li>
+<li><a class='localLink' href='http://schema.org/LeaveAction'>LeaveAction</a>: Unlike LeaveAction, UnRegisterAction implies that you are unregistering from a service you werer previously registered, rather than leaving a team/group of people.</li>
 </ul>
 """^^rdf:HTML ;
   rdfs:label "Un register action" ;
@@ -28655,7 +28659,7 @@ schema:UserBlocks
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:supersededBy schema:InteractionCounter ;
-  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class=\"localLink\" href=\"http://schema.org/Action\">Action</a>-based vocabulary, alongside types such as <a class=\"localLink\" href=\"http://schema.org/Comment\">Comment</a>."^^rdf:HTML ;
+  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class='localLink' href='http://schema.org/Action'>Action</a>-based vocabulary, alongside types such as <a class='localLink' href='http://schema.org/Comment'>Comment</a>."^^rdf:HTML ;
   rdfs:label "User blocks" ;
   rdfs:subClassOf schema:UserInteraction ;
 .
@@ -28663,7 +28667,7 @@ schema:UserCheckins
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:supersededBy schema:InteractionCounter ;
-  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class=\"localLink\" href=\"http://schema.org/Action\">Action</a>-based vocabulary, alongside types such as <a class=\"localLink\" href=\"http://schema.org/Comment\">Comment</a>."^^rdf:HTML ;
+  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class='localLink' href='http://schema.org/Action'>Action</a>-based vocabulary, alongside types such as <a class='localLink' href='http://schema.org/Comment'>Comment</a>."^^rdf:HTML ;
   rdfs:label "User checkins" ;
   rdfs:subClassOf schema:UserInteraction ;
 .
@@ -28671,7 +28675,7 @@ schema:UserComments
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:supersededBy schema:InteractionCounter ;
-  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class=\"localLink\" href=\"http://schema.org/Action\">Action</a>-based vocabulary, alongside types such as <a class=\"localLink\" href=\"http://schema.org/Comment\">Comment</a>."^^rdf:HTML ;
+  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class='localLink' href='http://schema.org/Action'>Action</a>-based vocabulary, alongside types such as <a class='localLink' href='http://schema.org/Comment'>Comment</a>."^^rdf:HTML ;
   rdfs:label "User comments" ;
   rdfs:subClassOf schema:UserInteraction ;
   sh:property schema:UserComments-commentText ;
@@ -28733,7 +28737,7 @@ schema:UserDownloads
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:supersededBy schema:InteractionCounter ;
-  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class=\"localLink\" href=\"http://schema.org/Action\">Action</a>-based vocabulary, alongside types such as <a class=\"localLink\" href=\"http://schema.org/Comment\">Comment</a>."^^rdf:HTML ;
+  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class='localLink' href='http://schema.org/Action'>Action</a>-based vocabulary, alongside types such as <a class='localLink' href='http://schema.org/Comment'>Comment</a>."^^rdf:HTML ;
   rdfs:label "User downloads" ;
   rdfs:subClassOf schema:UserInteraction ;
 .
@@ -28741,7 +28745,7 @@ schema:UserInteraction
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:supersededBy schema:InteractionCounter ;
-  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class=\"localLink\" href=\"http://schema.org/Action\">Action</a>-based vocabulary, alongside types such as <a class=\"localLink\" href=\"http://schema.org/Comment\">Comment</a>."^^rdf:HTML ;
+  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class='localLink' href='http://schema.org/Action'>Action</a>-based vocabulary, alongside types such as <a class='localLink' href='http://schema.org/Comment'>Comment</a>."^^rdf:HTML ;
   rdfs:label "User interaction" ;
   rdfs:subClassOf schema:Event ;
 .
@@ -28749,7 +28753,7 @@ schema:UserLikes
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:supersededBy schema:InteractionCounter ;
-  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class=\"localLink\" href=\"http://schema.org/Action\">Action</a>-based vocabulary, alongside types such as <a class=\"localLink\" href=\"http://schema.org/Comment\">Comment</a>."^^rdf:HTML ;
+  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class='localLink' href='http://schema.org/Action'>Action</a>-based vocabulary, alongside types such as <a class='localLink' href='http://schema.org/Comment'>Comment</a>."^^rdf:HTML ;
   rdfs:label "User likes" ;
   rdfs:subClassOf schema:UserInteraction ;
 .
@@ -28757,7 +28761,7 @@ schema:UserPageVisits
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:supersededBy schema:InteractionCounter ;
-  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class=\"localLink\" href=\"http://schema.org/Action\">Action</a>-based vocabulary, alongside types such as <a class=\"localLink\" href=\"http://schema.org/Comment\">Comment</a>."^^rdf:HTML ;
+  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class='localLink' href='http://schema.org/Action'>Action</a>-based vocabulary, alongside types such as <a class='localLink' href='http://schema.org/Comment'>Comment</a>."^^rdf:HTML ;
   rdfs:label "User page visits" ;
   rdfs:subClassOf schema:UserInteraction ;
 .
@@ -28765,7 +28769,7 @@ schema:UserPlays
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:supersededBy schema:InteractionCounter ;
-  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class=\"localLink\" href=\"http://schema.org/Action\">Action</a>-based vocabulary, alongside types such as <a class=\"localLink\" href=\"http://schema.org/Comment\">Comment</a>."^^rdf:HTML ;
+  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class='localLink' href='http://schema.org/Action'>Action</a>-based vocabulary, alongside types such as <a class='localLink' href='http://schema.org/Comment'>Comment</a>."^^rdf:HTML ;
   rdfs:label "User plays" ;
   rdfs:subClassOf schema:UserInteraction ;
 .
@@ -28773,7 +28777,7 @@ schema:UserPlusOnes
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:supersededBy schema:InteractionCounter ;
-  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class=\"localLink\" href=\"http://schema.org/Action\">Action</a>-based vocabulary, alongside types such as <a class=\"localLink\" href=\"http://schema.org/Comment\">Comment</a>."^^rdf:HTML ;
+  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class='localLink' href='http://schema.org/Action'>Action</a>-based vocabulary, alongside types such as <a class='localLink' href='http://schema.org/Comment'>Comment</a>."^^rdf:HTML ;
   rdfs:label "User plus ones" ;
   rdfs:subClassOf schema:UserInteraction ;
 .
@@ -28782,7 +28786,7 @@ schema:UserReview
   a sh:NodeShape ;
   schema:category "issue-1589" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "A review created by an end-user (e.g. consumer, purchaser, attendee etc.), in contrast with <a class=\"localLink\" href=\"http://schema.org/CriticReview\">CriticReview</a>."^^rdf:HTML ;
+  rdfs:comment "A review created by an end-user (e.g. consumer, purchaser, attendee etc.), in contrast with <a class='localLink' href='http://schema.org/CriticReview'>CriticReview</a>."^^rdf:HTML ;
   rdfs:label "User review" ;
   rdfs:subClassOf schema:Review ;
 .
@@ -28790,7 +28794,7 @@ schema:UserTweets
   a rdfs:Class ;
   a sh:NodeShape ;
   schema:supersededBy schema:InteractionCounter ;
-  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class=\"localLink\" href=\"http://schema.org/Action\">Action</a>-based vocabulary, alongside types such as <a class=\"localLink\" href=\"http://schema.org/Comment\">Comment</a>."^^rdf:HTML ;
+  rdfs:comment "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class='localLink' href='http://schema.org/Action'>Action</a>-based vocabulary, alongside types such as <a class='localLink' href='http://schema.org/Comment'>Comment</a>."^^rdf:HTML ;
   rdfs:label "User tweets" ;
   rdfs:subClassOf schema:UserInteraction ;
 .
@@ -28860,7 +28864,7 @@ schema:Vehicle-accelerationTime
 Typical unit code(s): SEC for seconds<br/><br/>
 
 <ul>
-<li>Note: There are unfortunately no standard unit codes for seconds/0..100 km/h or seconds/0..60 mph. Simply use \"SEC\" for seconds and indicate the velocities in the <a class=\"localLink\" href=\"http://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a>, or use <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a> with a <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> of 0..60 mph or 0..100 km/h to specify the reference speeds.</li>
+<li>Note: There are unfortunately no standard unit codes for seconds/0..100 km/h or seconds/0..60 mph. Simply use 'SEC' for seconds and indicate the velocities in the <a class='localLink' href='http://schema.org/name'>name</a> of the <a class='localLink' href='http://schema.org/QuantitativeValue'>QuantitativeValue</a>, or use <a class='localLink' href='http://schema.org/valueReference'>valueReference</a> with a <a class='localLink' href='http://schema.org/QuantitativeValue'>QuantitativeValue</a> of 0..60 mph or 0..100 km/h to specify the reference speeds.</li>
 </ul>
 """^^rdf:HTML ;
   sh:name "accelerationTime" ;
@@ -28886,7 +28890,7 @@ schema:Vehicle-callSign
   a sh:PropertyShape ;
   sh:path schema:callSign ;
   sh:datatype xsd:string ;
-  sh:description "A <a href=\"https://en.wikipedia.org/wiki/Call_sign\">callsign</a>, as used in broadcasting and radio communications to identify people, radio and TV stations, or vehicles."^^rdf:HTML ;
+  sh:description "A <a href='https://en.wikipedia.org/wiki/Call_sign'>callsign</a>, as used in broadcasting and radio communications to identify people, radio and TV stations, or vehicles."^^rdf:HTML ;
   sh:name "callSign" ;
 .
 schema:Vehicle-cargoVolume
@@ -28897,7 +28901,7 @@ schema:Vehicle-cargoVolume
 
 Typical unit code(s): LTR for liters, FTQ for cubic foot/feet<br/><br/>
 
-Note: You can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges."""^^rdf:HTML ;
+Note: You can use <a class='localLink' href='http://schema.org/minValue'>minValue</a> and <a class='localLink' href='http://schema.org/maxValue'>maxValue</a> to indicate ranges."""^^rdf:HTML ;
   sh:name "cargoVolume" ;
 .
 schema:Vehicle-dateVehicleFirstRegistered
@@ -28925,7 +28929,7 @@ schema:Vehicle-emissionsCO2
   a sh:PropertyShape ;
   sh:path schema:emissionsCO2 ;
   sh:datatype xsd:float ;
-  sh:description "The CO2 emissions in g/km. When used in combination with a QuantitativeValue, put \"g/km\" into the unitText property of that value, since there is no UN/CEFACT Common Code for \"g/km\"."^^rdf:HTML ;
+  sh:description "The CO2 emissions in g/km. When used in combination with a QuantitativeValue, put 'g/km' into the unitText property of that value, since there is no UN/CEFACT Common Code for 'g/km'."^^rdf:HTML ;
   sh:name "emissionsCO2" ;
 .
 schema:Vehicle-fuelCapacity
@@ -28944,9 +28948,9 @@ schema:Vehicle-fuelConsumption
   sh:description """The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).<br/><br/>
 
 <ul>
-<li>Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use <a class=\"localLink\" href=\"http://schema.org/unitText\">unitText</a> to indicate the unit of measurement, e.g. L/100 km.</li>
-<li>Note 2: There are two ways of indicating the fuel consumption, <a class=\"localLink\" href=\"http://schema.org/fuelConsumption\">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class=\"localLink\" href=\"http://schema.org/fuelEfficiency\">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>
-<li>Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a> to link the value for the fuel consumption to another value.</li>
+<li>Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use <a class='localLink' href='http://schema.org/unitText'>unitText</a> to indicate the unit of measurement, e.g. L/100 km.</li>
+<li>Note 2: There are two ways of indicating the fuel consumption, <a class='localLink' href='http://schema.org/fuelConsumption'>fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class='localLink' href='http://schema.org/fuelEfficiency'>fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>
+<li>Note 3: Often, the absolute value is useful only when related to driving speed ('at 80 km/h') or usage pattern ('city traffic'). You can use <a class='localLink' href='http://schema.org/valueReference'>valueReference</a> to link the value for the fuel consumption to another value.</li>
 </ul>
 """^^rdf:HTML ;
   sh:name "fuelConsumption" ;
@@ -28958,9 +28962,9 @@ schema:Vehicle-fuelEfficiency
   sh:description """The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).<br/><br/>
 
 <ul>
-<li>Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use <a class=\"localLink\" href=\"http://schema.org/unitText\">unitText</a> to indicate the unit of measurement, e.g. mpg or km/L.</li>
-<li>Note 2: There are two ways of indicating the fuel consumption, <a class=\"localLink\" href=\"http://schema.org/fuelConsumption\">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class=\"localLink\" href=\"http://schema.org/fuelEfficiency\">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>
-<li>Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a> to link the value for the fuel economy to another value.</li>
+<li>Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use <a class='localLink' href='http://schema.org/unitText'>unitText</a> to indicate the unit of measurement, e.g. mpg or km/L.</li>
+<li>Note 2: There are two ways of indicating the fuel consumption, <a class='localLink' href='http://schema.org/fuelConsumption'>fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class='localLink' href='http://schema.org/fuelEfficiency'>fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>
+<li>Note 3: Often, the absolute value is useful only when related to driving speed ('at 80 km/h') or usage pattern ('city traffic'). You can use <a class='localLink' href='http://schema.org/valueReference'>valueReference</a> to link the value for the fuel economy to another value.</li>
 </ul>
 """^^rdf:HTML ;
   sh:name "fuelEfficiency" ;
@@ -29109,10 +29113,10 @@ schema:Vehicle-payload
 Typical unit code(s): KGM for kilogram, LBR for pound<br/><br/>
 
 <ul>
-<li>Note 1: Many databases specify the permitted TOTAL weight instead, which is the sum of <a class=\"localLink\" href=\"http://schema.org/weight\">weight</a> and <a class=\"localLink\" href=\"http://schema.org/payload\">payload</a></li>
-<li>Note 2: You can indicate additional information in the <a class=\"localLink\" href=\"http://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>
-<li>Note 3: You may also link to a <a class=\"localLink\" href=\"http://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a>.</li>
-<li>Note 4: Note that you can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>
+<li>Note 1: Many databases specify the permitted TOTAL weight instead, which is the sum of <a class='localLink' href='http://schema.org/weight'>weight</a> and <a class='localLink' href='http://schema.org/payload'>payload</a></li>
+<li>Note 2: You can indicate additional information in the <a class='localLink' href='http://schema.org/name'>name</a> of the <a class='localLink' href='http://schema.org/QuantitativeValue'>QuantitativeValue</a> node.</li>
+<li>Note 3: You may also link to a <a class='localLink' href='http://schema.org/QualitativeValue'>QualitativeValue</a> node that provides additional information using <a class='localLink' href='http://schema.org/valueReference'>valueReference</a>.</li>
+<li>Note 4: Note that you can use <a class='localLink' href='http://schema.org/minValue'>minValue</a> and <a class='localLink' href='http://schema.org/maxValue'>maxValue</a> to indicate ranges.</li>
 </ul>
 """^^rdf:HTML ;
   sh:name "payload" ;
@@ -29151,12 +29155,12 @@ schema:Vehicle-speed
   a sh:PropertyShape ;
   sh:path schema:speed ;
   sh:class schema:QuantitativeValue ;
-  sh:description """The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> should be the maximum speed achievable under regular conditions.<br/><br/>
+  sh:description """The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by <a class='localLink' href='http://schema.org/maxValue'>maxValue</a> should be the maximum speed achievable under regular conditions.<br/><br/>
 
 Typical unit code(s): KMH for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot<br/><br/>
 
-*Note 1: Use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate the range. Typically, the minimal value is zero.
-* Note 2: There are many different ways of measuring the speed range. You can link to information about how the given value has been determined using the <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a> property."""^^rdf:HTML ;
+*Note 1: Use <a class='localLink' href='http://schema.org/minValue'>minValue</a> and <a class='localLink' href='http://schema.org/maxValue'>maxValue</a> to indicate the range. Typically, the minimal value is zero.
+* Note 2: There are many different ways of measuring the speed range. You can link to information about how the given value has been determined using the <a class='localLink' href='http://schema.org/valueReference'>valueReference</a> property."""^^rdf:HTML ;
   sh:name "speed" ;
 .
 schema:Vehicle-steeringPosition
@@ -29182,9 +29186,9 @@ schema:Vehicle-tongueWeight
 Typical unit code(s): KGM for kilogram, LBR for pound<br/><br/>
 
 <ul>
-<li>Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"http://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>
-<li>Note 2: You may also link to a <a class=\"localLink\" href=\"http://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a>.</li>
-<li>Note 3: Note that you can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>
+<li>Note 1: You can indicate additional information in the <a class='localLink' href='http://schema.org/name'>name</a> of the <a class='localLink' href='http://schema.org/QuantitativeValue'>QuantitativeValue</a> node.</li>
+<li>Note 2: You may also link to a <a class='localLink' href='http://schema.org/QualitativeValue'>QualitativeValue</a> node that provides additional information using <a class='localLink' href='http://schema.org/valueReference'>valueReference</a>.</li>
+<li>Note 3: Note that you can use <a class='localLink' href='http://schema.org/minValue'>minValue</a> and <a class='localLink' href='http://schema.org/maxValue'>maxValue</a> to indicate ranges.</li>
 </ul>
 """^^rdf:HTML ;
   sh:name "tongueWeight" ;
@@ -29196,9 +29200,9 @@ schema:Vehicle-trailerWeight
   sh:description """The permitted weight of a trailer attached to the vehicle.<br/><br/>
 
 Typical unit code(s): KGM for kilogram, LBR for pound
-* Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"http://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> node.
-* Note 2: You may also link to a <a class=\"localLink\" href=\"http://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a>.
-* Note 3: Note that you can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges."""^^rdf:HTML ;
+* Note 1: You can indicate additional information in the <a class='localLink' href='http://schema.org/name'>name</a> of the <a class='localLink' href='http://schema.org/QuantitativeValue'>QuantitativeValue</a> node.
+* Note 2: You may also link to a <a class='localLink' href='http://schema.org/QualitativeValue'>QualitativeValue</a> node that provides additional information using <a class='localLink' href='http://schema.org/valueReference'>valueReference</a>.
+* Note 3: Note that you can use <a class='localLink' href='http://schema.org/minValue'>minValue</a> and <a class='localLink' href='http://schema.org/maxValue'>maxValue</a> to indicate ranges."""^^rdf:HTML ;
   sh:name "trailerWeight" ;
 .
 schema:Vehicle-vehicleConfiguration
@@ -29276,7 +29280,7 @@ schema:Vehicle-vehicleSpecialUsage
 schema:Vehicle-vehicleTransmission
   a sh:PropertyShape ;
   sh:path schema:vehicleTransmission ;
-  sh:description "The type of component used for transmitting the power from a rotating power source to the wheels or other relevant component(s) (\"gearbox\" for cars)."^^rdf:HTML ;
+  sh:description "The type of component used for transmitting the power from a rotating power source to the wheels or other relevant component(s) ('gearbox' for cars)."^^rdf:HTML ;
   sh:name "vehicleTransmission" ;
   sh:or (
       [
@@ -29299,9 +29303,9 @@ schema:Vehicle-weightTotal
 Typical unit code(s): KGM for kilogram, LBR for pound<br/><br/>
 
 <ul>
-<li>Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"http://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>
-<li>Note 2: You may also link to a <a class=\"localLink\" href=\"http://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a>.</li>
-<li>Note 3: Note that you can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>
+<li>Note 1: You can indicate additional information in the <a class='localLink' href='http://schema.org/name'>name</a> of the <a class='localLink' href='http://schema.org/QuantitativeValue'>QuantitativeValue</a> node.</li>
+<li>Note 2: You may also link to a <a class='localLink' href='http://schema.org/QualitativeValue'>QualitativeValue</a> node that provides additional information using <a class='localLink' href='http://schema.org/valueReference'>valueReference</a>.</li>
+<li>Note 3: Note that you can use <a class='localLink' href='http://schema.org/minValue'>minValue</a> and <a class='localLink' href='http://schema.org/maxValue'>maxValue</a> to indicate ranges.</li>
 </ul>
 """^^rdf:HTML ;
   sh:name "weightTotal" ;
@@ -29439,7 +29443,7 @@ schema:VideoGame-directors
 schema:VideoGame-gamePlatform
   a sh:PropertyShape ;
   sh:path schema:gamePlatform ;
-  sh:description "The electronic systems used to play <a href=\"http://en.wikipedia.org/wiki/Category:Video_game_platforms\">video games</a>."^^rdf:HTML ;
+  sh:description "The electronic systems used to play <a href='http://en.wikipedia.org/wiki/Category:Video_game_platforms'>video games</a>."^^rdf:HTML ;
   sh:name "gamePlatform" ;
   sh:or (
       [
@@ -29621,7 +29625,7 @@ schema:VideoGameSeries-gameLocation
 schema:VideoGameSeries-gamePlatform
   a sh:PropertyShape ;
   sh:path schema:gamePlatform ;
-  sh:description "The electronic systems used to play <a href=\"http://en.wikipedia.org/wiki/Category:Video_game_platforms\">video games</a>."^^rdf:HTML ;
+  sh:description "The electronic systems used to play <a href='http://en.wikipedia.org/wiki/Category:Video_game_platforms'>video games</a>."^^rdf:HTML ;
   sh:name "gamePlatform" ;
   sh:or (
       [
@@ -29753,7 +29757,7 @@ schema:VideoObject-actors
 schema:VideoObject-caption
   a sh:PropertyShape ;
   sh:path schema:caption ;
-  sh:description "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a>."^^rdf:HTML ;
+  sh:description "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the <a class='localLink' href='http://schema.org/encodingFormat'>encodingFormat</a>."^^rdf:HTML ;
   sh:name "caption" ;
   sh:or (
       [
@@ -29877,7 +29881,7 @@ schema:VisualArtwork
 schema:VisualArtwork-artEdition
   a sh:PropertyShape ;
   sh:path schema:artEdition ;
-  sh:description "The number of copies when multiple copies of a piece of artwork are produced - e.g. for a limited edition of 20 prints, 'artEdition' refers to the total number of copies (in this example \"20\")."^^rdf:HTML ;
+  sh:description "The number of copies when multiple copies of a piece of artwork are produced - e.g. for a limited edition of 20 prints, 'artEdition' refers to the total number of copies (in this example '20')."^^rdf:HTML ;
   sh:name "artEdition" ;
   sh:or (
       [
@@ -30192,7 +30196,7 @@ schema:WebContent
   a sh:NodeShape ;
   schema:category "issue-2358" ;
   schema:isPartOf <http://pending.schema.org> ;
-  rdfs:comment "WebContent is a type representing all <a class=\"localLink\" href=\"http://schema.org/WebPage\">WebPage</a>, <a class=\"localLink\" href=\"http://schema.org/WebSite\">WebSite</a> and <a class=\"localLink\" href=\"http://schema.org/WebPageElement\">WebPageElement</a> content. It is sometimes the case that detailed distinctions between Web pages, sites and their parts is not always important or obvious. The  <a class=\"localLink\" href=\"http://schema.org/WebContent\">WebContent</a> type makes it easier to describe Web-addressable content without requiring such distinctions to always be stated. (The intent is that the existing types <a class=\"localLink\" href=\"http://schema.org/WebPage\">WebPage</a>, <a class=\"localLink\" href=\"http://schema.org/WebSite\">WebSite</a> and <a class=\"localLink\" href=\"http://schema.org/WebPageElement\">WebPageElement</a> will eventually be declared as subtypes of <a class=\"localLink\" href=\"http://schema.org/WebContent\">WebContent</a>.)"^^rdf:HTML ;
+  rdfs:comment "WebContent is a type representing all <a class='localLink' href='http://schema.org/WebPage'>WebPage</a>, <a class='localLink' href='http://schema.org/WebSite'>WebSite</a> and <a class='localLink' href='http://schema.org/WebPageElement'>WebPageElement</a> content. It is sometimes the case that detailed distinctions between Web pages, sites and their parts is not always important or obvious. The  <a class='localLink' href='http://schema.org/WebContent'>WebContent</a> type makes it easier to describe Web-addressable content without requiring such distinctions to always be stated. (The intent is that the existing types <a class='localLink' href='http://schema.org/WebPage'>WebPage</a>, <a class='localLink' href='http://schema.org/WebSite'>WebSite</a> and <a class='localLink' href='http://schema.org/WebPageElement'>WebPageElement</a> will eventually be declared as subtypes of <a class='localLink' href='http://schema.org/WebContent'>WebContent</a>.)"^^rdf:HTML ;
   rdfs:label "Web content" ;
   rdfs:subClassOf schema:CreativeWork ;
 .
@@ -30292,12 +30296,12 @@ The <em>speakable</em> property can be repeated an arbitrary number of times, wi
 
 1.) <em>id-value</em> URL references - uses <em>id-value</em> of an element in the page being annotated. The simplest use of <em>speakable</em> has (potentially relative) URL values, referencing identified sections of the document concerned.<br/><br/>
 
-2.) CSS Selectors - addresses content in the annotated page, eg. via class attribute. Use the <a class=\"localLink\" href=\"http://schema.org/cssSelector\">cssSelector</a> property.<br/><br/>
+2.) CSS Selectors - addresses content in the annotated page, eg. via class attribute. Use the <a class='localLink' href='http://schema.org/cssSelector'>cssSelector</a> property.<br/><br/>
 
-3.)  XPaths - addresses content via XPaths (assuming an XML view of the content). Use the <a class=\"localLink\" href=\"http://schema.org/xpath\">xpath</a> property.<br/><br/>
+3.)  XPaths - addresses content via XPaths (assuming an XML view of the content). Use the <a class='localLink' href='http://schema.org/xpath'>xpath</a> property.<br/><br/>
 
 For more sophisticated markup of speakable sections beyond simple ID references, either CSS selectors or XPath expressions to pick out document section(s) as speakable. For this
-we define a supporting type, <a class=\"localLink\" href=\"http://schema.org/SpeakableSpecification\">SpeakableSpecification</a>  which is defined to be a possible value of the <em>speakable</em> property."""^^rdf:HTML ;
+we define a supporting type, <a class='localLink' href='http://schema.org/SpeakableSpecification'>SpeakableSpecification</a>  which is defined to be a possible value of the <em>speakable</em> property."""^^rdf:HTML ;
   sh:name "speakable" ;
   sh:or (
       [
@@ -30328,14 +30332,14 @@ schema:WebPageElement-cssSelector
   a sh:PropertyShape ;
   sh:path schema:cssSelector ;
   sh:class schema:CssSelectorType ;
-  sh:description "A CSS selector, e.g. of a <a class=\"localLink\" href=\"http://schema.org/SpeakableSpecification\">SpeakableSpecification</a> or <a class=\"localLink\" href=\"http://schema.org/WebPageElement\">WebPageElement</a>. In the latter case, multiple matches within a page can constitute a single conceptual \"Web page element\"."^^rdf:HTML ;
+  sh:description "A CSS selector, e.g. of a <a class='localLink' href='http://schema.org/SpeakableSpecification'>SpeakableSpecification</a> or <a class='localLink' href='http://schema.org/WebPageElement'>WebPageElement</a>. In the latter case, multiple matches within a page can constitute a single conceptual 'Web page element'."^^rdf:HTML ;
   sh:name "cssSelector" ;
 .
 schema:WebPageElement-xpath
   a sh:PropertyShape ;
   sh:path schema:xpath ;
   sh:class schema:XPathType ;
-  sh:description "An XPath, e.g. of a <a class=\"localLink\" href=\"http://schema.org/SpeakableSpecification\">SpeakableSpecification</a> or <a class=\"localLink\" href=\"http://schema.org/WebPageElement\">WebPageElement</a>. In the latter case, multiple matches within a page can constitute a single conceptual \"Web page element\"."^^rdf:HTML ;
+  sh:description "An XPath, e.g. of a <a class='localLink' href='http://schema.org/SpeakableSpecification'>SpeakableSpecification</a> or <a class='localLink' href='http://schema.org/WebPageElement'>WebPageElement</a>. In the latter case, multiple matches within a page can constitute a single conceptual 'Web page element'."^^rdf:HTML ;
   sh:name "xpath" ;
 .
 schema:WebSite
@@ -30420,7 +30424,7 @@ schema:WorkBasedProgram
 schema:WorkBasedProgram-occupationalCategory
   a sh:PropertyShape ;
   sh:path schema:occupationalCategory ;
-  sh:description """A category describing the job, preferably using a term from a taxonomy such as <a href=\"http://www.onetcenter.org/taxonomy.html\">BLS O*NET-SOC</a>, <a href=\"https://www.ilo.org/public/english/bureau/stat/isco/isco08/\">ISCO-08</a> or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.<br/><br/>
+  sh:description """A category describing the job, preferably using a term from a taxonomy such as <a href='http://www.onetcenter.org/taxonomy.html'>BLS O*NET-SOC</a>, <a href='https://www.ilo.org/public/english/bureau/stat/isco/isco08/'>ISCO-08</a> or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.<br/><br/>
 
 Note: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC."""^^rdf:HTML ;
   sh:name "occupationalCategory" ;
@@ -30460,7 +30464,7 @@ schema:WriteAction
 schema:WriteAction-inLanguage
   a sh:PropertyShape ;
   sh:path schema:inLanguage ;
-  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>."^^rdf:HTML ;
+  sh:description "The language of the content or performance or used in an action. Please use one of the language codes from the <a href='http://tools.ietf.org/html/bcp47'>IETF BCP 47 standard</a>. See also <a class='localLink' href='http://schema.org/availableLanguage'>availableLanguage</a>."^^rdf:HTML ;
   sh:name "inLanguage" ;
   sh:or (
       [
@@ -30510,3 +30514,4 @@ schema:Zoo
   rdfs:label "Zoo" ;
   rdfs:subClassOf schema:CivicStructure ;
 .`;
+/* Tslint:enable:max-line-length */
