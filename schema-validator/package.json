@@ -21,8 +21,8 @@
     "scripts": {
         "build": "tsc",
         "watch": "tsc --watch",
-        "lint": "eslint \"src/**\"",
-        "lint-fix": "eslint \"src/**\" --fix",
+        "lint": "eslint 'src/**/*.ts'",
+        "lint-fix": "eslint 'src/**/*.ts' --fix",
         "test": "jest"
     }
 }

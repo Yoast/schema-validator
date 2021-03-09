@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "baseUrl": ".",
         "outDir": "dist/scripts/",
         "noImplicitAny": true,
         "target": "es5",
@@ -11,12 +12,16 @@
         ],
         "esModuleInterop": true,
         "declaration": true,
-        "types": [
-            "src/typings/*"
-        ]
+        "paths": {
+            "*": [
+                "node_modules/*",
+                "src/typings/*"
+            ]
+        },
     },
     "include": [
         "src/scripts/**/*",
+        "src/typings/**/*",
     ],
     "exclude": [
         "node_modules"
