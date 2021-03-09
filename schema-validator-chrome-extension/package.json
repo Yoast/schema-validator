@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "@types/chrome": "^0.0.133",
     "@types/npm": "^2.0.31",
     "eslint": "^7.21.0",
     "eslint-config-yoast": "^5.0.17",

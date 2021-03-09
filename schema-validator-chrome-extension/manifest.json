@@ -9,5 +9,15 @@
         "default_popup": "./dist/views/plugin.html"
         "default_icon": "./dist/images/grey.png"
     },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "./dist/scripts/page/page.js"
+            ]
+        }
+    ],
     "manifest_version": 2
 }
