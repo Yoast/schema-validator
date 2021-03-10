@@ -33,7 +33,6 @@ function generateValidationReport( schema: LinkedData ) {
  */
 function initialize() {
 	const graph = gatherSchemaFromPage();
-	console.log( graph );
 	generateValidationReport( graph );
 }
 

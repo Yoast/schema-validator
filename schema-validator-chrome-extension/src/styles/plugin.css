@@ -1,6 +1,6 @@
 
 body {
-	width: 20rem;
+	min-width: 20rem;
 	font-size: 1rem;
 }
 
@@ -20,15 +20,7 @@ article.warning {
 	background-color: #ff9242;
 }
 
-article.warning p::before {
-	content: "\26A0"
-}
-
 article.error {
 	border-color: #b9000c;
 	background-color: #ff4262;
-}
-
-article.error p::before {
-	content: "\26D4"
 }

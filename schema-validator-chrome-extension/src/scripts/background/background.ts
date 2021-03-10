@@ -1,51 +1,31 @@
 import MessageSender = chrome.runtime.MessageSender;
 import { SchemaValidationResult, SchemaValidator } from "schema-validator/dist/scripts";
 
-import { Message, ValidationSummary } from "./values";
+import { Message } from "./values";
 import { LinkedData } from "../common/values";
+import { IconPresenter } from "./presenters";
 
 let validationResults: SchemaValidationResult;
 let schema: LinkedData;
 
-function setIcon( tabId: number, icon: "green" | "grey" | "orange" | "red" ) {
-	chrome.browserAction.setIcon( {
-		path: `../images/${ icon }.png`,
-		tabId,
-	} );
-}
-
-function setBadge( tabId: number, text: string, color: "green" | "grey" | "orange" | "red" ) {
-	chrome.browserAction.setBadgeText( { text, tabId } );
-	chrome.browserAction.setBadgeBackgroundColor( { color, tabId } );
-}
-
-function updateIcon( tabId: number, summary: ValidationSummary ) {
-	if ( summary.error > 0 ) {
-		setIcon( tabId, "red" );
-		setBadge( tabId, summary.error.toString(), "red" );
-		return;
-	}
-	if ( summary.warning > 0 ) {
-		setIcon( tabId, "orange" );
-		setBadge( tabId, summary.warning.toString(), "orange" );
-		return;
-	}
-	setIcon( tabId, "green" );
-	setBadge( tabId, "", "grey" );
-}
-
 /**
- * Handles the message.
+ * Handles messages passed from other parts of the browser extension
+ * (e.g. content scripts and the popup scripts).
  *
- * @param command
- * @param payload
- * @param sender
- * @param sendResponse
+ * @param message The command.
+ * @param sender Information about the sender of the message.
+ * @param sendResponse Function to synchronously send a response back to the sender.
+ *
+ * @returns `true` when sending an asynchronous response back using `sendResponse`.
  */
-function handleMessage( { command, payload }: Message, sender: MessageSender, sendResponse: ( response?: unknown ) => void ) {
+function handleMessage( message: Message, sender: MessageSender, sendResponse: ( response?: unknown ) => void ): boolean {
+	const { command, payload } = message;
+
 	switch ( command ) {
 		case "generateValidationReport": {
 			schema = payload as LinkedData;
+
+			const icon = new IconPresenter( sender.tab.id );
 
 			const validator = new SchemaValidator();
 
@@ -54,7 +34,7 @@ function handleMessage( { command, payload }: Message, sender: MessageSender, se
 					results => {
 						validationResults = results;
 						console.log( validationResults );
-						updateIcon( sender.tab.id, results.failureCounts );
+						icon.render( validationResults );
 					},
 				);
 
@@ -62,7 +42,8 @@ function handleMessage( { command, payload }: Message, sender: MessageSender, se
 		}
 		case "getValidationResults": {
 			sendResponse( validationResults );
-			break;
+			// Turn this into an asynchronous response.
+			return true;
 		}
 		default: {
 			break;
