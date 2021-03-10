@@ -1,4 +1,6 @@
 import MessageSender = chrome.runtime.MessageSender;
+import { SchemaValidator } from "schema-validator/dist/scripts";
+
 import { Message, ValidationSummary } from "./values";
 import { StructuredDataFailure, LinkedData } from "../common/values";
 
@@ -76,11 +78,17 @@ function handleMessage( { command, payload }: Message, sender: MessageSender, se
 		case "generateValidationReport": {
 			schema = payload as LinkedData;
 			console.log( schema );
-			/*
-			 * Validate schema here using schema validator.
-			 */
-			validationResults = mockResults;
-			updateIcon( sender.tab.id, generateSummary( validationResults ) );
+
+			const validator = new SchemaValidator();
+
+			validator.validate( JSON.stringify( schema ) )
+				.then(
+					results => {
+						validationResults = results;
+						updateIcon( sender.tab.id, generateSummary( results ) );
+					},
+				);
+
 			break;
 		}
 		case "getValidationResults": {
