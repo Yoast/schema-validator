@@ -18,4 +18,9 @@ module.exports = {
 		filename: "background.js",
 		path: path.resolve( __dirname, "../../dist/scripts/background" ),
 	},
+	node: {
+		tls: "empty",
+		fs: "empty",
+		net: "empty",
+	},
 };

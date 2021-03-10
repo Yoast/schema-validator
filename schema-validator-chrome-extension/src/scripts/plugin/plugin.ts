@@ -1,12 +1,13 @@
 import { StructuredDataFailure } from "../common/values";
 import result from "./presenters/result";
+import { SchemaValidationResult } from "schema-validator";
 
 
-async function getResults(): Promise<StructuredDataFailure[]> {
+async function getResult(): Promise<SchemaValidationResult> {
 	return new Promise(
 		( resolve ) => {
-			chrome.runtime.sendMessage( { command: "getValidationResults" }, ( failures ) => {
-				resolve( failures );
+			chrome.runtime.sendMessage( { command: "getValidationResults" }, report => {
+				resolve( report );
 			} );
 		},
 	);
@@ -17,7 +18,8 @@ function sortFailures( failures: StructuredDataFailure[] ) {
 }
 
 async function initialize() {
-	const failures = await getResults();
+	const report = await getResult();
+	const failures = report.failures;
 	sortFailures( failures );
 	document.body.innerHTML = failures.map( failure => result( failure ) ).join( "" );
 }

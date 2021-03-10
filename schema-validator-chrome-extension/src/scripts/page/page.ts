@@ -6,7 +6,7 @@ import { LinkedData } from "../common/values";
  * @returns the graph.
  */
 function gatherSchemaFromPage(): LinkedData {
-	const schemaElements = document.querySelectorAll( "script[type='application/ld+json']" );
+	const schemaElements = document.querySelectorAll( "script.yoast-schema-graph[type='application/ld+json']" );
 
 	const schemas: LinkedData[] = [];
 

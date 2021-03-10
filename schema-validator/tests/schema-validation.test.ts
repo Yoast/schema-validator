@@ -1,5 +1,5 @@
 import { StructuredDataFailure } from "schemarama/shaclValidator";
-import { SchemaValidationResult, SchemaValidator } from "../scripts/schemarama-wrapper";
+import { SchemaValidationResult, SchemaValidator } from "../src/scripts/schemarama-wrapper";
 
 /* eslint-disable max-len */
 const yoastDotComSchema = `{
