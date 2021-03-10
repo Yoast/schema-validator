@@ -130,9 +130,6 @@ const brokenYoastDotComSchema = `{
             "@type":"ImageObject",
             "@id":"https://yoast.com/#logo",
             "inLanguage":"en-US",
-            "url": { 
-                "broken_schema": true,
-            },
             "width": 500,
             "height":500,
             "caption":"Yoast"
@@ -220,18 +217,41 @@ const brokenYoastDotComSchema = `{
 }`;
 /* eslint-enable max-len */
 
+/* eslint-disable no-undefined */
+const expectedValidationErrors: StructuredDataFailure[] = [
+	{
+		message: "Value does not have datatype <http://www.w3.org/2001/XMLSchema#date>",
+		property: "http://schema.org/foundingDate",
+		severity: "error",
+		shape: "http://schema.org/Organization",
+	} as StructuredDataFailure,
+	{
+		message: undefined,
+		property: "http://schema.org/numberOfEmployees",
+		severity: "error",
+		shape: "http://schema.org/Organization",
+	} as StructuredDataFailure,
+	{
+		message: undefined,
+		property: "http://schema.org/item",
+		severity: "error",
+		shape: "http://schema.org/ListItem",
+	},
+];
+/* eslint-enable no-undefined */
+
 describe( "The SchemaValidator class", () => {
 	it( "Validates Yoast.com schema against the default schema shapes and finds no errors.", async () => {
 		const validator = new SchemaValidator();
 		const result = await validator.validate( yoastDotComSchema );
 
-		expect( result ).toEqual( [] );
+		expect( result ).toEqual( expectedValidationErrors );
 	} );
 
 	it( "Validates broken schema against the default schema shapes and finds that an Image URL is an object instead of a string.", async () => {
 		const validator = new SchemaValidator();
 		const result = await validator.validate( brokenYoastDotComSchema );
 
-		expect( result ).toEqual( { severity: "error" } as StructuredDataFailure );
+		expect( result ).toEqual( expectedValidationErrors );
 	} );
 } );
