@@ -130,6 +130,9 @@ const brokenYoastDotComSchema = `{
             "@type":"ImageObject",
             "@id":"https://yoast.com/#logo",
             "inLanguage":"en-US",
+            "url": { 
+                "broken_schema": true,
+            },
             "width": 500,
             "height":500,
             "caption":"Yoast"
