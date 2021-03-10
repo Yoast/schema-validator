@@ -15,7 +15,6 @@ export default class FailurePresenter {
 	render( failure: StructuredDataFailure ): string {
 		return `<article class="result ${ escapeHTML( failure.severity || "" ) }">
 		<p>
-			<strong> ${ escapeHTML( failure.shape || "" ) }</strong><br/>
 			<strong> ${ escapeHTML( failure.property || "" ) }</strong><br/>
 			${ escapeHTML( failure.message || "" ) }
 		</p>

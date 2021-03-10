@@ -5,7 +5,7 @@
  *
  * @returns the escaped string.
  */
-export default function escapeHTML( unsafe: string ): string {
+export function escapeHTML( unsafe: string ): string {
 	return unsafe
 		.replace( /&/g, "&amp;" )
 		.replace( /</g, "&lt;" )

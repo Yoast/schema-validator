@@ -24,3 +24,27 @@ article.error {
 	border-color: #b9000c;
 	background-color: #ff4262;
 }
+
+summary {
+	position: relative;
+	border: 1px solid gray;
+	border-radius: 4px;
+	padding: 8px 16px;
+	margin: 4px 0;
+}
+
+.badge {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	border-radius: 50%;
+	padding: 4px 8px;
+}
+
+.badge.red {
+	background-color: red;
+}
+
+.badge.warning {
+	background-color: darkorange;
+}

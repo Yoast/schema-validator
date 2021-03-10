@@ -1,37 +1,40 @@
-import { SchemaValidationResult } from "schema-validator";
 import FailurePresenter from "./FailurePresenter";
+import { StructuredDataFailure } from "../../common/values";
+import { escapeHTML, sortFailures } from "../../common/helpers";
 
 /**
  * Presenter for a list of validation failures.
  */
 export default class FailureListPresenter {
 	/**
-	 * Element in which to render the failures.
-	 *
-	 * @protected
-	 */
-	protected element: HTMLElement;
-
-	/**
-	 * Presenter for a list of validation failures.
-	 *
-	 * @param element The element in which to render the failures.
-	 */
-	constructor( element: HTMLElement ) {
-		this.element = element;
-	}
-
-	/**
 	 * Renders the presenter.
 	 *
-	 * @param report The schema validation result.
+	 * @param shape The shape to which the failures belong.
+	 * @param failures The schema validation failures.
+	 *
+	 * @returns The rendered presenter.
 	 */
-	render( report: SchemaValidationResult ): void {
-		this.element.innerHTML = report.failures.map(
-			failure => {
-				const resultPresenter = new FailurePresenter();
-				return resultPresenter.render( failure );
-			},
-		).join( "" );
+	render( shape: string, failures: StructuredDataFailure[] ): string {
+		sortFailures( failures );
+
+		const renderedFailures = failures.map(
+			failure => new FailurePresenter().render( failure ),
+		);
+
+		let badgeColor = "red";
+		let badgeAmount = failures.filter( failure => failure.severity === "error" ).length;
+		if ( badgeAmount === 0 ) {
+			badgeColor = "orange";
+			badgeAmount = failures.filter( failure => failure.severity === "warning" ).length;
+		}
+
+		return `
+			<details>
+				<summary>${ escapeHTML( shape || "" ) }
+					${ badgeAmount ? `<span class="badge ${ badgeColor }">${ badgeAmount }</span>` : "" }
+				</summary>
+				${ renderedFailures.join( "" ) }
+			</details>
+		`;
 	}
 }

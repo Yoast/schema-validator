@@ -1,6 +1,5 @@
-import { StructuredDataFailure } from "../common/values";
 import { SchemaValidationResult } from "schema-validator";
-import FailureListPresenter from "./presenters/FailureListPresenter";
+import SchemaValidationResultPresenter from "./presenters/SchemaValidationResultPresenter";
 
 let report: SchemaValidationResult;
 
@@ -20,15 +19,6 @@ async function getResult(): Promise<SchemaValidationResult> {
 }
 
 /**
- * Sorts the given failures based on their severity, errors at the top.
- *
- * @param failures The validation failures to sort.
- */
-function sortFailures( failures: StructuredDataFailure[] ): void {
-	failures.sort( ( failure1: StructuredDataFailure ) => failure1.severity === "error" ? -1 : 1 );
-}
-
-/**
  * Initializes the popup by getting the validation result
  * and updating the contents of the popup accordingly.
  */
@@ -37,10 +27,9 @@ async function initialize(): Promise<void> {
 		report = await getResult();
 	}
 
-	const failures = report.failures;
-	sortFailures( failures );
-	const resultList = new FailureListPresenter( document.body );
-	resultList.render( report );
+	if ( report ) {
+		document.body.innerHTML = new SchemaValidationResultPresenter().render( report );
+	}
 }
 
 initialize();
