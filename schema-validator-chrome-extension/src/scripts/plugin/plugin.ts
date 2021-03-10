@@ -13,15 +13,7 @@ async function getResults(): Promise<StructuredDataFailure[]> {
 }
 
 function sortFailures( failures: StructuredDataFailure[] ) {
-	failures.sort( ( failure1, failure2 ) => {
-		if ( failure1.severity === "error" ) {
-			return -1;
-		}
-		if ( failure2.severity === "warning" ) {
-			return 1;
-		}
-		return 0;
-	} );
+	failures.sort( ( failure1: StructuredDataFailure ) => failure1.severity === "error" ? -1 : 1 );
 }
 
 async function initialize() {

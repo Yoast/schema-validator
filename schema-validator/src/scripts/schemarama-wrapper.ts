@@ -1,4 +1,5 @@
 import { StructuredDataFailure, Validator as ShaclValidator } from "schemarama/shaclValidator";
+import { parseJsonLd } from "schemarama";
 import { schemaShapesTTF } from "./definitions/schemashapes.ttl";
 
 /**
@@ -21,10 +22,12 @@ export class SchemaValidator {
      * @param input The schema you wish to validate.
      * @returns {StructuredDataFailure} The validation results.
      */
-	async validate( input: string ): Promise<[ StructuredDataFailure ]> {
+	async validate( input: string ): Promise<StructuredDataFailure[]> {
+		const transformedInput = await parseJsonLd( input, "https://yoast.com/" );
+
 		const validator = new ShaclValidator( this.definitions, { annotations: null, subclasses: "" } );
 
-		const validation = await validator.validate( input ) || { failures: {} as [ StructuredDataFailure ] };
+		const validation = await validator.validate( transformedInput ) || { failures: {} as [ StructuredDataFailure ] };
 
 		return validation.failures;
 	}

@@ -1,5 +1,4 @@
-import LinkedData from "./values/LinkedData";
-import { StructuredDataFailure } from "../common/values";
+import { LinkedData } from "../common/values";
 
 /**
  * Gathers the Schema from the page and puts them together in a graph.
@@ -20,23 +19,13 @@ function gatherSchemaFromPage(): LinkedData {
 	};
 }
 
-const mockResults: StructuredDataFailure[] = [
-	{
-		property: "author",
-		message: "A message",
-		severity: "warning",
-		shape: "",
-	},
-	{
-		property: "name",
-		message: "A second message",
-		severity: "error",
-		shape: "",
-	},
-];
-
-function sendResults( failures: StructuredDataFailure[] ) {
-	chrome.runtime.sendMessage( { command: "setValidationResults", payload: failures } );
+/**
+ * Sends a message to the background script to generate the validation report.
+ *
+ * @param schema The schema to generate the report for.
+ */
+function generateValidationReport( schema: LinkedData ) {
+	chrome.runtime.sendMessage( { command: "generateValidationReport", payload: schema } );
 }
 
 /**
@@ -45,7 +34,7 @@ function sendResults( failures: StructuredDataFailure[] ) {
 function initialize() {
 	const graph = gatherSchemaFromPage();
 	console.log( graph );
-	sendResults( mockResults );
+	generateValidationReport( graph );
 }
 
 initialize();

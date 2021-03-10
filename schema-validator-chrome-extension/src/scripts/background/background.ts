@@ -1,8 +1,9 @@
 import MessageSender = chrome.runtime.MessageSender;
 import { Message, ValidationSummary } from "./values";
-import { StructuredDataFailure } from "../common/values";
+import { StructuredDataFailure, LinkedData } from "../common/values";
 
 let validationResults: StructuredDataFailure[];
+let schema: LinkedData;
 
 function setIcon( tabId: number, icon: "green" | "grey" | "orange" | "red" ) {
 	chrome.browserAction.setIcon( {
@@ -47,13 +48,39 @@ function updateIcon( tabId: number, summary: ValidationSummary ) {
 	setBadge( tabId, "", "grey" );
 }
 
+const mockResults: StructuredDataFailure[] = [
+	{
+		property: "author",
+		message: "A message",
+		severity: "warning",
+		shape: "",
+	},
+	{
+		property: "name",
+		message: "A second message",
+		severity: "error",
+		shape: "",
+	},
+];
+
+/**
+ * Handles the message.
+ *
+ * @param command
+ * @param payload
+ * @param sender
+ * @param sendResponse
+ */
 function handleMessage( { command, payload }: Message, sender: MessageSender, sendResponse: ( response?: unknown ) => void ) {
 	switch ( command ) {
-		case "setValidationResults": {
-			validationResults = payload as StructuredDataFailure[];
-			const tabId = sender.tab.id;
-			const summary = generateSummary( validationResults );
-			updateIcon( tabId, summary );
+		case "generateValidationReport": {
+			schema = payload as LinkedData;
+			console.log( schema );
+			/*
+			 * Validate schema here using schema validator.
+			 */
+			validationResults = mockResults;
+			updateIcon( sender.tab.id, generateSummary( validationResults ) );
 			break;
 		}
 		case "getValidationResults": {

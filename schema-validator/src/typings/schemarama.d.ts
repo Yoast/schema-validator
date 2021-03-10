@@ -1,4 +1,12 @@
+declare module "schemarama" {
+
+	export type Store = unknown;
+
+	export function parseJsonLd( text: string, baseUrl: string ): Promise<Store>;
+}
+
 declare module "schemarama/shaclValidator" {
+	import { Store } from "schemarama";
 	export type StructuredDataFailure = {
 		property: string,
 		message: string,
@@ -28,9 +36,11 @@ declare module "schemarama/shaclValidator" {
 		 * @param {{baseUrl: string|undefined}} options
 		 * @returns {Promise<{baseUrl: string, store: Store, failures: [StructuredDataFailure]}>}
 		 */
-		validate( data: string,
+		validate( data: string | Store,
 				  options?: ShaclValidatorOptions ): Promise<{
 			baseUrl: string; store: Record<string, unknown>; failures: [ StructuredDataFailure ];
 		}>;
 	}
 }
+
+
