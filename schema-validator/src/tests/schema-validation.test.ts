@@ -1,5 +1,5 @@
 import { StructuredDataFailure } from "schemarama/shaclValidator";
-import { SchemaValidator } from "../scripts/schemarama-wrapper";
+import { SchemaValidationResult, SchemaValidator } from "../scripts/schemarama-wrapper";
 
 /* eslint-disable max-len */
 const yoastDotComSchema = `{
@@ -37,8 +37,6 @@ const yoastDotComSchema = `{
             "url":"https://yoast.com/about-us/team/joost-de-valk/",
             "sameAs":"https://yoast.com/about-us/team/joost-de-valk/"
          },
-         "foundingDate":"2010-05-01",
-         "numberOfEmployees":133,
          "slogan":"SEO for Everyone",
          "description":"Yoast helps you with your website optimization, whether it be through our widely used SEO software or our online SEO courses: we&#039;re here to help.",
          "legalName":"Yoast BV"
@@ -78,9 +76,6 @@ const yoastDotComSchema = `{
          "datePublished":"2015-09-14T08:13:22+00:00",
          "dateModified":"2021-03-02T08:35:35+00:00",
          "description":"Yoast helps you with your website optimization, whether it be through our widely used SEO software or our online SEO courses: we're here to help.",
-         "breadcrumb":{
-            "@id":"https://yoast.com/#breadcrumb"
-         },
          "inLanguage":"en-US",
          "potentialAction":[
             {
@@ -88,22 +83,6 @@ const yoastDotComSchema = `{
                "target":[
                   "https://yoast.com/"
                ]
-            }
-         ]
-      },
-      {
-         "@type":"BreadcrumbList",
-         "@id":"https://yoast.com/#breadcrumb",
-         "itemListElement":[
-            {
-               "@type":"ListItem",
-               "position":1,
-               "item":{
-                  "@type":"WebPage",
-                  "@id":"https://yoast.com/",
-                  "url":"https://yoast.com/",
-                  "name":"Home"
-               }
             }
          ]
       }
@@ -131,7 +110,7 @@ const brokenYoastDotComSchema = `{
             "@id":"https://yoast.com/#logo",
             "inLanguage":"en-US",
             "url": { 
-                "broken_schema": true,
+                "broken_schema": true
             },
             "width": 500,
             "height":500,
@@ -246,15 +225,23 @@ const expectedValidationErrors: StructuredDataFailure[] = [
 describe( "The SchemaValidator class", () => {
 	it( "Validates Yoast.com schema against the default schema shapes and finds no errors.", async () => {
 		const validator = new SchemaValidator();
-		const result = await validator.validate( yoastDotComSchema );
+		const result = await validator.validate( yoastDotComSchema, "https:/yoast.com" );
 
-		expect( result ).toEqual( expectedValidationErrors );
+		const expected: SchemaValidationResult = {
+			severity: "success",
+			failures: [],
+		};
+		expect( result ).toEqual( expected );
 	} );
 
 	it( "Validates broken schema against the default schema shapes and finds that an Image URL is an object instead of a string.", async () => {
 		const validator = new SchemaValidator();
-		const result = await validator.validate( brokenYoastDotComSchema );
+		const result = await validator.validate( brokenYoastDotComSchema, "https:/yoast.com" );
 
-		expect( result ).toEqual( expectedValidationErrors );
+		const expected: SchemaValidationResult = {
+			severity: "error",
+			failures: expectedValidationErrors,
+		};
+		expect( result ).toEqual( expected );
 	} );
 } );
