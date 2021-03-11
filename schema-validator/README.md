@@ -1,8 +1,23 @@
 # Schema-Validator
-This package wraps the google schemarama validator. 
-The validator validates schema against a set of schema shapes included in this package; this set is customized and based off automatically generated shapes defined at datashapes.org.
 
-## usage
+This package wraps the google schemarama validator. The validator validates schema against a set of schema shapes
+included in this package; this set is customized and based off automatically generated shapes defined at datashapes.org.
 
-```const validator = new SchemaValidator();
-const results:[StructuredDataFailure] = await validator.validate( mySchemaAsAString );```
+## Usage
+
+```ts
+import { SchemaValidator, SchemaValidationResult } from "schema-validator/dist/scripts";
+
+const schema = {
+	"@type": "...",
+	// Some schema...
+};
+
+const input = JSON.stringify( schema );
+
+const validator: SchemaValidator = new SchemaValidator();
+const results: SchemaValidationResult = await validator.validate( input );
+```
+
+## Building
+Run `yarn build` to build the TypeScript.
